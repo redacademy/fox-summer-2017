@@ -15,7 +15,7 @@ get_header(); ?>
             <section class="front-page-about">
                 <h2>Hello</h2>
                 <p>My name is Daniel Fox. I’m an explorer, photographer, and speaker. My belief is that nature is a powerful 
-                tool that is capable of restoring the human spirirt. My overarching goal is to share my stories with others in 
+                tool that is capable of restoring the human spirit. My overarching goal is to share my stories with others in 
                 a way that inspires them to reconnect with the wilderness.
                 </p>
                 <p>Ever since I was a young boy, I found my inspiration and comfort in nature. It taught me about life, and 
@@ -46,7 +46,7 @@ get_header(); ?>
                 <h2>Speaker</h2>
                 <p>As a motivational speaker, I love coming together with others to share my personal joys and struggles, and 
                 how nature has inspired me to become the most authentic version of myself. My aim is to share personal stories 
-                and visually beautiful images that compell viewers to listen and reevaluate their own relationship with the 
+                and visually beautiful images that compel viewers to listen and reevaluate their own relationship with the 
                 world.
                 </p>
                 <h3><a href="#">Speaker Topics</a></h3>
