@@ -2,7 +2,7 @@
 /**
  * The template for displaying comments.
  *
- * @package RED_Starter_Theme
+ * @package Daniel_Fox_Theme
  */
 
 /*

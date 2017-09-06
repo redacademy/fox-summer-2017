@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RED_Starter_Theme
+ * @package Daniel_Fox_Theme
  */
 
 if ( ! function_exists( 'red_starter_setup' ) ) :
