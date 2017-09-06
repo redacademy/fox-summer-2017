@@ -43,6 +43,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.thumbnail-header {
+  height: 48px;
+  width: 262px;
+  background-color: #dc4e3c;
+  color: #fff; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -222,6 +228,12 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Acherus-Grotesque-Regular';
+  src: url("../../assets/fonts/Acherus-Grotesque-Regular.woff2") format("woff2"), url("../../assets/fonts/Acherus-Grotesque-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/

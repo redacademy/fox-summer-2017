@@ -40,6 +40,6 @@ function danielfox_tax_album_type() {
 		'show_tagcloud'              => true,
 		'show_in_rest'               => true,
 	);
-	register_taxonomy( 'album-type', array( 'album' ), $args );
+	register_taxonomy( 'album-type', array( 'photograph' ), $args );
 }
 add_action( 'init', 'danielfox_tax_album_type', 0 );
