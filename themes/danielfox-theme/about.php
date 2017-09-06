@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for the about page
+ * Template Name: About
  *
  * @package Daniel_Fox_Theme
  */
@@ -18,3 +18,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php get_footer(); ?>
