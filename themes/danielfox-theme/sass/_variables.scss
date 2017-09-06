@@ -26,3 +26,46 @@ $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//DANIEL FOX 
+
+$color__accent: #dc4e3c;
+$color__underline: #014f5a;
+$color__main: #3a3a3a;
+$color__form__inactive: #757373;
+$color__reverse: #fff;
+
+@mixin hero-overlay {
+    color: $color__reverse;
+    opacity: 50%;
+}
+
+@mixin misc-overlay {
+    color: $color__reverse;
+    opacity: 80%;
+}
+
+@mixin header {
+    color: $color__accent;
+    font-size: 64px;
+}
+
+@mixin blog-thumbnail-a {
+    height: 262px;	
+    width: 262px;
+}
+
+.thumbnail-header {	
+    height: 48px;	
+    width: 262px;	
+    background-color: $color__accent;
+    color: $color__reverse;
+}
+
+@mixin subscribe-btn {
+    box-sizing: border-box;	
+    height: 47px;	
+    width: 179px;	
+    border: 1px solid $color__accent;	
+    background-color: $color__accent;
+}
