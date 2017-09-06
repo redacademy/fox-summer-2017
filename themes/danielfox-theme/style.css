@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Daniel_Fox_Theme
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Daniel_Fox_Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -651,6 +651,37 @@ object {
 
 .gallery-caption {
   display: block; }
+
+.site-footer {
+  box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
+  display: -ms-flexbox;
+  display: flex;
+  height: 83px; }
+  .site-footer .footer-left {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 1 50%;
+        flex: 0 1 50%; }
+    .site-footer .footer-left .footer-subscribe {
+      display: none; }
+      @media (min-width: 600px) {
+        .site-footer .footer-left .footer-subscribe {
+          display: block; } }
+  .site-footer .footer-right {
+    background-color: lightblue;
+    -ms-flex: 0 1 50%;
+        flex: 0 1 50%; }
+  .site-footer img {
+    max-height: 35px;
+    max-width: 35px;
+    margin: 7.5px; }
+    @media (min-width: 600px) {
+      .site-footer img {
+        max-height: 40px;
+        max-width: 40px;
+        margin: 12.5px; } }
 
 /*--------------------------------------------------------------
 # Page Templates

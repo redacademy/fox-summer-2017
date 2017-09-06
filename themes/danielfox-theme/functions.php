@@ -1,6 +1,6 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * Daniel_Fox_Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
