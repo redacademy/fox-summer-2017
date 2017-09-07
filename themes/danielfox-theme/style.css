@@ -223,9 +223,10 @@ th {
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'Acherus-Grotesque-Regular';
-  src: url("../../assets/fonts/Acherus-Grotesque-Regular.woff2") format("woff2"), url("../../assets/fonts/Acherus-Grotesque-Regular.woff") format("woff");
-  font-weight: normal;
+  font-family: 'Roboto';
+  src: url("Roboto-Light.eot");
+  src: url("Roboto-Light.eot?#iefix") format("embedded-opentype"), url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff"), url("Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -237,7 +238,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Acherus-Grotesque-Regular";
+  font-family: "Roboto";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
