@@ -222,22 +222,6 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
-<<<<<<< HEAD
-@font-face {
-  font-family: 'Acherus-Grotesque-Regular';
-  src: url("../../assets/fonts/Acherus-Grotesque-Regular.woff2") format("woff2"), url("../../assets/fonts/Acherus-Grotesque-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Roboto';
-  src: url("Roboto-Light.eot");
-  src: url("Roboto-Light.eot?#iefix") format("embedded-opentype"), url("Roboto-Light.woff2") format("woff2"), url("Roboto-Light.woff") format("woff"), url("Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-=======
->>>>>>> 1cfe6950eb408546f7cacb7cd1a3d6506ab08a88
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -519,17 +503,17 @@ a {
 
 .main-navigation {
   background: rgba(255, 255, 255, 0.9);
-  background-color: papayawhip;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: fixed; }
   .main-navigation .header-logo {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%; }
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%; }
     .main-navigation .header-logo img {
       max-height: 83px; }
   .main-navigation .nav-menu-options {
-    -ms-flex-preferred-size: 80%;
-        flex-basis: 80%; }
+    -ms-flex-preferred-size: 85%;
+        flex-basis: 85%; }
     .main-navigation .nav-menu-options div {
       height: 100%; }
       .main-navigation .nav-menu-options div ul {

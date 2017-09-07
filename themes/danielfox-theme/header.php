@@ -35,7 +35,9 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 
 					<div class="header-logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
+						</a>
 					</div>
 					
 					<div class="nav-menu-options">
