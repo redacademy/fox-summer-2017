@@ -43,12 +43,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-.thumbnail-header {
-  height: 48px;
-  width: 262px;
-  background-color: #dc4e3c;
-  color: #fff; }
-
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -243,7 +237,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Acherus-Grotesque-Regular";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
