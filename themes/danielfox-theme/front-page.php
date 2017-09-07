@@ -1,6 +1,7 @@
 <?php
 /**
  * The main template file.
+ * Template Name: Front-Page
  *
  * @package Daniel_Fox_Theme
  */
