@@ -28,7 +28,16 @@
 				</div>-->
 				
 				<nav class="header-nav-bar">
-					<p> This is the MOBILE header bar</p>
+					<div class="burger-nav">
+					</div>
+					<div class="header-page-name">
+					</div>
+					<div class="header-logo-mobile">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
+						</a>
+					</div>
+					
 				</nav>
 
 
@@ -41,7 +50,7 @@
 					</div>
 					
 					<div class="nav-menu-options">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+					<!--<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>-->
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
 

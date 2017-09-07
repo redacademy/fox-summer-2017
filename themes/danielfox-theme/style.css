@@ -497,15 +497,24 @@ a {
   .header-nav-bar p {
     margin: 0px;
     padding: 20px 0px; }
+  .header-nav-bar .header-logo {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%; }
+    .header-nav-bar .header-logo img {
+      max-height: 83px; }
 
 .site-header {
   height: 83px; }
+
+.page-template-about .site-header {
+  height: 0px; }
 
 .main-navigation {
   background: rgba(255, 255, 255, 0.9);
   display: -ms-flexbox;
   display: flex;
-  position: fixed; }
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+  position: absolute; }
   .main-navigation .header-logo {
     -ms-flex-preferred-size: 15%;
         flex-basis: 15%; }

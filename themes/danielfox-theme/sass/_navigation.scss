@@ -144,6 +144,13 @@ a {
 		margin: 0px;
 		padding: 20px 0px;
 	}
+		.header-logo {
+		flex-basis: 15%;
+
+		img {
+			max-height: 83px;
+		}
+	}
 
 	display: none;
 }
@@ -152,11 +159,18 @@ a {
 	height: 83px;
 }
 
+.page-template-about { 
+	.site-header {
+		height: 0px;
+	}
+}
+
 .main-navigation { //Desktop header bar styling
 	//display: none; 
 	background: rgba(255,255,255,0.90); 
 	display: flex;
-	position: fixed;
+	box-shadow: 0 0 9px 0 rgba(0,0,0,0.5);
+	position: absolute;
 	
 	div ul li {
 
