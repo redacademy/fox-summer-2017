@@ -246,6 +246,10 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h2 {
+  margin-top: 0px;
+  padding-top: 20px; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -490,8 +494,22 @@ a {
   text-align: right;
   width: 50%; }
 
-.main-navigation {
+.header-nav-bar {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
   display: none; }
+  .header-nav-bar p {
+    margin: 0px;
+    padding: 20px 0px; }
+
+.main-navigation {
+  background: rgba(255, 255, 255, 0.9);
+  background-color: papayawhip;
+  height: 83px;
+  display: -ms-flexbox;
+  display: flex; }
 
 /*--------------------------------------------------------------
 # Accessibility

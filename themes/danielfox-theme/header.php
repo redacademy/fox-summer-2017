@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 
 	<?php wp_head(); ?>
 	</head>
@@ -26,7 +27,11 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div>-->
 				
-				
+				<nav class="header-nav-bar">
+					<p> This is the MOBILE header bar</p>
+				</nav>
+
+
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
