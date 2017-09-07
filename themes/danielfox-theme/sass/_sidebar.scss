@@ -49,11 +49,13 @@
         color: #fff;
         letter-spacing: 2px;
         margin-left: 40%;
+        box-shadow: none;
+        border-radius: 0;
     }
 }
 
 
-.recent-post-thumbnail {
+.widget_recent_entries {
     height: 262px;	
     width: 262px;
 

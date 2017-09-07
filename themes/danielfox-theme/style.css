@@ -754,11 +754,13 @@ object {
     font-style: normal;
     color: #fff;
     letter-spacing: 2px;
-    margin-left: 40%; }
+    margin-left: 40%;
+    box-shadow: none;
+    border-radius: 0; }
 
-.recent-post-thumbnail {
+.widget_recent_entries {
   height: 262px;
   width: 262px; }
-  .recent-post-thumbnail p {
+  .widget_recent_entries p {
     background-color: #DC4E3C;
     color: #fff; }
