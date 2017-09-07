@@ -33,8 +33,7 @@
 				<?php endif; ?>
 				</div>
 				<div class="photograph-info">
-					<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '.....', CFS()->get( 'price' ), '</h2>' ); ?>
-					<?php echo CFS()->get( 'price' ); ?>
+					<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
 				</div>
 			</header><!-- .entry-header -->
 		</div>
