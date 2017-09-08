@@ -874,6 +874,9 @@ object {
         background-color: #DC4E3C;
         color: #fff; } }
 
+.single-post .site-footer {
+  display: none; }
+
 .single-post .tags-links {
   font-size: 13px;
   text-transform: capitalize; }
