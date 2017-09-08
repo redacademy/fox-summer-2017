@@ -5,10 +5,10 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color__accent;
 
 	&:visited {
-		color: $color__link-visited;
+		//color: $color__link-visited;
 	}
 	&:hover,
 	&:focus,
@@ -181,6 +181,11 @@ a {
 
 		img {
 			max-height: 83px;
+		}
+
+		a {
+		display: flex;
+    	justify-content: flex-end;
 		}
 	}
 
