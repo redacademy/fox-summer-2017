@@ -29,14 +29,12 @@
 				
 				<nav class="header-nav-bar"> <!-- Mobile nav header -->
 					<div class="burger-nav">
-													    <nav class="nav-side">
-      Side content
-      <a href="#" class="nav-toggle">
-						    <!--<span class="burger"></span>
-						    <span class="burger"></span>
-    						<span class="burger"></span>-->
-</a>
-    </nav>
+					
+					<nav class="nav-side">
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<a href="#" class="nav-toggle">
+							</a>
+						</nav>
 
 					</div>
 					<div class="header-page-name">
