@@ -814,7 +814,7 @@ object {
 .widget-area {
   display: none; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .widget-area {
     display: block; }
     .widget-area .subscription-box {
@@ -870,7 +870,21 @@ object {
         background-color: #DC4E3C;
         color: #fff; } }
 
-@media screen and (min-width: 1024px) {
+.single-post .tags-links {
+  font-size: 13px;
+  text-transform: capitalize; }
+  .single-post .tags-links a {
+    text-decoration: none;
+    color: #757373; }
+
+.single-post .entry-title {
+  font-size: font__header;
+  color: #dc4e3c; }
+
+.single-post .entry-date {
+  color: #dc4e3c; }
+
+@media screen and (min-width: 600px) {
   .blog .site-content {
     display: -ms-flexbox;
     display: flex;
