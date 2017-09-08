@@ -5,7 +5,6 @@ $('.nav-side .nav-toggle').on('click', function(e) {
   $(this).parent().toggleClass('nav-open');
   $('.header-nav-bar').css('top', '-100px');
 
-  //Write instructions here to change CSS for .header-nav-bar AND hide header-page-name AND hide header-logo-mobile
 });
 
     $(document).click( function(event){

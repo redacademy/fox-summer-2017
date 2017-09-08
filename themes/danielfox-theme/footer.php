@@ -20,8 +20,16 @@
 							<input class="subscribe-email-input" type="text" name="Email" placeholder="Email" size="20">
 						</form>
 					</div>-->
+					<div id="secondary" class="widget-area" role="complementary">
+						<?php dynamic_sidebar( 'subscribe-1' ); ?>
+					</div><!-- #secondary -->
+					
+
+
 				</div>
 				<div class="footer-right">
+
+
 
 				</div>
 

@@ -29,6 +29,13 @@
     box-sizing: border-box;	
     height: 47px;	
     width: 179px;	
+    color: white;
     border: 1px solid $color__accent;	
     background-color: $color__accent;
+
+    a {
+        color:white;
+        text-decoration: none;
+        text-align: center;
+    }
 }
