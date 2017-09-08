@@ -1,18 +1,5 @@
 //2-column Layout
 
-.blog {
-    .site-content {
-        // display: flex;
-        // flex-direction: row;
-        // .content-area {
-        //     flex-basis: 75%
-        // }
-        // .widget-area {
-        //     flex-basis: 25%;
-        // }
-    }
-}
-
 @media screen and (min-width: $breakpoint) {
     .blog {
         .site-content {
