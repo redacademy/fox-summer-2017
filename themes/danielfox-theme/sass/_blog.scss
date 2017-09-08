@@ -1,3 +1,35 @@
+.single-post {
+
+    .site-main {
+
+    }
+
+    .site-footer {
+        display: none;
+    }
+    .tags-links {
+        font-size: $font__tags;
+        text-transform: capitalize;
+    
+        a {
+            text-decoration: none;
+            color: $color__tags;
+        }
+    }
+    
+    .entry-title {
+        font-size: font__header;
+        color: $color__accent;
+    }
+    
+    .entry-date {
+        color: $color__accent;
+    }
+}
+
+
+
+
 //2-column Layout
 
 @media screen and (min-width: $breakpoint) {
