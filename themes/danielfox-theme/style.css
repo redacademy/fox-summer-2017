@@ -796,3 +796,15 @@ object {
   .widget_recent_entries p {
     background-color: #DC4E3C;
     color: #fff; }
+
+.blog .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+      flex-direction: row-reverse; }
+  .blog .site-content .content-area {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%; }
+  .blog .site-content .widget-area {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%; }
