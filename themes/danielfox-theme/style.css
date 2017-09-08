@@ -838,6 +838,22 @@ h2 {
     position: absolute;
     bottom: 0px; }
 
+h3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  box-sizing: border-box;
+  height: 47px;
+  width: 179px;
+  color: white;
+  border: 1px solid #dc4e3c;
+  background-color: #dc4e3c; }
+  h3 a {
+    color: white;
+    text-decoration: none;
+    text-align: center; }
+
 .widget-area {
   display: none; }
 

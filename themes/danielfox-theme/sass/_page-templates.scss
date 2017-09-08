@@ -25,3 +25,10 @@
         bottom: 0px;
     }
 }
+
+//MOVE THIS TO GLOBALS
+h3 {
+    display: flex;
+    justify-content: center;
+    @include subscribe-btn;
+}
