@@ -1,0 +1,14 @@
+//2-column Layout
+
+.blog {
+    .site-content {
+        display: flex;
+        flex-direction: row-reverse;
+        .content-area {
+            flex-basis: 75%
+        }
+        .widget-area {
+            flex-basis: 25%;
+        }
+    }
+}
