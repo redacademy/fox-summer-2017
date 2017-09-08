@@ -900,12 +900,13 @@ h2 {
 .single-post .site-footer {
   display: none; }
 
-.single-post .tags-links {
+.single-post .tags-links a::before {
+  content: "#"; }
+
+.single-post a {
+  text-decoration: none;
   font-size: 13px;
-  text-transform: capitalize; }
-  .single-post .tags-links a {
-    text-decoration: none;
-    color: #757373; }
+  color: #757373; }
 
 .single-post .entry-title {
   font-size: font__header;
