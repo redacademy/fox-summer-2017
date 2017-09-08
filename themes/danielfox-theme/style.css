@@ -412,9 +412,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
+  color: #dc4e3c; }
   a:hover, a:focus, a:active {
     color: midnightblue; }
   a:focus {
@@ -520,6 +518,11 @@ a {
         flex-basis: 15%; }
     .main-navigation .header-logo img {
       max-height: 83px; }
+    .main-navigation .header-logo a {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .main-navigation .nav-menu-options {
     -ms-flex-preferred-size: 85%;
         flex-basis: 85%; }
