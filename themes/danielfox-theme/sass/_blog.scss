@@ -1,0 +1,16 @@
+//2-column Layout
+
+.blog {
+    .site-content {
+        display: flex;
+        flex-wrap: wrap;
+        .content-area {
+            width: 73%;
+            justify-content: flex-end;
+        }
+        .widget-area {
+            width: 27%;
+            justify-content: flex-start;
+        }
+    }
+}
