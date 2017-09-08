@@ -38,6 +38,11 @@ $color__reverse: #fff;
 //Typography 
 
 $font__main: 'Roboto';
-$base__font: 1.5rem; 
+$base__font_desktop: 24px; 
 //base font size: 18pt = 24px = 1.5rem
+$font__header__mobile: 18px;
+
+//Screens
+
+$breakpoint: 600px;
 
