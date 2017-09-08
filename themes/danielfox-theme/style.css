@@ -818,7 +818,7 @@ object {
 .widget-area {
   display: none; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .widget-area {
     display: block; }
     .widget-area .subscription-box {
@@ -874,7 +874,7 @@ object {
         background-color: #DC4E3C;
         color: #fff; } }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1024px) {
   .blog .site-content {
     display: -ms-flexbox;
     display: flex;
