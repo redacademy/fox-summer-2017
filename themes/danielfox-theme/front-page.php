@@ -11,14 +11,17 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <section class="home-hero">
-            
+            <img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor02.jpg" alt="Adventurous image" />
             </section>
             <section class="front-page-about">
+                <div class="front-page-header-box">
                 <h2>Hello</h2>
+                </div>
                 <p>My name is Daniel Fox. I’m an explorer, photographer, and speaker. My belief is that nature is a powerful 
                 tool that is capable of restoring the human spirit. My overarching goal is to share my stories with others in 
                 a way that inspires them to reconnect with the wilderness.
                 </p>
+                <span class="desktop-text">
                 <p>Ever since I was a young boy, I found my inspiration and comfort in nature. It taught me about life, and 
                 death, about change and evolution, about challenges and perseverance. Most importantly, it taught me about 
                 perspective and balance, about being humble and spiritual.
@@ -26,12 +29,17 @@ get_header(); ?>
                 <p>I started the Wild Image Project so that I could tell a story. A story about our relationship with nature, 
                 about our journey in this universe, a story about being human.
                 </p>
+                </span>
                 <h3><a href="#">Learn More</a></h3>
             </section>
-            <section class="front-page-photography">
+
                 <div class="front-page-photography-image">
+                    <img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor39.jpg" alt="Adventurous image" />
                 </div>
+                <section class="front-page-photography">
+                <div class="front-page-header-box">
                 <h2>Photographer</h2>
+                </div>
                 <p>My aim as a photographer is to capture compelling moments and preserve them in memory. I consider myself a 
                 storyteller; the photographs I take are a visual support for the narrative that I share with others, and help 
                 communicate my deep love for interacting with wildlife and the natural environment. My favorite photographs to 
@@ -40,11 +48,14 @@ get_header(); ?>
                 </p>
                 <h3><a href="#">Let's Explore</a></h3>
             </section>
-            <section class="front-page-speaker">
-                <div class="front-page-speaker-image">
 
+                <div class="front-page-speaker-image">
+                <img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor41.jpg" alt="Adventurous image" />
                 </div>
+                <section class="front-page-speaker">
+                <div class="front-page-header-box">
                 <h2>Speaker</h2>
+                </div>
                 <p>As a motivational speaker, I love coming together with others to share my personal joys and struggles, and 
                 how nature has inspired me to become the most authentic version of myself. My aim is to share personal stories 
                 and visually beautiful images that compel viewers to listen and reevaluate their own relationship with the 
@@ -53,7 +64,9 @@ get_header(); ?>
                 <h3><a href="#">Speaker Topics</a></h3>
             </section>
             <section class="other-projects">
+                <div class="front-page-header-box">
                 <h2>Other Projects</h2>
+                </div>
                 <div class="wild-image-project">
                     <h3><a href="#">Wild Image Project</a></h3>
                 </div>
