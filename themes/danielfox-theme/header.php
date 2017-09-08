@@ -50,7 +50,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation"> <!-- Desktop nav header -->
 					<div class="header-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
+						<img class ="nav-logo" src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
 						</a>
 					</div>
 					
