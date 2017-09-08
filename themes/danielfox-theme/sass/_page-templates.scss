@@ -3,3 +3,25 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.front-page-about, .front-page-photography, .front-page-speaker, .other-projects {
+    width: 75%;
+    margin: auto;
+}
+
+.front-page-header-box {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-bottom: 1px solid $color__underline;
+}
+
+.front-page-photography-image, .front-page-speaker-image {
+    height: 125px;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        bottom: 0px;
+    }
+}

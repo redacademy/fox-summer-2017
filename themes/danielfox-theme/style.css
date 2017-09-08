@@ -777,6 +777,9 @@ object {
 .gallery-caption {
   display: block; }
 
+h2 {
+  color: #dc4e3c; }
+
 .site-footer {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
   display: -ms-flexbox;
@@ -815,10 +818,30 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.front-page-about, .front-page-photography, .front-page-speaker, .other-projects {
+  width: 75%;
+  margin: auto; }
+
+.front-page-header-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: auto;
+  border-bottom: 1px solid #014f5a; }
+
+.front-page-photography-image, .front-page-speaker-image {
+  height: 125px;
+  position: relative;
+  overflow: hidden; }
+  .front-page-photography-image img, .front-page-speaker-image img {
+    position: absolute;
+    bottom: 0px; }
+
 .widget-area {
   display: none; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .widget-area {
     display: block; }
     .widget-area .subscription-box {
@@ -874,7 +897,7 @@ object {
         background-color: #DC4E3C;
         color: #fff; } }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 600px) {
   .blog .site-content {
     display: -ms-flexbox;
     display: flex;
