@@ -13,7 +13,12 @@
 				<div class="footer-left">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
-					<span class="footer-subscribe"> <p> SUBSCRIBE BTN </p> </span>
+					<div class="subscribe-container">
+						<form method="POST" action="<?php echo get_template_directory_uri(); ?>/subscribe.php">
+						<input class="subscribe-button" type="submit" value="Subscribe" name="Subscribe">
+						<input class="subscribe-email-input" type="text" name="Email" placeholder="Email" size="20">
+						</form>
+					</div>
 				</div>
 				<div class="footer-right">
 
