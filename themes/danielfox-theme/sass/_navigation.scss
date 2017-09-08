@@ -2,6 +2,7 @@
 # Navigation
 --------------------------------------------------------------*/
 
+
 /* Links */
 
 a {
@@ -23,6 +24,7 @@ a {
 	}
 }
 
+
 /* Menus */
 
 .main-navigation {
@@ -30,13 +32,11 @@ a {
 	display: block;
 	float: left;
 	width: 100%;
-
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
@@ -44,57 +44,47 @@ a {
 			top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
-
 			ul {
 				left: -999rem;
 				top: 0;
 			}
-
 			li {
-				&:hover > ul,
-				&.focus > ul {
+				&:hover>ul,
+				&.focus>ul {
 					left: 100%;
 				}
 			}
-
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
+			:hover>a,
+			.focus>a {}
 			a:hover,
-			a.focus {
-			}
+			a.focus {}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
+		li:hover>ul,
+		li.focus>ul {
 			left: auto;
 		}
 	}
 	li {
 		float: left;
 		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
+		&:hover>a,
+		&.focus>a {}
 	}
 	a {
 		display: block;
 		text-decoration: none;
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-	}
+	.current_page_item>a,
+	.current-menu-item>a,
+	.current_page_ancestor>a {}
 }
 
+
 /* Small menu. */
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -112,17 +102,14 @@ a {
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
-
 	.site-main & {
 		margin: 0 0 $base__space-unit;
 		overflow: hidden;
 	}
-
 	.nav-previous {
 		float: left;
 		width: 50%;
 	}
-
 	.nav-next {
 		float: right;
 		text-align: right;
@@ -131,73 +118,135 @@ a {
 }
 
 //Additional Styling below here
+.site-header {
+	height: 83px;
+}
 
+.page-template-about {
+	.site-header {
+		height: 0px;
+	}
+}
 
-.header-nav-bar { //Header bar for the mobile site
-    background: rgba(255,255,255,0.90); 	
-	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5);
-	//height: 40px;
+.header-nav-bar {
+	//Header bar for the mobile site
+	background: rgba(255, 255, 255, 0.90);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+	height: 40px;
+	display: flex;
 	position: fixed;
 	width: 100%;
 	p {
 		margin: 0px;
 		padding: 20px 0px;
 	}
-		.header-logo {
-		flex-basis: 15%;
-
-		img {
-			max-height: 83px;
+	.burger-nav {
+		flex-basis: 30%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		.burger {
+			//Styling of hamburger menu through CSS 
+			width: 33px;
+			height: 4px;
+			margin-bottom: 5px;
+			background-color: #dc4e3c;
+			border-radius: 3px;
+			transform-origin: 4px 0px;
+			z-index: 1;
+			transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 		}
+///////
+.nav-side {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 250px;
+  background-color: cornflowerblue;
+  box-sizing: border-box;
+  padding: 20px;
+  color: white;
+  margin-left: -250px;
+  transition: margin 200ms ease-in-out;
+}
+
+.nav-side.nav-open {
+  margin-left: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-toggle {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background-color: cornflowerblue;
+  text-decoration: none;
+  text-align: center;
+  border-bottom-right-radius: 3px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-toggle:before {
+  content: "\2192";
+  font-weight: 600;
+  color: white;
+  line-height: 40px;
+}
+
+.nav-side.nav-open .nav-toggle:before {
+  content: "\2190";
+}
+
+///////
 	}
-
-	display: none;
 }
 
-.site-header {
-	height: 83px;
-}
-
-.page-template-about { 
-	.site-header {
-		height: 0px;
-	}
-}
-
-.main-navigation { //Desktop header bar styling
-	//display: none; 
-	background: rgba(255,255,255,0.90); 
+.header-page-name {
+	flex-basis: 40%;
 	display: flex;
-	box-shadow: 0 0 9px 0 rgba(0,0,0,0.5);
-	position: absolute;
-	
-	div ul li {
+	justify-content: center;
+	align-items: center;
+}
 
+.header-logo-mobile {
+	display: flex;
+	justify-content: center;
+	flex-basis: 30%;
+	img {
+		max-height: 100%;
 	}
-
+} //display: none;
+.main-navigation {
+	//Desktop header bar styling
+	background: rgba(255, 255, 255, 0.90);
+	display: flex;
+	box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
+	position: absolute;
+	display: none; //Turns off desktop header
 	.header-logo {
 		flex-basis: 15%;
-
 		img {
 			max-height: 83px;
 		}
-
 		a {
-		display: flex;
-    	justify-content: flex-end;
+			display: flex;
+			justify-content: flex-end;
 		}
 	}
-
 	.nav-menu-options {
 		flex-basis: 85%;
-
 		div {
 			height: 100%;
 			ul {
 				align-items: center;
 				height: 100%;
 				display: flex;
-    			justify-content: space-evenly;
+				justify-content: space-evenly;
 			}
 		}
 	}

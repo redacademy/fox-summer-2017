@@ -27,22 +27,29 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div>-->
 				
-				<nav class="header-nav-bar">
+				<nav class="header-nav-bar"> <!-- Mobile nav header -->
 					<div class="burger-nav">
+													    <nav class="nav-side">
+      Side content
+      <a href="#" class="nav-toggle">
+						    <!--<span class="burger"></span>
+						    <span class="burger"></span>
+    						<span class="burger"></span>-->
+</a>
+    </nav>
+
 					</div>
 					<div class="header-page-name">
+						<p><?php wp_title(''); ?></p>
 					</div>
 					<div class="header-logo-mobile">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
 						</a>
 					</div>
-					
 				</nav>
 
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-
+				<nav id="site-navigation" class="main-navigation" role="navigation"> <!-- Desktop nav header -->
 					<div class="header-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
