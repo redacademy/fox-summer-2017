@@ -3,15 +3,15 @@
     .site-footer {
         display: none;
     }
-    .tags-links {
-        font-size: $font__tags;
-        text-transform: capitalize;
-    
+    .tags-links a::before {
+        content: "#";
+        }
+
         a {
             text-decoration: none;
+            font-size: $font__tags;
             color: $color__tags;
         }
-    }
     
     .entry-title {
         font-size: font__header;

@@ -65,7 +65,7 @@
  		}
 
  		/* translators: used between list items, there is a space after the comma */
- 		$tags_list = get_the_tag_list( '#', esc_html( ' ' ) );
+ 		$tags_list = get_the_tag_list( '', esc_html( ' ' ) );
  		if ( $tags_list ) {
  			printf( '<span class="tags-links">' . esc_html( 'Tags | %1$s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
  		}
