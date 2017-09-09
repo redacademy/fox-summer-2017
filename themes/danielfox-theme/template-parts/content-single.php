@@ -18,9 +18,6 @@
 		<div class="entry-meta">
 			<?php red_starter_posted_on(); ?> 
 			<!-- / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?> -->
-			<footer class="entry-footer">
-				<?php red_starter_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -33,5 +30,8 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
+	<footer class="entry-footer">
+			<?php red_starter_entry_footer(); ?>
+	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->

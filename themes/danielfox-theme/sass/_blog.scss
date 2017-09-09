@@ -1,33 +1,38 @@
+.blog,
 .single-post {
-
+    .entry-meta {
+        .tags-links a::before {
+            content: "#";
+        }
+        a {
+            text-decoration: none;
+            color: $color__tags;
+            font-size: 12px;
+        }
+        .posted-on {
+            font-size: 12px;
+        }
+    }
     .site-footer {
         display: none;
     }
-    .tags-links a::before {
-        content: "#";
-        }
-
+    .entry-title {
+        font-size: 1.5rem;
+        color: $color__accent;
+        margin-bottom: 0;
         a {
             text-decoration: none;
-            font-size: $font__tags;
-            color: $color__tags;
         }
-    
-    .entry-title {
-        font-size: font__header;
-        color: $color__accent;
     }
-    
     .entry-date {
         color: $color__accent;
     }
+    article {
+        border-bottom: 2px solid $color__underline;
+    }
 }
 
-
-
-
 //2-column Layout
-
 @media screen and (min-width: $breakpoint) {
     .blog {
         .site-content {
@@ -42,4 +47,3 @@
         }
     }
 }
-

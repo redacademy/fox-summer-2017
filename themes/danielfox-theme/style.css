@@ -923,23 +923,40 @@ h3 {
         background-color: #DC4E3C;
         color: #fff; } }
 
+.blog .entry-meta .tags-links a::before,
+.single-post .entry-meta .tags-links a::before {
+  content: "#"; }
+
+.blog .entry-meta a,
+.single-post .entry-meta a {
+  text-decoration: none;
+  color: #757373;
+  font-size: 12px; }
+
+.blog .entry-meta .posted-on,
+.single-post .entry-meta .posted-on {
+  font-size: 12px; }
+
+.blog .site-footer,
 .single-post .site-footer {
   display: none; }
 
-.single-post .tags-links a::before {
-  content: "#"; }
-
-.single-post a {
-  text-decoration: none;
-  font-size: 13px;
-  color: #757373; }
-
+.blog .entry-title,
 .single-post .entry-title {
-  font-size: font__header;
-  color: #dc4e3c; }
+  font-size: 1.5rem;
+  color: #dc4e3c;
+  margin-bottom: 0; }
+  .blog .entry-title a,
+  .single-post .entry-title a {
+    text-decoration: none; }
 
+.blog .entry-date,
 .single-post .entry-date {
   color: #dc4e3c; }
+
+.blog article,
+.single-post article {
+  border-bottom: 2px solid #014f5a; }
 
 @media screen and (min-width: 600px) {
   .blog .site-content {
