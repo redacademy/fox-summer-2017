@@ -30,7 +30,9 @@ get_header(); ?>
                 about our journey in this universe, a story about being human.
                 </p>
                 </span>
+                <div class="red-button">
                 <h3><a href="#">Learn More</a></h3>
+                </div>
             </section>
 
                 <div class="front-page-photography-image">
@@ -46,7 +48,9 @@ get_header(); ?>
                 share are those ones with a good story behind them; the journey from real life to lens is not always 
                 straightforward.
                 </p>
+                 <div class="red-button">
                 <h3><a href="#">Let's Explore</a></h3>
+                </div>
             </section>
 
                 <div class="front-page-speaker-image">
@@ -61,7 +65,9 @@ get_header(); ?>
                 and visually beautiful images that compel viewers to listen and reevaluate their own relationship with the 
                 world.
                 </p>
+                 <div class="red-button">
                 <h3><a href="#">Speaker Topics</a></h3>
+                </div>
             </section>
             <section class="other-projects">
                 <div class="front-page-header-box">

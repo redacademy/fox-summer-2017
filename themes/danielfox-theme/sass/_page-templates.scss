@@ -7,6 +7,22 @@
 .front-page-about, .front-page-photography, .front-page-speaker, .other-projects {
     width: 75%;
     margin: auto;
+
+    .red-button {
+        display:flex;
+        justify-content: center;
+    }
+
+    //This hides the overflow text until switched to desktop mode
+    .desktop-text {
+        display: none;
+    }
+
+    @media (min-width: $breakpoint) {
+        .desktop-text{ 
+            display: block;
+        }
+    }
 }
 
 .front-page-header-box {
