@@ -119,7 +119,6 @@ a {
 
 //Additional Styling below here
 
-
 .site-header {
 	height: 83px;
 	.header-nav-bar {
@@ -141,7 +140,8 @@ a {
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			align-items: center; //Styling for the slide out nav bar
+			align-items: center; 
+			//Styling for the slide out nav bar
 			.menu {
 				margin: 0px;
 				padding: 0px;
@@ -210,8 +210,8 @@ a {
 		.nav-logo {
 			height: 0;
 		}
-	//display: none;
-	//MEDIA QUERY HERE
+
+		//Settings for desktop
 	@media (min-width: $breakpoint) {
 		.header-nav-bar {
 			display: none;

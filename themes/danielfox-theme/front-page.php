@@ -11,7 +11,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <section class="home-hero">
-            <img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor02.jpg" alt="Adventurous image" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor02.jpg" alt="Adventurous image" />
             </section>
             <section class="front-page-about">
                 <div class="front-page-header-box">
@@ -36,7 +36,7 @@ get_header(); ?>
             </section>
 
                 <div class="front-page-photography-image">
-                    <img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor39.jpg" alt="Adventurous image" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor39.jpg" alt="Adventurous image" />
                 </div>
                 <section class="front-page-photography">
                 <div class="front-page-header-box">
@@ -54,7 +54,7 @@ get_header(); ?>
             </section>
 
                 <div class="front-page-speaker-image">
-                <img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor41.jpg" alt="Adventurous image" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor41.jpg" alt="Adventurous image" />
                 </div>
                 <section class="front-page-speaker">
                 <div class="front-page-header-box">
