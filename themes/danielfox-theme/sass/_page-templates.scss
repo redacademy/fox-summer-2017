@@ -4,7 +4,7 @@
 
 /* Front page */
 
-.front-page-about, .front-page-photography, .front-page-speaker, .other-projects {
+.front-page-about, .front-page-photography, .front-page-speaker, .other-projects, .speaker-description { //Create mixin!
     width: 75%;
     margin: auto;
 
@@ -25,14 +25,14 @@
     }
 }
 
-.front-page-header-box {
+.front-page-header-box, .speaker-header-box { //Create Mixin for this later!
     display: flex;
     justify-content: center;
     margin: auto;
     border-bottom: 1px solid $color__underline;
 }
 
-.front-page-photography-image, .front-page-speaker-image {
+.front-page-photography-image, .front-page-speaker-image,  {
     height: 125px;
     position: relative;
     overflow: hidden;
@@ -42,9 +42,10 @@
     }
 }
 
-//MOVE THIS TO GLOBALS
-h3 {
+//Styling for Speaker Page
+
+.speaker-bottom-half {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    @include subscribe-btn;
+    flex-direction: column;
 }

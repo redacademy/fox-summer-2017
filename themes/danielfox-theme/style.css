@@ -780,6 +780,22 @@ object {
 h2 {
   color: #dc4e3c; }
 
+h3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  box-sizing: border-box;
+  padding: 15px 0px;
+  width: 179px;
+  color: white;
+  border: 1px solid #dc4e3c;
+  background-color: #dc4e3c; }
+  h3 a {
+    color: white;
+    text-decoration: none;
+    text-align: center; }
+
 .site-footer {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
   display: -ms-flexbox;
@@ -818,21 +834,21 @@ h2 {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.front-page-about, .front-page-photography, .front-page-speaker, .other-projects {
+.front-page-about, .front-page-photography, .front-page-speaker, .other-projects, .speaker-description {
   width: 75%;
   margin: auto; }
-  .front-page-about .red-button, .front-page-photography .red-button, .front-page-speaker .red-button, .other-projects .red-button {
+  .front-page-about .red-button, .front-page-photography .red-button, .front-page-speaker .red-button, .other-projects .red-button, .speaker-description .red-button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-  .front-page-about .desktop-text, .front-page-photography .desktop-text, .front-page-speaker .desktop-text, .other-projects .desktop-text {
+  .front-page-about .desktop-text, .front-page-photography .desktop-text, .front-page-speaker .desktop-text, .other-projects .desktop-text, .speaker-description .desktop-text {
     display: none; }
   @media (min-width: 600px) {
-    .front-page-about .desktop-text, .front-page-photography .desktop-text, .front-page-speaker .desktop-text, .other-projects .desktop-text {
+    .front-page-about .desktop-text, .front-page-photography .desktop-text, .front-page-speaker .desktop-text, .other-projects .desktop-text, .speaker-description .desktop-text {
       display: block; } }
 
-.front-page-header-box {
+.front-page-header-box, .speaker-header-box {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -848,21 +864,13 @@ h2 {
     position: absolute;
     bottom: 0px; }
 
-h3 {
+.speaker-bottom-half {
+  -ms-flex-align: center;
+      align-items: center;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  box-sizing: border-box;
-  padding: 15px 0px;
-  width: 179px;
-  color: white;
-  border: 1px solid #dc4e3c;
-  background-color: #dc4e3c; }
-  h3 a {
-    color: white;
-    text-decoration: none;
-    text-align: center; }
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 .widget-area {
   display: none; }
