@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="speaker-top-half">
 				<div class="speaker-header-image">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/Speaker1.jpg" alt="Daniel fox speaking" />
+					
 				</div>
 				<section class="speaker-description">
 					<div class="front-page-header-box speaker-header-box">

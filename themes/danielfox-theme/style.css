@@ -834,21 +834,38 @@ h3 {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.front-page-about, .front-page-photography, .front-page-speaker, .other-projects, .speaker-description {
+.front-page-about,
+.front-page-photography,
+.front-page-speaker,
+.other-projects,
+.speaker-description {
   width: 75%;
   margin: auto; }
-  .front-page-about .red-button, .front-page-photography .red-button, .front-page-speaker .red-button, .other-projects .red-button, .speaker-description .red-button {
+  .front-page-about .red-button,
+  .front-page-photography .red-button,
+  .front-page-speaker .red-button,
+  .other-projects .red-button,
+  .speaker-description .red-button {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-  .front-page-about .desktop-text, .front-page-photography .desktop-text, .front-page-speaker .desktop-text, .other-projects .desktop-text, .speaker-description .desktop-text {
+  .front-page-about .desktop-text,
+  .front-page-photography .desktop-text,
+  .front-page-speaker .desktop-text,
+  .other-projects .desktop-text,
+  .speaker-description .desktop-text {
     display: none; }
   @media (min-width: 600px) {
-    .front-page-about .desktop-text, .front-page-photography .desktop-text, .front-page-speaker .desktop-text, .other-projects .desktop-text, .speaker-description .desktop-text {
+    .front-page-about .desktop-text,
+    .front-page-photography .desktop-text,
+    .front-page-speaker .desktop-text,
+    .other-projects .desktop-text,
+    .speaker-description .desktop-text {
       display: block; } }
 
-.front-page-header-box, .speaker-header-box {
+.front-page-header-box,
+.speaker-header-box {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -856,13 +873,24 @@ h3 {
   margin: auto;
   border-bottom: 1px solid #014f5a; }
 
-.front-page-photography-image, .front-page-speaker-image {
+.front-page-photography-image,
+.front-page-speaker-image {
   height: 125px;
   position: relative;
   overflow: hidden; }
-  .front-page-photography-image img, .front-page-speaker-image img {
+  .front-page-photography-image img,
+  .front-page-speaker-image img {
     position: absolute;
     bottom: 0px; }
+
+.speaker-header-box {
+  -ms-flex-pack: left;
+      justify-content: left; }
+
+.speaker-header-image {
+  background-image: url("../../assets/images/Speaker1.jpg");
+  background-size: cover;
+  height: 265px; }
 
 .speaker-bottom-half {
   -ms-flex-align: center;
@@ -871,6 +899,30 @@ h3 {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+
+@media (min-width: 600px) {
+  .speaker-top-half {
+    display: -ms-flexbox;
+    display: flex; }
+    .speaker-top-half .speaker-header-image {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      margin: 1.5rem 3rem;
+      border: 2px solid #dc4e3c;
+      background-image: url("../../assets/images/Speaker1.jpg");
+      background-size: cover;
+      max-width: 550px;
+      min-height: 400px; }
+    .speaker-top-half .speaker-description {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+      margin-right: 1.5rem; }
+  .speaker-bottom-half {
+    -ms-flex-direction: row;
+        flex-direction: row;
+    margin: 5px; }
+    .speaker-bottom-half div {
+      margin: 5px; } }
 
 .widget-area {
   display: none; }

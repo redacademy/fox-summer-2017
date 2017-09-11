@@ -2,37 +2,43 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+
 /* Front page */
 
-.front-page-about, .front-page-photography, .front-page-speaker, .other-projects, .speaker-description { //Create mixin!
+.front-page-about,
+.front-page-photography,
+.front-page-speaker,
+.other-projects,
+.speaker-description {
+    //Create mixin!
     width: 75%;
     margin: auto;
-
     .red-button {
-        display:flex;
+        display: flex;
         justify-content: center;
-    }
-
-    //This hides the overflow text until switched to desktop mode
+    } //This hides the overflow text until switched to desktop mode
     .desktop-text {
         display: none;
     }
-
     @media (min-width: $breakpoint) {
-        .desktop-text{ 
+        .desktop-text {
             display: block;
         }
     }
 }
 
-.front-page-header-box, .speaker-header-box { //Create Mixin for this later!
+.front-page-header-box,
+.speaker-header-box {
+    //Create Mixin for this later!
     display: flex;
     justify-content: center;
     margin: auto;
     border-bottom: 1px solid $color__underline;
 }
 
-.front-page-photography-image, .front-page-speaker-image,  {
+.front-page-photography-image,
+.front-page-speaker-image,
+{
     height: 125px;
     position: relative;
     overflow: hidden;
@@ -42,10 +48,51 @@
     }
 }
 
-//Styling for Speaker Page
+//Styling for Speaker Page [MOBILE]
+
+.speaker-header-box {
+justify-content: left;
+}
+
+.speaker-header-image {
+    background-image: url("../../assets/images/Speaker1.jpg");
+    background-size: cover;
+        height: 265px;
+}
 
 .speaker-bottom-half {
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+
+//Styling for Speaker Page [DESKTOP]
+@media (min-width: $breakpoint) {
+    .speaker-top-half {
+        display: flex;
+
+        .speaker-header-image {
+            flex-basis: 50%;
+            margin: 1.5rem 3rem;
+            border: 2px solid $color__accent;
+            background-image: url("../../assets/images/Speaker1.jpg");
+            background-size: cover;
+            max-width: 550px;
+            min-height: 400px;
+        }
+
+        .speaker-description {
+            flex-basis: 50%;
+            margin-right: 1.5rem;
+        }
+    }
+
+    .speaker-bottom-half {
+        flex-direction: row;
+        margin: 5px;
+
+        div {
+            margin: 5px;
+        }
+    }
 }
