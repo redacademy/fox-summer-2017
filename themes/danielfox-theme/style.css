@@ -1110,6 +1110,29 @@ h3 {
   letter-spacing: 2px;
   margin-left: 68%; }
 
+.blog .mc4wp-form {
+  background-color: #dc4e3c;
+  box-sizing: border-box;
+  padding: 10px 20px; }
+  .blog .mc4wp-form h4 {
+    display: none; }
+  .blog .mc4wp-form p {
+    color: #fff; }
+  .blog .mc4wp-form .email-input {
+    border-radius: 0; }
+  .blog .mc4wp-form .subscribe-button {
+    box-sizing: border-box;
+    padding: 15px 0px;
+    width: 179px;
+    color: white;
+    border: 1px solid #dc4e3c;
+    background-color: #dc4e3c;
+    border-radius: 0; }
+    .blog .mc4wp-form .subscribe-button a {
+      color: white;
+      text-decoration: none;
+      text-align: center; }
+
 @media screen and (min-width: 600px) {
   .blog .site-content {
     display: -ms-flexbox;
@@ -1121,7 +1144,9 @@ h3 {
           flex-basis: 75%; }
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; } }
+          flex-basis: 25%; }
+    .blog .site-content .text-content {
+      border: 0; } }
 
 .error404 .site-content {
   margin: 0 20px; }

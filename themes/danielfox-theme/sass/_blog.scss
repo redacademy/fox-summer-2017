@@ -63,6 +63,24 @@
         letter-spacing: 2px;
         margin-left: 68%;
     }
+    .mc4wp-form {
+        background-color: $color__accent;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        h4 {
+            display: none;
+        }
+        p {
+            color: $color__reverse;
+        }
+        .email-input {
+            border-radius: 0;
+        }
+        .subscribe-button {
+            @include subscribe-btn;
+            border-radius: 0;
+        }
+    }
 }
 
 //2-column Layout
@@ -76,6 +94,9 @@
             }
             .widget-area {
                 flex-basis: 25%;
+            }
+            .text-content {
+                border: 0;
             }
         }
     }
