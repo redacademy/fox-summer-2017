@@ -875,12 +875,25 @@ h3 {
   display: flex; }
   .home-hero .home-hero-overlay {
     background-color: rgba(255, 255, 255, 0.6);
-    height: 100px;
     text-align: center;
     width: 100%; }
     .home-hero .home-hero-overlay h1 {
       margin: 0px;
       color: white; }
+      .home-hero .home-hero-overlay h1:nth-child(2) {
+        font-size: 24px; }
+
+.front-page-photography-image {
+  background: url("../../assets/images/Outdoor39.jpg");
+  background-size: cover;
+  background-position: 50% 87%;
+  height: 125px; }
+
+.front-page-speaker-image {
+  background: url("../../assets/images/Outdoor41.jpg");
+  background-size: cover;
+  background-position: 50% 93%;
+  height: 125px; }
 
 .front-page-about,
 .front-page-photography,
@@ -904,13 +917,6 @@ h3 {
   .other-projects .desktop-text,
   .speaker-description .desktop-text {
     display: none; }
-  @media (min-width: 600px) {
-    .front-page-about .desktop-text,
-    .front-page-photography .desktop-text,
-    .front-page-speaker .desktop-text,
-    .other-projects .desktop-text,
-    .speaker-description .desktop-text {
-      display: block; } }
 
 .front-page-header-box,
 .speaker-header-box {
@@ -921,15 +927,20 @@ h3 {
   margin: auto;
   border-bottom: 1px solid #014f5a; }
 
-.front-page-photography-image,
-.front-page-speaker-image {
-  height: 125px;
-  position: relative;
-  overflow: hidden; }
-  .front-page-photography-image img,
-  .front-page-speaker-image img {
-    position: absolute;
-    bottom: 0px; }
+@media (min-width: 600px) {
+  .home-hero {
+    -ms-flex-align: initial;
+        align-items: initial; }
+    .home-hero .home-hero-overlay {
+      background: none; }
+      .home-hero .home-hero-overlay h1:first-child {
+        display: none; }
+      .home-hero .home-hero-overlay h1:last-child {
+        font-size: 48px;
+        letter-spacing: 6px;
+        margin-top: 110px; }
+  .desktop-text {
+    display: block; } }
 
 .speaker-header-box {
   -ms-flex-pack: left;
