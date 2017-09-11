@@ -807,9 +807,29 @@ h3 {
 
 .site-footer {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
-  display: -ms-flexbox;
-  display: flex;
-  height: 83px; }
+  display: none;
+  height: 1.35%; }
+  @media screen and (min-width: 600px) {
+    .site-footer {
+      display: -ms-flexbox;
+      display: flex;
+      height: 1.84%; }
+      .site-footer .widget-area .mc4wp-form-fields {
+        border: none;
+        height: auto;
+        overflow: visible;
+        width: auto;
+        display: -ms-flexbox;
+        display: flex; }
+        .site-footer .widget-area .mc4wp-form-fields h4 {
+          display: none; }
+        .site-footer .widget-area .mc4wp-form-fields p {
+          display: none; }
+        .site-footer .widget-area .mc4wp-form-fields .subscribe-button {
+          margin-left: 0;
+          padding: 0; }
+        .site-footer .widget-area .mc4wp-form-fields .email-input {
+          height: 36px; } }
   .site-footer .footer-left {
     -ms-flex-align: center;
         align-items: center;
@@ -817,11 +837,6 @@ h3 {
     display: flex;
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
-    .site-footer .footer-left .footer-subscribe {
-      display: none; }
-      @media (min-width: 600px) {
-        .site-footer .footer-left .footer-subscribe {
-          display: block; } }
   .site-footer .footer-right {
     background-color: lightblue;
     -ms-flex: 0 1 50%;
@@ -836,6 +851,10 @@ h3 {
         max-width: 40px;
         margin: 12.5px; } }
 
+.home .site-footer {
+  display: -ms-flexbox;
+  display: flex; }
+
 .about-section p {
   margin: 3rem 2.5rem; }
 
@@ -843,6 +862,26 @@ h3 {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home-hero {
+  -ms-flex-align: center;
+      align-items: center;
+  background-image: url("../../assets/images/Outdoor02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  width: 100vw;
+  height: 100vh;
+  display: -ms-flexbox;
+  display: flex; }
+  .home-hero .home-hero-overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100px;
+    text-align: center;
+    width: 100%; }
+    .home-hero .home-hero-overlay h1 {
+      margin: 0px;
+      color: white; }
+
 .front-page-about,
 .front-page-photography,
 .front-page-speaker,

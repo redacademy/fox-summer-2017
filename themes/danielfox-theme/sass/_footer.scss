@@ -1,20 +1,38 @@
 .site-footer {
     box-shadow: 0 -1px 2px 0 rgba(0,0,0,0.5);
-    display: flex;
-    height: 83px;
+    display: none;
+    height: 1.35%;
+    @media screen and (min-width: $breakpoint) {
+        display: flex;
+        height: 1.84%;
+        .widget-area{
+            .mc4wp-form-fields {
+                border: none;
+                height: auto;
+                overflow: visible;
+                width: auto;
+                display: flex;
+                h4 {
+                    display: none;
+                }
+                p {
+                    display: none;
+                }
+                .subscribe-button {
+                    margin-left: 0;
+                    padding: 0;
+                }
+                .email-input {
+                    height: 36px;
+                }
+            }
+        }
+    }
 
     .footer-left {
         align-items: center;
         display: flex;
         flex: 0 1 50%;
-
-        .footer-subscribe {
-            display: none;
-
-            @media (min-width: 600px) { //Change the min-width to a variable and use this instead
-                display: block;
-            }
-        }
     }
 
     .footer-right {
@@ -27,11 +45,17 @@
         max-width: 35px;
         margin: 7.5px;
         
-        @media (min-width: 600px) { //Change the min-width to a variable and use this instead
+        @media (min-width: $breakpoint) {
         max-height: 40px;
         max-width: 40px;
         margin: 12.5px;
         }
+    }
+}
+
+.home {
+    .site-footer {
+        display: flex;
     }
 }
 
