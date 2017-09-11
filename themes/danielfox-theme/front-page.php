@@ -39,7 +39,7 @@ get_header(); ?>
             </section>
 
                 <div class="front-page-photography-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor39.jpg" alt="Adventurous image" />
+                   
                 </div>
                 <section class="front-page-photography">
                 <div class="front-page-header-box">
@@ -57,7 +57,6 @@ get_header(); ?>
             </section>
 
                 <div class="front-page-speaker-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor41.jpg" alt="Adventurous image" />
                 </div>
                 <section class="front-page-speaker">
                 <div class="front-page-header-box">

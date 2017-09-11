@@ -17,15 +17,32 @@
 
     .home-hero-overlay {
         background-color: rgba(255, 255, 255, 0.60);
-        height: 100px;
         text-align: center;
         width: 100%;
 
         h1 {
             margin: 0px;
             color: white;
+
+            &:nth-child(2) {
+                font-size: 24px;
+            }
         }
     }
+}
+
+.front-page-photography-image {
+    background: url("../../assets/images/Outdoor39.jpg");
+    background-size: cover;
+    background-position: 50% 87%;
+    height: 125px;
+}
+
+.front-page-speaker-image {
+    background: url("../../assets/images/Outdoor41.jpg");
+    background-size: cover;
+    background-position: 50% 93%;
+    height: 125px;
 }
 
 .front-page-about,
@@ -43,15 +60,6 @@
     .desktop-text {
         display: none;
     }
-    @media (min-width: $breakpoint) {
-        .home-hero {
-
-        }
-
-        .desktop-text {
-            display: block;
-        }
-    }
 }
 
 .front-page-header-box,
@@ -63,17 +71,34 @@
     border-bottom: 1px solid $color__underline;
 }
 
-.front-page-photography-image,
-.front-page-speaker-image,
-{
-    height: 125px;
-    position: relative;
-    overflow: hidden;
-    img {
-        position: absolute;
-        bottom: 0px;
+//Styling for Front Page [DESKTOP]
+
+    @media (min-width: $breakpoint) {
+        .home-hero {
+            align-items: initial;
+            
+            .home-hero-overlay {
+
+                background: none;
+
+                h1:first-child {
+                    display: none;
+                }
+                h1:last-child {
+                    font-size: 48px;
+                    letter-spacing: 6px;
+                    margin-top: 110px;
+                    
+                }
+            }
+        }
+
+        .desktop-text {
+            display: block;
+        }
     }
-}
+
+
 
 //Styling for Speaker Page [MOBILE]
 
