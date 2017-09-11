@@ -17,13 +17,16 @@
 
     .home-hero-overlay {
         background-color: rgba(255, 255, 255, 0.60);
-        height: 100px;
         text-align: center;
         width: 100%;
 
         h1 {
             margin: 0px;
             color: white;
+
+            &:nth-child(2) {
+                font-size: 24px;
+            }
         }
     }
 }
@@ -42,15 +45,6 @@
     } //This hides the overflow text until switched to desktop mode
     .desktop-text {
         display: none;
-    }
-    @media (min-width: $breakpoint) {
-        .home-hero {
-
-        }
-
-        .desktop-text {
-            display: block;
-        }
     }
 }
 
@@ -74,6 +68,35 @@
         bottom: 0px;
     }
 }
+
+//Styling for Front Page [DESKTOP]
+
+    @media (min-width: $breakpoint) {
+        .home-hero {
+            align-items: initial;
+            
+            .home-hero-overlay {
+
+                background: none;
+
+                h1:first-child {
+                    display: none;
+                }
+                h1:last-child {
+                    font-size: 48px;
+                    letter-spacing: 6px;
+                    margin-top: 110px;
+                    
+                }
+            }
+        }
+
+        .desktop-text {
+            display: block;
+        }
+    }
+
+
 
 //Styling for Speaker Page [MOBILE]
 
