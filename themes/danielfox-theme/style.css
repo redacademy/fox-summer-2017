@@ -1096,6 +1096,9 @@ h3 {
 .blog .comments-area,
 .single-post .comments-area {
   margin: 0 20px; }
+  .blog .comments-area input,
+  .single-post .comments-area input {
+    width: 100%; }
 
 .blog .read-more-btn a {
   -ms-flex-pack: end;
