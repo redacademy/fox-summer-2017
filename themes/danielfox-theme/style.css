@@ -1102,7 +1102,13 @@ h3 {
         width: 262px; }
         .blog .widget-area .widget_recent_entries p {
           background-color: #DC4E3C;
-          color: #fff; } }
+          color: #fff; }
+      .blog .widget-area .recent-post-thumbnail {
+        width: 214px;
+        height: 214px;
+        position: relative; }
+        .blog .widget-area .recent-post-thumbnail a {
+          position: absolute; } }
 
 .blog .entry-meta,
 .single-post .entry-meta {
@@ -1173,21 +1179,21 @@ h3 {
   letter-spacing: 2px;
   margin-left: 68%; }
 
-.blog .mc4wp-form {
+.blog .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;
   box-sizing: border-box;
   padding: 10px 20px; }
-  .blog .mc4wp-form .subscribe-desktop {
+  .blog .subscribe-mobile-container .mc4wp-form .subscribe-desktop {
     display: none; }
-  .blog .mc4wp-form h4 {
+  .blog .subscribe-mobile-container .mc4wp-form h4 {
     display: none; }
-  .blog .mc4wp-form p {
+  .blog .subscribe-mobile-container .mc4wp-form p {
     color: #fff; }
-  .blog .mc4wp-form .email-input {
+  .blog .subscribe-mobile-container .mc4wp-form .email-input {
     border-radius: 0;
     width: 65%;
     padding-right: 5px; }
-  .blog .mc4wp-form .subscribe-button {
+  .blog .subscribe-mobile-container .mc4wp-form .subscribe-button {
     box-sizing: border-box;
     padding: 15px 0px;
     width: 179px;
@@ -1202,7 +1208,7 @@ h3 {
     font-size: 1rem;
     letter-spacing: 1px;
     text-align: center; }
-    .blog .mc4wp-form .subscribe-button a {
+    .blog .subscribe-mobile-container .mc4wp-form .subscribe-button a {
       color: white;
       text-decoration: none;
       text-align: center; }
@@ -1218,7 +1224,17 @@ h3 {
           flex-basis: 75%; }
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
+          flex-basis: 25%;
+      margin-left: auto;
+      margin-right: auto; }
+      .blog .site-content .widget-area .widget-title {
+        text-align: center;
+        border-bottom: 1px solid #014f5a;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 22px;
+        padding-bottom: 10px;
+        margin-bottom: 10px; }
     .blog .site-content .text-content {
       border: 0; }
     .blog .site-content .subscribe-mobile-container {
