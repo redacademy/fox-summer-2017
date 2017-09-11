@@ -14,9 +14,7 @@
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				
+					the_archive_description( '<h1 class="taxonomy-description">', '</h1>' );		
 ?>
 			</header><!-- .page-header -->
 
@@ -26,14 +24,11 @@
 		<div class="photograph-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="entry-header">
 				<div class="thumbnail-wrapper">
-				<?php if ( has_post_thumbnail() ) : ?>
-					<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail( 'medium' ); ?>
-					</a>
-				<?php endif; ?>
-				</div>
-				<div class="photograph-info">
-					<?php the_title( sprintf( '<h2 class="entry-title">', esc_url( get_permalink() ) ), '</h2>' ); ?>
+					<?php if ( has_post_thumbnail() ) : ?>
+						<a href="<?php the_permalink(); ?>">
+						<?php the_post_thumbnail( 'large' ); ?>
+						</a>
+					<?php endif; ?>
 				</div>
 			</header><!-- .entry-header -->
 		</div>
