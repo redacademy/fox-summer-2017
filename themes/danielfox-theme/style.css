@@ -1153,3 +1153,32 @@ h3 {
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%; } }
+
+.error404 .site-content {
+  margin: 0 20px; }
+  .error404 .site-content fieldset {
+    border: 0;
+    margin: 0 auto;
+    padding: 0; }
+  .error404 .site-content .search-field {
+    width: 95%;
+    margin: 0;
+    border: 0.5px solid #dc4e3c; }
+  .error404 .site-content .search-form {
+    border: 0;
+    margin: 0; }
+  .error404 .site-content .fieldset {
+    border: 0;
+    margin: 0; }
+  .error404 .site-content .search-submit {
+    box-sizing: border-box;
+    padding: 15px 0px;
+    width: 179px;
+    color: white;
+    border: 1px solid #dc4e3c;
+    background-color: #dc4e3c;
+    margin-top: 1rem; }
+    .error404 .site-content .search-submit a {
+      color: white;
+      text-decoration: none;
+      text-align: center; }
