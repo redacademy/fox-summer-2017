@@ -1083,15 +1083,17 @@ h3 {
   letter-spacing: 1px; }
   .blog .entry-meta .tags-links a::before,
   .single-post .entry-meta .tags-links a::before {
-    content: "#"; }
+    content: "#";
+    text-transform: capitalize; }
   .blog .entry-meta a,
   .single-post .entry-meta a {
     text-decoration: none;
     color: #757373;
     font-size: 12px; }
-  .blog .entry-meta .posted-on,
-  .single-post .entry-meta .posted-on {
-    font-size: 12px; }
+  .blog .entry-meta .entry-date,
+  .single-post .entry-meta .entry-date {
+    font-size: 12px;
+    margin: 0 auto; }
 
 .blog .site-footer,
 .single-post .site-footer {
