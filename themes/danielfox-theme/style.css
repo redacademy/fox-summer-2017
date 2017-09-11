@@ -983,32 +983,33 @@ h3 {
     .speaker-bottom-half div {
       margin: 5px; } }
 
-.widget-area {
+.blog .widget-area {
   display: none; }
   @media screen and (min-width: 600px) {
-    .widget-area {
+    .blog .widget-area {
       display: block; }
-      .widget-area .mc4wp-form-fields {
+      .blog .widget-area .mc4wp-form {
         height: 262px;
         width: 262px;
         border: 1px solid #DC4E3C;
         padding: 32px 18px 0 17px;
-        box-sizing: border-box; }
-        .widget-area .mc4wp-form-fields h4 {
+        box-sizing: border-box;
+        background-color: transparent; }
+        .blog .widget-area .mc4wp-form h4 {
           width: 227px;
           color: #DC4E3C;
           font-family: "Roboto";
           font-size: 18px;
           letter-spacing: 1px;
           line-height: 10px; }
-        .widget-area .mc4wp-form-fields p {
+        .blog .widget-area .mc4wp-form p {
           width: 221px;
           color: #3A3A3A;
           font-family: "Roboto";
           font-size: 12px;
           letter-spacing: 1px;
           line-height: 2; }
-        .widget-area .mc4wp-form-fields .email-input {
+        .blog .widget-area .mc4wp-form .email-input {
           height: 28px;
           width: 220px;
           border: 1px solid #DC4E3C;
@@ -1017,7 +1018,7 @@ h3 {
           font-family: "Roboto";
           font-size: 12px;
           line-height: 14px; }
-        .widget-area .mc4wp-form-fields .subscribe-button {
+        .blog .widget-area .mc4wp-form .subscribe-button {
           box-sizing: border-box;
           height: 36px;
           width: 136px;
@@ -1034,10 +1035,12 @@ h3 {
           margin-left: 40%;
           box-shadow: none;
           border-radius: 0; }
-      .widget-area .widget_recent_entries {
+        .blog .widget-area .mc4wp-form .subscribe-mobile {
+          display: none; }
+      .blog .widget-area .widget_recent_entries {
         height: 262px;
         width: 262px; }
-        .widget-area .widget_recent_entries p {
+        .blog .widget-area .widget_recent_entries p {
           background-color: #DC4E3C;
           color: #fff; } }
 
@@ -1114,12 +1117,16 @@ h3 {
   background-color: #dc4e3c;
   box-sizing: border-box;
   padding: 10px 20px; }
+  .blog .mc4wp-form .subscribe-desktop {
+    display: none; }
   .blog .mc4wp-form h4 {
     display: none; }
   .blog .mc4wp-form p {
     color: #fff; }
   .blog .mc4wp-form .email-input {
-    border-radius: 0; }
+    border-radius: 0;
+    width: 65%;
+    padding-right: 5px; }
   .blog .mc4wp-form .subscribe-button {
     box-sizing: border-box;
     padding: 15px 0px;
@@ -1127,7 +1134,14 @@ h3 {
     color: white;
     border: 1px solid #dc4e3c;
     background-color: #dc4e3c;
-    border-radius: 0; }
+    padding: 8px 20px;
+    border-radius: 0;
+    width: 30%;
+    box-shadow: none;
+    border: 1px solid #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-align: center; }
     .blog .mc4wp-form .subscribe-button a {
       color: white;
       text-decoration: none;
@@ -1146,7 +1160,9 @@ h3 {
       -ms-flex-preferred-size: 25%;
           flex-basis: 25%; }
     .blog .site-content .text-content {
-      border: 0; } }
+      border: 0; }
+    .blog .site-content .subscribe-mobile-container {
+      display: none; } }
 
 .error404 .site-content {
   margin: 0 20px; }

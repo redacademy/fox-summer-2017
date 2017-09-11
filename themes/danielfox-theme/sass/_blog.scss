@@ -67,6 +67,9 @@
         background-color: $color__accent;
         box-sizing: border-box;
         padding: 10px 20px;
+        .subscribe-desktop {
+            display: none;
+        }
         h4 {
             display: none;
         }
@@ -75,10 +78,19 @@
         }
         .email-input {
             border-radius: 0;
+            width: 65%;
+            padding-right: 5px;
         }
         .subscribe-button {
             @include subscribe-btn;
+            padding: 8px 20px;
             border-radius: 0;
+            width: 30%;
+            box-shadow: none;
+            border: 1px solid $color__reverse;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            text-align: center;
         }
     }
 }
@@ -97,6 +109,9 @@
             }
             .text-content {
                 border: 0;
+            }
+            .subscribe-mobile-container {
+                display: none;
             }
         }
     }
