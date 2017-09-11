@@ -1,6 +1,8 @@
 .blog,
 .single-post {
     .entry-meta {
+        font-size: 13px;
+        letter-spacing: 1px;
         .tags-links a::before {
             content: "#";
         }
@@ -26,9 +28,30 @@
     }
     .entry-date {
         color: $color__accent;
+        text-align: center;
+        margin: 0 20px;
     }
-    article {
+    .text-content {
+        margin: 0px 20px;
         border-bottom: 2px solid $color__underline;
+    }
+}
+
+.blog {
+    .read-more-btn a {
+        justify-content: flex-end;
+        background-color: $color__accent;
+        text-decoration: none;
+        color: $color__reverse;
+        padding: 4px 10px;
+        letter-spacing: 2px;
+        margin-left: 245px;
+    }
+    .nav-links {
+        margin: 0 20px;
+        a {
+            text-decoration: none;
+        }
     }
 }
 
