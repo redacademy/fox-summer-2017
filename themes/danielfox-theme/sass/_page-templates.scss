@@ -5,6 +5,29 @@
 
 /* Front page */
 
+.home-hero {
+    align-items: center;
+    background-image: url("../../assets/images/Outdoor02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    .home-hero-overlay {
+        background-color: rgba(255, 255, 255, 0.60);
+        height: 100px;
+        text-align: center;
+        width: 100%;
+
+        h1 {
+            margin: 0px;
+            color: white;
+        }
+    }
+}
+
 .front-page-about,
 .front-page-photography,
 .front-page-speaker,
@@ -21,6 +44,10 @@
         display: none;
     }
     @media (min-width: $breakpoint) {
+        .home-hero {
+
+        }
+
         .desktop-text {
             display: block;
         }

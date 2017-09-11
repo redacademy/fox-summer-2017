@@ -11,7 +11,10 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
             <section class="home-hero">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor02.jpg" alt="Adventurous image" />
+                <div class="home-hero-overlay">
+                    <span><h1>Daniel Fox</h1></span>
+                    <h1>Explorer | Storyteller | Photographer</h1>
+                </div>
             </section>
             <section class="front-page-about">
                 <div class="front-page-header-box">
