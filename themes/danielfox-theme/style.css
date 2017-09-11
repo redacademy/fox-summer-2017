@@ -883,6 +883,18 @@ h3 {
       .home-hero .home-hero-overlay h1:nth-child(2) {
         font-size: 24px; }
 
+.front-page-photography-image {
+  background: url("../../assets/images/Outdoor39.jpg");
+  background-size: cover;
+  background-position: 50% 87%;
+  height: 125px; }
+
+.front-page-speaker-image {
+  background: url("../../assets/images/Outdoor41.jpg");
+  background-size: cover;
+  background-position: 50% 93%;
+  height: 125px; }
+
 .front-page-about,
 .front-page-photography,
 .front-page-speaker,
@@ -914,16 +926,6 @@ h3 {
       justify-content: center;
   margin: auto;
   border-bottom: 1px solid #014f5a; }
-
-.front-page-photography-image,
-.front-page-speaker-image {
-  height: 125px;
-  position: relative;
-  overflow: hidden; }
-  .front-page-photography-image img,
-  .front-page-speaker-image img {
-    position: absolute;
-    bottom: 0px; }
 
 @media (min-width: 600px) {
   .home-hero {

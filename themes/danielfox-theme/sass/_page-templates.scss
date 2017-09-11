@@ -31,6 +31,20 @@
     }
 }
 
+.front-page-photography-image {
+    background: url("../../assets/images/Outdoor39.jpg");
+    background-size: cover;
+    background-position: 50% 87%;
+    height: 125px;
+}
+
+.front-page-speaker-image {
+    background: url("../../assets/images/Outdoor41.jpg");
+    background-size: cover;
+    background-position: 50% 93%;
+    height: 125px;
+}
+
 .front-page-about,
 .front-page-photography,
 .front-page-speaker,
@@ -55,18 +69,6 @@
     justify-content: center;
     margin: auto;
     border-bottom: 1px solid $color__underline;
-}
-
-.front-page-photography-image,
-.front-page-speaker-image,
-{
-    height: 125px;
-    position: relative;
-    overflow: hidden;
-    img {
-        position: absolute;
-        bottom: 0px;
-    }
 }
 
 //Styling for Front Page [DESKTOP]
