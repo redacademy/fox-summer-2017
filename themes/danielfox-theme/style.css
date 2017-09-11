@@ -798,9 +798,29 @@ h3 {
 
 .site-footer {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
-  display: -ms-flexbox;
-  display: flex;
-  height: 83px; }
+  display: none;
+  height: 1.35%; }
+  @media screen and (min-width: 600px) {
+    .site-footer {
+      display: -ms-flexbox;
+      display: flex;
+      height: 1.84%; }
+      .site-footer .widget-area .mc4wp-form-fields {
+        border: none;
+        height: auto;
+        overflow: visible;
+        width: auto;
+        display: -ms-flexbox;
+        display: flex; }
+        .site-footer .widget-area .mc4wp-form-fields h4 {
+          display: none; }
+        .site-footer .widget-area .mc4wp-form-fields p {
+          display: none; }
+        .site-footer .widget-area .mc4wp-form-fields .subscribe-button {
+          margin-left: 0;
+          padding: 0; }
+        .site-footer .widget-area .mc4wp-form-fields .email-input {
+          height: 36px; } }
   .site-footer .footer-left {
     -ms-flex-align: center;
         align-items: center;
@@ -808,11 +828,6 @@ h3 {
     display: flex;
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
-    .site-footer .footer-left .footer-subscribe {
-      display: none; }
-      @media (min-width: 600px) {
-        .site-footer .footer-left .footer-subscribe {
-          display: block; } }
   .site-footer .footer-right {
     background-color: lightblue;
     -ms-flex: 0 1 50%;
@@ -826,6 +841,10 @@ h3 {
         max-height: 40px;
         max-width: 40px;
         margin: 12.5px; } }
+
+.home .site-footer {
+  display: -ms-flexbox;
+  display: flex; }
 
 .about-section p {
   margin: 3rem 2.5rem; }
@@ -1075,22 +1094,4 @@ h3 {
           flex-basis: 75%; }
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
-  .blog .site-footer {
-    display: -ms-flexbox;
-    display: flex; }
-    .blog .site-footer .mc4wp-form-fields {
-      border: none;
-      height: auto;
-      overflow: visible;
-      width: auto;
-      display: -ms-flexbox;
-      display: flex; }
-    .blog .site-footer h4 {
-      display: none; }
-    .blog .site-footer p {
-      display: none; }
-    .blog .site-footer .subscribe-button {
-      margin-left: 0; }
-    .blog .site-footer .email-input {
-      height: 36px; } }
+          flex-basis: 25%; } }

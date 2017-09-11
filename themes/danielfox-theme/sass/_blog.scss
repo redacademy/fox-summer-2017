@@ -45,27 +45,5 @@
                 flex-basis: 25%;
             }
         }
-        .site-footer {
-            display: flex;
-            .mc4wp-form-fields {
-                border: none;
-                height: auto;
-                overflow: visible;
-                width: auto;
-                display: flex;
-            }
-            h4 {
-                display: none;
-            }
-            p {
-                display: none;
-            }
-            .subscribe-button {
-                margin-left: 0;
-            }
-            .email-input {
-                height: 36px;
-            }
-        }
     }
 }
