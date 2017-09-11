@@ -22,7 +22,9 @@ get_header(); ?>
                             <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail( 'large' ); ?>
                             <?php endif; ?>
+                    </header><!-- .entry-header -->
 
+                <div class="text-content">
 		                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
 		                    <?php if ( 'post' === get_post_type() ) : ?>
@@ -30,12 +32,12 @@ get_header(); ?>
                                     <?php red_starter_entry_footer(); ?>
 		                    </div><!-- .entry-meta -->
 		                    <?php endif; ?>
-	                </header><!-- .entry-header -->
 
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
-                            <a href="<?php echo esc_url( get_permalink() )?>" class="read-more-btn">read more</a>
-	                </div><!-- .entry-content -->
+                            <p class="read-more-btn"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></p>
+                    </div><!-- .entry-content -->
+                </div>
             </article><!-- #post-## -->
 
             <?php endwhile; ?>
