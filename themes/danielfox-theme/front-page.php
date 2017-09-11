@@ -77,10 +77,16 @@ get_header(); ?>
                 </div>
                 <div class="project-container">
                     <div class="wild-image-project">
-                        <h3><a href="#">Wild Image Project</a></h3>
+                        <p>Under “The WILD Image Project,” I actively participate in a
+                        number of initiatives  and use a variety of mediums to 
+                        express my vision for reconnecting with nature.</p>
+                        <h3><a href="#">View Projects</a></h3>
                     </div>
                     <div class="front-page-blog">
-                        <h3><a href="#">Blog</a></h3>
+                        <p>My blog is where I document most of my solo expeditions, 
+                            and where I can share my stories of different communities 
+                            I’ve become a part of during the course of my work.</p>
+                        <h3><a href="#">View Stories</a></h3>
                     </div>
                 </div>
             </section>

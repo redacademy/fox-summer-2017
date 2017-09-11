@@ -96,8 +96,13 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-        opacity: 0.6;
+        opacity: 0.2;
          }
+
+    p {
+        display: none;
+        margin: 15px 70px;
+    }
 
     h3 {
         z-index: 2;
@@ -126,8 +131,13 @@
         width: 100%;
         height: 100%;
         z-index: 1;
-        opacity: 0.6;
+        opacity: 0.2;
          }
+    
+        p {
+        display: none;
+        margin: 15px 70px;
+    }
 
     h3 {
         z-index: 2;
@@ -166,6 +176,30 @@
         .desktop-text {
             display: block;
         }
+
+        .project-container {
+            display: flex;
+            .wild-image-project {
+                height: 317px;
+                flex-direction: column;
+                                p {
+               display: block;
+    }
+            }
+
+
+
+            .front-page-blog {
+                height: 317px;
+                flex-direction: column;
+                                p {
+               display: block;
+    }
+            }
+
+        }
+
+
     }
 
 
