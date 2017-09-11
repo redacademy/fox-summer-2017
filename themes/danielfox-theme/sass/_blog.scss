@@ -5,14 +5,16 @@
         letter-spacing: 1px;
         .tags-links a::before {
             content: "#";
+            text-transform: capitalize;
         }
         a {
             text-decoration: none;
             color: $color__tags;
             font-size: 12px;
         }
-        .posted-on {
+        .entry-date {
             font-size: 12px;
+            margin: 0 auto;
         }
     }
     .site-footer {
@@ -45,6 +47,9 @@
     }
     .comments-area {
         margin: 0 20px;
+        input {
+            width: 100%;
+        }
     }
 }
 

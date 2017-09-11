@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="28px" viewBox="0 0 15 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ARROW</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-375.000000, -1108.000000)" fill-rule="nonzero" fill="#DC4E3C">
+            <g id="Iconography-Copy-2" transform="translate(331.000000, 1108.000000)">
+                <g id="ARROW" transform="translate(44.000000, 0.000000)">
+                    <path d="M0.469166667,27.0123636 C0.631666667,27.1778182 0.845,27.2609697 1.05833333,27.2609697 C1.27166667,27.2609697 1.485,27.1778182 1.6475,27.0123636 L14.1475,14.2850909 C14.4733333,13.9533333 14.4733333,13.4170909 14.1475,13.0853333 L1.6475,0.358060606 C1.32166667,0.0263030303 0.795,0.0263030303 0.469166667,0.358060606 C0.143333333,0.689818182 0.143333333,1.22606061 0.469166667,1.55781818 L12.38,13.6852121 L0.469166667,25.8126061 C0.143333333,26.1443636 0.143333333,26.6814545 0.469166667,27.0123636 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
