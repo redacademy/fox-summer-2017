@@ -75,11 +75,13 @@ get_header(); ?>
                 <div class="front-page-header-box">
                 <h2>Other Projects</h2>
                 </div>
-                <div class="wild-image-project">
-                    <h3><a href="#">Wild Image Project</a></h3>
-                </div>
-                <div class="front-page-blog">
-                    <h3><a href="#">Blog</a></h3>
+                <div class="project-container">
+                    <div class="wild-image-project">
+                        <h3><a href="#">Wild Image Project</a></h3>
+                    </div>
+                    <div class="front-page-blog">
+                        <h3><a href="#">Blog</a></h3>
+                    </div>
                 </div>
             </section>
             <section class="contact-form">
