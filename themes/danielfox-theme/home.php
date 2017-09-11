@@ -45,7 +45,9 @@ get_header(); ?>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
-        <?php dynamic_sidebar( 'subscribe-1' ); ?>
+        <div class="subscribe-mobile-container">
+            <?php dynamic_sidebar( 'subscribe-1' ); ?>
+        </div>
         </main><!-- #main -->
     </div><!-- #primary -->
 <?php get_sidebar(); ?>
