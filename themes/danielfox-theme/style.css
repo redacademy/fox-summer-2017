@@ -407,6 +407,15 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/* Comments Area */
+.single-post .comment-form textarea {
+  border: 0.5px solid #dc4e3c;
+  border-radius: 0; }
+
+.single-post .comment-form input {
+  border: 0.5px solid #dc4e3c;
+  border-radius: 0; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1053,21 +1062,35 @@ h3 {
 .single-post .entry-title {
   font-size: 1.5rem;
   color: #dc4e3c;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  letter-spacing: 1px; }
   .blog .entry-title a,
   .single-post .entry-title a {
     text-decoration: none; }
 
 .blog .entry-date,
 .single-post .entry-date {
-  color: #dc4e3c;
-  text-align: center;
-  margin: 0 20px; }
+  color: #dc4e3c; }
 
 .blog .text-content,
 .single-post .text-content {
   margin: 0px 20px;
   border-bottom: 2px solid #014f5a; }
+
+.blog .block-quote,
+.single-post .block-quote {
+  margin: 0; }
+
+.blog .nav-links,
+.single-post .nav-links {
+  margin: 0 20px; }
+  .blog .nav-links a,
+  .single-post .nav-links a {
+    text-decoration: none; }
+
+.blog .comments-area,
+.single-post .comments-area {
+  margin: 0 20px; }
 
 .blog .read-more-btn a {
   -ms-flex-pack: end;
@@ -1077,12 +1100,7 @@ h3 {
   color: #fff;
   padding: 4px 10px;
   letter-spacing: 2px;
-  margin-left: 245px; }
-
-.blog .nav-links {
-  margin: 0 20px; }
-  .blog .nav-links a {
-    text-decoration: none; }
+  margin-left: 68%; }
 
 @media screen and (min-width: 600px) {
   .blog .site-content {
