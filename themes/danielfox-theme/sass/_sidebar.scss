@@ -1,6 +1,6 @@
-.blog .widget-area {
-    display: none;
-    @media screen and (min-width: $breakpoint) {
+//Sidebar on Desktop Layout
+@media screen and (min-width: $breakpoint) {
+    .widget-area {
         display: block;
         .mc4wp-form {
             height: 262px;

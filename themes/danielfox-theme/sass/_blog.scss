@@ -1,43 +1,38 @@
+//MOBILE version
 .blog,
 .single-post {
-    .entry-meta {
-        font-size: 13px;
-        letter-spacing: 1px;
-        .tags-links a::before {
-            content: "#";
-            text-transform: capitalize;
-        }
-        a {
-            text-decoration: none;
-            color: $color__tags;
-            font-size: 12px;
-        }
-        .entry-date {
-            font-size: 12px;
-            margin: 0 auto;
-        }
+    .widget-area {
+        display: none;
+    }
+    .entry-header .icon-container {
+        display: none;
     }
     .site-footer {
         display: none;
     }
-    .entry-title {
-        font-size: 1.5rem;
-        color: $color__accent;
-        margin-bottom: 0;
-        letter-spacing: 1px;
-        a {
-            text-decoration: none;
-        }
-    }
-    .entry-date {
-        color: $color__accent;
-    }
     .text-content {
         margin: 0px 20px;
         border-bottom: 2px solid $color__underline;
-    }
-    .block-quote {
-        margin: 0;
+        .entry-title {
+            font-size: 1.5rem;
+            color: $color__accent;
+            margin-bottom: 0;
+            letter-spacing: 1px;
+            a {
+                text-decoration: none;
+            }
+        }
+        .read-more {
+            margin-bottom: 20px;
+            a {
+                background-color: $color__accent;
+                color: $color__reverse;
+                text-decoration: none;
+                padding: 4px 10px;
+                letter-spacing: 2px;
+                margin-left: 68%;
+            }
+        }
     }
     .nav-links {
         margin: 0 20px;
@@ -45,24 +40,19 @@
             text-decoration: none;
         }
     }
-    .comments-area {
-        margin: 0 20px;
-        input {
-            width: 100%;
+    .entry-meta {
+        font-size: 13px;
+        letter-spacing: 1px;
+        .tags-links a::before {
+            content: "#";
+        }
+        a {
+            text-decoration: none;
+            color: $color__tags;
+            font-size: 12px;
         }
     }
-}
-
-.blog {
-    .entry-content a {
-        justify-content: flex-end;
-        background-color: $color__accent;
-        text-decoration: none;
-        color: $color__reverse;
-        padding: 4px 10px;
-        letter-spacing: 2px;
-        margin-left: 68%;
-    }
+    //Bottom Subscription Box:
     .subscribe-mobile-container {
         .mc4wp-form {
             background-color: $color__accent;
@@ -97,16 +87,18 @@
     }
 }
 
-//2-column Layout
+//Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
     .blog {
+        .widget-area {
+            display: block;
+        }
         .site-content {
             display: flex;
             flex-direction: row-reverse;
             margin-top: 70px;
             .content-area {
                 flex-basis: 70%;
-                margin-right: 67px;
                 .post-date {
                     display: none;
                 }
