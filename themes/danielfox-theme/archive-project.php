@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1><?php wp_title(''); ?>
+				<h1><?php wp_title(''); ?></h1>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
