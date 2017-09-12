@@ -22,8 +22,11 @@ get_header(); ?>
                             <span class="post-date"><?php red_starter_posted_on(); ?></span>
                             
                             <div class="blog-photo">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+                                <div class="icon-container">    
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+                                </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                     <?php the_post_thumbnail( 'full' ); ?>
                             </div>
@@ -41,8 +44,7 @@ get_header(); ?>
 		                    <?php endif; ?>
 
 	                <div class="entry-content">
-                            <?php the_excerpt(); ?>
-                            <p class="read-more-btn"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></p>
+                            <?php the_excerpt(); ?><a href="<?php echo esc_url( get_permalink() )?>">read more</a>
                     </div><!-- .entry-content -->
                 </div>
             </article><!-- #post-## -->
