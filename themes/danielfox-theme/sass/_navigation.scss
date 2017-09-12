@@ -38,7 +38,7 @@ a {
 		margin: 0;
 		padding-left: 0;
 		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			//box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
 			top: $base__space-unit;
@@ -51,7 +51,7 @@ a {
 			li {
 				&:hover>ul,
 				&.focus>ul {
-					left: 100%;
+					left: -3.4rem;
 				}
 			}
 			a {
@@ -70,8 +70,14 @@ a {
 	li {
 		float: left;
 		position: relative;
+		
 		&:hover>a,
-		&.focus>a {}
+		&.focus>a {
+		}
+		&:hover>.sub-menu,
+		&.focus>.sub-menu {
+			left: -3.4rem;
+		}
 	}
 	a {
 		display: block;
@@ -221,6 +227,20 @@ a {
 			height: 100%;
 		}
 
+		.sub-menu {
+			flex-direction: column;
+			margin-top: 20px;
+			text-align: center;
+			li {
+				background-color: rgba(255, 255, 255, 0.90);
+				border: 0.5px solid #0C5661;
+				&:nth-child(2) {
+					border-top: 0px;
+					border-bottom: 0px;
+				}
+			}
+		}
+
 		.main-navigation {
 			//Desktop header bar styling
 			background: rgba(255, 255, 255, 0.90);
@@ -247,6 +267,19 @@ a {
 						display: flex;
 						justify-content: space-evenly;
 					}
+				}
+			}
+
+			.menu-item-has-children {
+				    height: 100%;
+    display: flex;
+    align-items: center;
+			}
+
+			ul ul {
+				top: 5.6rem;
+				li {
+					padding: 10px 0px;
 				}
 			}
 		}
