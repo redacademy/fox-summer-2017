@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying the different album groups of photos
  *
  * @package Daniel_Fox_Theme
  */?>
@@ -17,7 +17,7 @@
 					the_archive_description( '<h1 class="taxonomy-description">', '</h1>' );		
 ?>
 			</header><!-- .page-header -->
-
+			
 			<?php /* Start the Loop */ ?>
 <section class="photograph-grid">
 <?php while ( have_posts() ) : the_post(); ?>
