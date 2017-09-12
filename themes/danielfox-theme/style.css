@@ -927,6 +927,9 @@ h3 {
   margin: auto;
   border-bottom: 1px solid #014f5a; }
 
+.featured-in {
+  display: none; }
+
 .other-projects {
   width: 100%; }
   .other-projects .wild-image-project {
@@ -1021,7 +1024,14 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column; }
       .project-container .front-page-blog p {
-        display: block; } }
+        display: block; }
+  .featured-in {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .featured-in .featured-images a {
+      margin: 0px 3%; } }
 
 .speaker-header-box {
   -ms-flex-pack: left;

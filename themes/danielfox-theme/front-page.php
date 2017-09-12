@@ -71,6 +71,18 @@ get_header(); ?>
                 <h3><a href="#">Speaker Topics</a></h3>
                 </div>
             </section>
+
+            <div class="featured-in">
+                <h2>Featured In:</h2>
+                <div class="featured-images">
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/sidetracked.svg" alt="Sidetracked brand logo" /></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/the-culture-trip.svg" alt="The culture trip brand logo" /></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/maptia.svg" alt="Maptia brand logo" /></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bayan-collective.svg" alt="Bayan collective brand logo" /></a>
+                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/canoe-and-kayak.svg" alt="Canoe and kayak brand logo" /></a>
+                </div>
+            </div>
+
             <section class="other-projects">
                 <div class="front-page-header-box">
                 <h2>Other Projects</h2>
