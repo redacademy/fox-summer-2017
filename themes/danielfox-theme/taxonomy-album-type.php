@@ -33,6 +33,9 @@
 			</header><!-- .entry-header -->
 		</div>
 <?php endwhile; ?>
+
+<?php the_posts_navigation(); ?>
+
 </section>
 	<?php else : ?>
 		<?php get_template_part( 'template-parts/content', 'none' ); ?>
