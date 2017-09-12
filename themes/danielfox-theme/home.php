@@ -20,8 +20,13 @@ get_header(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                <header class="entry-header">
                             <span class="post-date"><?php red_starter_posted_on(); ?></span>
-                            <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail( 'full' ); ?>
+                            
+                            <div class="blog-photo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+                                <?php if ( has_post_thumbnail() ) : ?>
+                                    <?php the_post_thumbnail( 'full' ); ?>
+                            </div>
                             <?php endif; ?>
                     </header><!-- .entry-header -->
 
