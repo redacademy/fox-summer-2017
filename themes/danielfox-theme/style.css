@@ -1341,11 +1341,6 @@ h3 {
       text-decoration: none;
       text-align: center; }
 
-@media screen and (min-width: 600px) {
-  .single-project .wp-post-image, .post-type-archive-project .wp-post-image {
-    width: auto;
-    height: 75vh; } }
-
 .wp-image-220 {
   width: 100%; }
 
@@ -1354,11 +1349,29 @@ h3 {
   .post-type-archive-project .project-container .project-title a {
     color: white;
     text-decoration: none; }
+  .post-type-archive-project .project-container .project-title h2 {
+    margin-bottom: 0; }
 
 @media screen and (min-width: 600px) {
+  .single-project .wp-post-image {
+    height: 75vh;
+    width: auto; }
   .post-type-archive-project .project-container {
-    display: block; }
-    .post-type-archive-project .project-container .project-title {
-      position: absolute; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
     .post-type-archive-project .project-container .project-mobile-description {
-      display: none; } }
+      display: none; }
+  .post-type-archive-project .site-main {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 2%; }
+    .post-type-archive-project .site-main .page-header {
+      left: -1000px;
+      position: absolute;
+      width: 0; }
+    .post-type-archive-project .site-main .project {
+      width: 29.5%; } }

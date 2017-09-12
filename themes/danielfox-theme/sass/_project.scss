@@ -1,12 +1,3 @@
-.single-project, .post-type-archive-project {
-    .wp-post-image {
-        @media screen and (min-width: $breakpoint) {
-        width: auto;
-        height: 75vh;
-        }
-    }
-}
-
 .wp-image-220 {
     width: 100%;
 }
@@ -20,20 +11,42 @@
                 color: white;
                 text-decoration: none;
             }
+            h2 {
+                margin-bottom: 0;
+            }
         }
     }
 }
 
 //Styling for Project Archive Page [DESKTOP]
 @media screen and (min-width: $breakpoint) {
+    .single-project {
+        .wp-post-image {
+            height: 75vh;
+            width: auto;
+        }
+    }
     .post-type-archive-project {
         .project-container {
-            display: block;
+            display: flex;
+            flex-direction: column;
             .project-title {
-                position: absolute;
             }
             .project-mobile-description {
                 display: none;
+            }
+        }
+        .site-main {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 2%;
+            .page-header {
+                left: -1000px;
+                position: absolute;
+                width: 0;
+            }
+            .project {
+                width: 29.5%;
             }
         }
     }
