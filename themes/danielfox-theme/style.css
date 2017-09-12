@@ -441,7 +441,6 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
       top: 1.5rem;
@@ -452,7 +451,7 @@ a {
         top: 0; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+        left: -3.4rem; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -461,6 +460,9 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
+    .main-navigation li:hover > .sub-menu,
+    .main-navigation li.focus > .sub-menu {
+      left: -3.4rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -585,6 +587,17 @@ a {
       display: none; }
     .site-header .nav-logo {
       height: 100%; }
+    .site-header .sub-menu {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 20px;
+      text-align: center; }
+      .site-header .sub-menu li {
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 0.5px solid #0C5661; }
+        .site-header .sub-menu li:nth-child(2) {
+          border-top: 0px;
+          border-bottom: 0px; }
     .site-header .main-navigation {
       background: rgba(255, 255, 255, 0.9);
       display: -ms-flexbox;
@@ -613,7 +626,17 @@ a {
             display: -ms-flexbox;
             display: flex;
             -ms-flex-pack: space-evenly;
-                justify-content: space-evenly; } }
+                justify-content: space-evenly; }
+      .site-header .main-navigation .menu-item-has-children {
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+      .site-header .main-navigation ul ul {
+        top: 5.6rem; }
+        .site-header .main-navigation ul ul li {
+          padding: 10px 0px; } }
 
 .page-template-about .site-header {
   height: 0px; }
@@ -1079,6 +1102,8 @@ h3 {
 
 @media (min-width: 600px) {
   .photograph-grid {
+    -ms-flex-align: center;
+        align-items: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -1342,3 +1367,17 @@ h3 {
 
 .wp-image-220 {
   width: 100%; }
+
+.post-type-archive-project .project-container .project-title {
+  background: #DC4E3C; }
+  .post-type-archive-project .project-container .project-title a {
+    color: white;
+    text-decoration: none; }
+
+@media screen and (min-width: 600px) {
+  .post-type-archive-project .project-container {
+    display: block; }
+    .post-type-archive-project .project-container .project-title {
+      position: absolute; }
+    .post-type-archive-project .project-container .project-mobile-description {
+      display: none; } }

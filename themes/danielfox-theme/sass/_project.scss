@@ -10,3 +10,31 @@
 .wp-image-220 {
     width: 100%;
 }
+
+//Styling for Project Archive Page [MOBILE]
+.post-type-archive-project {
+    .project-container {
+        .project-title {
+            background: #DC4E3C;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+//Styling for Project Archive Page [DESKTOP]
+@media screen and (min-width: $breakpoint) {
+    .post-type-archive-project {
+        .project-container {
+            display: block;
+            .project-title {
+                position: absolute;
+            }
+            .project-mobile-description {
+                display: none;
+            }
+        }
+    }
+}
