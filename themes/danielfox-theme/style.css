@@ -1236,3 +1236,11 @@ h3 {
       color: white;
       text-decoration: none;
       text-align: center; }
+
+@media screen and (min-width: 600px) {
+  .single-project .wp-post-image, .post-type-archive-project .wp-post-image {
+    width: auto;
+    height: 75vh; } }
+
+.wp-image-220 {
+  width: 100%; }

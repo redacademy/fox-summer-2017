@@ -1,3 +1,12 @@
+.single-project, .post-type-archive-project {
+    .wp-post-image {
+        @media screen and (min-width: $breakpoint) {
+        width: auto;
+        height: 75vh;
+        }
+    }
+}
+
 .wp-image-220 {
     width: 100%;
 }
