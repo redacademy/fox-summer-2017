@@ -105,7 +105,14 @@
             flex-direction: row-reverse;
             margin-top: 70px;
             .content-area {
-                flex-basis: 75%
+                flex-basis: 75%;
+                .post-date {
+                    display: none;
+                }
+                .post-date-2 {}
+                .wp-post-image {
+                    width: 80%;
+                }
             }
             .widget-area {
                 flex-basis: 25%;

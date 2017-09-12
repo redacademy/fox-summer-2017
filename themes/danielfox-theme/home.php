@@ -16,18 +16,20 @@ get_header(); ?>
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
                 
+            
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                <header class="entry-header">
-                            <?php red_starter_posted_on(); ?>
+                            <span class="post-date"><?php red_starter_posted_on(); ?></span>
                             <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail( 'large' ); ?>
+                                <?php the_post_thumbnail( 'full' ); ?>
                             <?php endif; ?>
                     </header><!-- .entry-header -->
 
                 <div class="text-content">
 		                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
-		                    <?php if ( 'post' === get_post_type() ) : ?>
+                            <?php if ( 'post' === get_post_type() ) : ?>
+                            <span class="post-date-2"><?php red_starter_posted_on(); ?></span>
 		                    <div class="entry-meta">
                                     <?php red_starter_entry_footer(); ?>
 		                    </div><!-- .entry-meta -->
