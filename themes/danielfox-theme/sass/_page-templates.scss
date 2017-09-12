@@ -177,23 +177,16 @@
             }
         }
     }
-
-.featured-in {
-    display: flex;
-    justify-content: space-around;
-
-    .featured-images {
-        a {
-            margin: 0px 3%;
+    .featured-in {
+        display: flex;
+        justify-content: space-around;
+        .featured-images {
+            a {
+                margin: 0px 3%;
+            }
         }
     }
 }
-
-
-
-}
-
-
 
 //Styling for Speaker Page [MOBILE]
 .speaker-header-box {
@@ -237,4 +230,36 @@
             margin: 5px;
         }
     }
+}
+
+//Styling for Photo pages [Mobile]
+
+.photograph-grid {
+    div {
+        margin: 10px;
+    }
+}
+
+//Styling for Photo pages [Desktop]
+
+@media (min-width: $breakpoint) {
+
+.photograph-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 18px;
+
+    .photograph-grid-item {
+        padding: 18px 18px;
+    }
+
+
+    div {
+        flex-basis: 33.333%;
+        margin: 0px;
+
+
+    }
+}
+
 }
