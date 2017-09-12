@@ -65,5 +65,13 @@
                 color: #fff;
             }
         }
+        .recent-post-thumbnail {
+            width: 214px;
+            height: 214px;
+            position: relative;
+            a {
+                position: absolute;
+            }
+        }
     }
 }
