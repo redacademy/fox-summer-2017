@@ -55,8 +55,12 @@ function danielfox_cpt_photograph() {
 		'has_archive'           => 'photographs',		
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
+		'query_var'				=> true,
+		'rewrite'				=> true,
 		'capability_type'       => 'post',
 		'show_in_rest'          => true,
+		'rest_base'				=> 'gallery',
+		'rest_controller_class' => 'WP_REST_Posts_controller'
 	);
 	register_post_type( 'photograph', $args );
 
