@@ -1,13 +1,14 @@
-.widget-area {
+.blog .widget-area {
     display: none;
     @media screen and (min-width: $breakpoint) {
         display: block;
-        .mc4wp-form-fields {
+        .mc4wp-form {
             height: 262px;
             width: 262px;
             border: 1px solid #DC4E3C;
             padding: 32px 18px 0 17px;
             box-sizing: border-box;
+            background-color: transparent;
             h4 {
                 width: 227px;
                 color: #DC4E3C;
@@ -52,6 +53,9 @@
                 box-shadow: none;
                 border-radius: 0;
             }
+            .subscribe-mobile {
+                display: none;
+            }
         }
         .widget_recent_entries {
             height: 262px;
@@ -59,6 +63,14 @@
             p {
                 background-color: #DC4E3C;
                 color: #fff;
+            }
+        }
+        .recent-post-thumbnail {
+            width: 214px;
+            height: 214px;
+            position: relative;
+            a {
+                position: absolute;
             }
         }
     }
