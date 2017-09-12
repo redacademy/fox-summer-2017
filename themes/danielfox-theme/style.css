@@ -441,7 +441,6 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
       top: 1.5rem;
@@ -452,7 +451,7 @@ a {
         top: 0; }
       .main-navigation ul ul li:hover > ul,
       .main-navigation ul ul li.focus > ul {
-        left: 100%; }
+        left: -3.4rem; }
       .main-navigation ul ul a {
         width: 200px; }
     .main-navigation ul li:hover > ul,
@@ -461,6 +460,9 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
+    .main-navigation li:hover > .sub-menu,
+    .main-navigation li.focus > .sub-menu {
+      left: -3.4rem; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -585,6 +587,17 @@ a {
       display: none; }
     .site-header .nav-logo {
       height: 100%; }
+    .site-header .sub-menu {
+      -ms-flex-direction: column;
+          flex-direction: column;
+      margin-top: 20px;
+      text-align: center; }
+      .site-header .sub-menu li {
+        background-color: rgba(255, 255, 255, 0.9);
+        border: 0.5px solid #0C5661; }
+        .site-header .sub-menu li:nth-child(2) {
+          border-top: 0px;
+          border-bottom: 0px; }
     .site-header .main-navigation {
       background: rgba(255, 255, 255, 0.9);
       display: -ms-flexbox;
@@ -613,7 +626,17 @@ a {
             display: -ms-flexbox;
             display: flex;
             -ms-flex-pack: space-evenly;
-                justify-content: space-evenly; } }
+                justify-content: space-evenly; }
+      .site-header .main-navigation .menu-item-has-children {
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+            align-items: center; }
+      .site-header .main-navigation ul ul {
+        top: 5.6rem; }
+        .site-header .main-navigation ul ul li {
+          padding: 10px 0px; } }
 
 .page-template-about .site-header {
   height: 0px; }
@@ -1079,6 +1102,8 @@ h3 {
 
 @media (min-width: 600px) {
   .photograph-grid {
+    -ms-flex-align: center;
+        align-items: center;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -1091,129 +1116,131 @@ h3 {
           flex-basis: 33.333%;
       margin: 0px; } }
 
-.blog .widget-area {
-  display: none; }
-  @media screen and (min-width: 600px) {
-    .blog .widget-area {
-      display: block; }
-      .blog .widget-area .mc4wp-form {
-        height: 262px;
-        width: 262px;
-        border: 1px solid #dc4e3c;
-        box-sizing: border-box;
-        margin: 0 auto; }
-        .blog .widget-area .mc4wp-form h4 {
-          color: #dc4e3c;
-          font-size: 18px;
-          letter-spacing: 1px;
-          border-bottom: 0.5px groove #014f5a;
-          padding-bottom: 8px;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-          padding-left: 2px; }
-        .blog .widget-area .mc4wp-form p {
-          font-size: 14px;
-          line-height: 2; }
-        .blog .widget-area .mc4wp-form .email-input {
-          width: 220px;
-          border-radius: 0;
-          border: 1px solid #dc4e3c;
-          margin-left: 14px;
-          margin-right: 21px;
-          font-size: 12px;
-          margin-bottom: 20px;
-          letter-spacing: 1px; }
-        .blog .widget-area .mc4wp-form .subscribe-button {
-          box-sizing: border-box;
-          background-color: #dc4e3c;
-          font-size: 18px;
-          box-shadow: none;
-          color: #fff;
-          text-shadow: none;
-          border-radius: 0;
-          letter-spacing: 2px;
-          margin-left: 48%;
-          padding: 7.5px 8.5px; }
-        .blog .widget-area .mc4wp-form .subscribe-mobile {
-          display: none; }
-        .blog .widget-area .mc4wp-form .subscribe-desktop {
-          margin-left: 16px;
-          margin-right: 80px;
-          letter-spacing: 1px;
-          margin-bottom: 10px;
-          line-height: 1.5; }
-      .blog .widget-area .recent-post-container .container-title {
-        background-color: transparent;
-        border: 0;
-        margin: 0 auto;
+@media screen and (min-width: 600px) {
+  .blog .widget-area,
+  .single-post .widget-area {
+    display: block; }
+    .blog .widget-area .mc4wp-form,
+    .single-post .widget-area .mc4wp-form {
+      height: 262px;
+      width: 262px;
+      border: 1px solid #dc4e3c;
+      box-sizing: border-box;
+      margin: 0 auto; }
+      .blog .widget-area .mc4wp-form h4,
+      .single-post .widget-area .mc4wp-form h4 {
         color: #dc4e3c;
-        border-bottom: 1px solid #014f5a;
+        font-size: 18px;
+        letter-spacing: 1px;
+        border-bottom: 0.5px groove #014f5a;
+        padding-bottom: 8px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 2px; }
+      .blog .widget-area .mc4wp-form p,
+      .single-post .widget-area .mc4wp-form p {
+        font-size: 14px;
+        line-height: 2; }
+      .blog .widget-area .mc4wp-form .email-input,
+      .single-post .widget-area .mc4wp-form .email-input {
+        width: 220px;
+        border-radius: 0;
+        border: 1px solid #dc4e3c;
+        margin-left: 14px;
+        margin-right: 21px;
+        font-size: 12px;
         margin-bottom: 20px;
-        width: 73%; }
-      .blog .widget-area .recent-post-container .recent-post-thumbnail {
-        width: 262px;
-        height: 262px;
-        position: relative;
-        border: 1px solid black;
-        margin: 0 auto;
-        margin-bottom: 34px;
-        overflow: hidden; }
-      .blog .widget-area .recent-post-container a {
-        position: absolute;
-        text-decoration: none;
+        letter-spacing: 1px; }
+      .blog .widget-area .mc4wp-form .subscribe-button,
+      .single-post .widget-area .mc4wp-form .subscribe-button {
+        box-sizing: border-box;
+        background-color: #dc4e3c;
+        font-size: 18px;
+        box-shadow: none;
         color: #fff;
-        width: 100%;
-        text-align: center; }
-      .blog .widget-area .recent-post-container .recent-post-title {
-        width: 100%;
-        margin-top: 0;
-        letter-spacing: 1px; } }
+        text-shadow: none;
+        border-radius: 0;
+        letter-spacing: 2px;
+        margin-left: 48%;
+        padding: 7.5px 8.5px; }
+      .blog .widget-area .mc4wp-form .subscribe-mobile,
+      .single-post .widget-area .mc4wp-form .subscribe-mobile {
+        display: none; }
+      .blog .widget-area .mc4wp-form .subscribe-desktop,
+      .single-post .widget-area .mc4wp-form .subscribe-desktop {
+        margin-left: 16px;
+        margin-right: 80px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        line-height: 1.5; }
+    .blog .widget-area .recent-post-container .container-title,
+    .single-post .widget-area .recent-post-container .container-title {
+      background-color: transparent;
+      border: 0;
+      margin: 0 auto;
+      color: #dc4e3c;
+      border-bottom: 1px solid #014f5a;
+      margin-bottom: 20px;
+      width: 73%; }
+    .blog .widget-area .recent-post-container .recent-post-thumbnail,
+    .single-post .widget-area .recent-post-container .recent-post-thumbnail {
+      width: 262px;
+      height: 262px;
+      position: relative;
+      border: 1px solid black;
+      margin: 0 auto;
+      margin-bottom: 34px;
+      overflow: hidden; }
+    .blog .widget-area .recent-post-container a,
+    .single-post .widget-area .recent-post-container a {
+      position: absolute;
+      text-decoration: none;
+      color: #fff;
+      width: 100%;
+      text-align: center; }
+    .blog .widget-area .recent-post-container .recent-post-title,
+    .single-post .widget-area .recent-post-container .recent-post-title {
+      width: 100%;
+      margin-top: 0;
+      letter-spacing: 1px; } }
 
-.blog .entry-meta,
-.single-post .entry-meta {
-  font-size: 13px;
-  letter-spacing: 1px; }
-  .blog .entry-meta .tags-links a::before,
-  .single-post .entry-meta .tags-links a::before {
-    content: "#";
-    text-transform: capitalize; }
-  .blog .entry-meta a,
-  .single-post .entry-meta a {
-    text-decoration: none;
-    color: #757373;
-    font-size: 12px; }
-  .blog .entry-meta .entry-date,
-  .single-post .entry-meta .entry-date {
-    font-size: 12px;
-    margin: 0 auto; }
+.blog .widget-area,
+.single-post .widget-area {
+  display: none; }
+
+.blog .icon-container,
+.single-post .icon-container {
+  display: none; }
 
 .blog .site-footer,
 .single-post .site-footer {
   display: none; }
 
-.blog .entry-title,
-.single-post .entry-title {
-  font-size: 1.5rem;
-  color: #dc4e3c;
-  margin-bottom: 0;
-  letter-spacing: 1px; }
-  .blog .entry-title a,
-  .single-post .entry-title a {
-    text-decoration: none; }
-
-.blog .entry-date,
-.single-post .entry-date {
-  color: #dc4e3c; }
-
 .blog .text-content,
 .single-post .text-content {
   margin: 0px 20px;
   border-bottom: 2px solid #014f5a; }
-
-.blog .block-quote,
-.single-post .block-quote {
-  margin: 0; }
+  .blog .text-content .entry-title,
+  .single-post .text-content .entry-title {
+    font-size: 1.5rem;
+    color: #dc4e3c;
+    margin-bottom: 0;
+    letter-spacing: 1px; }
+    .blog .text-content .entry-title a,
+    .single-post .text-content .entry-title a {
+      text-decoration: none; }
+  .blog .text-content .read-more,
+  .single-post .text-content .read-more {
+    margin-bottom: 20px; }
+    .blog .text-content .read-more a,
+    .single-post .text-content .read-more a {
+      background-color: #dc4e3c;
+      color: #fff;
+      text-decoration: none;
+      padding: 4px 10px;
+      letter-spacing: 2px;
+      margin-left: 68%; }
 
 .blog .nav-links,
 .single-post .nav-links {
@@ -1222,38 +1249,40 @@ h3 {
   .single-post .nav-links a {
     text-decoration: none; }
 
-.blog .comments-area,
-.single-post .comments-area {
-  margin: 0 20px; }
-  .blog .comments-area input,
-  .single-post .comments-area input {
-    width: 100%; }
+.blog .entry-meta,
+.single-post .entry-meta {
+  font-size: 13px;
+  letter-spacing: 1px; }
+  .blog .entry-meta .tags-links a::before,
+  .single-post .entry-meta .tags-links a::before {
+    content: "#"; }
+  .blog .entry-meta a,
+  .single-post .entry-meta a {
+    text-decoration: none;
+    color: #757373;
+    font-size: 12px; }
 
-.blog .entry-content a {
-  -ms-flex-pack: end;
-      justify-content: flex-end;
-  background-color: #dc4e3c;
-  text-decoration: none;
-  color: #fff;
-  padding: 4px 10px;
-  letter-spacing: 2px;
-  margin-left: 68%; }
-
-.blog .subscribe-mobile-container .mc4wp-form {
+.blog .subscribe-mobile-container .mc4wp-form,
+.single-post .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;
   box-sizing: border-box;
   padding: 10px 20px; }
-  .blog .subscribe-mobile-container .mc4wp-form .subscribe-desktop {
+  .blog .subscribe-mobile-container .mc4wp-form .subscribe-desktop,
+  .single-post .subscribe-mobile-container .mc4wp-form .subscribe-desktop {
     display: none; }
-  .blog .subscribe-mobile-container .mc4wp-form h4 {
+  .blog .subscribe-mobile-container .mc4wp-form h4,
+  .single-post .subscribe-mobile-container .mc4wp-form h4 {
     display: none; }
-  .blog .subscribe-mobile-container .mc4wp-form p {
+  .blog .subscribe-mobile-container .mc4wp-form p,
+  .single-post .subscribe-mobile-container .mc4wp-form p {
     color: #fff; }
-  .blog .subscribe-mobile-container .mc4wp-form .email-input {
+  .blog .subscribe-mobile-container .mc4wp-form .email-input,
+  .single-post .subscribe-mobile-container .mc4wp-form .email-input {
     border-radius: 0;
     width: 65%;
     padding-right: 5px; }
-  .blog .subscribe-mobile-container .mc4wp-form .subscribe-button {
+  .blog .subscribe-mobile-container .mc4wp-form .subscribe-button,
+  .single-post .subscribe-mobile-container .mc4wp-form .subscribe-button {
     box-sizing: border-box;
     padding: 15px 0px;
     width: 179px;
@@ -1268,12 +1297,15 @@ h3 {
     font-size: 1rem;
     letter-spacing: 1px;
     text-align: center; }
-    .blog .subscribe-mobile-container .mc4wp-form .subscribe-button a {
+    .blog .subscribe-mobile-container .mc4wp-form .subscribe-button a,
+    .single-post .subscribe-mobile-container .mc4wp-form .subscribe-button a {
       color: white;
       text-decoration: none;
       text-align: center; }
 
 @media screen and (min-width: 600px) {
+  .blog .widget-area {
+    display: block; }
   .blog .site-content {
     display: -ms-flexbox;
     display: flex;
@@ -1282,18 +1314,22 @@ h3 {
     margin-top: 70px; }
     .blog .site-content .content-area {
       -ms-flex-preferred-size: 70%;
-          flex-basis: 70%;
-      margin-right: 67px; }
+          flex-basis: 70%; }
       .blog .site-content .content-area .post-date {
         display: none; }
-      .blog .site-content .content-area .wp-post-image {
-        width: 80%; }
       .blog .site-content .content-area .entry-content a {
         color: #dc4e3c;
         text-decoration: underline;
         letter-spacing: 1px;
         display: inline;
         background-color: transparent; }
+      .blog .site-content .content-area .blog-photo {
+        display: -ms-flexbox;
+        display: flex; }
+        .blog .site-content .content-area .blog-photo .icon-container {
+          display: block;
+          width: 50px;
+          margin-left: -30px; }
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%;

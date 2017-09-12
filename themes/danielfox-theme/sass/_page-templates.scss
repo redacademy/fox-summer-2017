@@ -233,7 +233,6 @@
 }
 
 //Styling for Photo pages [Mobile]
-
 .photograph-grid {
     div {
         margin: 10px;
@@ -241,25 +240,18 @@
 }
 
 //Styling for Photo pages [Desktop]
-
 @media (min-width: $breakpoint) {
-
-.photograph-grid {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px 18px;
-
-    .photograph-grid-item {
-        padding: 18px 18px;
+    .photograph-grid {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px 18px;
+        .photograph-grid-item {
+            padding: 18px 18px;
+        }
+        div {
+            flex-basis: 33.333%;
+            margin: 0px;
+        }
     }
-
-
-    div {
-        flex-basis: 33.333%;
-        margin: 0px;
-
-
-    }
-}
-
 }

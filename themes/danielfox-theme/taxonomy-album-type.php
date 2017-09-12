@@ -25,7 +25,8 @@
 			<header class="entry-header">
 				<div class="thumbnail-wrapper">
 					<?php if ( has_post_thumbnail() ) : ?>
-						<a href="<?php the_permalink(); ?>">
+						<a class="gallery-modal-link" href="<?php the_permalink(); ?>" id="<?php echo get_the_ID(); ?>">
+
 						<?php the_post_thumbnail( 'large' ); ?>
 						</a>
 					<?php endif; ?>
