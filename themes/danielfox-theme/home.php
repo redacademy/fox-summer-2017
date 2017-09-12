@@ -44,7 +44,8 @@ get_header(); ?>
 		                    <?php endif; ?>
 
 	                <div class="entry-content">
-                            <?php the_excerpt(); ?><a href="<?php echo esc_url( get_permalink() )?>">read more</a>
+                            <?php the_excerpt(); ?>
+                            <span class="read-more"><a href="<?php echo esc_url( get_permalink() )?>">read more</a></span>
                     </div><!-- .entry-content -->
                 </div>
             </article><!-- #post-## -->
