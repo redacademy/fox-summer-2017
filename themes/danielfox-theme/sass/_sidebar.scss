@@ -1,91 +1,94 @@
 //Sidebar on Desktop Layout
 @media screen and (min-width: $breakpoint) {
-    .widget-area {
-        display: block;
-        .mc4wp-form {
-            height: 262px;
-            width: 262px;
-            border: 1px solid $color__accent;
-            box-sizing: border-box;
-            margin: 0 auto;
-            h4 {
-                color: $color__accent;
-                font-size: 18px;
-                letter-spacing: 1px;
-                border-bottom: 0.5px groove $color__underline;
-                padding-bottom: 8px;
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
-                padding-left: 2px;
-            }
-            p {
-                font-size: 14px;
-                line-height: 2;
-            }
-            .email-input {
-                width: 220px;
-                border-radius: 0;
-                border: 1px solid $color__accent;
-                margin-left: 14px;
-                margin-right: 21px;
-                font-size: 12px;
-                margin-bottom: 20px;
-                letter-spacing: 1px;
-            }
-            .subscribe-button {
-                box-sizing: border-box;
-                background-color: $color__accent;
-                font-size: 18px;
-                box-shadow: none;
-                color: $color__reverse;
-                text-shadow: none;
-                border-radius: 0;
-                letter-spacing: 2px;
-                margin-left: 48%;
-                padding: 7.5px 8.5px;
-            }
-            .subscribe-mobile {
-                display: none;
-            }
-            .subscribe-desktop {
-                margin-left: 16px;
-                margin-right: 80px;
-                letter-spacing: 1px;
-                margin-bottom: 10px;
-                line-height: 1.5;
-            }
-        }
-        .recent-post-container {
-            .container-title {
-                background-color: transparent;
-                border: 0;
-                margin: 0 auto;
-                color: $color__accent;
-                border-bottom: 1px solid $color__underline;
-                margin-bottom: 20px;
-                width: 73%;
-            }
-            .recent-post-thumbnail {
-                width: 262px;
+    .blog,
+    .single-post {
+        .widget-area {
+            display: block;
+            .mc4wp-form {
                 height: 262px;
-                position: relative;
-                border: 1px solid black;
+                width: 262px;
+                border: 1px solid $color__accent;
+                box-sizing: border-box;
                 margin: 0 auto;
-                margin-bottom: 34px;
-                overflow: hidden;
+                h4 {
+                    color: $color__accent;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    border-bottom: 0.5px groove $color__underline;
+                    padding-bottom: 8px;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-left: 2px;
+                }
+                p {
+                    font-size: 14px;
+                    line-height: 2;
+                }
+                .email-input {
+                    width: 220px;
+                    border-radius: 0;
+                    border: 1px solid $color__accent;
+                    margin-left: 14px;
+                    margin-right: 21px;
+                    font-size: 12px;
+                    margin-bottom: 20px;
+                    letter-spacing: 1px;
+                }
+                .subscribe-button {
+                    box-sizing: border-box;
+                    background-color: $color__accent;
+                    font-size: 18px;
+                    box-shadow: none;
+                    color: $color__reverse;
+                    text-shadow: none;
+                    border-radius: 0;
+                    letter-spacing: 2px;
+                    margin-left: 48%;
+                    padding: 7.5px 8.5px;
+                }
+                .subscribe-mobile {
+                    display: none;
+                }
+                .subscribe-desktop {
+                    margin-left: 16px;
+                    margin-right: 80px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                    line-height: 1.5;
+                }
             }
-            a {
-                position: absolute;
-                text-decoration: none;
-                color: $color__reverse;
-                width: 100%;
-                text-align: center;
-            }
-            .recent-post-title {
-                width: 100%;
-                margin-top: 0;
-                letter-spacing: 1px;
+            .recent-post-container {
+                .container-title {
+                    background-color: transparent;
+                    border: 0;
+                    margin: 0 auto;
+                    color: $color__accent;
+                    border-bottom: 1px solid $color__underline;
+                    margin-bottom: 20px;
+                    width: 73%;
+                }
+                .recent-post-thumbnail {
+                    width: 262px;
+                    height: 262px;
+                    position: relative;
+                    border: 1px solid black;
+                    margin: 0 auto;
+                    margin-bottom: 34px;
+                    overflow: hidden;
+                }
+                a {
+                    position: absolute;
+                    text-decoration: none;
+                    color: $color__reverse;
+                    width: 100%;
+                    text-align: center;
+                }
+                .recent-post-title {
+                    width: 100%;
+                    margin-top: 0;
+                    letter-spacing: 1px;
+                }
             }
         }
     }

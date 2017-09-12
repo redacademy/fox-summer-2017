@@ -4,7 +4,7 @@
     .widget-area {
         display: none;
     }
-    .entry-header .icon-container {
+    .icon-container {
         display: none;
     }
     .site-footer {
@@ -102,15 +102,20 @@
                 .post-date {
                     display: none;
                 }
-                .wp-post-image {
-                    width: 80%;
-                }
                 .entry-content a {
                     color: $color__accent;
                     text-decoration: underline;
                     letter-spacing: 1px;
                     display: inline;
                     background-color: transparent;
+                }
+                .blog-photo {
+                    display: flex;
+                    .icon-container {
+                        display: block;
+                        width: 50px;
+                        margin-left: -30px;
+                    }
                 }
             }
             .widget-area {

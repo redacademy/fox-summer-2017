@@ -1117,15 +1117,18 @@ h3 {
       margin: 0px; } }
 
 @media screen and (min-width: 600px) {
-  .widget-area {
+  .blog .widget-area,
+  .single-post .widget-area {
     display: block; }
-    .widget-area .mc4wp-form {
+    .blog .widget-area .mc4wp-form,
+    .single-post .widget-area .mc4wp-form {
       height: 262px;
       width: 262px;
       border: 1px solid #dc4e3c;
       box-sizing: border-box;
       margin: 0 auto; }
-      .widget-area .mc4wp-form h4 {
+      .blog .widget-area .mc4wp-form h4,
+      .single-post .widget-area .mc4wp-form h4 {
         color: #dc4e3c;
         font-size: 18px;
         letter-spacing: 1px;
@@ -1135,10 +1138,12 @@ h3 {
         margin-left: auto;
         margin-right: auto;
         padding-left: 2px; }
-      .widget-area .mc4wp-form p {
+      .blog .widget-area .mc4wp-form p,
+      .single-post .widget-area .mc4wp-form p {
         font-size: 14px;
         line-height: 2; }
-      .widget-area .mc4wp-form .email-input {
+      .blog .widget-area .mc4wp-form .email-input,
+      .single-post .widget-area .mc4wp-form .email-input {
         width: 220px;
         border-radius: 0;
         border: 1px solid #dc4e3c;
@@ -1147,7 +1152,8 @@ h3 {
         font-size: 12px;
         margin-bottom: 20px;
         letter-spacing: 1px; }
-      .widget-area .mc4wp-form .subscribe-button {
+      .blog .widget-area .mc4wp-form .subscribe-button,
+      .single-post .widget-area .mc4wp-form .subscribe-button {
         box-sizing: border-box;
         background-color: #dc4e3c;
         font-size: 18px;
@@ -1158,15 +1164,18 @@ h3 {
         letter-spacing: 2px;
         margin-left: 48%;
         padding: 7.5px 8.5px; }
-      .widget-area .mc4wp-form .subscribe-mobile {
+      .blog .widget-area .mc4wp-form .subscribe-mobile,
+      .single-post .widget-area .mc4wp-form .subscribe-mobile {
         display: none; }
-      .widget-area .mc4wp-form .subscribe-desktop {
+      .blog .widget-area .mc4wp-form .subscribe-desktop,
+      .single-post .widget-area .mc4wp-form .subscribe-desktop {
         margin-left: 16px;
         margin-right: 80px;
         letter-spacing: 1px;
         margin-bottom: 10px;
         line-height: 1.5; }
-    .widget-area .recent-post-container .container-title {
+    .blog .widget-area .recent-post-container .container-title,
+    .single-post .widget-area .recent-post-container .container-title {
       background-color: transparent;
       border: 0;
       margin: 0 auto;
@@ -1174,7 +1183,8 @@ h3 {
       border-bottom: 1px solid #014f5a;
       margin-bottom: 20px;
       width: 73%; }
-    .widget-area .recent-post-container .recent-post-thumbnail {
+    .blog .widget-area .recent-post-container .recent-post-thumbnail,
+    .single-post .widget-area .recent-post-container .recent-post-thumbnail {
       width: 262px;
       height: 262px;
       position: relative;
@@ -1182,13 +1192,15 @@ h3 {
       margin: 0 auto;
       margin-bottom: 34px;
       overflow: hidden; }
-    .widget-area .recent-post-container a {
+    .blog .widget-area .recent-post-container a,
+    .single-post .widget-area .recent-post-container a {
       position: absolute;
       text-decoration: none;
       color: #fff;
       width: 100%;
       text-align: center; }
-    .widget-area .recent-post-container .recent-post-title {
+    .blog .widget-area .recent-post-container .recent-post-title,
+    .single-post .widget-area .recent-post-container .recent-post-title {
       width: 100%;
       margin-top: 0;
       letter-spacing: 1px; } }
@@ -1197,8 +1209,8 @@ h3 {
 .single-post .widget-area {
   display: none; }
 
-.blog .entry-header .icon-container,
-.single-post .entry-header .icon-container {
+.blog .icon-container,
+.single-post .icon-container {
   display: none; }
 
 .blog .site-footer,
@@ -1305,14 +1317,19 @@ h3 {
           flex-basis: 70%; }
       .blog .site-content .content-area .post-date {
         display: none; }
-      .blog .site-content .content-area .wp-post-image {
-        width: 80%; }
       .blog .site-content .content-area .entry-content a {
         color: #dc4e3c;
         text-decoration: underline;
         letter-spacing: 1px;
         display: inline;
         background-color: transparent; }
+      .blog .site-content .content-area .blog-photo {
+        display: -ms-flexbox;
+        display: flex; }
+        .blog .site-content .content-area .blog-photo .icon-container {
+          display: block;
+          width: 50px;
+          margin-left: -30px; }
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%;
