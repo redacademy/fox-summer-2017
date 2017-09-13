@@ -436,7 +436,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -527,9 +526,14 @@ a {
         margin: 0px;
         padding: 0px; }
         .site-header .header-nav-bar .burger-nav .menu li {
-          list-style: none; }
+          list-style: none;
+          font-size: 22px; }
         .site-header .header-nav-bar .burger-nav .menu a {
           text-decoration: none; }
+        .site-header .header-nav-bar .burger-nav .menu .sub-menu {
+          display: none; }
+        .site-header .header-nav-bar .burger-nav .menu .sub-menu--open {
+          display: block; }
       .site-header .header-nav-bar .burger-nav .nav-side {
         position: fixed;
         left: 0;
@@ -617,6 +621,8 @@ a {
       .site-header .main-navigation .nav-menu-options {
         -ms-flex-preferred-size: 85%;
             flex-basis: 85%; }
+        .site-header .main-navigation .nav-menu-options .menu li {
+          font-size: 20px; }
         .site-header .main-navigation .nav-menu-options div {
           height: 100%; }
           .site-header .main-navigation .nav-menu-options div ul {
