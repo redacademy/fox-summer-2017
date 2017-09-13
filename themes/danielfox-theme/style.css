@@ -878,6 +878,13 @@ h3 {
   display: -ms-flexbox;
   display: flex; }
 
+.home .widget-area {
+  display: none; }
+
+@media (min-width: 600px) {
+  .home .widget-area {
+    display: block; } }
+
 .about-section p {
   margin: 3rem 2.5rem; }
 
@@ -1388,26 +1395,48 @@ h3 {
   .post-type-archive-project .project-container .project-title h2 {
     margin-bottom: 0; }
 
+.post-type-archive-project .site-main h1 {
+  display: none; }
+
+.post-type-archive-project .site-main .project-about {
+  display: none; }
+
+.post-type-archive-project .site-main .page-header {
+  left: -1000px;
+  position: absolute;
+  width: 0; }
+
+.post-type-archive-project .site-header {
+  height: 41px; }
+
 @media screen and (min-width: 600px) {
   .single-project .wp-post-image {
     height: 75vh;
     width: auto; }
+  .post-type-archive-project .site-header {
+    height: 83px; }
   .post-type-archive-project .project-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column; }
-    .post-type-archive-project .project-container .project-mobile-description {
-      display: none; }
-  .post-type-archive-project .site-main {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: 0 2%; }
-    .post-type-archive-project .site-main .page-header {
-      left: -1000px;
-      position: absolute;
-      width: 0; }
-    .post-type-archive-project .site-main .project {
-      width: 29.5%; } }
+    .post-type-archive-project .project-container .project-mobile-description {
+      display: none; }
+  .post-type-archive-project .site-main h1 {
+    border-bottom: 0.5px solid #0C5661;
+    display: block;
+    margin: 4.33% auto;
+    padding-bottom: 1%;
+    text-align: center;
+    width: 24.24%; }
+  .post-type-archive-project .site-main .project-about {
+    display: block;
+    margin: 0 auto;
+    width: 88.89%; }
+  .post-type-archive-project .site-main .page-header {
+    left: 0;
+    position: initial;
+    width: auto; }
+  .post-type-archive-project .site-main .project {
+    width: 29.5%; } }

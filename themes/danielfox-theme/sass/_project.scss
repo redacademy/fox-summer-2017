@@ -16,6 +16,22 @@
             }
         }
     }
+    .site-main {
+        h1 {
+            display: none;
+        }
+        .project-about {
+            display: none;
+        }
+        .page-header {
+            left: -1000px;
+            position: absolute;
+            width: 0;
+        }
+    }
+    .site-header {
+        height: 41px;
+    }
 }
 
 //Styling for Project Archive Page [DESKTOP]
@@ -27,9 +43,13 @@
         }
     }
     .post-type-archive-project {
+        .site-header {
+            height: 83px;
+        }
         .project-container {
             display: flex;
-            flex-direction: column;
+            justify-content: space-around;
+            margin: 0 2%;
             .project-title {
             }
             .project-mobile-description {
@@ -37,13 +57,23 @@
             }
         }
         .site-main {
-            display: flex;
-            justify-content: space-around;
-            margin: 0 2%;
+            h1 {
+                border-bottom: 0.5px solid #0C5661;
+                display: block;
+                margin: 4.33% auto;
+                padding-bottom: 1%;
+                text-align: center;
+                width: 24.24%;
+            }
+            .project-about {
+                display: block;
+                margin: 0 auto;
+                width: 88.89%;
+            }
             .page-header {
-                left: -1000px;
-                position: absolute;
-                width: 0;
+                left: 0;
+                position: initial;
+                width: auto;
             }
             .project {
                 width: 29.5%;
