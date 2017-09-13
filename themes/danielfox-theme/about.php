@@ -45,6 +45,10 @@ get_header(); ?>
                 <p>Within that silence, I found comfort; within those trees, I found a tribe that listened; within nature I found the family I was looking for, the structure of values and insights that would teach me about life, about what it is to be human, and what is like to live on this planet.  That deep connectedness has never left me since, I carry it with me everywhere I go, where ever I find myself, whether I am alone or not.
                 </p>
 		</section>
+		<section class="contact-form">
+			<h2>Let's Connect</h2>
+			<?php dynamic_sidebar( 'contactform-1' ); ?>
+		</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
