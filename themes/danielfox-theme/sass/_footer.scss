@@ -57,5 +57,17 @@
     .site-footer {
         display: flex;
     }
+    .widget-area {
+        display: none;
+    }
 }
+
+@media (min-width: $breakpoint) {
+    .home {
+        .widget-area {
+            display: block;
+        }
+    }
+}
+
 

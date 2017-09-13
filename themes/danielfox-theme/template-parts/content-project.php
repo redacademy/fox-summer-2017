@@ -8,7 +8,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header project-container">
 		<div class="project-title">
             <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		</div>
@@ -20,7 +19,4 @@
         <div class="project-mobile-description">
             <?php echo CFS()->get( 'mobile_description' ); ?>
         </div><!-- .entry-content -->
-
-	</header><!-- .entry-header -->
-
 </article><!-- #post-## -->

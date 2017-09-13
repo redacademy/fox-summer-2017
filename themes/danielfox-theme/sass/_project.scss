@@ -1,12 +1,3 @@
-.single-project, .post-type-archive-project {
-    .wp-post-image {
-        @media screen and (min-width: $breakpoint) {
-        width: auto;
-        height: 75vh;
-        }
-    }
-}
-
 .wp-image-220 {
     width: 100%;
 }
@@ -20,20 +11,72 @@
                 color: white;
                 text-decoration: none;
             }
+            h2 {
+                margin-bottom: 0;
+            }
         }
+    }
+    .site-main {
+        h1 {
+            display: none;
+        }
+        .project-about {
+            display: none;
+        }
+        .page-header {
+            left: -1000px;
+            position: absolute;
+            width: 0;
+        }
+    }
+    .site-header {
+        height: 41px;
     }
 }
 
 //Styling for Project Archive Page [DESKTOP]
 @media screen and (min-width: $breakpoint) {
+    .single-project {
+        .wp-post-image {
+            height: 75vh;
+            width: auto;
+        }
+    }
     .post-type-archive-project {
+        .site-header {
+            height: 83px;
+        }
         .project-container {
-            display: block;
+            display: flex;
+            justify-content: space-around;
+            margin: 0 2%;
             .project-title {
-                position: absolute;
             }
             .project-mobile-description {
                 display: none;
+            }
+        }
+        .site-main {
+            h1 {
+                border-bottom: 0.5px solid #0C5661;
+                display: block;
+                margin: 4.33% auto;
+                padding-bottom: 1%;
+                text-align: center;
+                width: 24.24%;
+            }
+            .project-about {
+                display: block;
+                margin: 0 auto;
+                width: 88.89%;
+            }
+            .page-header {
+                left: 0;
+                position: initial;
+                width: auto;
+            }
+            .project {
+                width: 29.5%;
             }
         }
     }

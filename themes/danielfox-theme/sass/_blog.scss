@@ -4,7 +4,7 @@
     .widget-area {
         display: none;
     }
-    .entry-header .icon-container {
+    .icon-container {
         display: none;
     }
     .site-footer {
@@ -102,15 +102,20 @@
                 .post-date {
                     display: none;
                 }
-                .wp-post-image {
-                    width: 80%;
-                }
                 .entry-content a {
                     color: $color__accent;
                     text-decoration: underline;
                     letter-spacing: 1px;
                     display: inline;
                     background-color: transparent;
+                }
+                .blog-photo {
+                    display: flex;
+                    .icon-container {
+                        display: block;
+                        width: 50px;
+                        margin-left: -30px;
+                    }
                 }
             }
             .widget-area {
@@ -132,6 +137,39 @@
             }
             .subscribe-mobile-container {
                 display: none;
+            }
+        }
+    }
+}
+
+.single-post {
+    .comments-area {
+        margin: 0 20px;
+        .comment-reply-title {
+            background-color: transparent;
+            color: $color__accent;
+            border: none;
+            border-bottom: 2px solid $color__underline;
+            width: 100%;
+        }
+        input {
+            width: 100%;
+        }
+        .form-submit {
+            margin-bottom: 20px;
+            background-color: $color__accent;
+            color: $color__reverse;
+            text-decoration: none;
+            padding: 4px 10px;
+            letter-spacing: 2px;
+            margin-left: 68%;
+            .submit {
+                background-color: $color__accent;
+                box-shadow: none;
+                color: $color__reverse;
+                font-size: 18px;
+                letter-spacing: 1px;
+                text-shadow: none;
             }
         }
     }
