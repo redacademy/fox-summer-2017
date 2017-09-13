@@ -10,6 +10,13 @@
     .site-footer {
         display: none;
     }
+    .entry-header {
+        text-align: center;
+        .posted-on {
+            color: $color__accent;
+            font-size: 1.2rem;
+        }
+    }
     .text-content {
         margin: 0px 20px;
         border-bottom: 2px solid $color__underline;
@@ -21,6 +28,9 @@
             a {
                 text-decoration: none;
             }
+        }
+        .post-date-2 {
+            color: $color__accent;
         }
         .read-more {
             margin-bottom: 20px;
@@ -80,8 +90,8 @@
                 box-shadow: none;
                 border: 1px solid $color__reverse;
                 font-size: 1rem;
-                letter-spacing: 1px;
                 text-align: center;
+                text-shadow: none;
             }
         }
     }
@@ -143,6 +153,9 @@
 }
 
 .single-post {
+    .text-content {
+        border-bottom: 0;
+    }
     .comments-area {
         margin: 0 20px;
         .comment-reply-title {
@@ -162,7 +175,8 @@
             text-decoration: none;
             padding: 4px 10px;
             letter-spacing: 2px;
-            margin-left: 68%;
+            margin: 0 auto;
+            width: 50%;
             .submit {
                 background-color: $color__accent;
                 box-shadow: none;

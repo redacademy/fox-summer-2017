@@ -828,6 +828,9 @@ h3 {
     text-decoration: none;
     text-align: center; }
 
+a:hover {
+  background-color: transparent; }
+
 .site-footer {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
   display: none;
@@ -929,7 +932,7 @@ h3 {
 .other-projects,
 .speaker-description {
   width: 75%;
-  margin: auto; }
+  margin: 15px auto; }
   .front-page-about .red-button,
   .front-page-photography .red-button,
   .front-page-speaker .red-button,
@@ -1036,7 +1039,7 @@ h3 {
         font-size: 48px;
         letter-spacing: 6px;
         margin-top: 110px; }
-  .desktop-text {
+  .front-page-about .desktop-text {
     display: block; }
   .project-container {
     display: -ms-flexbox;
@@ -1058,8 +1061,14 @@ h3 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .featured-in .featured-images a {
-      margin: 0px 3%; } }
+    .featured-in .featured-images {
+      width: 78%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .featured-in .featured-images a {
+        margin: 0px 3%; } }
 
 .speaker-header-box {
   -ms-flex-pack: left;
@@ -1257,6 +1266,14 @@ h3 {
 .single-post .site-footer {
   display: none; }
 
+.blog .entry-header,
+.single-post .entry-header {
+  text-align: center; }
+  .blog .entry-header .posted-on,
+  .single-post .entry-header .posted-on {
+    color: #dc4e3c;
+    font-size: 1.2rem; }
+
 .blog .text-content,
 .single-post .text-content {
   margin: 0px 20px;
@@ -1270,6 +1287,9 @@ h3 {
     .blog .text-content .entry-title a,
     .single-post .text-content .entry-title a {
       text-decoration: none; }
+  .blog .text-content .post-date-2,
+  .single-post .text-content .post-date-2 {
+    color: #dc4e3c; }
   .blog .text-content .read-more,
   .single-post .text-content .read-more {
     margin-bottom: 20px; }
@@ -1335,8 +1355,8 @@ h3 {
     box-shadow: none;
     border: 1px solid #fff;
     font-size: 1rem;
-    letter-spacing: 1px;
-    text-align: center; }
+    text-align: center;
+    text-shadow: none; }
     .blog .subscribe-mobile-container .mc4wp-form .subscribe-button a,
     .single-post .subscribe-mobile-container .mc4wp-form .subscribe-button a {
       color: white;
@@ -1388,6 +1408,9 @@ h3 {
     .blog .site-content .subscribe-mobile-container {
       display: none; } }
 
+.single-post .text-content {
+  border-bottom: 0; }
+
 .single-post .comments-area {
   margin: 0 20px; }
   .single-post .comments-area .comment-reply-title {
@@ -1405,7 +1428,8 @@ h3 {
     text-decoration: none;
     padding: 4px 10px;
     letter-spacing: 2px;
-    margin-left: 68%; }
+    margin: 0 auto;
+    width: 50%; }
     .single-post .comments-area .form-submit .submit {
       background-color: #dc4e3c;
       box-shadow: none;

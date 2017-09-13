@@ -1,4 +1,4 @@
-(function ($) {
+// (function ($) {
 
 // $('.term-expeditions').append("Hi String");
 
@@ -20,4 +20,4 @@
 
 // });
 
-})(jQuery);
+// })(jQuery);
