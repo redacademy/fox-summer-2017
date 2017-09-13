@@ -1,17 +1,55 @@
+// Footer Styling [MOBILE]
 .site-footer {
     box-shadow: 0 -1px 2px 0 rgba(0,0,0,0.5);
     display: none;
     height: 1.35%;
-    @media screen and (min-width: $breakpoint) {
+    .footer-left {
+        align-items: center;
+        display: flex;
+        flex: 0 1 50%;
+    }
+    .footer-right {
+        background-color: lightblue;
+        flex: 0 1 50%;
+    }
+    img {
+        margin: 7.5px;
+        max-height: 35px;
+        max-width: 35px;
+    }
+}
+
+.home {
+    .site-footer {
+        display: flex;
+    }
+    .widget-area {
+        display: none;
+    }
+}
+
+// Footer Styling [DESKTOP]
+@media screen and (min-width: $breakpoint) {
+    .home {
+        .widget-area {
+            display: block;
+        }
+    }
+    .site-footer{
         display: flex;
         height: 1.84%;
+        img {
+            margin: 12.5px;
+            max-height: 40px;
+            max-width: 40px;
+        }
         .widget-area{
             .mc4wp-form-fields {
                 border: none;
+                display: flex;
                 height: auto;
                 overflow: visible;
                 width: auto;
-                display: flex;
                 h4 {
                     display: none;
                 }
@@ -28,46 +66,4 @@
             }
         }
     }
-
-    .footer-left {
-        align-items: center;
-        display: flex;
-        flex: 0 1 50%;
-    }
-
-    .footer-right {
-        background-color: lightblue;
-        flex: 0 1 50%;
-    }
-
-    img {
-        max-height: 35px;
-        max-width: 35px;
-        margin: 7.5px;
-        
-        @media (min-width: $breakpoint) {
-        max-height: 40px;
-        max-width: 40px;
-        margin: 12.5px;
-        }
-    }
 }
-
-.home {
-    .site-footer {
-        display: flex;
-    }
-    .widget-area {
-        display: none;
-    }
-}
-
-@media (min-width: $breakpoint) {
-    .home {
-        .widget-area {
-            display: block;
-        }
-    }
-}
-
-
