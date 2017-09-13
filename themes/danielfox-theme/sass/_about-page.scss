@@ -3,3 +3,11 @@
         margin: 3rem 2.5rem;
     }
 }
+
+@media screen and (min-width: $breakpoint) {
+    .about-section {
+        .contact-form {
+            display: none;
+        }
+    }
+}

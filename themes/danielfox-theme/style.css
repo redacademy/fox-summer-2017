@@ -711,6 +711,20 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.contact-form {
+  width: 94.13%;
+  margin: 0 auto; }
+  .contact-form p {
+    text-align: center; }
+    .contact-form p span input {
+      width: 100%; }
+    .contact-form p input {
+      width: 100px; }
+
+@media (min-width: 600px) {
+  .contact-form {
+    width: 434px; } }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -888,6 +902,10 @@ a:hover {
 
 .about-section p {
   margin: 3rem 2.5rem; }
+
+@media screen and (min-width: 600px) {
+  .about-section .contact-form {
+    display: none; } }
 
 /*--------------------------------------------------------------
 # Page Templates
