@@ -1272,6 +1272,14 @@ a:hover {
 .single-post .site-footer {
   display: none; }
 
+.blog .entry-header,
+.single-post .entry-header {
+  text-align: center; }
+  .blog .entry-header .posted-on,
+  .single-post .entry-header .posted-on {
+    color: #dc4e3c;
+    font-size: 1.2rem; }
+
 .blog .text-content,
 .single-post .text-content {
   margin: 0px 20px;
@@ -1285,6 +1293,9 @@ a:hover {
     .blog .text-content .entry-title a,
     .single-post .text-content .entry-title a {
       text-decoration: none; }
+  .blog .text-content .post-date-2,
+  .single-post .text-content .post-date-2 {
+    color: #dc4e3c; }
   .blog .text-content .read-more,
   .single-post .text-content .read-more {
     margin-bottom: 20px; }
@@ -1350,8 +1361,8 @@ a:hover {
     box-shadow: none;
     border: 1px solid #fff;
     font-size: 1rem;
-    letter-spacing: 1px;
-    text-align: center; }
+    text-align: center;
+    text-shadow: none; }
     .blog .subscribe-mobile-container .mc4wp-form .subscribe-button a,
     .single-post .subscribe-mobile-container .mc4wp-form .subscribe-button a {
       color: white;
@@ -1403,6 +1414,9 @@ a:hover {
     .blog .site-content .subscribe-mobile-container {
       display: none; } }
 
+.single-post .text-content {
+  border-bottom: 0; }
+
 .single-post .comments-area {
   margin: 0 20px; }
   .single-post .comments-area .comment-reply-title {
@@ -1420,7 +1434,8 @@ a:hover {
     text-decoration: none;
     padding: 4px 10px;
     letter-spacing: 2px;
-    margin-left: 68%; }
+    margin: 0 auto;
+    width: 50%; }
     .single-post .comments-area .form-submit .submit {
       background-color: #dc4e3c;
       box-shadow: none;
