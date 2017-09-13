@@ -1355,6 +1355,32 @@ h3 {
     .blog .site-content .subscribe-mobile-container {
       display: none; } }
 
+.single-post .comments-area {
+  margin: 0 20px; }
+  .single-post .comments-area .comment-reply-title {
+    background-color: transparent;
+    color: #dc4e3c;
+    border: none;
+    border-bottom: 2px solid #014f5a;
+    width: 100%; }
+  .single-post .comments-area input {
+    width: 100%; }
+  .single-post .comments-area .form-submit {
+    margin-bottom: 20px;
+    background-color: #dc4e3c;
+    color: #fff;
+    text-decoration: none;
+    padding: 4px 10px;
+    letter-spacing: 2px;
+    margin-left: 68%; }
+    .single-post .comments-area .form-submit .submit {
+      background-color: #dc4e3c;
+      box-shadow: none;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-shadow: none; }
+
 .error404 .site-content {
   margin: 0 20px; }
   .error404 .site-content fieldset {
@@ -1440,3 +1466,9 @@ h3 {
     width: auto; }
   .post-type-archive-project .site-main .project {
     width: 29.5%; } }
+
+.archive.tag .widget-area {
+  display: none; }
+
+.archive.tag .page-title {
+  color: #dc4e3c; }
