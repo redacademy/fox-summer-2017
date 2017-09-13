@@ -1410,6 +1410,17 @@ a:hover {
           display: block;
           width: 50px;
           margin-left: -30px; }
+      .blog .site-content .content-area .nav-links,
+      .single-post .site-content .content-area .nav-links {
+        padding: 20px;
+        line-height: 1px; }
+        .blog .site-content .content-area .nav-links a,
+        .single-post .site-content .content-area .nav-links a {
+          background-color: #dc4e3c;
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          letter-spacing: 1px; }
     .blog .site-content .widget-area,
     .single-post .site-content .widget-area {
       -ms-flex-preferred-size: 30%;

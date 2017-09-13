@@ -28,7 +28,7 @@ get_header(); ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
-                                    <?php the_post_thumbnail( 'full' ); ?>
+                                    <?php the_post_thumbnail( 'custom-size' ); ?>
                             </div>
                             <?php endif; ?>
                     </header><!-- .entry-header -->
@@ -51,7 +51,10 @@ get_header(); ?>
             </article><!-- #post-## -->
 
             <?php endwhile; ?>
-            <?php the_posts_navigation(); ?>
+            <?php the_post_navigation( array(
+			'prev_text' => __( 'Previous Post' ),
+			'next_text' => __( 'Next Post' )
+		)); ?>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
