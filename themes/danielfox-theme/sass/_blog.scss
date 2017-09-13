@@ -99,7 +99,8 @@
 
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
-    .blog {
+    .blog,
+    .single-post {
         .widget-area {
             display: block;
         }
@@ -185,6 +186,17 @@
                 letter-spacing: 1px;
                 text-shadow: none;
             }
+        }
+    }
+}
+
+@media screen and (min-width: $breakpoint) {
+    .single-post {
+        .comments-area {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
         }
     }
 }
