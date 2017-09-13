@@ -471,12 +471,6 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -834,6 +828,9 @@ h3 {
     text-decoration: none;
     text-align: center; }
 
+a:hover {
+  background-color: transparent; }
+
 .site-footer {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
   display: none;
@@ -935,7 +932,7 @@ h3 {
 .other-projects,
 .speaker-description {
   width: 75%;
-  margin: auto; }
+  margin: 15px auto; }
   .front-page-about .red-button,
   .front-page-photography .red-button,
   .front-page-speaker .red-button,
@@ -1042,7 +1039,7 @@ h3 {
         font-size: 48px;
         letter-spacing: 6px;
         margin-top: 110px; }
-  .desktop-text {
+  .front-page-about .desktop-text {
     display: block; }
   .project-container {
     display: -ms-flexbox;
@@ -1064,8 +1061,14 @@ h3 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
-    .featured-in .featured-images a {
-      margin: 0px 3%; } }
+    .featured-in .featured-images {
+      width: 78%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .featured-in .featured-images a {
+        margin: 0px 3%; } }
 
 .speaker-header-box {
   -ms-flex-pack: left;
@@ -1484,9 +1487,6 @@ h3 {
       color: white;
       text-decoration: none;
       text-align: center; }
-
-.wp-image-220 {
-  width: 100%; }
 
 .post-type-archive-project .project-container .project-title {
   background: #DC4E3C; }

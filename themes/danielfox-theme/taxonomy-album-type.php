@@ -32,6 +32,7 @@
 		$postCount = 0;
 		while ( have_posts() ) : the_post(); 
 		$postIndexNext = $postIndex+1;
+		$postIndexPrev = $postIndex-1;
 		$postCount++;
 
 		?>
@@ -62,6 +63,9 @@
 									
 									<button href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
 									Next 
+									</button>
+									<button href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
+									Previous
 									</button>
 									
 									</div>

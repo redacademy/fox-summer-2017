@@ -7,3 +7,7 @@ h3 {
     justify-content: center;
     @include subscribe-btn;
 }
+
+a:hover {
+    background-color: transparent;
+}
