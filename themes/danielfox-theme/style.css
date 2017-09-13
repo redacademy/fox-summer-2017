@@ -1240,7 +1240,20 @@ a:hover {
       border: 1px solid black;
       margin: 0 auto;
       margin-bottom: 34px;
-      overflow: hidden; }
+      overflow: hidden;
+      display: -ms-flexbox;
+      display: flex; }
+      .blog .widget-area .recent-post-container .recent-post-thumbnail .wp-post-image,
+      .single-post .widget-area .recent-post-container .recent-post-thumbnail .wp-post-image {
+        max-height: 262px;
+        position: absolute;
+        max-width: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        z-index: -1;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .blog .widget-area .recent-post-container a,
     .single-post .widget-area .recent-post-container a {
       position: absolute;
