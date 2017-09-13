@@ -5,4 +5,12 @@
     .page-title {
         color: $color__accent;
     }
+    .entry-title {
+        text-decoration: none;
+    }
+    .entry-content {
+        p {
+            margin: 0 20px;
+        }
+    }
 }

@@ -1478,3 +1478,6 @@ h3 {
 
 .archive.tag .page-title {
   color: #dc4e3c; }
+
+.archive.tag .entry-title {
+  text-decoration: none; }
