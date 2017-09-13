@@ -22,8 +22,8 @@ get_header(); ?>
 				<div class="text-content">
 						<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
+						<span class="post-date-2"><?php red_starter_posted_on(); ?></span>
 						<div class="entry-meta">
-								<?php red_starter_posted_on(); ?>
 								<?php red_starter_entry_footer(); ?>
 						</div><!-- .entry-meta -->
 
