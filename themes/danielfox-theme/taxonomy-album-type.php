@@ -115,7 +115,6 @@
 // end while has posts
 $postIndex++;
 endwhile;
-var_dump($postCount);
 ?>
 
 <?php the_posts_navigation(); ?>
