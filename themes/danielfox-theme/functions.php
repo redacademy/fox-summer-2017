@@ -103,7 +103,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'daniel-fox-photography-modal', get_template_directory_uri() . '/build/js/photography-modal.min.js', array('jquery'), false, true );
+	// wp_enqueue_script( 'daniel-fox-photography-modal', get_template_directory_uri() . '/build/js/photography-modal.min.js', array('jquery'), false, true );
 
 	wp_enqueue_script( 'daniel-fox-menu-toggle', get_template_directory_uri() . '/build/js/menu-toggle.min.js', array('jquery'), false, true );
 

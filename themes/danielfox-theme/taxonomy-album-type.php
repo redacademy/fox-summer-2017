@@ -17,6 +17,7 @@
 
 		<?php if ( have_posts() ) : 
 			$postIndex = 1;
+			
 		?>
 
 			<header class="page-header">
@@ -26,7 +27,14 @@
 			<?php /* Start the Loop */ ?>
 	<section class="photograph-grid">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php 
+		
+		$postCount = 0;
+		while ( have_posts() ) : the_post(); 
+		$postIndexNext = $postIndex+1;
+		$postCount++;
+
+		?>
 
 			<div class="photograph-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
@@ -51,13 +59,16 @@
 										<?php the_title(); ?> 
 									</button>
 									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-									<!--<button href="#modal-<?php echo $postIndex; ?>" data-toggle="modal"></button>-->
+									
+									<button href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
+									Next 
+									</button>
+									
 									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
 						</div><!-- /.modal -->  
-  
-  
+
 				<!-- #modal 2 -->
 				<div class="modal fade" id="modal-2-<?php echo $postIndex; ?>">
 				<div class="modal-dialog modal-dialog-2">
@@ -99,7 +110,8 @@
 <?php 
 // end while has posts
 $postIndex++;
-endwhile; 
+endwhile;
+var_dump($postCount);
 ?>
 
 <?php the_posts_navigation(); ?>
