@@ -104,6 +104,8 @@ get_header(); ?>
             </section>
             <section class="contact-form">
                 <h2>Let's Connect</h2>
+                [contact-form-7 id="235" title="Contact form 1"]
+
             </section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
