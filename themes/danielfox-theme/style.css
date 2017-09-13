@@ -838,27 +838,6 @@ h3 {
   box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
   display: none;
   height: 1.35%; }
-  @media screen and (min-width: 600px) {
-    .site-footer {
-      display: -ms-flexbox;
-      display: flex;
-      height: 1.84%; }
-      .site-footer .widget-area .mc4wp-form-fields {
-        border: none;
-        height: auto;
-        overflow: visible;
-        width: auto;
-        display: -ms-flexbox;
-        display: flex; }
-        .site-footer .widget-area .mc4wp-form-fields h4 {
-          display: none; }
-        .site-footer .widget-area .mc4wp-form-fields p {
-          display: none; }
-        .site-footer .widget-area .mc4wp-form-fields .subscribe-button {
-          margin-left: 0;
-          padding: 0; }
-        .site-footer .widget-area .mc4wp-form-fields .email-input {
-          height: 36px; } }
   .site-footer .footer-left {
     -ms-flex-align: center;
         align-items: center;
@@ -871,14 +850,9 @@ h3 {
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
   .site-footer img {
+    margin: 7.5px;
     max-height: 35px;
-    max-width: 35px;
-    margin: 7.5px; }
-    @media (min-width: 600px) {
-      .site-footer img {
-        max-height: 40px;
-        max-width: 40px;
-        margin: 12.5px; } }
+    max-width: 35px; }
 
 .home .site-footer {
   display: -ms-flexbox;
@@ -887,9 +861,33 @@ h3 {
 .home .widget-area {
   display: none; }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .home .widget-area {
-    display: block; } }
+    display: block; }
+  .site-footer {
+    display: -ms-flexbox;
+    display: flex;
+    height: 1.84%; }
+    .site-footer img {
+      margin: 12.5px;
+      max-height: 40px;
+      max-width: 40px; }
+    .site-footer .widget-area .mc4wp-form-fields {
+      border: none;
+      display: -ms-flexbox;
+      display: flex;
+      height: auto;
+      overflow: visible;
+      width: auto; }
+      .site-footer .widget-area .mc4wp-form-fields h4 {
+        display: none; }
+      .site-footer .widget-area .mc4wp-form-fields p {
+        display: none; }
+      .site-footer .widget-area .mc4wp-form-fields .subscribe-button {
+        margin-left: 0;
+        padding: 0; }
+      .site-footer .widget-area .mc4wp-form-fields .email-input {
+        height: 36px; } }
 
 .about-section p {
   margin: 3rem 2.5rem; }
@@ -1516,3 +1514,6 @@ h3 {
 
 .archive.tag .entry-title {
   text-decoration: none; }
+
+.archive.tag .entry-content p {
+  margin: 0 20px; }
