@@ -20,3 +20,5 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+add_image_size( 'custom-size', 900, 300, array( 'left', 'top' ) );

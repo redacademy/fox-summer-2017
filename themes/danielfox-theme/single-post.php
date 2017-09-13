@@ -40,7 +40,10 @@ get_header(); ?>
 
 		</article><!-- #post-## -->
 
-		<?php the_post_navigation(); ?>
+		<?php the_post_navigation( array(
+			'prev_text' => __( 'Previous Post' ),
+			'next_text' => __( 'Next Post' )
+		)); ?>
 
 		<?php
 				// If comments are open or we have at least one comment, load up the comment template.

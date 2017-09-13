@@ -1258,7 +1258,20 @@ a:hover {
       border: 1px solid black;
       margin: 0 auto;
       margin-bottom: 34px;
-      overflow: hidden; }
+      overflow: hidden;
+      display: -ms-flexbox;
+      display: flex; }
+      .blog .widget-area .recent-post-container .recent-post-thumbnail .wp-post-image,
+      .single-post .widget-area .recent-post-container .recent-post-thumbnail .wp-post-image {
+        max-height: 262px;
+        position: absolute;
+        max-width: none;
+        top: 0;
+        left: 0;
+        width: auto;
+        z-index: -1;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     .blog .widget-area .recent-post-container a,
     .single-post .widget-area .recent-post-container a {
       position: absolute;
@@ -1382,38 +1395,58 @@ a:hover {
       text-align: center; }
 
 @media screen and (min-width: 600px) {
-  .blog .widget-area {
+  .blog .widget-area,
+  .single-post .widget-area {
     display: block; }
-  .blog .site-content {
+  .blog .site-content,
+  .single-post .site-content {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     margin-top: 70px; }
-    .blog .site-content .content-area {
+    .blog .site-content .content-area,
+    .single-post .site-content .content-area {
       -ms-flex-preferred-size: 70%;
           flex-basis: 70%; }
-      .blog .site-content .content-area .post-date {
+      .blog .site-content .content-area .post-date,
+      .single-post .site-content .content-area .post-date {
         display: none; }
-      .blog .site-content .content-area .entry-content a {
+      .blog .site-content .content-area .entry-content a,
+      .single-post .site-content .content-area .entry-content a {
         color: #dc4e3c;
         text-decoration: underline;
         letter-spacing: 1px;
         display: inline;
         background-color: transparent; }
-      .blog .site-content .content-area .blog-photo {
+      .blog .site-content .content-area .blog-photo,
+      .single-post .site-content .content-area .blog-photo {
         display: -ms-flexbox;
         display: flex; }
-        .blog .site-content .content-area .blog-photo .icon-container {
+        .blog .site-content .content-area .blog-photo .icon-container,
+        .single-post .site-content .content-area .blog-photo .icon-container {
           display: block;
           width: 50px;
           margin-left: -30px; }
-    .blog .site-content .widget-area {
+      .blog .site-content .content-area .nav-links,
+      .single-post .site-content .content-area .nav-links {
+        padding: 20px;
+        line-height: 1px; }
+        .blog .site-content .content-area .nav-links a,
+        .single-post .site-content .content-area .nav-links a {
+          background-color: #dc4e3c;
+          color: #fff;
+          text-decoration: none;
+          padding: 20px;
+          letter-spacing: 1px; }
+    .blog .site-content .widget-area,
+    .single-post .site-content .widget-area {
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%;
       margin-left: auto;
       margin-right: auto; }
-      .blog .site-content .widget-area .widget-title {
+      .blog .site-content .widget-area .widget-title,
+      .single-post .site-content .widget-area .widget-title {
         text-align: center;
         border-bottom: 1px solid #014f5a;
         width: 80%;
@@ -1421,9 +1454,11 @@ a:hover {
         font-size: 22px;
         padding-bottom: 10px;
         margin-bottom: 10px; }
-    .blog .site-content .text-content {
+    .blog .site-content .text-content,
+    .single-post .site-content .text-content {
       border: 0; }
-    .blog .site-content .subscribe-mobile-container {
+    .blog .site-content .subscribe-mobile-container,
+    .single-post .site-content .subscribe-mobile-container {
       display: none; } }
 
 .single-post .text-content {
@@ -1455,6 +1490,16 @@ a:hover {
       font-size: 18px;
       letter-spacing: 1px;
       text-shadow: none; }
+
+@media screen and (min-width: 600px) {
+  .single-post .comments-area {
+    width: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center; } }
 
 .error404 .site-content {
   margin: 0 20px; }
