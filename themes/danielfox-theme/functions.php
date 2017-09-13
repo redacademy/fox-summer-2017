@@ -109,6 +109,9 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
+	wp_enqueue_script( 'daniel-fox-bootstrap-modal', get_template_directory_uri() . '/lib/bootstrap.min.js', array('jquery'), false, true );
+	wp_enqueue_style( 'daniel-fox-bootstrap-modal', get_template_directory_uri() . '/lib/bootstrap.css' );
+
 function get_image_src( $object, $field_name, $request ) {
     $feat_img_array = wp_get_attachment_image_src($object['featured_media'], 'thumbnail', true);
     return $feat_img_array[0];
