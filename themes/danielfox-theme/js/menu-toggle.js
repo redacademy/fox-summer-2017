@@ -13,7 +13,7 @@ $('.nav-side .nav-toggle').on('click', function(e) {
 });
 
 // Sliding out more options for Photography in mobile sidebar
-$('#menu-item-98').on('click', function(e) {
+$('#menu-item-98 a').on('click', function(e) {
   e.preventDefault();
   $('.site-header .header-nav-bar .burger-nav .menu .sub-menu').toggleClass('sub-menu--open');
 });

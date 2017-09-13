@@ -436,6 +436,7 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
+    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -443,8 +444,7 @@ a {
       float: left;
       position: absolute;
       top: 1.5rem;
-      left: -999rem;
-      z-index: 99999; }
+      left: -999rem; }
       .main-navigation ul ul ul {
         left: -999rem;
         top: 0; }
