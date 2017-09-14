@@ -48,7 +48,7 @@ get_header(); ?>
 									<div class="modal-body">
 									<div>Title for the video</div>
 
-												<iframe width="600" height="450"
+										<iframe width="800" height="600"
 					src="https://www.youtube.com/embed/yhUCG-9s8kA">
 					</iframe>
 								<div>Video Description</div>
@@ -78,7 +78,7 @@ get_header(); ?>
 
 									<div>Title for the video</div>
 
-										<iframe width="600" height="450"
+												<iframe width="800" height="600"
 										src="https://www.youtube.com/embed/ArhjLa4xbNk">
 										</iframe>
 
@@ -108,7 +108,7 @@ get_header(); ?>
 									<div class="modal-body">
 									<div>Title for the video</div>
 
-										<iframe width="600" height="450"
+										<iframe width="800" height="600"
 										src="https://www.youtube.com/embed/Dhas9OEc1Lk">
 										</iframe>
 										<div>Video Description</div>
