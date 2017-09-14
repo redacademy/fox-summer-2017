@@ -4,8 +4,15 @@
     .widget-area {
         display: none;
     }
-    .icon-container {
+    .icon-container-desktop {
         display: none;
+    }
+    .icon-container-mobile {
+        text-align: center;
+        p {
+            display: inline;
+            color: $color__accent;
+        }
     }
     .site-footer {
         display: none;
@@ -113,6 +120,9 @@
                 .post-date {
                     display: none;
                 }
+                .icon-container-mobile {
+                    display: none;
+                }
                 .entry-content a {
                     color: $color__accent;
                     text-decoration: underline;
@@ -122,7 +132,7 @@
                 }
                 .blog-photo {
                     display: flex;
-                    .icon-container {
+                    .icon-container-desktop {
                         display: block;
                         width: 50px;
                         margin-left: -30px;

@@ -823,6 +823,10 @@ object {
 .gallery-caption {
   display: block; }
 
+body {
+  font-family: "Roboto";
+  color: #404040; }
+
 h2 {
   color: #dc4e3c; }
 
@@ -1320,9 +1324,17 @@ a:hover {
 .single-post .widget-area {
   display: none; }
 
-.blog .icon-container,
-.single-post .icon-container {
+.blog .icon-container-desktop,
+.single-post .icon-container-desktop {
   display: none; }
+
+.blog .icon-container-mobile,
+.single-post .icon-container-mobile {
+  text-align: center; }
+  .blog .icon-container-mobile p,
+  .single-post .icon-container-mobile p {
+    display: inline;
+    color: #dc4e3c; }
 
 .blog .site-footer,
 .single-post .site-footer {
@@ -1443,6 +1455,9 @@ a:hover {
       .blog .site-content .content-area .post-date,
       .single-post .site-content .content-area .post-date {
         display: none; }
+      .blog .site-content .content-area .icon-container-mobile,
+      .single-post .site-content .content-area .icon-container-mobile {
+        display: none; }
       .blog .site-content .content-area .entry-content a,
       .single-post .site-content .content-area .entry-content a {
         color: #dc4e3c;
@@ -1454,13 +1469,13 @@ a:hover {
       .single-post .site-content .content-area .blog-photo {
         display: -ms-flexbox;
         display: flex; }
-        .blog .site-content .content-area .blog-photo .icon-container,
-        .single-post .site-content .content-area .blog-photo .icon-container {
+        .blog .site-content .content-area .blog-photo .icon-container-desktop,
+        .single-post .site-content .content-area .blog-photo .icon-container-desktop {
           display: block;
           width: 50px;
           margin-left: -30px; }
-          .blog .site-content .content-area .blog-photo .icon-container .comment-icon,
-          .single-post .site-content .content-area .blog-photo .icon-container .comment-icon {
+          .blog .site-content .content-area .blog-photo .icon-container-desktop .comment-icon,
+          .single-post .site-content .content-area .blog-photo .icon-container-desktop .comment-icon {
             padding-bottom: 82px; }
       .blog .site-content .content-area .nav-links,
       .single-post .site-content .content-area .nav-links {

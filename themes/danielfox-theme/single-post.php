@@ -15,7 +15,7 @@ get_header(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 				<div class="blog-photo">
-                        <div class="icon-container">    
+                        <div class="icon-container-desktop">    
 						<a href="#comments"><img class="comment-icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
                             <img class="facebook-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
                             <img class="instagram-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
@@ -50,6 +50,12 @@ get_header(); ?>
 			'prev_text' => __( 'Previous Post' ),
 			'next_text' => __( 'Next Post' )
 		)); ?>
+
+		<div class="icon-container-mobile">
+			<p>Share</p>    
+			<img class="facebook-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
+            <img class="instagram-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+        </div>
 
 		<div class="comments-section" id="comments">
 		<?php
