@@ -40,6 +40,8 @@
 					<div class="header-page-name"> 
 						<?php if (is_page_template( 'front-page.php' )) {
 						echo '<p>Welcome</p>';
+						}  elseif (is_page_template( 'taxonomy-album-type.php' )) {
+						echo '<p>Blog</p>';
 						} ?>
 
 						<p><?php wp_title(''); ?></p>
