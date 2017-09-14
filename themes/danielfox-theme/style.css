@@ -714,12 +714,23 @@ a {
 .contact-form {
   width: 94.13%;
   margin: 0 auto; }
+  .contact-form p:nth-child(2),
+  .contact-form p:nth-child(3),
+  .contact-form p:nth-child(4) {
+    height: 38px; }
+  .contact-form textarea {
+    height: 125px; }
   .contact-form p {
-    text-align: center; }
+    text-align: center;
+    margin: 0 0 10px; }
+    .contact-form p .wpcf7-submit {
+      border: none; }
     .contact-form p span input {
       width: 100%; }
     .contact-form p input {
       width: 100px; }
+  .contact-form input, .contact-form textarea {
+    border: 0.5px solid #DC4E3C; }
 
 @media (min-width: 600px) {
   .contact-form {

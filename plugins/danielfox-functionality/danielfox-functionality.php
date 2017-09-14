@@ -1,13 +1,13 @@
 <?php
  /**
  *
- * @package   [SITE NAME] Daniel Fox Functionality
+ * @package   Daniel Fox Functionality
  * @author    Marie, David, Daniel
  * @license   GPL-2.0+
- * @copyright 2015 Your Name or Company
+ * @copyright Daniel Fox 2017
  *
  * @wordpress-plugin
- * Plugin Name: [SITE NAME] Daniel Fox Functionality
+ * Plugin Name: Daniel Fox Functionality
  * Description: Daniel Fox website functionality
  * Version:     1.0.0
  * Author:      Marie, David, Daniel
