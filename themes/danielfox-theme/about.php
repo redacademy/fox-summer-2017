@@ -14,7 +14,7 @@ get_header(); ?>
             
             <section class="about-section about-first-section">
 				<div class="about-image">
-					<img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/aboutme-banner.jpg" alt="Adventurous image" />
+					<img class="home-page-logo" src="<?php echo get_template_directory_uri(); ?>/assets/images/Outdoor02.jpg" alt="Adventurous image" />
 				</div>
                 <p> My name is Daniel Fox. I’m an explorer, photographer, and speaker. My belief is that nature is a powerful tool that is capable of restoring the human spirit. My overarching goal is to share my stories with others in a way that inspires them to reconnect with the wilderness. 
                 </p>
