@@ -23,7 +23,6 @@ get_header(); ?>
                             
                             <div class="blog-photo">
                                 <div class="icon-container">    
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
                                     <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
                                 </div>

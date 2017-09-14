@@ -13,6 +13,7 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+		<script src="https://use.fontawesome.com/e21b8dad43.js"></script>
 
 	<?php wp_head(); ?>
 	</head>
