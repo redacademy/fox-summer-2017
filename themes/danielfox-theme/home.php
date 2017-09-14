@@ -52,8 +52,8 @@ get_header(); ?>
 
             <?php endwhile; ?>
             <?php the_post_navigation( array(
-			'prev_text' => __( 'Previous Post' ),
-			'next_text' => __( 'Next Post' )
+			'prev_text' => __( 'Older Posts' ),
+			'next_text' => __( 'Newer Posts' )
 		)); ?>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
