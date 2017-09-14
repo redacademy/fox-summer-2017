@@ -16,7 +16,7 @@ get_header(); ?>
 				<header class="entry-header">
 				<div class="blog-photo">
                         <div class="icon-container">    
-                            <img class="comment-icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
+						<a href="#comments"><img class="comment-icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
                             <img class="facebook-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
                             <img class="instagram-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
                         </div>
@@ -51,12 +51,14 @@ get_header(); ?>
 			'next_text' => __( 'Next Post' )
 		)); ?>
 
+		<div class="comments-section" id="comments">
 		<?php
 				// If comments are open or we have at least one comment, load up the comment template.
 				if ( comments_open() || get_comments_number() ) :
 					comments_template();
 				endif;
 		?>
+		</div>
 
 		<?php endwhile; // End of the loop. ?>
 
