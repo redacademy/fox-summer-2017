@@ -52,7 +52,7 @@ function danielfox_cpt_photograph() {
 		'show_in_admin_bar'     => true,
 		'show_in_nav_menus'     => true,
 		'can_export'            => true,
-		'has_archive'           => 'photographs',		
+		'has_archive'           => '',		
 		'exclude_from_search'   => false,
 		'publicly_queryable'    => true,
 		'query_var'				=> true,

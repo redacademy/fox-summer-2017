@@ -570,8 +570,6 @@ a {
     -ms-flex-align: center;
         align-items: center; }
   .site-header .header-logo-mobile {
-    -ms-flex-align: right;
-        align-items: right;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
