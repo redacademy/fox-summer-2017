@@ -19,7 +19,7 @@ get_header(); ?>
             
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                <header class="entry-header">
-                            <span class="post-date"><?php red_starter_posted_on(); ?></span>
+                            <span class="post-date"><?php danielfox_posted_on(); ?></span>
                             
                             <div class="blog-photo">
                                 <div class="icon-container">    
@@ -37,9 +37,9 @@ get_header(); ?>
 		                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
                             <?php if ( 'post' === get_post_type() ) : ?>
-                            <span class="post-date-2"><?php red_starter_posted_on(); ?></span>
+                            <span class="post-date-2"><?php danielfox_posted_on(); ?></span>
 		                    <div class="entry-meta">
-                                    <?php red_starter_entry_footer(); ?>
+                                    <?php danielfox_entry_footer(); ?>
 		                    </div><!-- .entry-meta -->
 		                    <?php endif; ?>
 
