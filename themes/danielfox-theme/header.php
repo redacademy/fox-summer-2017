@@ -37,7 +37,11 @@
 						</nav>
 
 					</div>
-					<div class="header-page-name">
+					<div class="header-page-name"> 
+						<?php if (is_page_template( 'front-page.php' )) {
+						echo '<p>Welcome</p>';
+						} ?>
+
 						<p><?php wp_title(''); ?></p>
 					</div>
 					<div class="header-logo-mobile">
