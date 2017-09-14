@@ -34,7 +34,7 @@ get_header(); ?>
                 </p>
                 </span>
                 <div class="red-button">
-                <h3><a href="#">Learn More</a></h3>
+                <h3><a href="about">Learn More</a></h3>
                 </div>
             </section>
 
@@ -52,7 +52,7 @@ get_header(); ?>
                 straightforward.
                 </p>
                  <div class="red-button">
-                <h3><a href="#">Let's Explore</a></h3>
+                <h3><a href="album-type/wildlife/">Let's Explore</a></h3>
                 </div>
             </section>
 
@@ -68,7 +68,7 @@ get_header(); ?>
                 world.
                 </p>
                  <div class="red-button">
-                <h3><a href="#">Speaker Topics</a></h3>
+                <h3><a href="speaker">Speaker Topics</a></h3>
                 </div>
             </section>
 
@@ -92,13 +92,13 @@ get_header(); ?>
                         <p>Under “The WILD Image Project,” I actively participate in a
                         number of initiatives  and use a variety of mediums to 
                         express my vision for reconnecting with nature.</p>
-                        <h3><a href="#">View Projects</a></h3>
+                        <h3><a href="projects">View Projects</a></h3>
                     </div>
                     <div class="front-page-blog">
                         <p>My blog is where I document most of my solo expeditions, 
                             and where I can share my stories of different communities 
                             I’ve become a part of during the course of my work.</p>
-                        <h3><a href="#">View Stories</a></h3>
+                        <h3><a href="blog">View Stories</a></h3>
                     </div>
                 </div>
             </section>
