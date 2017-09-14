@@ -230,14 +230,19 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: "Roboto";
+  color: #3a3a3a;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   clear: both; }
 
 h2 {
@@ -248,7 +253,10 @@ h2 {
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -268,16 +276,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -423,7 +436,7 @@ textarea {
 a {
   color: #dc4e3c; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #dc4e3c; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -835,8 +848,8 @@ object {
   display: block; }
 
 body {
-  font-family: "Roboto";
-  color: #404040; }
+  font-family: Roboto, Arial, sans-serif;
+  color: #3a3a3a; }
 
 h2 {
   color: #dc4e3c; }
