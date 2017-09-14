@@ -1171,9 +1171,20 @@ a:hover {
       min-width: 200px; } }
 
 .photograph-grid div {
-  margin: 10px; }
+  margin: 10px;
+  max-height: 500px;
+  overflow: hidden; }
+
+.taxonomy-description {
+  display: none; }
 
 @media (min-width: 600px) {
+  .taxonomy-description {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0px; }
   .photograph-grid {
     -ms-flex-align: center;
         align-items: center;
@@ -1183,9 +1194,15 @@ a:hover {
         flex-wrap: wrap;
     margin: 0px 18px; }
     .photograph-grid .photograph-grid-item {
-      -ms-flex-preferred-size: 33.333%;
-          flex-basis: 33.333%;
-      padding: 18px 18px; }
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+      margin: 1.1vw;
+      max-height: 20vw;
+      overflow: hidden;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center; }
     .photograph-grid div {
       margin: 0px; } }
 
