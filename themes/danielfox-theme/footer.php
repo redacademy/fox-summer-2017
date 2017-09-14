@@ -17,12 +17,9 @@
 						<?php dynamic_sidebar( 'subscribe-1' ); ?>
 					</div><!-- #secondary -->
 					
-
-
 				</div>
 				<div class="footer-right">
-
-
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="Daniel Fox logo" />
 
 				</div>
 

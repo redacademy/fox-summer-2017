@@ -570,6 +570,8 @@ a {
     -ms-flex-align: center;
         align-items: center; }
   .site-header .header-logo-mobile {
+    -ms-flex-align: right;
+        align-items: right;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -857,9 +859,12 @@ a:hover {
     -ms-flex: 0 1 50%;
         flex: 0 1 50%; }
   .site-footer .footer-right {
-    background-color: lightblue;
     -ms-flex: 0 1 50%;
-        flex: 0 1 50%; }
+        flex: 0 1 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
   .site-footer img {
     margin: 7.5px;
     max-height: 35px;

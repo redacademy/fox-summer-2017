@@ -9,8 +9,9 @@
         flex: 0 1 50%;
     }
     .footer-right {
-        background-color: lightblue;
         flex: 0 1 50%;
+        display: flex;
+        justify-content: flex-end;
     }
     img {
         margin: 7.5px;
