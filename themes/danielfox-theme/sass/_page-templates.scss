@@ -275,19 +275,35 @@
 .photograph-grid {
     div {
         margin: 10px;
+        max-height: 500px;
+        overflow: hidden;
     }
+}
+.taxonomy-description {
+    display: none;
 }
 
 //Styling for Photo pages [Desktop]
 @media (min-width: $breakpoint) {
+
+    .taxonomy-description {
+    display: flex;
+    justify-content: center;
+    margin:0px;
+}
+
     .photograph-grid {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
         margin: 0px 18px;
         .photograph-grid-item {
-            flex-basis: 33.333%;
-            padding: 18px 18px;
+            flex-basis: 30%;
+            margin: 1.1vw;
+            max-height: 20vw;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
         }
         div {
             margin: 0px;
