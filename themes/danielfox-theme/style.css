@@ -1009,7 +1009,7 @@ a:hover {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    border: 1px solid red;
+    border: 1px solid #dc4e3c;
     margin-bottom: 51px; }
     .other-projects .wild-image-project:before {
       content: ' ';
@@ -1041,7 +1041,7 @@ a:hover {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
-    border: 1px solid red; }
+    border: 1px solid #dc4e3c; }
     .other-projects .front-page-blog:before {
       content: ' ';
       background: url("../../assets/images/Outdoor14.jpg");
@@ -1170,7 +1170,7 @@ a:hover {
     .speaker-bottom-half .modal-container {
       min-width: 200px; } }
 
-.photograph-grid div {
+.photograph-grid .photograph-grid-item {
   margin: 10px;
   max-height: 500px;
   overflow: hidden; }
@@ -1185,6 +1185,8 @@ a:hover {
     -ms-flex-pack: center;
         justify-content: center;
     margin: 0px; }
+    .taxonomy-description p {
+      color: #dc4e3c; }
   .photograph-grid {
     -ms-flex-align: center;
         align-items: center;
@@ -1206,36 +1208,38 @@ a:hover {
     .photograph-grid div {
       margin: 0px; } }
 
+.modal-background-image {
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .modal-dialog {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  height: 100vh;
-  width: 100vw;
   -ms-flex-align: center;
-      align-items: center;
-  margin: 0px;
-  position: absolute;
-  left: 0px;
-  top: 0px; }
+      align-items: center; }
   .modal-dialog .modal-body {
-    height: 95vh;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
     position: relative; }
+    .modal-dialog .modal-body.modal-background-image {
+      height: 100vh;
+      width: 100vw; }
     .modal-dialog .modal-body .inside-pic {
       position: absolute;
       top: 5%;
       right: 5%; }
+  .modal-dialog.modal-dialog-2 .modal-2-exit-button {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 999; }
   .modal-dialog .modal-content-2 {
     background-color: rgba(255, 255, 255, 0.9);
-    border: 4px solid red;
-    border-radius: 0px;
-    height: 75%;
-    width: 75%; }
+    border: 4px solid #dc4e3c;
+    border-radius: 0px; }
     .modal-dialog .modal-content-2 .modal-body-2 {
-      height: 100%; }
+      height: 100vh;
+      width: 100vw; }
       .modal-dialog .modal-content-2 .modal-body-2 .modal-2-top-section {
         display: -ms-flexbox;
         display: flex;
