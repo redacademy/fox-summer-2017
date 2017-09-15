@@ -12,7 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="speaker-top-half">
 
-				<div class="speaker-header-image">
+				<div class="speaker-header-image" style="background:url(<?php echo CFS()->get( 'speaker_hero_image' ); ?>); ">
 
 							   
 				</div>
