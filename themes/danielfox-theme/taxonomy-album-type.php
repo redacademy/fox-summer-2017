@@ -29,7 +29,6 @@
 		$postIndexNext = $postIndex+1;
 		$postIndexPrev = $postIndex-1;
 		$postCount++;
-
 		?>
 
 			<div class="photograph-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

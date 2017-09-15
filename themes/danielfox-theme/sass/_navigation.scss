@@ -245,6 +245,8 @@ a {
 			display: flex;
 			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
 			position: absolute;
+			top: 0px; //avocado
+
 			.header-logo {
 				flex-basis: 15%;
 				img {
