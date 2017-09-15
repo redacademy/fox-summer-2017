@@ -47,19 +47,21 @@
 						<div class="modal fade" id="modal-<?php echo $postIndex; ?>">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-body">
-									<?php if ( has_post_thumbnail() ) : ?>
-										<?php the_post_thumbnail( 'full' ); ?>
-									<?php endif; ?>
+									<div class="modal-body modal-background-image" style="background:url(<?php 
+									if ( has_post_thumbnail() ) :
+									the_post_thumbnail_url( 'full' ); 
+									endif ?>); ">
+									
+								
 									<button class="inside-pic" href="#modal-2-<?php echo $postIndex; ?>" data-toggle="modal">
 										<?php the_title(); ?> 
 									</button>
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
 									
-									<button href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
+									<button class="modal-next" href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
 									Next 
 									</button>
-									<button href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
+									<button class="modal-prev" href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
 									Previous
 									</button>
 									
@@ -83,7 +85,7 @@
 								Picture details here
 							</div>
 							<div class="modal-2-exit-button">
-							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>	
+							<button type="button" class="btn btn-default modal-2-close" data-dismiss="modal">Close</button>	
 							</div>
 						</div>	
 							<div class="modal-2-picture-description">
