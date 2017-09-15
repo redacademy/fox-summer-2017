@@ -51,7 +51,9 @@ get_header(); ?>
             </article><!-- #post-## -->
 
             <?php endwhile; ?>
-            <?php posts_nav_link( ' ','Older Posts','Newer Posts'); ?>
+            <div class="blog-nav"<?php posts_nav_link( ' ',
+            '<i class="fa fa-chevron-left" aria-hidden="true"></i>Older Posts',
+            'Newer Posts<i class="fa fa-chevron-right" aria-hidden="true"></i>'); ?></div>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>

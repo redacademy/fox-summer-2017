@@ -48,7 +48,7 @@ get_header(); ?>
 		</article><!-- #post-## -->
 
 		<?php the_post_navigation( array(
-			'prev_text' => __( 'Previous Post' ),
+			'prev_text' => __( '<i class="fa fa-chevron-left" aria-hidden="true"></i>Previous Post' ),
 			'next_text' => __( 'Next Post' )
 		)); ?>
 

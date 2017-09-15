@@ -1375,7 +1375,8 @@ a:hover {
 
 .blog .text-content {
   margin: 0px 20px;
-  border-bottom: 2px solid #014f5a; }
+  border-bottom: 2px solid #014f5a;
+  padding-bottom: 40px; }
   .blog .text-content .entry-title {
     font-size: 1.5rem;
     color: #dc4e3c;
@@ -1395,11 +1396,6 @@ a:hover {
       letter-spacing: 2px;
       margin-left: 68%; }
 
-.blog .nav-links {
-  margin: 0 20px; }
-  .blog .nav-links a {
-    text-decoration: none; }
-
 .blog .entry-meta {
   font-size: 13px;
   letter-spacing: 1px; }
@@ -1409,6 +1405,14 @@ a:hover {
     text-decoration: none;
     color: #757373;
     font-size: 12px; }
+
+.blog .blog-nav {
+  color: #dc4e3c;
+  text-decoration: none;
+  padding-bottom: 20px;
+  margin: 0 20px; }
+  .blog .blog-nav .fa-chevron-right {
+    padding-left: 5px; }
 
 .blog .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;
