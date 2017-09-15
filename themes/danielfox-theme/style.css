@@ -1481,7 +1481,8 @@ a:hover {
     margin-top: 70px; }
     .blog .site-content .content-area {
       -ms-flex-preferred-size: 70%;
-          flex-basis: 70%; }
+          flex-basis: 70%;
+      margin-right: 67px; }
       .blog .site-content .content-area .post-date {
         display: none; }
       .blog .site-content .content-area .icon-container-mobile {
@@ -1767,6 +1768,9 @@ a:hover {
             padding-bottom: 108px; }
           .single-post .site-content .content-area .blog-photo .icon-container-desktop .comment-icon {
             padding-bottom: 82px; }
+          .single-post .site-content .content-area .blog-photo .icon-container-desktop .wp-post-image {
+            width: 90%;
+            max-height: 450px; }
       .single-post .site-content .content-area .nav-links {
         padding: 20px;
         line-height: 1px; }
