@@ -9,8 +9,22 @@
     }
     .icon-container-mobile {
         text-align: center;
+
+        .fa-facebook {
+            background-color: $color__accent;
+            font-size: 1.6rem;
+            color: $color__reverse;
+            border-radius: 50%;
+            padding: 9px 14px;
+        }
+        .fa-instagram {
+            background-color: $color__accent;
+            font-size: 1.6rem;
+            color: $color__reverse;
+            border-radius: 50%;
+            padding: 9px 10.5px;
+        }
         p {
-            display: inline;
             color: $color__accent;
         }
     }

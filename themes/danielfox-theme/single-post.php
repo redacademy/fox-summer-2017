@@ -52,9 +52,10 @@ get_header(); ?>
 		)); ?>
 
 		<div class="icon-container-mobile">
-			<p>Share</p>    
-			<img class="facebook-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
-            <img class="instagram-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+			<p>Share</p>   
+			<i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
+			<i class="fa fa-instagram" aria-hidden="true" alt="Instagram logo"></i>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
         </div>
 
 		<div class="comments-section" id="comments">
