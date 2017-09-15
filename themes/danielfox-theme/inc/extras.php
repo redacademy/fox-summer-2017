@@ -22,3 +22,17 @@ function danielfox_body_classes( $classes ) {
 add_filter( 'body_class', 'danielfox_body_classes' );
 
 add_image_size( 'custom-size', 900, 300, array( 'left', 'top' ) );
+
+function set_posts_per_page_for_photograph_cpt( $query ) {
+  if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'photograph' ) || $query->is_tax('album-type') ) {
+    $query->set( 'posts_per_page', '9' );
+  }
+}
+add_action( 'pre_get_posts', 'set_posts_per_page_for_photograph_cpt' );
+
+function set_posts_per_page_for_project_cpt( $query ) {
+  if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'project' ) ) {
+    $query->set( 'posts_per_page', '3' );
+  }
+}
+add_action( 'pre_get_posts', 'set_posts_per_page_for_project_cpt' );
