@@ -32,7 +32,7 @@ add_action( 'pre_get_posts', 'set_posts_per_page_for_photograph_cpt' );
 
 function set_posts_per_page_for_project_cpt( $query ) {
   if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'project' ) ) {
-    $query->set( 'posts_per_page', '3' );
+    $query->set( 'posts_per_page', '6' );
   }
 }
 add_action( 'pre_get_posts', 'set_posts_per_page_for_project_cpt' );
