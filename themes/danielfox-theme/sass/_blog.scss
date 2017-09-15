@@ -34,12 +34,13 @@
         }
         .read-more {
             margin-bottom: 20px;
+            text-align: center;
             a {
                 background-color: $color__accent;
                 color: $color__reverse;
                 text-decoration: none;
                 padding: 4px 10px;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 margin-left: 68%;
             }
         }
@@ -58,11 +59,18 @@
     }
     .blog-nav {
         color: $color__accent;
-        text-decoration: none;
         padding-bottom: 20px;
         margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        a { 
+            text-decoration: none;
+        }
         .fa-chevron-right {
             padding-left: 5px;
+        }
+        .fa-chevron-left {
+            padding-right: 5px;
         }
     }
     

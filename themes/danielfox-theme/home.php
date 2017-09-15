@@ -51,7 +51,7 @@ get_header(); ?>
             </article><!-- #post-## -->
 
             <?php endwhile; ?>
-            <div class="blog-nav"<?php posts_nav_link( ' ',
+            <div class="blog-nav"><?php posts_nav_link( ' ',
             '<i class="fa fa-chevron-left" aria-hidden="true"></i>Older Posts',
             'Newer Posts<i class="fa fa-chevron-right" aria-hidden="true"></i>'); ?></div>
         <?php else : ?>

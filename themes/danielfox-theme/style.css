@@ -1391,13 +1391,14 @@ a:hover {
   .blog .text-content .post-date-2 {
     color: #dc4e3c; }
   .blog .text-content .read-more {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
     .blog .text-content .read-more a {
       background-color: #dc4e3c;
       color: #fff;
       text-decoration: none;
       padding: 4px 10px;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       margin-left: 68%; }
 
 .blog .entry-meta {
@@ -1412,11 +1413,18 @@ a:hover {
 
 .blog .blog-nav {
   color: #dc4e3c;
-  text-decoration: none;
   padding-bottom: 20px;
-  margin: 0 20px; }
+  margin: 0 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .blog .blog-nav a {
+    text-decoration: none; }
   .blog .blog-nav .fa-chevron-right {
     padding-left: 5px; }
+  .blog .blog-nav .fa-chevron-left {
+    padding-right: 5px; }
 
 .blog .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;
