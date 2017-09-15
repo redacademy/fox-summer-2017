@@ -1638,6 +1638,8 @@ a:hover {
   .post-type-archive-project .project-container {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: 0 2%; }
