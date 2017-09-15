@@ -214,18 +214,27 @@
 @media (min-width: $breakpoint) {
 
     .about-header {
+        align-items: center;
         display: flex;
+        height: 153px;
+        h1 {
+            font-size: 48px;
+        }
     }
 
     .about-page {
         .desktop-photo-column-sections {
             flex-basis: 33.333%;
-            padding: 10px 5px;
+            padding: 1% .5%;
         }
     }
 
     .about-text-desktop {
        display: flex;
+       .about-text-desktop-section {
+            flex-basis: 33.333%;
+            padding: 1% 1.5%;
+       }
     }
 
     .desktop-photo-columns {

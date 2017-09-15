@@ -17,7 +17,7 @@ get_header(); ?>
 		 </div>
 
 		 <div class="about-text-desktop">
-			 <div class="about-text-desktop-first-second">
+			 <div class="about-text-desktop-section about-text-desktop-first-second">
                 <p> 
 					<?php echo CFS()->get( 'about_first_text' ); ?>
                 </p>
@@ -25,12 +25,12 @@ get_header(); ?>
 					<?php echo CFS()->get( 'about_second_text' ); ?>					
                 </p>
 			</div>	 
-			<div class="about-text-desktop-third">
+			<div class="about-text-desktop-section about-text-desktop-third">
 				<p>
 					<?php echo CFS()->get( 'about_third_text' ); ?>					
                 </p>
 			</div>	
-			 <div class="about-text-desktop-fourth-fifth">
+			 <div class="about-text-desktop-section about-text-desktop-fourth-fifth">
                 <p>
 					<?php echo CFS()->get( 'about_fourth_text' ); ?>					
                 </p>

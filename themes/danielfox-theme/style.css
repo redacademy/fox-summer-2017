@@ -1134,15 +1134,24 @@ a:hover {
 
 @media (min-width: 600px) {
   .about-header {
+    -ms-flex-align: center;
+        align-items: center;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    height: 153px; }
+    .about-header h1 {
+      font-size: 48px; }
   .about-page .desktop-photo-column-sections {
     -ms-flex-preferred-size: 33.333%;
         flex-basis: 33.333%;
-    padding: 10px 5px; }
+    padding: 1% .5%; }
   .about-text-desktop {
     display: -ms-flexbox;
     display: flex; }
+    .about-text-desktop .about-text-desktop-section {
+      -ms-flex-preferred-size: 33.333%;
+          flex-basis: 33.333%;
+      padding: 1% 1.5%; }
   .desktop-photo-columns {
     display: -ms-flexbox;
     display: flex; }
