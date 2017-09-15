@@ -332,13 +332,9 @@ hr {
   overflow-x: hidden;
   overflow-y: auto;
 }
-.modal-dialog {
-  /*position: relative;*/
-  width: 95%;
-}
+
 .modal-content {
   position: relative;
-  background-color: #ffffff;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 6px;
@@ -347,6 +343,8 @@ hr {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   outline: 0;
+  max-height: 98vh;
+  overflow: hidden;
 }
 .modal-backdrop {
   position: fixed;
@@ -404,7 +402,7 @@ hr {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 95%;
+    width: 100%;
     /*margin: 30px auto;*/
   }
   .modal-content {
