@@ -114,7 +114,6 @@ get_header(); ?>
 				</div>
 			</div>
 			<section class="contact-form">
-                <h2>Let's Connect</h2>
 				<?php dynamic_sidebar( 'contactform-1' ); ?>
             </section>
 		</main><!-- #main -->

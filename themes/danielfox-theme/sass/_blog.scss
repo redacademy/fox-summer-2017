@@ -19,6 +19,7 @@
     .text-content {
         margin: 0px 20px;
         border-bottom: 2px solid $color__underline;
+        padding-bottom: 40px;
         .entry-title {
             font-size: 1.5rem;
             color: $color__accent;
@@ -33,20 +34,15 @@
         }
         .read-more {
             margin-bottom: 20px;
+            text-align: center;
             a {
                 background-color: $color__accent;
                 color: $color__reverse;
                 text-decoration: none;
                 padding: 4px 10px;
-                letter-spacing: 2px;
+                letter-spacing: 1px;
                 margin-left: 68%;
             }
-        }
-    }
-    .nav-links {
-        margin: 0 20px;
-        a {
-            text-decoration: none;
         }
     }
     .entry-meta {
@@ -61,6 +57,23 @@
             font-size: 12px;
         }
     }
+    .blog-nav {
+        color: $color__accent;
+        padding-bottom: 20px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        a { 
+            text-decoration: none;
+        }
+        .fa-chevron-right {
+            padding-left: 5px;
+        }
+        .fa-chevron-left {
+            padding-right: 5px;
+        }
+    }
+    
     //Bottom Subscription Box:
     .subscribe-mobile-container {
         .mc4wp-form {
@@ -103,8 +116,8 @@
         .blog-photo {
             display: flex;
             .icon-container-desktop {
-                @include facebook-icon;
-                @include twitter-icon;
+                // @include facebook-icon;
+                // @include twitter-icon;
                 @include comment-icon;
                 display: block;
                 width: 50px;
@@ -112,6 +125,10 @@
                 .comment-icon {
                     padding-bottom: 82px;
                 }
+                // .jssocials-share {
+                //     display: block;  
+                //     margin: 0; // or .3em 0 to have vertical gaps between shares
+                // }
             }
         }
         .widget-area {
@@ -165,10 +182,13 @@
             }
             .text-content {
                 border: 0;
+                .jssocials-share-link 
+                { border-radius: 50%; }
             }
             .subscribe-mobile-container {
                 display: none;
             }
+            
         }
     }
 }

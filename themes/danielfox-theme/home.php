@@ -24,8 +24,8 @@ get_header(); ?>
                             <div class="blog-photo">
                                 <div class="icon-container-desktop">    
                                     <i class="fa fa-comment-o" aria-hidden="true" alt="Comment logo"></i>
-                                    <i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
-                                    <i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i>
+                                    <!-- <i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i> -->
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail( 'large' ); ?>
@@ -35,7 +35,7 @@ get_header(); ?>
 
                 <div class="text-content">
 		                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
+                            <div id="shareRoundIcons"></div>
                             <?php if ( 'post' === get_post_type() ) : ?>
                             <span class="post-date-2"><?php danielfox_posted_on(); ?></span>
 		                    <div class="entry-meta">
@@ -51,7 +51,9 @@ get_header(); ?>
             </article><!-- #post-## -->
 
             <?php endwhile; ?>
-            <?php posts_nav_link( ' ','Older Posts','Newer Posts'); ?>
+            <div class="blog-nav"><?php posts_nav_link( ' ',
+            '<i class="fa fa-chevron-left" aria-hidden="true"></i>Older Posts',
+            'Newer Posts<i class="fa fa-chevron-right" aria-hidden="true"></i>'); ?></div>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
@@ -61,4 +63,3 @@ get_header(); ?>
         </main><!-- #main -->
     </div><!-- #primary -->
 <?php get_sidebar(); ?>
-<?php get_footer(); ?>
