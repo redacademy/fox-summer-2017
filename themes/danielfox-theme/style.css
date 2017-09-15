@@ -611,7 +611,8 @@ a {
       display: -ms-flexbox;
       display: flex;
       box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
-      position: absolute; }
+      position: absolute;
+      top: 0px; }
       .site-header .main-navigation .header-logo {
         -ms-flex-preferred-size: 15%;
             flex-basis: 15%; }
@@ -848,7 +849,7 @@ body {
   font-family: Roboto, Arial, sans-serif;
   color: #3a3a3a; }
 
-h2 {
+h1, h2 {
   color: #dc4e3c; }
 
 h3 {
@@ -1115,6 +1116,42 @@ a:hover {
           justify-content: space-between; }
       .featured-in .featured-images a {
         margin: 0px 3%; } }
+
+.about-text-desktop {
+  display: none; }
+
+.about-header {
+  background: url("../../assets/images/aboutme-banner.jpg");
+  display: none;
+  margin-top: 83px;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.about-image-third-desktop, .about-image-fifth-desktop {
+  display: none; }
+
+@media (min-width: 600px) {
+  .about-header {
+    display: -ms-flexbox;
+    display: flex; }
+  .about-page .desktop-photo-column-sections {
+    -ms-flex-preferred-size: 33.333%;
+        flex-basis: 33.333%;
+    padding: 10px 5px; }
+  .about-text-desktop {
+    display: -ms-flexbox;
+    display: flex; }
+  .desktop-photo-columns {
+    display: -ms-flexbox;
+    display: flex; }
+  .about-section p {
+    display: none; }
+  .about-section .about-image-third-mobile, .about-section .about-image-fifth-mobile {
+    display: none; }
+  .about-section .about-image-third-desktop, .about-section .about-image-fifth-desktop {
+    display: block; } }
 
 .speaker-header-box {
   -ms-flex-pack: left;

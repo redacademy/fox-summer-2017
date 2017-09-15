@@ -191,6 +191,60 @@
     }
 }
 
+//Styling for About Page [MOBILE]
+
+.about-text-desktop {
+    display: none;
+}
+
+.about-header {
+    background: url("../../assets/images/aboutme-banner.jpg");
+    display: none;
+    margin-top: 83px;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-image-third-desktop, .about-image-fifth-desktop {
+    display: none;
+}
+
+//Styling for About Page [DESKTOP]
+
+@media (min-width: $breakpoint) {
+
+    .about-header {
+        display: flex;
+    }
+
+    .about-page {
+        .desktop-photo-column-sections {
+            flex-basis: 33.333%;
+            padding: 10px 5px;
+        }
+    }
+
+    .about-text-desktop {
+       display: flex;
+    }
+
+    .desktop-photo-columns {
+        display: flex;
+    }
+
+    .about-section {
+        p {
+            display: none;
+        }
+        .about-image-third-mobile, .about-image-fifth-mobile {
+            display: none;
+        }
+        .about-image-third-desktop, .about-image-fifth-desktop {
+        display: block;
+        }
+    }
+}
+
 //Styling for Speaker Page [MOBILE]
 .speaker-header-box {
     justify-content: left;
@@ -227,13 +281,6 @@
 .modal-container-3 {
         background-image: url("../../assets/Video3.png");
 }
-
-// .111, .222, .333 {
-//     width: 300px;
-//     height: 300px;
-//     background-image: url("../../assets/Video1.png");
-//     background-size: cover;
-// }
 
 //Styling for Speaker Page [DESKTOP]
 @media (min-width: $breakpoint) {
