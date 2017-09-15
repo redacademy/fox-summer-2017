@@ -46,23 +46,34 @@
 						<div class="modal fade" id="modal-<?php echo $postIndex; ?>">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-body modal-background-image" style="background:url(<?php 
+									<div class="modal-body modal-background-image" id="modal-background-image" style="background:url(<?php 
 									if ( has_post_thumbnail() ) :
 									the_post_thumbnail_url( 'full' ); 
-									endif ?>); ">
+									endif ?>);">
 									
 								
 									<button class="inside-pic" href="#modal-2-<?php echo $postIndex; ?>" data-toggle="modal">
 										<?php the_title(); ?> 
 									</button>
-									<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>
+									<!--<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>-->
 									
-									<button class="modal-next" href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
-									Next 
-									</button>
-									<button class="modal-prev" href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
-									Previous
-									</button>
+										<div class="fa fa-times modal-close" data-dismiss="modal">
+										</div>
+
+									<div class="modal-banners">
+									<div class="modal-left-banner">
+										<div class="modal-prev" href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
+										Previous
+										</div>
+									</div>
+
+									<div class="modal-right-banner">
+										<div class="modal-next" href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
+										Next 
+										</div>
+									</div>
+									</div>
+
 									
 									</div>
 								</div><!-- /.modal-content -->
