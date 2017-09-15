@@ -113,6 +113,10 @@
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
     .blog {
+        .social-media-icons {
+            background-color: blue;
+            height: 100px;
+        }
         .blog-photo {
             display: flex;
             .icon-container-desktop {
@@ -182,13 +186,20 @@
             }
             .text-content {
                 border: 0;
-                .jssocials-share-link 
-                { border-radius: 50%; }
             }
             .subscribe-mobile-container {
                 display: none;
             }
             
         }
+    }
+}
+
+.blog {
+    .social-media-container {
+        height: 100px;
+        background-color: blue;
+        .jssocials-share-link 
+        { border-radius: 50%; }
     }
 }

@@ -18,6 +18,7 @@ get_header(); ?>
                 
             
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            
 	                <header class="entry-header">
                             <!-- <span class="post-date"><?php danielfox_posted_on(); ?></span> -->
                             
@@ -34,8 +35,8 @@ get_header(); ?>
                     </header><!-- .entry-header -->
 
                 <div class="text-content">
+                    
 		                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-                            <div id="shareRoundIcons"></div>
                             <?php if ( 'post' === get_post_type() ) : ?>
                             <span class="post-date-2"><?php danielfox_posted_on(); ?></span>
 		                    <div class="entry-meta">
@@ -45,6 +46,7 @@ get_header(); ?>
 
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
+                            <div class="social-media-container" id="shareRoundIcons">adjflajdfljadlfjadf</div>
                             <span class="read-more"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
                     </div><!-- .entry-content -->
                 </div>
