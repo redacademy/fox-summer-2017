@@ -16,12 +16,13 @@ get_header(); ?>
 				<header class="entry-header">
 				<div class="blog-photo">
                         <div class="icon-container-desktop">    
-						<a href="#comments"><img class="comment-icon" src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
-                            <img class="facebook-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
-                            <img class="instagram-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+							<i class="fa fa-comment-o" aria-hidden="true" alt="Comment logo"></i>
+							<i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
+							<i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i>
                         </div>
 					<?php if ( has_post_thumbnail() ) : ?>
 							<?php the_post_thumbnail( 'large' ); ?>
+				</div>
 					<?php endif; ?>
 				</header><!-- .entry-header -->
 
@@ -52,9 +53,9 @@ get_header(); ?>
 		)); ?>
 
 		<div class="icon-container-mobile">
-			<p>Share</p>    
-			<img class="facebook-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
-            <img class="instagram-icon" src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+			<p>Share</p>   
+			<i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
+			<i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i>
         </div>
 
 		<div class="comments-section" id="comments">

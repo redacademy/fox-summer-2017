@@ -5,11 +5,6 @@
  * @package Daniel_Fox_Theme
  */?>
 
-<!--<script src="//code.jquery.com/jquery.min.js"></script>
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />-->
-<!--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
-  
-
 <?php get_header(); ?>
 
 	<div id="primary" class="content-area">

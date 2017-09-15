@@ -19,12 +19,9 @@ get_header(); ?>
 				</a>
 				<section class="speaker-description">
 					<div class="front-page-header-box speaker-header-box">
-						<h2>What I Speak About</h2>
+						<h2><?php echo CFS()->get( 'speaker_header' ); ?></h2>
 					</div>
-					<p>Through my speaking engagements, I share what personal insights and realizations I’ve collected from my own experiences, and through my interactions with the natural world.
-					<br></br>I strive for us to connect more with nature and with one another. 
-					<br></br>In a world so fast-paced and filled with endless distractions, it’s easy to get caught up in a more materialistic way of thinking. I encourage myself and the peers I share with to be aware of what’s truly valuable in life, and to use our connection with nature as a constant reminder to exist in the moment. 
-					</p>
+					<p><?php echo CFS()->get( 'speaker_first_text' ); ?></p>
 				</section>
 			</div>
 			<div class="speaker-bottom-half">
@@ -48,9 +45,8 @@ get_header(); ?>
 									<div class="modal-body">
 									<div>Title for the video</div>
 
-										<iframe width="800" height="600"
-					src="https://www.youtube.com/embed/yhUCG-9s8kA">
-					</iframe>
+										<?php echo CFS()->get( 'speaker_first_iframe' ); ?>
+
 								<div>Video Description</div>
 									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>							
 									
@@ -78,9 +74,7 @@ get_header(); ?>
 
 									<div>Title for the video</div>
 
-												<iframe width="800" height="600"
-										src="https://www.youtube.com/embed/ArhjLa4xbNk">
-										</iframe>
+										<?php echo CFS()->get( 'speaker_second_iframe' ); ?>
 
 									<div>Video Description</div>
 									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -108,9 +102,8 @@ get_header(); ?>
 									<div class="modal-body">
 									<div>Title for the video</div>
 
-										<iframe width="800" height="600"
-										src="https://www.youtube.com/embed/Dhas9OEc1Lk">
-										</iframe>
+										<?php echo CFS()->get( 'speaker_third_iframe' ); ?>
+
 										<div>Video Description</div>
 									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 									</div>

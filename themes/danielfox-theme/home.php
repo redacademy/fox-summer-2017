@@ -19,16 +19,16 @@ get_header(); ?>
             
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	                <header class="entry-header">
-                            <span class="post-date"><?php danielfox_posted_on(); ?></span>
+                            <!-- <span class="post-date"><?php danielfox_posted_on(); ?></span> -->
                             
                             <div class="blog-photo">
-                                <div class="icon-container">    
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" alt="Comment icon" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+                                <div class="icon-container-desktop">    
+                                    <i class="fa fa-comment-o" aria-hidden="true" alt="Comment logo"></i>
+                                    <i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
+                                    <i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i>
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
-                                    <?php the_post_thumbnail( 'custom-size' ); ?>
+                                <?php the_post_thumbnail( 'large' ); ?>
                             </div>
                             <?php endif; ?>
                     </header><!-- .entry-header -->

@@ -123,6 +123,7 @@ function danielfox_scripts() {
 
 	wp_enqueue_script( 'daniel-fox-bootstrap-modal', get_template_directory_uri() . '/lib/bootstrap.js', array('jquery'), false, true );
 	wp_enqueue_style( 'daniel-fox-bootstrap-modal', get_template_directory_uri() . '/lib/bootstrap.css' );
+	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/e21b8dad43.js', array(), '4.7.0', false);
 
 function get_image_src( $object, $field_name, $request ) {
     $feat_img_array = wp_get_attachment_image_src($object['featured_media'], 'thumbnail', true);
