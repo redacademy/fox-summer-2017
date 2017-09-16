@@ -24,9 +24,9 @@ get_header(); ?>
                             
                             <div class="blog-photo">
                                 <div class="icon-container-desktop">    
-                                    <i class="fa fa-comment-o" aria-hidden="true" alt="Comment logo"></i>
-                                    <!-- <i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
-                                    <i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i> -->
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail( 'large' ); ?>
