@@ -343,7 +343,7 @@ hr {
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   outline: 0;
-  max-height: 98vh;
+  max-height: 100vh;
   overflow: hidden;
 }
 .modal-backdrop {

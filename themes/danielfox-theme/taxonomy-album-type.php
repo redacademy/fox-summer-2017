@@ -43,7 +43,7 @@
 						<?php endif; ?>
 
 
-						<div class="modal fade" id="modal-<?php echo $postIndex; ?>">
+						<div class="modal fade modal-overlay-window" id="modal-<?php echo $postIndex; ?>">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-body modal-background-image" id="modal-background-image" style="background:url(<?php 
@@ -81,7 +81,7 @@
 						</div><!-- /.modal -->  
 
 				<!-- #modal 2 -->
-				<div class="modal fade" id="modal-2-<?php echo $postIndex; ?>">
+				<div class="modal fade modal-overlay-window" id="modal-2-<?php echo $postIndex; ?>">
 				<div class="modal-dialog modal-dialog-2">
 					<div class="modal-content modal-content-2">
 					<!--<div class="modal-header modal-header-2">

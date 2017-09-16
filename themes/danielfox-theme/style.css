@@ -1265,7 +1265,11 @@ a:hover {
     .photograph-grid div {
       margin: 0px; } }
 
-#modal-1 {
+.modal-open {
+  padding-right: 0px !important; }
+
+.modal-overlay-window {
+  background-color: black;
   padding-right: 0px !important; }
 
 .modal-background-image {
@@ -1275,10 +1279,14 @@ a:hover {
 .modal-dialog {
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+  .modal-dialog .modal-content {
+    width: 100vw;
+    height: 100vh; }
   .modal-dialog .modal-left-banner, .modal-dialog .modal-right-banner {
     display: none; }
   .modal-dialog .modal-close {
@@ -1290,10 +1298,11 @@ a:hover {
     left: 3.3vw;
     z-index: 5; }
   .modal-dialog #modal-background-image {
-    height: 98vh;
-    width: 98vw;
+    height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat !important;
-    background-size: contain !important; }
+    background-size: contain !important;
+    background-position: center !important; }
     .modal-dialog #modal-background-image .modal-banners {
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1335,7 +1344,7 @@ a:hover {
       width: 10vw;
       max-width: 90px;
       background-color: white;
-      height: 98vh;
+      height: 100vh;
       opacity: 0.5;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1351,7 +1360,7 @@ a:hover {
       width: 10vw;
       max-width: 90px;
       background-color: white;
-      height: 98vh;
+      height: 100vh;
       opacity: 0.5;
       -ms-flex-pack: center;
           justify-content: center;
