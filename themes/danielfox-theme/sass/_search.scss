@@ -1,25 +1,20 @@
-.error404 {
+.search {
     .site-content {
-        margin: 0 30px;
-        h2 {
-            margin-top: 20px;
-        }
-        .search-form {
-            width: 80%;
-            border: 0;
-            margin-left: 0;
-        }
+        margin: 0 20px;
         fieldset {
             border: 0;
             margin: 0 auto;
             padding: 0;
         }
         .search-field {
+            width: 80%;
             margin: 0;
             border: 0.5px solid $color__accent;
             padding: 9px;
         }
-        
+        .search-form {
+            border: 0;
+            margin: 0;
         
         .fieldset {
             border: 0;
@@ -36,21 +31,14 @@
             font-size: 18px;
             border: none;
         }
-        .widget_recent_entries {
-            ul {
-                margin: 0;
-                li {
-                    color: $color__accent;
-                }
-                a {
-                    text-decoration: none;
-                }
-            }
+        ul {
+            margin: 0;
         }
+    }
     }
 }
 
-.error404 {
+.search {
     @media screen and (min-width: $breakpoint) {
         fieldset {
             border: 0;
