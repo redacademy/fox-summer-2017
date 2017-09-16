@@ -47,34 +47,54 @@
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-body modal-background-image" id="modal-background-image" style="background:url(<?php 
-									if ( has_post_thumbnail() ) :
-									the_post_thumbnail_url( 'full' ); 
-									endif ?>);">
+										if ( has_post_thumbnail() ) :
+										the_post_thumbnail_url( 'full' ); 
+										endif ?>);">
+										
 									
-								
-									<button class="inside-pic" href="#modal-2-<?php echo $postIndex; ?>" data-toggle="modal">
-										<?php the_title(); ?> 
-									</button>
-									<!--<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>-->
-									
-										<div class="fa fa-times modal-close" data-dismiss="modal">
+										<button class="inside-pic" href="#modal-2-<?php echo $postIndex; ?>" data-toggle="modal">
+											<?php the_title(); ?> 
+										</button>
+										<!--<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>-->
+										
+										<div class="modal-close" data-dismiss="modal">
 										</div>
 
-									<div class="modal-banners">
-									<div class="modal-left-banner">
-										<div class="modal-prev" href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
-										Previous
-										</div>
-									</div>
+										<div class="modal-banners">
+											<div class="modal-left-banner">
+												<div class="modal-prev" href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
+												Previous
+												</div>
+											</div>
 
-									<div class="modal-right-banner">
-										<div class="modal-next" href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
-										Next 
-										</div>
-									</div>
-									</div>
+											<div class="modal-right-banner">
+												<div class="modal-next" href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
+												Next 
+												</div>
+											</div>
+										</div> <!-- Close Modal-banners -->
 
-									
+										<div class="mobile-modal-description-window">
+											<div class="mobile-modal-description-window-top">
+												<div class="mobile-modal-description-toggle">
+												</div>
+												<div class="mobile-modal-description-picture-status">
+														<?php echo CFS()->get( 'availability' ); ?>
+												</div>	
+											</div>
+											<div class="mobile-modal-description-title-date">
+												<div class="mobile-modal-description-title">
+														<?php the_title(); ?> 
+												</div>
+												<div class="mobile-modal-description-date">
+													<?php the_date(); ?> 
+												</div>
+											</div>
+											<div class="mobile-modal-description-excerpt">
+												<?php echo CFS()->get( 'preview_description' ); ?>
+											</div>
+										<div> <!-- Close mobile-modal-description-window -->
+
 									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
