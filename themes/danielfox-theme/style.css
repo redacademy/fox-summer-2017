@@ -1003,7 +1003,7 @@ a:hover {
   -ms-flex-pack: center;
       justify-content: center;
   margin: auto;
-  border-bottom: 1px solid rgba(1, 79, 90, 0.3); }
+  border-bottom: 1px solid rgba(1, 79, 90, 0.5); }
 
 .featured-in {
   display: none; }
@@ -1385,7 +1385,7 @@ a:hover {
         color: #dc4e3c;
         font-size: 18px;
         letter-spacing: 1px;
-        border-bottom: 0.5px groove rgba(1, 79, 90, 0.3);
+        border-bottom: 0.5px groove rgba(1, 79, 90, 0.5);
         padding-bottom: 8px;
         width: 90%;
         margin-left: auto;
@@ -1433,7 +1433,7 @@ a:hover {
       border: 0;
       margin: 0 auto;
       color: #dc4e3c;
-      border-bottom: 2px solid rgba(1, 79, 90, 0.3);
+      border-bottom: 2px solid rgba(1, 79, 90, 0.5);
       margin-bottom: 20px;
       width: 63%; }
     .blog .widget-area .recent-post-container .recent-post-thumbnail,
@@ -1488,8 +1488,8 @@ a:hover {
 
 .blog .text-content {
   margin: 0px 20px;
-  border-bottom: 2px solid rgba(1, 79, 90, 0.3);
-  padding-bottom: 40px; }
+  border-bottom: 2px solid rgba(1, 79, 90, 0.5);
+  padding-bottom: 30px; }
   .blog .text-content .entry-title {
     font-size: 1.5rem;
     color: #dc4e3c;
@@ -1498,7 +1498,7 @@ a:hover {
     .blog .text-content .entry-title a {
       text-decoration: none; }
   .blog .text-content .post-date-2 {
-    color: #dc4e3c; }
+    display: none; }
   .blog .text-content .read-more {
     margin-bottom: 20px;
     text-align: center; }
@@ -1522,7 +1522,7 @@ a:hover {
 
 .blog .blog-nav {
   color: #dc4e3c;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: 0 20px;
   display: -ms-flexbox;
   display: flex;
@@ -1538,17 +1538,20 @@ a:hover {
 .blog .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;
   box-sizing: border-box;
-  padding: 10px 20px; }
+  padding: 20px 20px; }
   .blog .subscribe-mobile-container .mc4wp-form .subscribe-desktop {
     display: none; }
   .blog .subscribe-mobile-container .mc4wp-form h4 {
     display: none; }
   .blog .subscribe-mobile-container .mc4wp-form p {
-    color: #fff; }
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px; }
   .blog .subscribe-mobile-container .mc4wp-form .email-input {
     border-radius: 0;
-    width: 65%;
-    padding-right: 5px; }
+    width: 66%;
+    margin-right: 8px;
+    padding-top: 3px; }
   .blog .subscribe-mobile-container .mc4wp-form .subscribe-button {
     box-sizing: border-box;
     padding: 15px 0px;
@@ -1624,7 +1627,7 @@ a:hover {
       margin-right: auto; }
       .blog .site-content .widget-area .widget-title {
         text-align: center;
-        border-bottom: 1px solid rgba(1, 79, 90, 0.3);
+        border-bottom: 1px solid rgba(1, 79, 90, 0.5);
         width: 80%;
         margin: 0 auto;
         font-size: 22px;
@@ -1701,6 +1704,8 @@ a:hover {
   .post-type-archive-project .project-container {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     margin: 0 2%; }
@@ -1772,7 +1777,7 @@ a:hover {
 
 .single-post .text-content {
   margin: 0px 20px;
-  border-bottom: 2px solid rgba(1, 79, 90, 0.3); }
+  border-bottom: 2px solid rgba(1, 79, 90, 0.5); }
   .single-post .text-content .entry-title {
     font-size: 1.5rem;
     color: #dc4e3c;
@@ -1908,7 +1913,7 @@ a:hover {
       margin-right: auto; }
       .single-post .site-content .widget-area .widget-title {
         text-align: center;
-        border-bottom: 1px solid rgba(1, 79, 90, 0.3);
+        border-bottom: 1px solid rgba(1, 79, 90, 0.5);
         width: 80%;
         margin: 0 auto;
         font-size: 22px;

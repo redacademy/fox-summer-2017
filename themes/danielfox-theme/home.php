@@ -20,13 +20,13 @@ get_header(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             
 	                <header class="entry-header">
-                            <!-- <span class="post-date"><?php danielfox_posted_on(); ?></span> -->
+                            <span class="post-date"><?php danielfox_posted_on(); ?></span>
                             
                             <div class="blog-photo">
                                 <div class="icon-container-desktop">    
-                                    <i class="fa fa-comment-o" aria-hidden="true" alt="Comment logo"></i>
-                                    <!-- <i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
-                                    <i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i> -->
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                 <?php the_post_thumbnail( 'large' ); ?>
@@ -46,7 +46,7 @@ get_header(); ?>
 
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
-                            <div class="social-media-container" id="shareRoundIcons">adjflajdfljadlfjadf</div>
+                            <!-- <div class="social-media-container" id="shareRoundIcons">adjflajdfljadlfjadf</div> -->
                             <span class="read-more"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
                     </div><!-- .entry-content -->
                 </div>

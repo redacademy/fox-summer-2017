@@ -126,7 +126,7 @@ function danielfox_scripts() {
 	wp_enqueue_style( 'daniel-fox-bootstrap-modal', get_template_directory_uri() . '/lib/bootstrap.css' );
 	
 	wp_enqueue_script( 'jsSocials', get_template_directory_uri() . '/js/jsSocials.js', array('jquery'), false, true );
-	wp_enqueue_script( 'jsSocials-lib', 'https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js', array('jquery'), '1.4.0', false );
+	wp_enqueue_script( 'jsSocials-lib', 'https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.min.js', array('font-awesome'), '1.4.0', false );
 	wp_enqueue_style( 'jsSocials-style', 'https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials.css' );
 	wp_enqueue_style( 'jsSocials-flat-css', 'https://cdn.jsdelivr.net/jquery.jssocials/1.4.0/jssocials-theme-flat.css' );
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/e21b8dad43.js', array(), '4.7.0', false);

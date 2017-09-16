@@ -19,7 +19,7 @@
     .text-content {
         margin: 0px 20px;
         border-bottom: 2px solid $color__underline;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
         .entry-title {
             font-size: 1.5rem;
             color: $color__accent;
@@ -30,7 +30,7 @@
             }
         }
         .post-date-2 {
-            color: $color__accent;
+            display: none;
         }
         .read-more {
             margin-bottom: 20px;
@@ -59,7 +59,7 @@
     }
     .blog-nav {
         color: $color__accent;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
         margin: 0 20px;
         display: flex;
         justify-content: space-between;
@@ -79,7 +79,7 @@
         .mc4wp-form {
             background-color: $color__accent;
             box-sizing: border-box;
-            padding: 10px 20px;
+            padding: 20px 20px;
             .subscribe-desktop {
                 display: none;
             }
@@ -88,11 +88,14 @@
             }
             p {
                 color: $color__reverse;
+                margin: 0;
+                margin-bottom: 5px;
             }
             .email-input {
                 border-radius: 0;
-                width: 65%;
-                padding-right: 5px;
+                width: 66%;
+                margin-right: 8px;
+                padding-top: 3px;
             }
             .subscribe-button {
                 @include subscribe-btn;
