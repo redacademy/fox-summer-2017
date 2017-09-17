@@ -735,13 +735,21 @@ a {
     text-align: center;
     margin: 0 0 10px; }
     .contact-form p .wpcf7-submit {
-      border: none; }
+      background-color: #dc4e3c;
+      border: 1px solid #dc4e3c;
+      border-radius: 0;
+      box-shadow: none;
+      color: #fff;
+      font-size: 18px;
+      line-height: 22px;
+      text-shadow: none;
+      width: 142px; }
     .contact-form p span input {
       width: 100%; }
     .contact-form p input {
       width: 100px; }
   .contact-form input, .contact-form textarea {
-    border: 0.5px solid #DC4E3C; }
+    border: 0.5px solid #dc4e3c; }
 
 @media (min-width: 600px) {
   .contact-form {

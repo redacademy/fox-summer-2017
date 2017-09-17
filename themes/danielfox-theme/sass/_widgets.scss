@@ -32,7 +32,15 @@
 		text-align: center;
 		margin: 0 0 10px;
 		.wpcf7-submit {
-			border: none;
+			background-color: $color__accent;			
+			border: 1px solid $color__accent;
+			border-radius: 0;
+			box-shadow: none;
+			color: $color__reverse;
+			font-size: $base__font;
+			line-height: 22px;
+			text-shadow: none;
+			width: 142px;
 		}
 		span {
 			input {
@@ -44,7 +52,7 @@
 		}
 	}
 	input, textarea {
-		border: 0.5px solid #DC4E3C;
+		border: 0.5px solid $color__accent;
 	}
 }
 
