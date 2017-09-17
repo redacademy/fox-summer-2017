@@ -1316,11 +1316,8 @@ a:hover {
       display: flex; }
   .modal-dialog .modal-body {
     position: relative; }
-    .modal-dialog .modal-body .inside-pic {
-      display: none;
-      position: absolute;
-      top: 5%;
-      right: 13%; }
+    .modal-dialog .modal-body .desktop-modal-details {
+      display: none; }
   .modal-dialog .modal-content-2 {
     background-color: rgba(255, 255, 255, 0.9);
     border: 4px solid #dc4e3c;
@@ -1404,7 +1401,7 @@ a:hover {
     -ms-flex-align: center;
         align-items: center; }
     .modal-dialog .modal-left-banner .modal-prev {
-      background: url("../../assets/Facebook_White.svg"); }
+      background: url("../../assets/icons/exit.svg"); }
   .modal-dialog .modal-right-banner {
     display: -ms-flexbox;
     display: flex;
@@ -1420,9 +1417,43 @@ a:hover {
     -ms-flex-align: center;
         align-items: center; }
     .modal-dialog .modal-right-banner .modal-next {
-      background: url("../../assets/Facebook_White.svg"); }
-  .modal-dialog .modal-body .inside-pic {
-    display: block; } }
+      background: url("../../assets/icons/exit.svg"); }
+  .modal-dialog .modal-body .desktop-modal-details {
+    height: 150px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.85);
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 5%;
+    right: 13%; }
+  .modal-dialog .modal-body .desktop-modal-details-left {
+    -ms-flex-preferred-size: 75%;
+        flex-basis: 75%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-left: 20px;
+    color: #dc4e3c;
+    line-height: 1.8; }
+  .modal-dialog .modal-body .desktop-modal-details-right {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    border-left: 1px solid #dc4e3c;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .modal-dialog .modal-body .desktop-modal-details-right .desktop-modal-details-plus-sign {
+      background: url("../../assets/icons/exit.svg");
+      height: 30px;
+      width: 30px;
+      background-size: cover; } }
 
 @media screen and (min-width: 600px) {
   .blog .widget-area,

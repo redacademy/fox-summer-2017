@@ -416,11 +416,9 @@
     }
     .modal-body {
         position: relative;
-        .inside-pic {
+        .desktop-modal-details {
             display: none;
-            position: absolute;
-            top: 5%;
-            right: 13%;
+
         }
     } // .modal-dialog-2 {
     //     .modal-2-exit-button {
@@ -526,7 +524,7 @@
             justify-content: center;
             align-items: center;
             .modal-prev {
-                background: url("../../assets/Facebook_White.svg");
+                 background: url('../../assets/icons/exit.svg');
             }
         }
         .modal-right-banner {
@@ -540,12 +538,42 @@
             justify-content: center;
             align-items: center;
             .modal-next {
-                background: url("../../assets/Facebook_White.svg");
+               background: url('../../assets/icons/exit.svg');
             }
         }
         .modal-body {
-            .inside-pic {
-                display: block;
+            .desktop-modal-details {
+                height: 150px;
+                width: 250px;
+                background-color: rgba(255, 255, 255, 0.85);
+                display: flex;
+                position: absolute;
+                top: 5%;
+                right: 13%;
+            }
+
+            .desktop-modal-details-left {
+                flex-basis: 75%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 20px;
+                color: $color__accent;
+                line-height: 1.8;
+            }
+            .desktop-modal-details-right {
+                flex-basis: 25%;
+                border-left: 1px solid $color__accent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .desktop-modal-details-plus-sign {
+                    background: url('../../assets/icons/exit.svg');
+                    height: 30px;
+                    width: 30px;
+                    background-size: cover;
+                }
             }
         }
     }
