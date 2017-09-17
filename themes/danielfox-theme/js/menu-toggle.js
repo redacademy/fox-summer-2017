@@ -17,7 +17,6 @@ $('.nav-side .nav-toggle').on('click', function(e) {
 
   $('.mobile-modal-description-toggle').on('click', function() {
    $('#mobile-modal-details').toggleClass('mobile-modal-description-window');
-  // $(this).parent().parent().css('bottom','-250px');
 });
 
 

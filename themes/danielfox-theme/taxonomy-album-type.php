@@ -52,10 +52,24 @@
 										endif ?>);">
 										
 									
-										<button class="inside-pic" href="#modal-2-<?php echo $postIndex; ?>" data-toggle="modal">
-											<?php the_title(); ?> 
-										</button>
-										<!--<button type="button" class="btn btn-default modal-close" data-dismiss="modal">Close</button>-->
+										<div class="desktop-modal-details" >
+											<div class="desktop-modal-details-left">
+												<div>
+													<?php the_title(); ?> 
+												</div>
+												<div>
+											    	<?php echo CFS()->get('location'); ?>
+												</div>
+												<div>
+													<?php the_date(); ?>
+												</div>
+
+											</div>
+											<div class="desktop-modal-details-right">
+												<div class="desktop-modal-details-plus-sign" href="#modal-2-<?php echo $postIndex; ?>" data-toggle="modal">
+												</div>
+											</div>
+										</div>
 										
 										<div class="modal-close" data-dismiss="modal">
 										</div>
@@ -73,11 +87,6 @@
 												</div>
 											</div>
 										</div> <!-- Close Modal-banners -->
-
-										<!--<div class="mobile-modal-window-closed">
-											<div class="mobile-modal-reopen-window-button">
-											</div>
-										</div>-->
 
 										<div id="mobile-modal-details" class="mobile-modal-closed-window">
 											<div class="mobile-modal-description-window-top">
