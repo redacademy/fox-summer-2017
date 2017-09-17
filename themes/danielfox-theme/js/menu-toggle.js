@@ -12,7 +12,14 @@ $('.nav-side .nav-toggle').on('click', function(e) {
     $('.header-nav-bar').css('top', '0px');
     $('.nav-toggle').show();
   }); 
+
 });
+
+  $('.mobile-modal-description-toggle').on('click', function() {
+   $('#mobile-modal-details').toggleClass('mobile-modal-description-window');
+  // $(this).parent().parent().css('bottom','-250px');
+});
+
 
 // Sliding out more options for Photography in mobile sidebar
 $('#menu-item-98 a').on('click', function() {

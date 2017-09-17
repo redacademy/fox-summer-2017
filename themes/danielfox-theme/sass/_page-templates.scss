@@ -454,17 +454,34 @@
     }
 }
 
-//Styling for modal-description window
+//Styling for modal-description window on [Mobile]
+
+.mobile-modal-closed-window {
+    bottom: -250px;
+        height: 280px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+
+    .mobile-modal-description-picture-status {
+        display: none;
+    }
+
+    .mobile-modal-description-toggle {
+        background-color: blue;
+    }
+}
+
 .mobile-modal-description-window {
     height: 280px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     bottom: 0px;
+}
     .mobile-modal-description-window-top {
         height: 55px;
         width: 100%;
-        background-color: yellow;
             display: flex;
     flex-direction: row;
     position: relative;
@@ -476,22 +493,27 @@
             right: 50%;
         }
         .mobile-modal-description-picture-status{
+        display: block;
         position: absolute;
-    right: 5%;
+        right: 5%;
+        top: 25px;
         }
     }
     .mobile-modal-description-title-date {
         height: 55px;
         width: 100%;
-        background-color: green;
         margin: 0px 20px;
     }
     .mobile-modal-description-excerpt {
         margin: 0px 20px;
     }
-}
 
 @media (min-width: $breakpoint) {
+
+    #mobile-modal-details {
+        display: none;
+    }
+
     .modal-dialog {
         .modal-left-banner {
             display: flex;

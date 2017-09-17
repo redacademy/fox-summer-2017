@@ -1340,39 +1340,55 @@ a:hover {
   .modal-dialog .modal-button {
     display: none; }
 
+.mobile-modal-closed-window {
+  bottom: -250px;
+  height: 280px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute; }
+  .mobile-modal-closed-window .mobile-modal-description-picture-status {
+    display: none; }
+  .mobile-modal-closed-window .mobile-modal-description-toggle {
+    background-color: blue; }
+
 .mobile-modal-description-window {
   height: 280px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
   position: absolute;
   bottom: 0px; }
-  .mobile-modal-description-window .mobile-modal-description-window-top {
-    height: 55px;
-    width: 100%;
-    background-color: yellow;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-        flex-direction: row;
-    position: relative; }
-    .mobile-modal-description-window .mobile-modal-description-window-top .mobile-modal-description-toggle {
-      height: 20px;
-      width: 20px;
-      background-color: red;
-      position: absolute;
-      right: 50%; }
-    .mobile-modal-description-window .mobile-modal-description-window-top .mobile-modal-description-picture-status {
-      position: absolute;
-      right: 5%; }
-  .mobile-modal-description-window .mobile-modal-description-title-date {
-    height: 55px;
-    width: 100%;
-    background-color: green;
-    margin: 0px 20px; }
-  .mobile-modal-description-window .mobile-modal-description-excerpt {
-    margin: 0px 20px; }
+
+.mobile-modal-description-window-top {
+  height: 55px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  position: relative; }
+  .mobile-modal-description-window-top .mobile-modal-description-toggle {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    right: 50%; }
+  .mobile-modal-description-window-top .mobile-modal-description-picture-status {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 25px; }
+
+.mobile-modal-description-title-date {
+  height: 55px;
+  width: 100%;
+  margin: 0px 20px; }
+
+.mobile-modal-description-excerpt {
+  margin: 0px 20px; }
 
 @media (min-width: 600px) {
+  #mobile-modal-details {
+    display: none; }
   .modal-dialog .modal-left-banner {
     display: -ms-flexbox;
     display: flex;
