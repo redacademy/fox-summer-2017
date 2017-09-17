@@ -36,16 +36,14 @@
                     letter-spacing: 1px;
                 }
                 .subscribe-button {
-                    box-sizing: border-box;
-                    background-color: $color__accent;
+                    @include subscribe-btn;
+                    width: 136px;
                     font-size: 18px;
                     box-shadow: none;
-                    color: $color__reverse;
                     text-shadow: none;
                     border-radius: 0;
-                    letter-spacing: 2px;
-                    margin-left: 48%;
-                    padding: 7.5px 8.5px;
+                    margin-left: 40%;
+                    padding: 8px 0;
                 }
                 .subscribe-mobile {
                     display: none;

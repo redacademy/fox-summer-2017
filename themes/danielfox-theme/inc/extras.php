@@ -36,3 +36,8 @@ function set_posts_per_page_for_project_cpt( $query ) {
   }
 }
 add_action( 'pre_get_posts', 'set_posts_per_page_for_project_cpt' );
+
+function wpdocs_excerpt_more( $more ) {
+  return '... <a href="'.get_the_permalink().'" rel="nofollow" class="read-more-desktop">read more</a>';
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );

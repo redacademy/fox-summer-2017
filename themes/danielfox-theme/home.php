@@ -47,15 +47,15 @@ get_header(); ?>
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
                             <div class="social-media-container" id="share">adjflajdfljadlfjadf</div>
-                            <span class="read-more"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
+                            <span class="read-more-mobile"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
                     </div><!-- .entry-content -->
                 </div>
             </article><!-- #post-## -->
 
             <?php endwhile; ?>
             <div class="blog-nav"><?php posts_nav_link( ' ',
-            '<i class="fa fa-chevron-left" aria-hidden="true"></i>Older Posts',
-            'Newer Posts<i class="fa fa-chevron-right" aria-hidden="true"></i>'); ?></div>
+            '<div class="nav-older"><i class="fa fa-chevron-left" aria-hidden="true"></i>Older Posts</div>',
+            '<div class="nav-newer">Newer Posts<i class="fa fa-chevron-right" aria-hidden="true"></i></div>' ); ?></div>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>

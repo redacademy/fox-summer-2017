@@ -860,11 +860,11 @@ h3 {
   box-sizing: border-box;
   padding: 15px 0px;
   width: 179px;
-  color: white;
-  border: 1px solid #dc4e3c;
-  background-color: #dc4e3c; }
+  color: #fff;
+  background-color: #dc4e3c;
+  letter-spacing: 1px; }
   h3 a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     text-align: center; }
 
@@ -1494,15 +1494,23 @@ a:hover {
       .blog .widget-area .mc4wp-form .subscribe-button,
       .single-post .widget-area .mc4wp-form .subscribe-button {
         box-sizing: border-box;
+        padding: 15px 0px;
+        width: 179px;
+        color: #fff;
         background-color: #dc4e3c;
+        letter-spacing: 1px;
+        width: 136px;
         font-size: 18px;
         box-shadow: none;
-        color: #fff;
         text-shadow: none;
         border-radius: 0;
-        letter-spacing: 2px;
-        margin-left: 48%;
-        padding: 7.5px 8.5px; }
+        margin-left: 40%;
+        padding: 8px 0; }
+        .blog .widget-area .mc4wp-form .subscribe-button a,
+        .single-post .widget-area .mc4wp-form .subscribe-button a {
+          color: #fff;
+          text-decoration: none;
+          text-align: center; }
       .blog .widget-area .mc4wp-form .subscribe-mobile,
       .single-post .widget-area .mc4wp-form .subscribe-mobile {
         display: none; }
@@ -1585,16 +1593,18 @@ a:hover {
       text-decoration: none; }
   .blog .text-content .post-date-2 {
     display: none; }
-  .blog .text-content .read-more {
+  .blog .text-content .read-more-mobile {
     margin-bottom: 20px;
     text-align: center; }
-    .blog .text-content .read-more a {
+    .blog .text-content .read-more-mobile a {
       background-color: #dc4e3c;
       color: #fff;
       text-decoration: none;
       padding: 4px 10px;
       letter-spacing: 1px;
       margin-left: 68%; }
+  .blog .text-content .read-more-desktop {
+    display: none; }
 
 .blog .entry-meta {
   font-size: 13px;
@@ -1642,9 +1652,9 @@ a:hover {
     box-sizing: border-box;
     padding: 15px 0px;
     width: 179px;
-    color: white;
-    border: 1px solid #dc4e3c;
+    color: #fff;
     background-color: #dc4e3c;
+    letter-spacing: 1px;
     padding: 8px 20px;
     border-radius: 0;
     width: 30%;
@@ -1654,7 +1664,7 @@ a:hover {
     text-align: center;
     text-shadow: none; }
     .blog .subscribe-mobile-container .mc4wp-form .subscribe-button a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       text-align: center; }
 
@@ -1710,6 +1720,31 @@ a:hover {
           text-decoration: none;
           padding: 20px;
           letter-spacing: 1px; }
+      .blog .site-content .content-area .nav-older,
+      .blog .site-content .content-area .nav-newer {
+        box-sizing: border-box;
+        padding: 15px 0px;
+        width: 179px;
+        color: #fff;
+        background-color: #dc4e3c;
+        letter-spacing: 1px;
+        font-size: 18px;
+        text-align: center; }
+        .blog .site-content .content-area .nav-older a,
+        .blog .site-content .content-area .nav-newer a {
+          color: #fff;
+          text-decoration: none;
+          text-align: center; }
+        .blog .site-content .content-area .nav-older a,
+        .blog .site-content .content-area .nav-newer a {
+          text-shadow: none; }
+        .blog .site-content .content-area .nav-older .fa,
+        .blog .site-content .content-area .nav-newer .fa {
+          display: none; }
+      .blog .site-content .content-area .read-more-desktop {
+        padding-left: 0.5rem; }
+      .blog .site-content .content-area .read-more-mobile {
+        display: none; }
     .blog .site-content .widget-area {
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%;
@@ -1761,9 +1796,9 @@ a:hover {
     box-sizing: border-box;
     padding: 15px 0px;
     width: 179px;
-    color: white;
-    border: 1px solid #dc4e3c;
+    color: #fff;
     background-color: #dc4e3c;
+    letter-spacing: 1px;
     box-shadow: none;
     width: 5%;
     background-color: transparent;
@@ -1771,7 +1806,7 @@ a:hover {
     font-size: 18px;
     border: none; }
     .error404 .site-content .search-submit a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       text-align: center; }
   .error404 .site-content .widget_recent_entries ul {
@@ -1947,9 +1982,9 @@ a:hover {
     box-sizing: border-box;
     padding: 15px 0px;
     width: 179px;
-    color: white;
-    border: 1px solid #dc4e3c;
+    color: #fff;
     background-color: #dc4e3c;
+    letter-spacing: 1px;
     padding: 8px 20px;
     border-radius: 0;
     width: 30%;
@@ -1959,7 +1994,7 @@ a:hover {
     text-align: center;
     text-shadow: none; }
     .single-post .subscribe-mobile-container .mc4wp-form .subscribe-button a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       text-align: center; }
 
@@ -2070,9 +2105,9 @@ a:hover {
       box-sizing: border-box;
       padding: 15px 0px;
       width: 179px;
-      color: white;
-      border: 1px solid #dc4e3c;
+      color: #fff;
       background-color: #dc4e3c;
+      letter-spacing: 1px;
       box-shadow: none;
       display: inline;
       background-color: transparent;
@@ -2080,7 +2115,7 @@ a:hover {
       font-size: 18px;
       border: none; }
       .search .site-content .search-form .search-submit a {
-        color: white;
+        color: #fff;
         text-decoration: none;
         text-align: center; }
     .search .site-content .search-form ul {
