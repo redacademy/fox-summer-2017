@@ -22,8 +22,6 @@
         }
         .search-submit {
             @include subscribe-btn;
-            margin-top: 1rem;
-            width: 10%;
             box-shadow: none;
             display: inline;
             background-color: transparent;
@@ -45,6 +43,24 @@
             padding: 0;
             width: 50%;
             margin-left: 0;
+        }
+    }
+}
+
+
+.search-results {
+    .entry-meta {
+        display: none;
+    }
+    .entry-title a {
+        text-decoration: none;
+    }
+    .search-pagination {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        a {
+            text-decoration: none;
         }
     }
 }

@@ -1731,13 +1731,16 @@ a:hover {
     border-radius: 50%; }
 
 .error404 .site-content {
-  margin: 0 30px; }
+  margin: 0 20px; }
   .error404 .site-content h2 {
-    margin-top: 20px; }
+    margin-bottom: 10px; }
+  .error404 .site-content p {
+    margin-top: 0; }
   .error404 .site-content .search-form {
-    width: 80%;
+    width: 100%;
     border: 0;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 2rem; }
   .error404 .site-content fieldset {
     border: 0;
     margin: 0 auto;
@@ -1745,7 +1748,8 @@ a:hover {
   .error404 .site-content .search-field {
     margin: 0;
     border: 0.5px solid #dc4e3c;
-    padding: 9px; }
+    padding: 9px;
+    width: 87%; }
   .error404 .site-content .fieldset {
     border: 0;
     margin: 0; }
@@ -1756,10 +1760,8 @@ a:hover {
     color: white;
     border: 1px solid #dc4e3c;
     background-color: #dc4e3c;
-    margin-top: 1rem;
-    width: 10%;
     box-shadow: none;
-    display: inline;
+    width: 5%;
     background-color: transparent;
     color: #dc4e3c;
     font-size: 18px;
@@ -1776,11 +1778,13 @@ a:hover {
       text-decoration: none; }
 
 @media screen and (min-width: 600px) {
-  .error404 fieldset {
-    border: 0;
-    padding: 0;
-    width: 50%;
-    margin-left: 0; } }
+  .error404 .search-form {
+    width: 52%; }
+    .error404 .search-form fieldset {
+      border: 0;
+      padding: 0;
+      width: 50%;
+      margin-left: 0; } }
 
 .post-type-archive-project .project-container .project-title {
   background: #DC4E3C; }
@@ -2065,8 +2069,6 @@ a:hover {
       color: white;
       border: 1px solid #dc4e3c;
       background-color: #dc4e3c;
-      margin-top: 1rem;
-      width: 10%;
       box-shadow: none;
       display: inline;
       background-color: transparent;
@@ -2086,3 +2088,18 @@ a:hover {
     padding: 0;
     width: 50%;
     margin-left: 0; } }
+
+.search-results .entry-meta {
+  display: none; }
+
+.search-results .entry-title a {
+  text-decoration: none; }
+
+.search-results .search-pagination {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 50%; }
+  .search-results .search-pagination a {
+    text-decoration: none; }
