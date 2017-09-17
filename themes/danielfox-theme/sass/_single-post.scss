@@ -4,8 +4,6 @@
         display: none;
     }
     .icon-container-mobile {
-        @include facebook-icon;
-        @include twitter-icon;
         text-align: center;
         p {
             color: $color__accent;
@@ -134,12 +132,12 @@
                 .blog-photo {
                     display: flex;
                     .icon-container-desktop {
-                        @include facebook-icon;
-                        @include twitter-icon;
-                        @include comment-icon;
                         display: block;
                         width: 50px;
                         margin-left: -30px;
+                        .facebook-icon {
+                            margin-bottom: 21px;
+                        }
                         .comment-icon {
                             padding-bottom: 82px;
                         }

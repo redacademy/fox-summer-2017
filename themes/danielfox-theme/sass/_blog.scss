@@ -131,19 +131,25 @@
                 max-height: 450px;
             }
             .icon-container-desktop {
-                // @include facebook-icon;
-                // @include twitter-icon;
-                @include comment-icon;
                 display: block;
                 width: 50px;
                 margin-left: -30px;
+                margin-top: 12px;
+                .facebook-icon {
+                    margin-bottom: 21px;
+                }
                 .comment-icon {
                     padding-bottom: 82px;
+                    .fa-comment-o {
+                        color: $color__accent;
+                        font-size: 2.5rem;
+                        padding-bottom: 108px;
+                    }
                 }
-                // .jssocials-share {
-                //     display: block;  
-                //     margin: 0; // or .3em 0 to have vertical gaps between shares
-                // }
+                .jssocials-share {
+                    display: block;  
+                    margin: 0; // or .3em 0 to have vertical gaps between shares
+                }
             }
         }
         .widget-area {
