@@ -74,7 +74,12 @@
 											</div>
 										</div> <!-- Close Modal-banners -->
 
-										<div class="mobile-modal-description-window">
+										<!--<div class="mobile-modal-window-closed">
+											<div class="mobile-modal-reopen-window-button">
+											</div>
+										</div>-->
+
+										<div id="mobile-modal-details" class="mobile-modal-closed-window">
 											<div class="mobile-modal-description-window-top">
 												<div class="mobile-modal-description-toggle">
 												</div>
@@ -93,7 +98,9 @@
 											<div class="mobile-modal-description-excerpt">
 												<?php echo CFS()->get( 'preview_description' ); ?>
 											</div>
-										<div> <!-- Close mobile-modal-description-window -->
+										</div> <!-- Close mobile-modal-description-window -->
+
+
 
 									</div>
 								</div><!-- /.modal-content -->
