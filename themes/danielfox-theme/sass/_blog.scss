@@ -122,6 +122,11 @@
         }
         .blog-photo {
             display: flex;
+            width: 100%;
+            .wp-post-image {
+                width: 100%;
+                max-height: 450px;
+            }
             .icon-container-desktop {
                 // @include facebook-icon;
                 // @include twitter-icon;

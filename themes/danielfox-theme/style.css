@@ -1664,7 +1664,11 @@ a:hover {
     height: 100px; }
   .blog .blog-photo {
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    width: 100%; }
+    .blog .blog-photo .wp-post-image {
+      width: 100%;
+      max-height: 450px; }
     .blog .blog-photo .icon-container-desktop {
       display: block;
       width: 50px;

@@ -46,7 +46,7 @@ get_header(); ?>
 
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
-                            <!-- <div class="social-media-container" id="shareRoundIcons">adjflajdfljadlfjadf</div> -->
+                            <div class="social-media-container" id="share">adjflajdfljadlfjadf</div>
                             <span class="read-more"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
                     </div><!-- .entry-content -->
                 </div>
