@@ -46,7 +46,7 @@ get_header(); ?>
 
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
-                            <div class="social-media-container" id="share">adjflajdfljadlfjadf</div>
+                            <div class="share" data-share-title="<?php echo get_the_title(); ?>" data-share-link="<?php echo esc_url(get_the_permalink()); ?>></div>
                             <span class="read-more-mobile"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
                     </div><!-- .entry-content -->
                 </div>
@@ -65,3 +65,4 @@ get_header(); ?>
         </main><!-- #main -->
     </div><!-- #primary -->
 <?php get_sidebar(); ?>
+<?php get_footer(); ?>
