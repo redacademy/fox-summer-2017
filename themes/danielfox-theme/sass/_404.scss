@@ -1,13 +1,17 @@
 .error404 {
     .site-content {
-        margin: 0 30px;
+        margin: 0 20px;
         h2 {
-            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: 0;
         }
         .search-form {
-            width: 80%;
+            width: 100%;
             border: 0;
             margin-left: 0;
+            margin-bottom: 2rem;
         }
         fieldset {
             border: 0;
@@ -18,19 +22,16 @@
             margin: 0;
             border: 0.5px solid $color__accent;
             padding: 9px;
+            width: 87%;
         }
-        
-        
         .fieldset {
             border: 0;
             margin: 0;
         }
         .search-submit {
             @include subscribe-btn;
-            margin-top: 1rem;
-            width: 10%;
             box-shadow: none;
-            display: inline;
+            width: 5%;
             background-color: transparent;
             color: $color__accent;
             font-size: 18px;
@@ -52,11 +53,14 @@
 
 .error404 {
     @media screen and (min-width: $breakpoint) {
-        fieldset {
-            border: 0;
-            padding: 0;
-            width: 50%;
-            margin-left: 0;
+        .search-form {
+            width: 52%;
+            fieldset {
+                border: 0;
+                padding: 0;
+                width: 50%;
+                margin-left: 0;
+            }
         }
     }
 }
