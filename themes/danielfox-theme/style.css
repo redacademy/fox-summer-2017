@@ -966,7 +966,6 @@ a:hover {
 .home-hero {
   -ms-flex-align: center;
       align-items: center;
-  background-image: url("../../assets/images/Outdoor02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% 50%;
@@ -985,13 +984,11 @@ a:hover {
         font-size: 24px; }
 
 .front-page-photography-image {
-  background: url("../../assets/images/Outdoor39.jpg");
   background-size: cover;
   background-position: 50% 87%;
   height: 125px; }
 
 .front-page-speaker-image {
-  background: url("../../assets/images/Outdoor41.jpg");
   background-size: cover;
   background-position: 50% 93%;
   height: 125px; }
@@ -1047,7 +1044,6 @@ a:hover {
     margin-bottom: 51px; }
     .other-projects .wild-image-project:before {
       content: ' ';
-      background: url("../../assets/images/wild.jpg");
       background-size: cover;
       background-position: 50% 65%;
       display: block;
@@ -1079,7 +1075,6 @@ a:hover {
     width: 100%; }
     .other-projects .front-page-blog:before {
       content: ' ';
-      background: url("../../assets/images/Outdoor14.jpg");
       background-size: cover;
       background-position: 50% 25%;
       display: block;
