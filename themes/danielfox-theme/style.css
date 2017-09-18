@@ -2157,27 +2157,27 @@ a:hover {
   .search .site-content .search-form {
     border: 0;
     margin: 0; }
-    .search .site-content .search-form .fieldset {
-      border: 0;
-      margin: 0; }
-    .search .site-content .search-form .search-submit {
-      box-sizing: border-box;
-      padding: 15px 0px;
-      width: 179px;
+  .search .site-content .fieldset {
+    border: 0;
+    margin: 0; }
+  .search .site-content .search-submit {
+    box-sizing: border-box;
+    padding: 15px 0px;
+    width: 179px;
+    color: #fff;
+    background-color: #dc4e3c;
+    box-shadow: none;
+    display: inline;
+    background-color: transparent;
+    color: #dc4e3c;
+    font-size: 18px;
+    border: none; }
+    .search .site-content .search-submit a {
       color: #fff;
-      background-color: #dc4e3c;
-      box-shadow: none;
-      display: inline;
-      background-color: transparent;
-      color: #dc4e3c;
-      font-size: 18px;
-      border: none; }
-      .search .site-content .search-form .search-submit a {
-        color: #fff;
-        text-decoration: none;
-        text-align: center; }
-    .search .site-content .search-form ul {
-      margin: 0; }
+      text-decoration: none;
+      text-align: center; }
+  .search .site-content ul {
+    margin: 0; }
 
 @media screen and (min-width: 600px) {
   .search fieldset {
@@ -2193,10 +2193,19 @@ a:hover {
   text-decoration: none; }
 
 .search-results .search-pagination {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  width: 50%; }
-  .search-results .search-pagination a {
-    text-decoration: none; }
+  text-align: center; }
+
+.search-results .search-pagination > a {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  text-decoration: none; }
+  .search-results .search-pagination > a.prev.page-numbers {
+    background-image: url("../../assets/icons/left.svg");
+    background-position: left center;
+    padding-left: 20px;
+    width: 50%; }
+  .search-results .search-pagination > a.next.page-numbers {
+    background-image: url("../../assets/icons/right.svg");
+    background-position: right center;
+    padding-right: 20px;
+    width: 50%; }
