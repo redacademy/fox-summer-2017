@@ -76,13 +76,13 @@
 										<div class="modal-banners">
 											<div class="modal-left-banner">
 												<div class="modal-prev" href="#modal-<?php echo $postIndexPrev; ?>" data-toggle="modal" data-dismiss="modal">
-												Previous
+											
 												</div>
 											</div>
 
 											<div class="modal-right-banner">
 												<div class="modal-next" href="#modal-<?php echo $postIndexNext; ?>" data-toggle="modal" data-dismiss="modal">
-												Next 
+											
 												</div>
 											</div>
 										</div> <!-- Close Modal-banners -->

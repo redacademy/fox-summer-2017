@@ -326,8 +326,6 @@
             flex-basis: 50%;
             margin: 1.5rem 3rem;
             border: 2px solid $color__accent;
-            background-image: url("../../assets/images/Speaker1.jpg");
-            background-size: cover;
             max-width: 550px;
             min-height: 400px;
         }
@@ -518,7 +516,10 @@
             justify-content: center;
             align-items: center;
             .modal-prev {
-                 background: url('../../assets/icons/exit.svg');
+                background: url('../../assets/icons/left.svg');
+                background-size: contain;
+                height: 59px;
+                width: 31px;
             }
         }
         .modal-right-banner {
@@ -532,7 +533,10 @@
             justify-content: center;
             align-items: center;
             .modal-next {
-               background: url('../../assets/icons/exit.svg');
+                height: 59px;
+                width: 31px;
+                background-size: contain;
+               background: url('../../assets/icons/right.svg');
             }
         }
         .modal-body {
