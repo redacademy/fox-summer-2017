@@ -30,7 +30,7 @@
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 							<h2 class="mobile-nav-menu-home">Home</h2>
 						</a>
-						
+
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						<a href="#" class="nav-toggle">
 							</a>
@@ -38,13 +38,23 @@
 
 					</div>
 					<div class="header-page-name"> 
-						<?php if (is_page_template( 'front-page.php' )) {
-						echo '<p>Welcome</p>';
-						}  elseif (is_page_template( 'taxonomy-album-type.php' )) {
-						echo '<p>Blog</p>';
-						} ?>
+						<?php 
+						if ( is_front_page() ) {
+							echo '<p>Welcome</p>';
+						}  
+						elseif (is_tax( 'album-type' )) {
+							echo '<p>Photography</p>';
+						}
+						elseif( is_post_type_archive('project') ) {
+							echo 'Projects';
+						}
+						else  
+						{ 
+							echo '<p>' . get_the_title() . '</p>';
+						} 
 
-						<p><?php wp_title(''); ?></p>
+						?>
+						
 					</div>
 					<div class="header-logo-mobile">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
