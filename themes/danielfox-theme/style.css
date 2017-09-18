@@ -1206,6 +1206,33 @@ a:hover {
 .modal-container-3 {
   background-image: url("../../assets/Video3.png"); }
 
+.video-modal-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center; }
+  .video-modal-body .speaker-video-title {
+    height: 10vh;
+    width: 65vw;
+    padding-top: 2vh;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 4px; }
+  .video-modal-body .speaker-video-description {
+    padding-top: 2vh;
+    width: 80vw;
+    text-align: center;
+    overflow: auto;
+    height: 14vh;
+    color: white;
+    letter-spacing: 3px; }
+
+.speaker-modal-background {
+  background-color: rgba(0, 0, 0, 0.7); }
+
 @media (min-width: 600px) {
   .speaker-top-half {
     display: -ms-flexbox;
@@ -1236,7 +1263,15 @@ a:hover {
       -ms-flex-preferred-size: 34%;
           flex-basis: 34%; }
     .speaker-bottom-half .modal-container {
-      min-width: 200px; } }
+      min-width: 200px; }
+  .video-modal-body .speaker-video-title {
+    font-size: 36px;
+    width: 80vw;
+    letter-spacing: 10px; }
+  .video-modal-body .speaker-video-description {
+    padding-top: 2vh;
+    width: 90vw;
+    letter-spacing: 4px; } }
 
 .photograph-grid .photograph-grid-item {
   margin: 10px;
@@ -1277,7 +1312,7 @@ a:hover {
     .photograph-grid div {
       margin: 0px; } }
 
-.modal-open {
+.modal-open, .fade {
   padding-right: 0px !important; }
 
 .modal-overlay-window {

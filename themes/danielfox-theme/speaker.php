@@ -12,9 +12,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 			<div class="speaker-top-half">
 
-				<div class="speaker-header-image" style="background:url(<?php echo CFS()->get( 'speaker_hero_image' ); ?>); ">
-
-							   
+				<div class="speaker-header-image" style="background:url(<?php echo CFS()->get( 'speaker_hero_image' ); ?>); ">		   
 				</div>
 				</a>
 				<section class="speaker-description">
@@ -27,28 +25,23 @@ get_header(); ?>
 			<div class="speaker-bottom-half">
 				<div class="speaker-video-one speaker-vid">
 						
-						<a class="gallery-modal-link" data-toggle="modal" 
-							   data-target="#modal-1" >
-
+						<a class="gallery-modal-link" data-toggle="modal" data-target="#modal-1" >
 							   <div class="modal-container modal-container-1">
-								   
-									<!--<div class="video">	   
-									</div>-->
 							   </div>
-							 
-
 						</a>
 
-						<div class="modal fade" id="modal-1">
+
+						<div class="modal fade speaker-modal-background" id="modal-1">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-body">
-									<div>Title for the video</div>
+									<div class="modal-body video-modal-body">
+									<div class="speaker-video-title">David this needs to be a CFS!</div>
 
 										<?php echo CFS()->get( 'speaker_first_iframe' ); ?>
 
-								<div>Video Description</div>
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>							
+								<div class="speaker-video-description">David this needs to be a CFS!</div>
+										<div class="modal-close" data-dismiss="modal">
+										</div>						
 									
 									</div>
 								</div><!-- /.modal-content -->
@@ -67,24 +60,26 @@ get_header(); ?>
 							   </div>
 						</a>
 
-						<div class="modal fade" id="modal-2">
+						<div class="modal fade speaker-modal-background" id="modal-2">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-body">
+									<div class="modal-body video-modal-body">
 
-									<div>Title for the video</div>
+									<div class="speaker-video-title">David this needs to be a CFS!</div>
 
 										<?php echo CFS()->get( 'speaker_second_iframe' ); ?>
 
-									<div>Video Description</div>
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<div class="speaker-video-description">David this needs to be a CFS!</div>
+										<div class="modal-close" data-dismiss="modal">
+										</div>
 									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
 						</div><!-- /.modal -->  
-
-
 				</div>
+
+
+
 				<div class="speaker-video-three speaker-vid">
 
 						<a class="gallery-modal-link" data-toggle="modal" 
@@ -96,16 +91,17 @@ get_header(); ?>
 							 
 						</a>
 
-						<div class="modal fade" id="modal-3">
+						<div class="modal fade speaker-modal-background" id="modal-3">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-body">
-									<div>Title for the video</div>
+									<div class="modal-body video-modal-body">
+										<div class="speaker-video-title">David this needs to be a CFS!</div>
 
 										<?php echo CFS()->get( 'speaker_third_iframe' ); ?>
 
-										<div>Video Description</div>
-									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										<div class="speaker-video-description">David this needs to be a CFS!</div>
+										<div class="modal-close" data-dismiss="modal">
+										</div>
 									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
