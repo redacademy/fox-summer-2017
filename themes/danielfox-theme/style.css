@@ -1327,69 +1327,35 @@ a:hover {
     .modal-dialog .modal-body .desktop-modal-details {
       display: none; }
   .modal-dialog .modal-content-2 {
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 4px solid #dc4e3c;
-    border-radius: 0px; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
     .modal-dialog .modal-content-2 .modal-body-2 {
-      height: 80vh;
-      width: 80vw; }
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 4px solid #dc4e3c;
+      border-radius: 0px;
+      height: 71.289vh;
+      width: 86.666vw; }
       .modal-dialog .modal-content-2 .modal-body-2 .modal-2-top-section {
         display: -ms-flexbox;
         display: flex;
         height: 30%;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+        -ms-flex-direction: column;
+            flex-direction: column;
+        line-height: 1.6;
+        margin-left: 75px; }
+        .modal-dialog .modal-content-2 .modal-body-2 .modal-2-top-section .modal-2-picture-details h2 {
+          margin-bottom: 0px; }
       .modal-dialog .modal-content-2 .modal-body-2 .modal-2-picture-description {
         width: 75%;
-        margin: auto; }
+        height: 300px;
+        margin: auto;
+        overflow: auto; }
   .modal-dialog .modal-button {
     display: none; }
-
-.mobile-modal-closed-window {
-  bottom: -250px;
-  height: 280px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute; }
-  .mobile-modal-closed-window .mobile-modal-description-picture-status {
-    display: none; }
-  .mobile-modal-closed-window .mobile-modal-description-toggle {
-    background-color: blue; }
-
-.mobile-modal-description-window {
-  height: 280px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  position: absolute;
-  bottom: 0px; }
-
-.mobile-modal-description-window-top {
-  height: 55px;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  position: relative; }
-  .mobile-modal-description-window-top .mobile-modal-description-toggle {
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    position: absolute;
-    right: 50%; }
-  .mobile-modal-description-window-top .mobile-modal-description-picture-status {
-    display: block;
-    position: absolute;
-    right: 5%;
-    top: 25px; }
-
-.mobile-modal-description-title-date {
-  height: 55px;
-  width: 100%;
-  margin: 0px 20px; }
-
-.mobile-modal-description-excerpt {
-  margin: 0px 20px; }
 
 @media (min-width: 600px) {
   #mobile-modal-details {
@@ -1461,7 +1427,56 @@ a:hover {
       background: url("../../assets/icons/exit.svg");
       height: 30px;
       width: 30px;
-      background-size: cover; } }
+      background-size: cover; }
+  .modal-body-2 .modal-2-close {
+    left: auto;
+    right: 26px; } }
+
+.mobile-modal-closed-window {
+  bottom: -250px;
+  height: 280px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute; }
+  .mobile-modal-closed-window .mobile-modal-description-picture-status {
+    display: none; }
+  .mobile-modal-closed-window .mobile-modal-description-toggle {
+    background-color: blue; }
+
+.mobile-modal-description-window {
+  height: 280px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  bottom: 0px; }
+
+.mobile-modal-description-window-top {
+  height: 55px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  position: relative; }
+  .mobile-modal-description-window-top .mobile-modal-description-toggle {
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    position: absolute;
+    right: 50%; }
+  .mobile-modal-description-window-top .mobile-modal-description-picture-status {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 25px; }
+
+.mobile-modal-description-title-date {
+  height: 55px;
+  width: 100%;
+  margin: 0px 20px; }
+
+.mobile-modal-description-excerpt {
+  margin: 0px 20px; }
 
 @media screen and (min-width: 600px) {
   .blog .widget-area,

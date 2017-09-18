@@ -12,26 +12,26 @@
 
 		<?php if ( have_posts() ) : 
 			$postIndex = 1;
-			
 		?>
 
-			<header class="page-header">
-				<?php the_archive_description( '<h1 class="taxonomy-description">', '</h1>' ); ?>
-			</header><!-- .page-header -->
-			
-			<?php /* Start the Loop */ ?>
-	<section class="photograph-grid">
+		<header class="page-header">
+			<?php the_archive_description( '<h1 class="taxonomy-description">', '</h1>' ); ?>
+		</header><!-- .page-header -->
+		
+		<?php /* Start the Loop */ ?>
+		
+			<section class="photograph-grid">
 
 		<?php 
-		
 		$postCount = 0;
 		while ( have_posts() ) : the_post(); 
 		$postIndexNext = $postIndex+1;
 		$postIndexPrev = $postIndex-1;
 		$postCount++;
+		
 		?>
 
-			<div class="photograph-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div class="photograph-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 				<header class="entry-header">
 					<div class="thumbnail-wrapper">
 					
@@ -50,8 +50,7 @@
 										if ( has_post_thumbnail() ) :
 										the_post_thumbnail_url( 'full' ); 
 										endif ?>);">
-										
-									
+
 										<div class="desktop-modal-details" >
 											<div class="desktop-modal-details-left">
 												<div>
@@ -117,42 +116,43 @@
 						</div><!-- /.modal -->  
 
 				<!-- #modal 2 -->
-				<div class="modal fade modal-overlay-window" id="modal-2-<?php echo $postIndex; ?>">
+				<div class="modal modal-overlay-window modal-overlay-window-2" id="modal-2-<?php echo $postIndex; ?>">
 				<div class="modal-dialog modal-dialog-2">
-					<div class="modal-content modal-content-2">
-					<!--<div class="modal-header modal-header-2">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					</div>-->
-					<div class="modal-body modal-body-2">
-				
+					<div class="modal-content modal-content-2" id="modal-background-image" style="background:url(<?php 
+										if ( has_post_thumbnail() ) :
+										the_post_thumbnail_url( 'full' ); 
+										endif ?>);">
+
+					<div class="modal-body modal-body-2" >
+						<div class="modal-close modal-2-close" data-dismiss="modal">
+						</div>
 						<div class="modal-2-top-section">
 							<div class="modal-2-picture-details">
-								<h2><?php the_title(); ?></h2> <br>
-								Picture details here
+								<h2><?php the_title(); ?></h2>
 							</div>
-							<div class="modal-2-exit-button">
-							<button type="button" class="btn btn-default modal-2-close" data-dismiss="modal">Close</button>	
+							<div>
+								<?php echo CFS()->get('location'); ?>
+							</div>							
+							<div >
+								<?php the_date(); ?> 
 							</div>
+							<div class="mobile-modal-description-picture-status">
+									<?php echo CFS()->get( 'availability' ); ?>
+							</div>	
 						</div>	
 							<div class="modal-2-picture-description">
 								<?php the_content(); ?> 
 							</div>
 
 							
-					</div>
-					<!--<div class="modal-footer modal-footer-2">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					</div>-->
+						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->
 				</div><!-- /.modal -->  
 
-
-					
-
-				</div>
-			</header><!-- .entry-header -->
-		</div>
+			</div>
+		</header><!-- .entry-header -->
+	</div>
 
 <?php 
 // end while has posts
