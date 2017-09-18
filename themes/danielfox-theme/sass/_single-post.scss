@@ -18,7 +18,7 @@
     .nav-links > div {
         background-size: auto 100%;
         background-repeat: no-repeat;
-        margin: 0 20px;
+        margin: 0 5.07%;
         a {
             text-decoration: none;
         }
@@ -67,8 +67,9 @@
 //COMMENTS SECTION 
 .single-post {
     .comments-area {
-        margin: 0 20px;
+        margin: 0 5.07%;
         padding-bottom: 30px;
+        padding-left: 3.2%;
         .comment-reply-title {
             background-color: transparent;
             color: $color__accent;
@@ -78,6 +79,7 @@
         }
         input {
             width: 100%;
+            padding-left: 3.2%;
         }
         .form-submit {
             margin-bottom: 20px;
@@ -87,7 +89,8 @@
             padding: 4px 10px;
             letter-spacing: 2px;
             margin: 0 auto;
-            width: 50%;
+            width: 40%;
+
             .submit {
                 // @include subscribe-btn;
                 background-color: $color__accent;

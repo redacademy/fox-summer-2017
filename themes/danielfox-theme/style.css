@@ -1910,7 +1910,7 @@ a:hover {
 .single-post .nav-links > div {
   background-size: auto 100%;
   background-repeat: no-repeat;
-  margin: 0 20px; }
+  margin: 0 5.07%; }
   .single-post .nav-links > div a {
     text-decoration: none; }
   .single-post .nav-links > div.nav-previous {
@@ -1946,8 +1946,9 @@ a:hover {
     background-color: #dc4e3c; }
 
 .single-post .comments-area {
-  margin: 0 20px;
-  padding-bottom: 30px; }
+  margin: 0 5.07%;
+  padding-bottom: 30px;
+  padding-left: 3.2%; }
   .single-post .comments-area .comment-reply-title {
     background-color: transparent;
     color: #dc4e3c;
@@ -1955,7 +1956,8 @@ a:hover {
     border-bottom: 2px solid rgba(1, 79, 90, 0.5);
     width: 100%; }
   .single-post .comments-area input {
-    width: 100%; }
+    width: 100%;
+    padding-left: 3.2%; }
   .single-post .comments-area .form-submit {
     margin-bottom: 20px;
     background-color: #dc4e3c;
@@ -1964,7 +1966,7 @@ a:hover {
     padding: 4px 10px;
     letter-spacing: 2px;
     margin: 0 auto;
-    width: 50%; }
+    width: 40%; }
     .single-post .comments-area .form-submit .submit {
       background-color: #dc4e3c;
       box-shadow: none;
@@ -1997,7 +1999,7 @@ a:hover {
       width: 60%; } }
 
 .error404 .site-content {
-  margin: 0 20px; }
+  margin: 0 5.07%; }
   .error404 .site-content h2 {
     margin-bottom: 10px; }
   .error404 .site-content p {
@@ -2111,16 +2113,38 @@ a:hover {
   display: none; }
 
 .archive.tag .page-title {
-  color: #dc4e3c; }
+  color: #dc4e3c;
+  margin: 0 5.07%; }
 
-.archive.tag .entry-title {
-  text-decoration: none; }
+.archive.tag .entry-title a {
+  text-decoration: none;
+  margin: 0 5.07%; }
+
+.archive.tag .entry-meta {
+  display: none; }
 
 .archive.tag .entry-content p {
-  margin: 0 20px; }
+  margin: 0 5.07%; }
+
+.archive.tag .nav-links > div {
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin: 0 5.07%; }
+  .archive.tag .nav-links > div a {
+    text-decoration: none; }
+  .archive.tag .nav-links > div.nav-previous {
+    background-image: url("../../assets/icons/left.svg");
+    background-position: left center;
+    padding-left: 20px;
+    width: 30%; }
+  .archive.tag .nav-links > div.nav-next {
+    background-image: url("../../assets/icons/right.svg");
+    background-position: right center;
+    padding-right: 20px;
+    width: 30%; }
 
 .search .site-content {
-  margin: 0 20px; }
+  margin: 0 5.07%; }
   .search .site-content fieldset {
     border: 0;
     margin: 0 auto;
