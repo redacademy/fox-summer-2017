@@ -1771,11 +1771,14 @@ a:hover {
       .single-post .site-content .content-area .jssocials-shares {
         display: block;
         margin: 0;
-        width: 5%; }
-      .blog .site-content .content-area .jssocials-share-link,
-      .single-post .site-content .content-area .jssocials-share-link {
-        border-radius: 50%;
-        background-color: #dc4e3c; } }
+        width: 5%;
+        background-color: transparent; }
+        .blog .site-content .content-area .jssocials-shares .jssocials-share-link,
+        .single-post .site-content .content-area .jssocials-shares .jssocials-share-link {
+          border-radius: 50%;
+          background-color: #dc4e3c;
+          padding: 7px 8px;
+          font-size: 25px; } }
 
 .blog .post-date-2 {
   display: none; }
@@ -1931,6 +1934,17 @@ a:hover {
     text-decoration: none;
     color: #757373;
     font-size: 12px; }
+
+.jssocials-shares {
+  display: block;
+  margin: 0; }
+  .jssocials-shares .jssocials-share .jssocials-share-link {
+    border-radius: 50%;
+    padding: 7px 8px;
+    font-size: 25px;
+    background-color: #dc4e3c; }
+  .jssocials-shares .jssocials-share a:hover {
+    background-color: #dc4e3c; }
 
 .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;

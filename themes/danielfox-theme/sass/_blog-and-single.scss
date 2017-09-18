@@ -125,10 +125,13 @@
                     display: block;  
                     margin: 0; // or .3em 0 to have vertical gaps between shares
                     width: 5%;
-                }
-                .jssocials-share-link { 
-                    border-radius: 50%; 
-                    background-color: $color__accent;
+                    background-color: transparent;
+                    .jssocials-share-link { 
+                        border-radius: 50%; 
+                        background-color: $color__accent;
+                        padding: 7px 8px;
+                        font-size: 25px;
+                    }
                 }
             }
         }

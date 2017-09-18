@@ -47,6 +47,24 @@
             font-size: 12px;
         }
     }
+    .jssocials-shares {
+        display: block;  
+        margin: 0; // or .3em 0 to have vertical gaps between shares
+        .jssocials-share {
+            .jssocials-share-link { 
+                border-radius: 50%; 
+                padding: 7px 8px;
+                font-size: 25px;
+                background-color: $color__accent;
+            }
+            a:hover {
+                background-color: $color__accent;
+            }
+        }
+    }
+
+
+    
 
     //Bottom Subscription Box:
     .subscribe-mobile-container {
