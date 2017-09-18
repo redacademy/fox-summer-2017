@@ -44,12 +44,15 @@
             letter-spacing: 1px;
         .tags-links a::before {
             content: "#";
+            a {
+                text-decoration: none;
+                color: $color__tags;
+                font-size: 12px;
+            }
         }
-        a {
-            text-decoration: none;
-            color: $color__tags;
-            font-size: 12px;
         }
+        .jssocials-shares {
+            display: none;
         }
     }
 }
@@ -103,10 +106,6 @@
                         .comment-icon {
                             padding-bottom: 82px;
                         }
-                        .jssocials-share {
-                            display: block;  
-                            margin: 0; // or .3em 0 to have vertical gaps between shares
-                        }
                     }
                 } 
                 .text-content {
@@ -121,6 +120,15 @@
                 }
                 .subscribe-mobile-container {
                     display: none;
+                }
+                .jssocials-shares {
+                    display: block;  
+                    margin: 0; // or .3em 0 to have vertical gaps between shares
+                    width: 5%;
+                }
+                .jssocials-share-link { 
+                    border-radius: 50%; 
+                    background-color: $color__accent;
                 }
             }
         }

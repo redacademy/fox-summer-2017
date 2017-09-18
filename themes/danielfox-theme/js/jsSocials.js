@@ -1,11 +1,13 @@
 (function ($) {
-  $( ".share" ).each(function() {
+  $( ".shareRoundIcons" ).each(function() {
     var shareTitle =  $(this).data('share-title');
     var shareLink =  $(this).data('share-link');
    $( this ).jsSocials({
       url: 'http:' + shareLink,
-       text: shareTitle,
-     shares: ["twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
+      text: shareTitle,
+      showLabel: false,
+      showCount: false,
+     shares: ["facebook", "twitter"]
  });
 });
     

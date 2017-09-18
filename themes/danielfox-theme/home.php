@@ -46,7 +46,7 @@ get_header(); ?>
 
 	                <div class="entry-content">
                             <?php the_excerpt(); ?>
-                            <div class="share" data-share-title="<?php echo get_the_title(); ?>" data-share-link="<?php echo esc_url(get_the_permalink()); ?>></div>
+                            <div class="shareRoundIcons" data-share-title="<?php echo get_the_title(); ?>" data-share-link="<?php echo esc_url(get_the_permalink()); ?>></div>
                             <span class="read-more-mobile"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
                     </div><!-- .entry-content -->
                 </div>
@@ -54,8 +54,8 @@ get_header(); ?>
 
             <?php endwhile; ?>
             <div class="blog-nav"><?php posts_nav_link( ' ',
-            '<div class="nav-older"><i class="fa fa-chevron-left" aria-hidden="true"></i>Older Posts</div>',
-            '<div class="nav-newer">Newer Posts<i class="fa fa-chevron-right" aria-hidden="true"></i></div>' ); ?></div>
+            '<div class="nav-older">Older Posts</div>',
+            '<div class="nav-newer">Newer Posts</div>' ); ?></div>
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>
