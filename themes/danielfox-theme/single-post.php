@@ -48,14 +48,14 @@ get_header(); ?>
 		</article><!-- #post-## -->
 
 		<?php the_post_navigation( array(
-			'prev_text' => __( '<i class="fa fa-chevron-left" aria-hidden="true"></i>Previous Post' ),
+			'prev_text' => __( 'Previous Post' ),
 			'next_text' => __( 'Next Post' )
 		)); ?>
 
 		<div class="icon-container-mobile">
 			<p>Share</p>   
-			<i class="fa fa-facebook" aria-hidden="true" alt="Facebook logo"></i>
-			<i class="fa fa-twitter" aria-hidden="true" alt="Twitter logo"></i>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
         </div>
 
 		<div class="comments-section" id="comments">
