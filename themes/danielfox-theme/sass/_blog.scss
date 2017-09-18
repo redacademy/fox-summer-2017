@@ -101,27 +101,21 @@
         .post-date {
             display: none;
         }
-        .nav-links {
-            padding: 20px;
-            line-height: 1px;
-            a {
-                background-color: $color__accent;
-                color: $color__reverse;
-                text-decoration: none;
-                padding: 20px;
-                letter-spacing: 1px;
-            }
-        }
-        .nav-older,
-        .nav-newer {
-            @include subscribe-btn;
-            font-size: 18px;
-            text-align: center;
-            a {
+        .blog-nav {
+            display: flex;
+            justify-content: space-between;
+            .nav-older {
+                @include subscribe-btn;
+                font-size: 18px;
+                text-align: center;
                 text-shadow: none;
             }
-            .fa {
-                display: none;
+            .nav-newer {
+                @include subscribe-btn;
+                font-size: 18px;
+                text-align: center;
+                text-shadow: none;
+                padding: auto;
             }
         }
         .read-more-desktop {
