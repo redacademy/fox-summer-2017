@@ -1,4 +1,5 @@
 (function ($) {
+  $( document ).ready(function() {
   $( ".shareRoundIcons" ).each(function() {
     var shareTitle =  $(this).data('share-title');
     var shareLink =  $(this).data('share-link');
@@ -7,10 +8,13 @@
       text: shareTitle,
       showLabel: false,
       showCount: false,
-     shares: ["facebook", "twitter"]
+     shares: [{
+       share: "facebook"
+      }, { 
+       share: "twitter"
+      }]
  });
 });
     
+});
 }(jQuery));
-
-
