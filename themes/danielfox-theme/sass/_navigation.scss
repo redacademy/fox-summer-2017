@@ -178,6 +178,15 @@ a {
 				color: white;
 				margin-left: -250px;
 				transition: margin 200ms ease-in-out;
+				a{
+					text-decoration: none;
+
+					.mobile-nav-menu-home {
+						font-weight: 400;
+						font-size: 22px;
+						margin-bottom: 12px;
+					}
+				}
 			}
 			.nav-side.nav-open {
 				margin-left: 0;

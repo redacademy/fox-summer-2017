@@ -46,7 +46,7 @@
 						<div class="modal fade modal-overlay-window" id="modal-<?php echo $postIndex; ?>">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-body modal-background-image" id="modal-background-image" style="background:url(<?php 
+									<div class="modal-body modal-background-image" id="modal-background-image" style="background-image:url(<?php 
 										if ( has_post_thumbnail() ) :
 										the_post_thumbnail_url( 'full' ); 
 										endif ?>);">
@@ -118,7 +118,7 @@
 				<!-- #modal 2 -->
 				<div class="modal modal-overlay-window modal-overlay-window-2" id="modal-2-<?php echo $postIndex; ?>">
 				<div class="modal-dialog modal-dialog-2">
-					<div class="modal-content modal-content-2" id="modal-background-image" style="background:url(<?php 
+					<div class="modal-content modal-content-2" id="modal-background-image" style="background-image:url(<?php 
 										if ( has_post_thumbnail() ) :
 										the_post_thumbnail_url( 'full' ); 
 										endif ?>);">

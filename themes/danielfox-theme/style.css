@@ -558,6 +558,12 @@ a {
         color: white;
         margin-left: -250px;
         transition: margin 200ms ease-in-out; }
+        .site-header .header-nav-bar .burger-nav .nav-side a {
+          text-decoration: none; }
+          .site-header .header-nav-bar .burger-nav .nav-side a .mobile-nav-menu-home {
+            font-weight: 400;
+            font-size: 22px;
+            margin-bottom: 12px; }
       .site-header .header-nav-bar .burger-nav .nav-side.nav-open {
         margin-left: 0;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
@@ -1369,9 +1375,9 @@ a:hover {
   .modal-dialog #modal-background-image {
     height: 100vh;
     width: 100vw;
-    background-repeat: no-repeat !important;
-    background-size: contain !important;
-    background-position: center !important; }
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
     .modal-dialog #modal-background-image .modal-banners {
       -ms-flex-pack: justify;
           justify-content: space-between;
