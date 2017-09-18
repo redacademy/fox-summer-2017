@@ -8,11 +8,13 @@
       text: shareTitle,
       showLabel: false,
       showCount: false,
-     shares: ["facebook", "twitter"]
+     shares: [{
+       share: "facebook"
+      }, { 
+       share: "twitter"
+      }]
  });
 });
     
 });
 }(jQuery));
-
-

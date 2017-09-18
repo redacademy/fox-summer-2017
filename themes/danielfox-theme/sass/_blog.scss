@@ -34,6 +34,12 @@
             text-decoration: none;
             width: 50%;
         }
+        a:first-child {
+            text-align: left;
+        }
+        a:last-child {
+            text-align: right;
+        }
         a > div {
             background-size: auto 100%;
             background-repeat: no-repeat;
