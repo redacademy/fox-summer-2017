@@ -1947,8 +1947,7 @@ a:hover {
 
 .single-post .comments-area {
   margin: 0 5.07%;
-  padding-bottom: 30px;
-  padding-left: 3.2%; }
+  padding-bottom: 30px; }
   .single-post .comments-area .comment-reply-title {
     background-color: transparent;
     color: #dc4e3c;
@@ -1956,8 +1955,7 @@ a:hover {
     border-bottom: 2px solid rgba(1, 79, 90, 0.5);
     width: 100%; }
   .single-post .comments-area input {
-    width: 100%;
-    padding-left: 3.2%; }
+    width: 100%; }
   .single-post .comments-area .form-submit {
     margin-bottom: 20px;
     background-color: #dc4e3c;
@@ -1966,7 +1964,7 @@ a:hover {
     padding: 4px 10px;
     letter-spacing: 2px;
     margin: 0 auto;
-    width: 40%; }
+    width: 50%; }
     .single-post .comments-area .form-submit .submit {
       background-color: #dc4e3c;
       box-shadow: none;
