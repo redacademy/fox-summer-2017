@@ -1809,6 +1809,10 @@ a:hover {
   .blog .blog-nav a {
     text-decoration: none;
     width: 50%; }
+  .blog .blog-nav a:first-child {
+    text-align: left; }
+  .blog .blog-nav a:last-child {
+    text-align: right; }
   .blog .blog-nav a > div {
     background-size: auto 100%;
     background-repeat: no-repeat; }
