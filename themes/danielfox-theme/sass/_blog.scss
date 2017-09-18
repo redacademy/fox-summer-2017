@@ -1,34 +1,5 @@
 //MOBILE version
 .blog {
-    .widget-area {
-        display: none;
-    }
-    .icon-container-desktop {
-        display: none;
-    }
-    .site-footer {
-        display: none;
-    }
-    .entry-header {
-        text-align: center;
-        .posted-on {
-            color: $color__accent;
-            font-size: 1.2rem;
-        }
-    }
-    .text-content {
-        margin: 0px 20px;
-        border-bottom: 2px solid $color__underline;
-        padding-bottom: 30px;
-        .entry-title {
-            font-size: 1.5rem;
-            color: $color__accent;
-            margin-bottom: 0;
-            letter-spacing: 1px;
-            a {
-                text-decoration: none;
-            }
-        }
         .post-date-2 {
             display: none;
         }
@@ -48,18 +19,6 @@
             display: none;
         }
     }
-    .entry-meta {
-        font-size: 13px;
-        letter-spacing: 1px;
-        .tags-links a::before {
-            content: "#";
-        }
-        a {
-            text-decoration: none;
-            color: $color__tags;
-            font-size: 12px;
-        }
-    }
     .blog-nav {
         color: $color__accent;
         padding-bottom: 30px;
@@ -68,12 +27,6 @@
         justify-content: space-between;
         a { 
             text-decoration: none;
-        }
-        .fa-chevron-right {
-            padding-left: 5px;
-        }
-        .fa-chevron-left {
-            padding-right: 5px;
         }
     }
     
@@ -113,79 +66,25 @@
             }
         }
     }
-}
 
 
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
     .blog {
-        .social-media-icons {
-            background-color: blue;
-            height: 100px;
+        .post-date {
+            display: none;
         }
-        .blog-photo {
-            display: flex;
-            width: 100%;
-            .wp-post-image {
-                width: 100%;
-                max-height: 450px;
-            }
-            .icon-container-desktop {
-                display: block;
-                width: 50px;
-                margin-left: -30px;
-                margin-top: 12px;
-                .facebook-icon {
-                    margin-bottom: 21px;
-                }
-                .comment-icon {
-                    padding-bottom: 82px;
-                    .fa-comment-o {
-                        color: $color__accent;
-                        font-size: 2.5rem;
-                        padding-bottom: 108px;
-                    }
-                }
-                .jssocials-share {
-                    display: block;  
-                    margin: 0; // or .3em 0 to have vertical gaps between shares
-                }
+        .nav-links {
+            padding: 20px;
+            line-height: 1px;
+            a {
+                background-color: $color__accent;
+                color: $color__reverse;
+                text-decoration: none;
+                padding: 20px;
+                letter-spacing: 1px;
             }
         }
-        .widget-area {
-            display: block;
-        }
-        .site-content {
-            display: flex;
-            flex-direction: row-reverse;
-            margin-top: 70px;
-            .content-area {
-                flex-basis: 70%;
-                margin-right: 67px;
-                .post-date {
-                    display: none;
-                }
-                .icon-container-mobile {
-                    display: none;
-                }
-                .entry-content a {
-                    color: $color__accent;
-                    text-decoration: underline;
-                    letter-spacing: 1px;
-                    display: inline;
-                    background-color: transparent;
-                }
-                .nav-links {
-                    padding: 20px;
-                    line-height: 1px;
-                    a {
-                        background-color: $color__accent;
-                        color: $color__reverse;
-                        text-decoration: none;
-                        padding: 20px;
-                        letter-spacing: 1px;
-                    }
-                }
                 .nav-older,
                 .nav-newer {
                     @include subscribe-btn;
@@ -205,36 +104,14 @@
                     display: none;
                 }
             }
-            .widget-area {
-                flex-basis: 30%;
-                margin-left: auto;
-                margin-right: auto;
-                .widget-title {
-                    text-align: center;
-                    border-bottom: 1px solid $color__underline;
-                    width: 80%;
-                    margin: 0 auto;
-                    font-size: 22px;
-                    padding-bottom: 10px;
-                    margin-bottom: 10px;
-                }
-            }
-            .text-content {
-                border: 0;
-            }
-            .subscribe-mobile-container {
-                display: none;
-            }
             
         }
-    }
-}
 
-.blog {
-    .social-media-container {
-        height: 100px;
-        background-color: blue;
-        .jssocials-share-link 
-        { border-radius: 50%; }
-    }
-}
+// .blog {
+//     .social-media-container {
+//         height: 100px;
+//         background-color: blue;
+//         .jssocials-share-link 
+//         { border-radius: 50%; }
+//     }
+// }

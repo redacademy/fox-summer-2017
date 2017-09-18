@@ -1,40 +1,5 @@
 //MOBILE version
 .single-post {
-    .icon-container-desktop {
-        display: none;
-    }
-    .icon-container-mobile {
-        text-align: center;
-        p {
-            color: $color__accent;
-            margin-bottom: 0;
-        }
-    }
-    .widget-area {
-        display: none;
-    }
-    .site-footer {
-        display: none;
-    }
-    .entry-header {
-        text-align: center;
-        .posted-on {
-            color: $color__accent;
-            font-size: 1.2rem;
-        }
-    }
-    .text-content {
-        margin: 0px 20px;
-        border-bottom: 2px solid $color__underline;
-        .entry-title {
-            font-size: 1.5rem;
-            color: $color__accent;
-            margin-bottom: 0;
-            letter-spacing: 1px;
-            a {
-                text-decoration: none;
-            }
-        }
         .post-date-2 {
             color: $color__accent;
         }
@@ -53,14 +18,20 @@
     .nav-links > div {
         background-size: auto 100%;
         background-repeat: no-repeat;
-        padding-left: 20px;
-        margin: 0 20px
+        margin: 0 20px;
+        width: 40%;
         a {
             text-decoration: none;
         }
         &.nav-previous {
             background-image: url( '../../assets/icons/left.svg' );
             background-position: left center;
+            padding-left: 20px;
+        }
+        &.nav-next {
+            background-image: url( '../../assets/icons/right.svg' );
+            background-position: right center;
+            padding-right: 20px;
         }
     }
     .entry-meta {
@@ -109,7 +80,6 @@
             }
         }
     }
-}
 
 //COMMENTS SECTION 
 .single-post {
@@ -156,81 +126,25 @@
         .icon-container-mobile {
             display: none;
         }
-        .widget-area {
-            display: block;
-        }
-        .site-content {
-            display: flex;
-            flex-direction: row-reverse;
-            margin-top: 70px;
-            .content-area {
-                flex-basis: 70%;
-                .post-date {
-                    display: none;
-                }
-                .entry-content a {
-                    color: $color__accent;
-                    text-decoration: underline;
-                    letter-spacing: 1px;
-                    display: inline;
-                    background-color: transparent;
-                }
-                .blog-photo {
-                    display: flex;
-                    .icon-container-desktop {
-                        display: block;
-                        width: 50px;
-                        margin-left: -30px;
-                        .facebook-icon {
-                            margin-bottom: 21px;
-                        }
-                        .comment-icon {
-                            padding-bottom: 82px;
-                        }
-                        .wp-post-image {
-                            width: 90%;
-                            max-height: 450px;
-                        }
-                    }
-                }
-                .nav-links {
+        .nav-links {
+            padding: 20px;
+            line-height: 1px;
+                a {
+                    background-color: $color__accent;
+                    color: $color__reverse;
+                    text-decoration: none;
                     padding: 20px;
-                    line-height: 1px;
-                    a {
-                        background-color: $color__accent;
-                        color: $color__reverse;
-                        text-decoration: none;
-                        padding: 20px;
-                        letter-spacing: 1px;
+                    letter-spacing: 1px;
                     }
                 }
             }
-            .widget-area {
-                flex-basis: 30%;
-                margin-left: auto;
-                margin-right: auto;
-                .widget-title {
-                    text-align: center;
-                    border-bottom: 1px solid $color__underline;
-                    width: 80%;
-                    margin: 0 auto;
-                    font-size: 22px;
-                    padding-bottom: 10px;
-                    margin-bottom: 10px;
-                }
-            }
-            .text-content {
-                border: 0;
-            }
-            .subscribe-mobile-container {
-                display: none;
-            }
-            .comments-area {
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                margin: 0 auto;
+        .comments-area {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            .comment-respond {
+                width: 60%;
             }
         }
     }
-}
