@@ -60,7 +60,7 @@
 											    	<?php echo CFS()->get('location'); ?>
 												</div>
 												<div>
-													<?php the_date(); ?>
+													<?php echo get_the_date(); ?>
 												</div>
 
 											</div>
@@ -87,7 +87,7 @@
 											</div>
 										</div> <!-- Close Modal-banners -->
 
-										<div id="mobile-modal-details" class="mobile-modal-closed-window">
+										<div id="mobile-modal-details" class="mobile-modal-details mobile-modal-closed-window">
 											<div class="mobile-modal-description-window-top">
 												<div class="mobile-modal-description-toggle">
 												</div>
@@ -100,7 +100,7 @@
 														<?php the_title(); ?> 
 												</div>
 												<div class="mobile-modal-description-date">
-													<?php the_date(); ?> 
+													<?php echo get_the_date(); ?> 
 												</div>
 											</div>
 											<div class="mobile-modal-description-excerpt">
@@ -133,8 +133,8 @@
 							<div>
 								<?php echo CFS()->get('location'); ?>
 							</div>							
-							<div >
-								<?php the_date(); ?> 
+							<div>
+								<?php echo get_the_date(); ?> 
 							</div>
 							<div class="mobile-modal-description-picture-status">
 									<?php echo CFS()->get( 'availability' ); ?>
