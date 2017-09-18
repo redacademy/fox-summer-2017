@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <section class="home-hero">
+            <section class="home-hero" style="background-image:url(<?php echo CFS()->get( 'front_page_hero_image' ); ?>);">
                 <div class="home-hero-overlay">
                     <span><h1><?php echo CFS()->get( 'front_page_mobile_h1' ); ?></h1></span>
                     <h1><?php echo CFS()->get( 'front_page_mobiledesktop_h1' ); ?></h1>
@@ -31,7 +31,7 @@ get_header(); ?>
                 </div>
             </section>
 
-                <div class="front-page-photography-image">
+                <div class="front-page-photography-image" style="background-image:url(<?php echo CFS()->get( 'front_page_photographer_image' ); ?>);">
                    
                 </div>
             <section class="front-page-photography">
@@ -46,7 +46,7 @@ get_header(); ?>
                 </div>
             </section>
 
-                <div class="front-page-speaker-image">
+                <div class="front-page-speaker-image" style="background-image:url(<?php echo CFS()->get( 'front_page_speaker_image' ); ?>);">
                 </div>
             <section class="front-page-speaker">
                 <div class="front-page-header-box">
@@ -79,17 +79,17 @@ get_header(); ?>
                 </div>
 
                 <div class="project-container">
-                    <div class="wild-image-project">
+                    <div class="wild-image-project" style="background-image:url(<?php echo CFS()->get( 'front_page_wild_image' ); ?>);">
                         <p><?php echo CFS()->get( 'wild_image_project_text' ); ?></p>
                         <h3><a href="projects"><?php echo CFS()->get( 'front_page_projects_button' ); ?></a></h3>
                     </div>
-                    <div class="front-page-blog">
+                    <div class="front-page-blog" style="background-image:url(<?php echo CFS()->get( 'front_page_blog_image' ); ?>);">
                         <p><?php echo CFS()->get( 'front_page_blog_text' ); ?></p>
                         <h3><a href="blog"><?php echo CFS()->get( 'front_page_blog_button' ); ?></a></h3>
                     </div>
                 </div>
             </section>
-            
+
             <section class="contact-form">
                 <?php dynamic_sidebar( 'contactform-1' ); ?>
             </section>

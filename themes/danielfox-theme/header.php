@@ -22,15 +22,15 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
-				<!--<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div>-->
 				
 				<nav class="header-nav-bar"> <!-- Mobile nav header -->
 					<div class="burger-nav">
 					
 					<nav class="nav-side">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<h2 class="mobile-nav-menu-home">Home</h2>
+						</a>
+
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						<a href="#" class="nav-toggle">
 							</a>
@@ -38,13 +38,23 @@
 
 					</div>
 					<div class="header-page-name"> 
-						<?php if (is_page_template( 'front-page.php' )) {
-						echo '<p>Welcome</p>';
-						}  elseif (is_page_template( 'taxonomy-album-type.php' )) {
-						echo '<p>Blog</p>';
-						} ?>
+						<?php 
+						if ( is_front_page() ) {
+							echo '<p>Welcome</p>';
+						}  
+						elseif (is_tax( 'album-type' )) {
+							echo '<p>Photography</p>';
+						}
+						elseif( is_post_type_archive('project') ) {
+							echo 'Projects';
+						}
+						else  
+						{ 
+							echo '<p>' . get_the_title() . '</p>';
+						} 
 
-						<p><?php wp_title(''); ?></p>
+						?>
+						
 					</div>
 					<div class="header-logo-mobile">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
