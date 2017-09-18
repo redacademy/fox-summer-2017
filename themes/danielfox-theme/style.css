@@ -729,8 +729,13 @@ a {
   .contact-form p:nth-child(3),
   .contact-form p:nth-child(4) {
     height: 38px; }
+  .contact-form p:nth-child(5) {
+    margin-bottom: 0; }
+  .contact-form p:nth-child(6) {
+    line-height: 17px; }
   .contact-form textarea {
-    height: 125px; }
+    height: 125px;
+    padding-top: 6px; }
   .contact-form p {
     text-align: center;
     margin: 0 0 10px; }
@@ -742,6 +747,7 @@ a {
       color: #fff;
       font-size: 18px;
       line-height: 22px;
+      margin: 15px 0;
       text-shadow: none;
       width: 142px; }
     .contact-form p span input {
@@ -749,7 +755,16 @@ a {
     .contact-form p input {
       width: 100px; }
   .contact-form input, .contact-form textarea {
-    border: 0.5px solid #dc4e3c; }
+    border: 0.5px solid #dc4e3c;
+    border-radius: 0;
+    padding-left: 12px; }
+  .contact-form h2 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 0;
+    padding-top: 0;
+    text-align: center; }
 
 @media (min-width: 600px) {
   .contact-form {
@@ -904,7 +919,8 @@ a:hover {
 
 .home .site-footer {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 35px; }
 
 .home .widget-area {
   display: none; }
@@ -938,7 +954,7 @@ a:hover {
         height: 36px; } }
 
 .about-section p {
-  margin: 3rem 2.5rem; }
+  margin: 3rem 2.5rem 2.0rem; }
 
 @media screen and (min-width: 600px) {
   .about-section .contact-form {
@@ -1053,14 +1069,15 @@ a:hover {
   .other-projects .front-page-blog {
     -ms-flex-align: center;
         align-items: center;
-    height: 200px;
-    width: 100%;
-    position: relative;
+    border: 1px solid #dc4e3c;
     display: -ms-flexbox;
     display: flex;
+    height: 200px;
     -ms-flex-pack: center;
         justify-content: center;
-    border: 1px solid #dc4e3c; }
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%; }
     .other-projects .front-page-blog:before {
       content: ' ';
       background: url("../../assets/images/Outdoor14.jpg");

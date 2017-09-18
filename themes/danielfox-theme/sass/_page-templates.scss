@@ -109,12 +109,13 @@
     }
     .front-page-blog {
         align-items: center;
-        height: 200px;
-        width: 100%;
-        position: relative;
-        display: flex;
-        justify-content: center;
         border: 1px solid $color__accent;
+        display: flex;
+        height: 200px;
+        justify-content: center;
+        margin-bottom: 40px;
+        position: relative;
+        width: 100%;
         &:before {
             content: ' ';
             background: url("../../assets/images/Outdoor14.jpg");
