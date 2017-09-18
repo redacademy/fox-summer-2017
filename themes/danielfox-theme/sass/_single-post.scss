@@ -1,25 +1,24 @@
 //MOBILE version
 .single-post {
-        .post-date-2 {
-            color: $color__accent;
-        }
-        .read-more {
-            margin-bottom: 20px;
-            a {
-                background-color: $color__accent;
-                color: $color__reverse;
-                text-decoration: none;
-                padding: 4px 10px;
-                letter-spacing: 2px;
-                margin-left: 68%;
-            }
+    .post-date-2 {
+        display: block;
+        color: $color__accent;
+    }
+    .read-more {
+        margin-bottom: 20px;
+        a {
+            background-color: $color__accent;
+            color: $color__reverse;
+            text-decoration: none;
+            padding: 4px 10px;
+            letter-spacing: 2px;
+            margin-left: 68%;
         }
     }
     .nav-links > div {
         background-size: auto 100%;
         background-repeat: no-repeat;
-        margin: 0 20px;
-        width: 40%;
+        margin: 0 5.07%;
         a {
             text-decoration: none;
         }
@@ -27,11 +26,13 @@
             background-image: url( '../../assets/icons/left.svg' );
             background-position: left center;
             padding-left: 20px;
+            width: 30%;
         }
         &.nav-next {
             background-image: url( '../../assets/icons/right.svg' );
             background-position: right center;
             padding-right: 20px;
+            width: 30%;
         }
     }
     .entry-meta {
@@ -46,45 +47,27 @@
             font-size: 12px;
         }
     }
-
-    //Bottom Subscription Box:
-    .subscribe-mobile-container {
-        .mc4wp-form {
-            background-color: $color__accent;
-            box-sizing: border-box;
-            padding: 10px 20px;
-            .subscribe-desktop {
-                display: none;
+    .jssocials-shares {
+        display: block;  
+        margin: 0; // or .3em 0 to have vertical gaps between shares
+        .jssocials-share {
+            .jssocials-share-link { 
+                border-radius: 50%; 
+                padding: 7px 8px;
+                font-size: 25px;
+                background-color: $color__accent;
             }
-            h4 {
-                display: none;
-            }
-            p {
-                color: $color__reverse;
-            }
-            .email-input {
-                border-radius: 0;
-                width: 65%;
-                padding-right: 5px;
-            }
-            .subscribe-button {
-                @include subscribe-btn;
-                padding: 8px 20px;
-                border-radius: 0;
-                width: 30%;
-                box-shadow: none;
-                border: 1px solid $color__reverse;
-                font-size: 1rem;
-                text-align: center;
-                text-shadow: none;
+            a:hover {
+                background-color: $color__accent;
             }
         }
     }
+}
 
 //COMMENTS SECTION 
 .single-post {
     .comments-area {
-        margin: 0 20px;
+        margin: 0 5.07%;
         padding-bottom: 30px;
         .comment-reply-title {
             background-color: transparent;
@@ -105,6 +88,7 @@
             letter-spacing: 2px;
             margin: 0 auto;
             width: 50%;
+
             .submit {
                 // @include subscribe-btn;
                 background-color: $color__accent;
@@ -117,8 +101,6 @@
         }
     }
 }
-
-
 
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {

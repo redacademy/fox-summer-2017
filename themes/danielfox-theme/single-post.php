@@ -54,8 +54,12 @@ get_header(); ?>
 
 		<div class="icon-container-mobile">
 			<p>Share</p>   
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
+			<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" /> -->
+			<div class="shareRoundIcons" 
+                data-share-title="<?php echo get_the_title(); ?>" 
+                 data-share-link="<?php echo esc_url(get_the_permalink()); ?>">
+            </div>
         </div>
 
 		<div class="comments-section" id="comments">
