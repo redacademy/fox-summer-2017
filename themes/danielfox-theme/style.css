@@ -1875,40 +1875,25 @@ a:hover {
   .blog .post-date {
     display: none; }
   .blog .blog-nav {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
-    .blog .blog-nav .nav-older {
+    line-height: 1px; }
+    .blog .blog-nav a {
       box-sizing: border-box;
       padding: 15px 0px;
       width: 179px;
       color: #fff;
       background-color: #dc4e3c;
-      font-size: 18px;
-      text-align: center;
-      text-shadow: none; }
-      .blog .blog-nav .nav-older a {
-        color: #fff;
-        text-decoration: none;
-        text-align: center; }
-    .blog .blog-nav .nav-newer {
-      box-sizing: border-box;
-      padding: 15px 0px;
-      width: 179px;
-      color: #fff;
       background-color: #dc4e3c;
-      font-size: 18px;
-      text-align: center;
-      text-shadow: none;
-      padding: auto; }
-      .blog .blog-nav .nav-newer a {
+      color: #fff;
+      text-decoration: none;
+      padding: 20px;
+      letter-spacing: 1px; }
+      .blog .blog-nav a a {
         color: #fff;
         text-decoration: none;
         text-align: center; }
-  .blog .read-more-desktop {
+  .read-more-desktop {
     padding-left: 0.5rem; }
-  .blog .read-more-mobile {
+  .read-more-mobile {
     display: none; } }
 
 .single-post .post-date-2 {

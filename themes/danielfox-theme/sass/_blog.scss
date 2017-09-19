@@ -102,22 +102,17 @@
             display: none;
         }
         .blog-nav {
-            display: flex;
-            justify-content: space-between;
-            .nav-older {
-                @include subscribe-btn;
-                font-size: 18px;
-                text-align: center;
-                text-shadow: none;
-            }
-            .nav-newer {
-                @include subscribe-btn;
-                font-size: 18px;
-                text-align: center;
-                text-shadow: none;
-                padding: auto;
-            }
+            line-height: 1px;
+                a {
+                    @include subscribe-btn;
+                    background-color: $color__accent;
+                    color: $color__reverse;
+                    text-decoration: none;
+                    padding: 20px;
+                    letter-spacing: 1px;
+                }
         }
+    }
         .read-more-desktop {
             padding-left: 0.5rem;
         }
@@ -125,5 +120,4 @@
             display: none;
         }
     }
-            
-}
+        
