@@ -34,6 +34,10 @@
     }
 }
 
+h2 {
+    font-size: 28px;
+}
+
 .front-page-photography-image {
     background-size: cover;
     background-position: 50% 87%;
@@ -94,7 +98,6 @@
         justify-content: center;
         border: 1px solid $color__accent;
         margin-bottom: 51px;
-
         p {
             display: none;
             margin: 15px 70px;
@@ -122,7 +125,6 @@
         margin-bottom: 40px;
         position: relative;
         width: 100%;
-
         p {
             display: none;
             margin: 15px 70px;
@@ -174,6 +176,7 @@
     .featured-in {
         display: flex;
         justify-content: space-around;
+        margin: 50px 0px 70px 0px;
         .featured-images {
             width: 78%;
             display: flex;
@@ -193,6 +196,22 @@
             height: 317px;
             width: 50%;
         }
+    }
+    .front-page-hello {
+        h2 {
+            font-size: 48px;
+        }
+    }
+    .featured-in {
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .front-page-header-box {
+        width: 60%;
+    }
+    .front-page-other-projects-box {
+        display: none;
     }
 }
 
@@ -614,7 +633,8 @@
         background-size: cover;
     }
     .mobile-modal-description-toggle-close {
-        background-image: url('../../assets/icons/right.svg');
+        background-image: url('../../assets/icons/down.svg');
+        background-size: auto;
     }
     .mobile-modal-description-picture-status {
         display: block;
