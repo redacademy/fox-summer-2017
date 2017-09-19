@@ -1,7 +1,12 @@
 .blog, 
 .single-post {
-    .widget-area {
+    #secondary {
         display: none;
+    }
+    .site-footer {
+        .widget-area {
+            display: none;
+        }
     }
     .icon-container-desktop {
         display: none;
@@ -58,16 +63,15 @@
 @media screen and (min-width: $breakpoint) {
     .blog,
     .single-post {
-        .site-footer {
-            display: flex;
+        #secondary {
+            display: block;
+            margin-right: 50px;
         }
-        .site-content {
-            display: flex;
-            flex-direction: row-reverse;
-            margin-top: 70px;
+        .site-footer {
+        display: flex;
             .widget-area {
                 display: block;
-                flex-basis: 25%;
+                // flex-basis: 25%;
                 .widget-title {
                     text-align: center;
                     border-bottom: 1px solid $color__underline;
@@ -78,6 +82,11 @@
                     margin-bottom: 10px;
                 }
             }
+        }
+        .site-content {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 70px;
             .content-area {
                 flex-basis: 70%;
                 margin-right: 67px;
