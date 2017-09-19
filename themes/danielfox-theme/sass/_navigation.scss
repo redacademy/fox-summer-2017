@@ -263,24 +263,27 @@ a {
 
 		.main-navigation {
 			//Desktop header bar styling
-			background: rgba(255, 255, 255, 0.90);
+			background: rgba(255, 255, 255, 0.80);
 			display: flex;
 			box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
 			position: absolute;
-			top: 0px; //avocado
+			top: 0px;
+			height: 83px;
 
 			.header-logo {
-				flex-basis: 15%;
+				flex-basis: 13%;
 				img {
-					max-height: 83px;
+					max-height: 65px;
 				}
 				a {
 					display: flex;
 					justify-content: flex-end;
+					height: 100%;
+					align-items: center;
 				}
 			}
 			.nav-menu-options {
-				flex-basis: 85%;
+				flex-basis: 87%;
 				.menu li {
 					font-size: 20px
 				}
