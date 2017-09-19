@@ -2110,6 +2110,30 @@ a:hover {
 .post-type-archive-project .site-header {
   height: 41px; }
 
+.single-project .featured-image {
+  height: 296px;
+  width: 500px;
+  overflow: hidden;
+  position: relative; }
+  .single-project .featured-image .wp-post-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+    margin: 0 auto; }
+
+.single-project .project-title {
+  margin: 3.9% 13.87%; }
+  .single-project .project-title .entry-title {
+    font-size: 20px;
+    text-align: center; }
+    .single-project .project-title .entry-title a {
+      text-decoration: none; }
+
+.single-project .entry-content {
+  margin: 5.62% 11.2%; }
+
 @media screen and (min-width: 600px) {
   .single-project .wp-post-image {
     height: 75vh;

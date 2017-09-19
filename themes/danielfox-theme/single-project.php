@@ -12,16 +12,20 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<?php the_post_navigation(); ?>
+			<div class="project-title">
+				<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+			</div>
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+			<?php if ( has_post_thumbnail() ) : ?>
+				<div class="featured-image"><?php the_post_thumbnail( 'large' ); ?></div>
+			<?php endif; ?>
+
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div>
+		</article><!-- #post-## -->
 
 		<?php endwhile; // End of the loop. ?>
 
