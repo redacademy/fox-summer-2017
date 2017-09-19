@@ -58,6 +58,9 @@
 @media screen and (min-width: $breakpoint) {
     .blog,
     .single-post {
+        .site-footer {
+            display: block;
+        }
         .site-content {
             display: flex;
             flex-direction: row-reverse;
