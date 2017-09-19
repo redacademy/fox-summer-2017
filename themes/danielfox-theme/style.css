@@ -1547,7 +1547,7 @@ a:hover {
     right: 47%;
     background-size: cover; }
   .mobile-modal-description-window-top .mobile-modal-description-toggle-close {
-    background-image: url("../../assets/icons/right.svg") !important; }
+    background-image: url("../../assets/icons/right.svg"); }
   .mobile-modal-description-window-top .mobile-modal-description-picture-status {
     display: block;
     position: absolute;
@@ -1578,7 +1578,7 @@ a:hover {
         color: #dc4e3c;
         font-size: 18px;
         letter-spacing: 1px;
-        border-bottom: 0.5px groove rgba(1, 79, 90, 0.5);
+        border-bottom: 0.5px solid rgba(1, 79, 90, 0.5);
         padding-bottom: 8px;
         width: 90%;
         margin-left: auto;
@@ -2080,12 +2080,21 @@ a:hover {
       margin-left: 0; } }
 
 .post-type-archive-project .project-container .project-title {
-  background: #DC4E3C; }
+  background: #dc4e3c; }
   .post-type-archive-project .project-container .project-title a {
     color: white;
     text-decoration: none; }
   .post-type-archive-project .project-container .project-title h2 {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 10.5px 0;
+    margin-left: 6.5%;
+    font-size: 1.2rem;
+    letter-spacing: 1px; }
+
+.post-type-archive-project .project-container .project-mobile-description {
+  margin: 31px 19px;
+  text-align: center; }
 
 .post-type-archive-project .site-main h1 {
   display: none; }
@@ -2118,7 +2127,7 @@ a:hover {
     .post-type-archive-project .project-container .project-mobile-description {
       display: none; }
   .post-type-archive-project .site-main h1 {
-    border-bottom: 0.5px solid #0C5661;
+    border-bottom: 2px solid rgba(1, 79, 90, 0.5);
     display: block;
     margin: 4.33% auto;
     padding-bottom: 1%;

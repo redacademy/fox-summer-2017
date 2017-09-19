@@ -2,14 +2,23 @@
 .post-type-archive-project {
     .project-container {
         .project-title {
-            background: #DC4E3C;
+            background: $color__accent;
             a {
                 color: white;
                 text-decoration: none;
             }
             h2 {
                 margin-bottom: 0;
+                margin-top: 0;
+                padding: 10.5px 0;
+                margin-left: 6.5%;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
             }
+        }
+        .project-mobile-description {
+            margin: 31px 19px;
+            text-align: center;
         }
     }
     .site-main {
@@ -55,7 +64,7 @@
         }
         .site-main {
             h1 {
-                border-bottom: 0.5px solid #0C5661;
+                border-bottom: 2px solid $color__underline;
                 display: block;
                 margin: 4.33% auto;
                 padding-bottom: 1%;
