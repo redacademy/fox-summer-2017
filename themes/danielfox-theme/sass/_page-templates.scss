@@ -260,7 +260,6 @@
 }
 
 .speaker-header-image {
-    background-image: url("../../assets/Video1.jpg");
     background-size: cover;
     height: 265px;
 }
@@ -468,8 +467,8 @@
 
     .modal-content-2 {
         display: flex;
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 
         .modal-body-2 {
             background-color: rgba(255, 255, 255, 0.9);
