@@ -16,18 +16,18 @@
         $('.nav-toggle').show();
       }); 
 
-      
-
     });
 
 
     $('.gallery-modal-link').on('click', function(){
       $mobileDetails.removeClass('mobile-modal-description-window');
+      $mobileDetails.removeClass('mobile-modal-description-toggle-close');
     });
 
     // toggle description in modal
     $('.mobile-modal-description-toggle').on('click', function() {
       $mobileDetails.toggleClass('mobile-modal-description-window');
+      $('.mobile-modal-description-toggle').toggleClass('mobile-modal-description-toggle-close');
     });
 
 
