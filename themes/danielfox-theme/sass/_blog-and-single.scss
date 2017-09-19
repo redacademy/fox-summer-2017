@@ -23,6 +23,12 @@
             font-size: 1.2rem;
         }
     }
+    .blog-image {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .text-content {
         margin: 0px 20px;
         border-bottom: 2px solid $color__underline;
@@ -112,9 +118,6 @@
             .content-area {
                 flex-basis: 70%;
                 margin-right: 67px;
-                .post-date {
-                    display: none;
-                }
                 .blog-photo {
                     display: flex;
                     width: 100%;
@@ -122,12 +125,12 @@
                     .blog-image {
                         min-height: 483px; 
                         width: 100%;
-                        background-position: bottom center;
+                        background-position: center bottom;
                     }
-                    .wp-post-image {
-                        width: 100%;
-                        max-height: 450px;
-                    }
+                }
+                .post-date {
+                    display: none;
+                }
                     .icon-container-mobile {
                         display: none;
                     }
@@ -172,4 +175,3 @@
             }
         }
     }
-}
