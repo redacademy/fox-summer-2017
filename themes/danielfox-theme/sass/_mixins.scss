@@ -11,10 +11,6 @@
 	margin-right: auto;
 }
 
-@mixin overlay-80 {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.80));
-}
-
 @mixin header {
     color: $color__accent;
     font-size: 28px;
