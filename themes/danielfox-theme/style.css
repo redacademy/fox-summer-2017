@@ -1786,7 +1786,8 @@ h2 {
   .blog .widget-area,
   .single-post .widget-area {
     display: block;
-    margin-right: 50px; }
+    margin-right: 50px;
+    padding-top: 10px; }
   .blog .site-footer,
   .single-post .site-footer {
     display: -ms-flexbox;
