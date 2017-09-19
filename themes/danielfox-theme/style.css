@@ -1821,6 +1821,10 @@ h2 {
 .blog .site-content {
   padding-top: 60px; }
 
+.blog .blog-mobile-caption {
+  color: #dc4e3c;
+  font-size: 20px; }
+
 .blog .post-date-2 {
   display: none; }
 
