@@ -36,7 +36,7 @@ get_header(); ?>
                                     </div>
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
-                                <div class="blog-image" style="background:url(<?php echo the_post_thumbnail_url(); ?>)">
+                                <div class="blog-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
                                 </div>
                             <?php endif; ?>
                     </header><!-- .entry-header -->
