@@ -512,7 +512,8 @@ a {
   width: 100%; }
   .site-header .header-nav-bar p {
     margin: 0px;
-    padding: 20px 0px; }
+    padding: 20px 0px;
+    color: #dc4e3c; }
   .site-header .header-nav-bar .burger-nav {
     -ms-flex-preferred-size: 30%;
         flex-basis: 30%;
@@ -598,9 +599,12 @@ a {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-preferred-size: 30%;
-      flex-basis: 30%; }
+      flex-basis: 30%;
+  padding-left: 6%; }
   .site-header .header-logo-mobile img {
-    max-height: 100%; }
+    max-height: 100%;
+    max-height: 80%;
+    margin-top: 4px; }
 
 .site-header .nav-logo {
   height: 0; }
@@ -1019,14 +1023,14 @@ a:hover {
   background-position: 60% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
   height: 105vh;
   width: 100%; }
   .home-hero .home-hero-overlay {
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    position: absolute;
+    top: 50%; }
     .home-hero .home-hero-overlay h1 {
       color: white;
       font-weight: 100;
@@ -1143,13 +1147,15 @@ h2 {
     -ms-flex-align: initial;
         align-items: initial; }
     .home-hero .home-hero-overlay {
-      background: none; }
+      background: none;
+      position: initial;
+      top: 0%; }
       .home-hero .home-hero-overlay h1:first-child {
         display: none; }
       .home-hero .home-hero-overlay h1:last-child {
         font-size: 48px;
         letter-spacing: 6px;
-        margin-top: 190px; }
+        padding-top: 190px; }
   .front-page-about .desktop-text {
     display: block; }
   .project-container {
@@ -1574,7 +1580,7 @@ h2 {
     right: 26px; } }
 
 .mobile-modal-closed-window {
-  bottom: -250px;
+  bottom: -240px;
   height: 280px;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.9);
@@ -1611,7 +1617,7 @@ h2 {
     display: block;
     position: absolute;
     right: 5%;
-    top: 25px; }
+    top: 35px; }
 
 .mobile-modal-description-title-date {
   height: 55px;
@@ -2236,6 +2242,21 @@ h2 {
   .single-project .wp-post-image {
     height: 75vh;
     width: auto; }
+  .single-project .type-project .project-title {
+    margin-top: 90px;
+    margin-bottom: 30px; }
+  .single-project .type-project .entry-title a {
+    font-size: 40px; }
+  .single-project .project .project-featured-image-box {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .single-project .project .project-featured-image {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 80%; }
   .post-type-archive-project .site-header {
     height: 83px; }
   .post-type-archive-project .project-container {
@@ -2264,7 +2285,10 @@ h2 {
     position: initial;
     width: auto; }
   .post-type-archive-project .site-main .project {
-    width: 29.5%; } }
+    width: 29.5%; }
+  .project-container article .project-title {
+    margin-top: 50px;
+    margin-bottom: 0px; } }
 
 .archive.tag .widget-area {
   display: none; }

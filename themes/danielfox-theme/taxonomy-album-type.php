@@ -104,7 +104,7 @@
 												</div>
 											</div>
 											<div class="mobile-modal-description-excerpt">
-												<?php echo CFS()->get( 'preview_description' ); ?>
+												<?php echo CFS()->get( 'mobile_description' ); ?>
 											</div>
 										</div> <!-- Close mobile-modal-description-window -->
 

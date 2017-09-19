@@ -10,13 +10,15 @@
     background-position: 60% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    //display: flex;
     height: 105vh;
     width: 100%;
     .home-hero-overlay {
         background-color: rgba(255, 255, 255, 0.60);
         text-align: center;
         width: 100%;
+        position: absolute;
+        top: 50%;
         h1 {
             color: white;
             font-weight: 100;
@@ -143,13 +145,15 @@ h2 {
         align-items: initial;
         .home-hero-overlay {
             background: none;
+            position: initial;
+            top: 0%;
             h1:first-child {
                 display: none;
             }
             h1:last-child {
                 font-size: 48px;
                 letter-spacing: 6px;
-                margin-top: 190px;
+                padding-top: 190px;
             }
         }
     }
@@ -645,7 +649,7 @@ h2 {
 
 //Styling for modal-description window on [Mobile]
 .mobile-modal-closed-window {
-    bottom: -250px;
+    bottom: -240px;
     height: 280px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
@@ -687,7 +691,7 @@ h2 {
         display: block;
         position: absolute;
         right: 5%;
-        top: 25px;
+        top: 35px;
     }
 }
 

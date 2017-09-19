@@ -19,8 +19,16 @@ get_header(); ?>
 			</div>
 
 			<?php if ( has_post_thumbnail() ) : ?>
-				<div class="featured-image project-featured-image" ><?php the_post_thumbnail( 'large' ); ?></div>
-				
+				<div class="project-featured-image-box">
+					<div class="featured-image project-featured-image" 
+					
+					<?php
+					$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+					echo ' style="background-image: url('. $url.')"';
+					?>
+					>
+					</div>
+				</div>
 			<?php endif; ?>
 
 			<div class="entry-content">
