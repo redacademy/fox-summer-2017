@@ -462,7 +462,7 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: -3.4rem; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 170px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -613,10 +613,10 @@ a {
   .site-header .sub-menu {
     -ms-flex-direction: column;
         flex-direction: column;
-    margin-top: 20px;
+    margin-top: 8px;
     text-align: center; }
     .site-header .sub-menu li {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.8);
       border: 0.5px solid #0C5661; }
       .site-header .sub-menu li:nth-child(2) {
         border-top: 0px;
@@ -646,7 +646,12 @@ a {
       -ms-flex-preferred-size: 83%;
           flex-basis: 83%; }
       .site-header .main-navigation .nav-menu-options .menu li {
-        font-size: 20px; }
+        font-size: 20px;
+        margin-left: 25px; }
+        .site-header .main-navigation .nav-menu-options .menu li .sub-menu li a {
+          color: black;
+          font-size: 15px;
+          letter-spacing: 2px; }
       .site-header .main-navigation .nav-menu-options div {
         height: 100%; }
         .site-header .main-navigation .nav-menu-options div ul {
@@ -666,7 +671,7 @@ a {
     .site-header .main-navigation ul ul {
       top: 5.6rem; }
       .site-header .main-navigation ul ul li {
-        padding: 10px 0px; } }
+        padding: 7px 0px; } }
 
 .page-template-about .site-header {
   height: 0px; }
@@ -957,7 +962,8 @@ a:hover {
   display: none; }
 
 @media screen and (min-width: 600px) {
-  .home .widget-area {
+  .home .widget-area,
+  .blog .widget-area {
     display: block; }
   .site-footer {
     display: -ms-flexbox;
@@ -1015,8 +1021,8 @@ a:hover {
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  width: 100vw; }
+  height: 105vh;
+  width: 100%; }
   .home-hero .home-hero-overlay {
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
@@ -1143,7 +1149,7 @@ h2 {
       .home-hero .home-hero-overlay h1:last-child {
         font-size: 48px;
         letter-spacing: 6px;
-        margin-top: 150px; }
+        margin-top: 190px; }
   .front-page-about .desktop-text {
     display: block; }
   .project-container {
@@ -1245,8 +1251,8 @@ h2 {
   padding-top: 65px; }
 
 .speaker-header-box {
-  -ms-flex-pack: left;
-      justify-content: left; }
+  -ms-flex-pack: center;
+      justify-content: center; }
   .speaker-header-box h2 {
     font-size: 16px;
     font-weight: 100;
@@ -1301,7 +1307,7 @@ h2 {
     width: 80vw;
     text-align: center;
     overflow: auto;
-    height: 14vh;
+    height: 25vh;
     color: white;
     letter-spacing: 3px; }
 
@@ -1346,7 +1352,8 @@ h2 {
   .video-modal-body .speaker-video-description {
     padding-top: 2vh;
     width: 90vw;
-    letter-spacing: 4px; } }
+    letter-spacing: 3px;
+    height: 16vh; } }
 
 .photograph-grid .photograph-grid-item {
   margin: 10px;
@@ -1996,12 +2003,12 @@ h2 {
     background-image: url("../../assets/icons/left.svg");
     background-position: left center;
     padding-left: 20px;
-    width: 30%; }
+    width: 36%; }
   .single-post .nav-links > div.nav-next {
     background-image: url("../../assets/icons/right.svg");
     background-position: right center;
     padding-right: 20px;
-    width: 30%; }
+    width: 36%; }
 
 .single-post .entry-meta {
   font-size: 13px;
@@ -2160,9 +2167,11 @@ h2 {
 .post-type-archive-project .site-header {
   height: 41px; }
 
+.single-project .project-featured-image {
+  width: 100%; }
+
 .single-project .featured-image {
   height: 296px;
-  width: 500px;
   overflow: hidden;
   position: relative; }
   .single-project .featured-image .wp-post-image {

@@ -32,7 +32,8 @@
 
 // Footer Styling [DESKTOP]
 @media screen and (min-width: $breakpoint) {
-    .home {
+    .home,
+    .blog {
         .widget-area {
             display: block;
         }

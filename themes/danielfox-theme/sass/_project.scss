@@ -40,9 +40,12 @@
 }
 
 .single-project {
+    .project-featured-image {
+        width: 100%;
+
+    }
     .featured-image {
         height: 296px;
-        width: 500px;
         overflow: hidden;
         position: relative;
         .wp-post-image {

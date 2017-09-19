@@ -29,17 +29,17 @@ get_header(); ?>
 							   <div class="modal-container modal-container-1">
 							   </div>
 						</a>
-
+	
 
 						<div class="modal fade speaker-modal-background" id="modal-1">
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-body video-modal-body">
-									<div class="speaker-video-title">David this needs to be a CFS!</div>
+									<div class="speaker-video-title"><?php echo CFS()->get( 'first_iframe_title' ); ?></div>
 
 										<?php echo CFS()->get( 'speaker_first_iframe' ); ?>
 
-								<div class="speaker-video-description">David this needs to be a CFS!</div>
+								<div class="speaker-video-description"><?php echo CFS()->get( 'first_iframe_description' ); ?></div>
 										<div class="modal-close" data-dismiss="modal">
 										</div>						
 									
@@ -65,11 +65,11 @@ get_header(); ?>
 								<div class="modal-content">
 									<div class="modal-body video-modal-body">
 
-									<div class="speaker-video-title">David this needs to be a CFS!</div>
+									<div class="speaker-video-title"><?php echo CFS()->get( 'second_iframe_title' ); ?></div>
 
 										<?php echo CFS()->get( 'speaker_second_iframe' ); ?>
 
-									<div class="speaker-video-description">David this needs to be a CFS!</div>
+									<div class="speaker-video-description"><?php echo CFS()->get( 'second_iframe_description' ); ?></div>
 										<div class="modal-close" data-dismiss="modal">
 										</div>
 									</div>
@@ -95,11 +95,11 @@ get_header(); ?>
 							<div class="modal-dialog">
 								<div class="modal-content">
 									<div class="modal-body video-modal-body">
-										<div class="speaker-video-title">David this needs to be a CFS!</div>
+										<div class="speaker-video-title"><?php echo CFS()->get( 'third_iframe_title' ); ?></div>
 
 										<?php echo CFS()->get( 'speaker_third_iframe' ); ?>
-
-										<div class="speaker-video-description">David this needs to be a CFS!</div>
+	
+										<div class="speaker-video-description"><?php echo CFS()->get( 'third_iframe_description' ); ?></div>
 										<div class="modal-close" data-dismiss="modal">
 										</div>
 									</div>
