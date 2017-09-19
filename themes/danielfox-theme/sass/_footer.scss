@@ -59,11 +59,22 @@
                     display: none;
                 }
                 .subscribe-button {
-                    margin-left: 0;
-                    padding: 0;
+                    background-color: $color__accent;
+                    border: 1px solid $color__accent;
+                    border-radius: 0;
+                    box-shadow: none;
+                    color: $color__reverse;
+                    font-size: $base__font;
+                    margin: 18px 0;
+                    padding: 12px 0;
+                    text-shadow: none;	
+                    width: 179px;
                 }
                 .email-input {
-                    height: 36px;
+                    border: 1px solid $color__accent;
+                    border-radius: 0;
+                    margin: 18px 0;
+                    padding: 12px 0;
                 }
             }
         }
