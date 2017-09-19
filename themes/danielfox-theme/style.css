@@ -1779,7 +1779,6 @@ h2 {
     .single-post .widget-area .recent-post-container .recent-post-title {
       width: 100%;
       margin-top: 0;
-<<<<<<< HEAD
       margin-bottom: 0px;
       letter-spacing: 1px; }
     .blog .widget-area .recent-post-container .blog-thumbnail,
@@ -1790,12 +1789,6 @@ h2 {
         background-size: contain;
         background-repeat: no-repeat;
         height: 300px; } }
-=======
-      letter-spacing: 1px;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-      padding-left: 19px; } }
->>>>>>> Corrected styling on nav buttons on blog page; applied letter-spacing and margins to error page
 
 .blog .site-content,
 .single-post .site-content {
