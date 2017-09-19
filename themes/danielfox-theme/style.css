@@ -1212,6 +1212,13 @@ h2 {
 .about-image-fifth-desktop {
   display: none; }
 
+.about-section .about-image {
+  height: 350px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 67%; }
+
 @media (min-width: 600px) {
   .about-header {
     -ms-flex-align: center;
@@ -1244,7 +1251,13 @@ h2 {
   .about-section .about-image-fifth-desktop {
     display: block; }
   .about-section .about-image-third-desktop img {
-    height: 627px; } }
+    height: 627px; }
+  .about-third-section {
+    height: 100% !important; }
+    .about-third-section .about-image-large {
+      height: 100%; }
+  .desktop-photo-column-sections .about-second-section, .desktop-photo-column-sections .about-fifth-section {
+    margin-top: 10px; } }
 
 .page-template-speaker {
   padding-top: 65px; }

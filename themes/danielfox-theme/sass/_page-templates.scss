@@ -234,6 +234,16 @@ h2 {
     display: none;
 }
 
+.about-section {
+.about-image {
+    height: 350px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 67%;
+}
+}
+
 //Styling for About Page [DESKTOP]
 @media (min-width: $breakpoint) {
     .about-header {
@@ -278,6 +288,19 @@ h2 {
             }
         }
     }
+        .about-third-section {
+            height: 100% !important;
+        
+        .about-image-large {
+            height: 100%;
+        }
+        }
+.desktop-photo-column-sections{
+        .about-second-section, .about-fifth-section {
+            margin-top: 10px;
+        }
+    }
+        
 }
 
 //Styling for Speaker Page [MOBILE]
