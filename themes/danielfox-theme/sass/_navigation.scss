@@ -42,7 +42,6 @@ a {
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
-
 			ul {
 				left: -999rem;
 				top: 0;
@@ -69,10 +68,8 @@ a {
 	li {
 		float: left;
 		position: relative;
-		
 		&:hover>a,
-		&.focus>a {
-		}
+		&.focus>a {}
 		&:hover>.sub-menu,
 		&.focus>.sub-menu {
 			left: -3.4rem;
@@ -114,7 +111,6 @@ a {
 }
 
 //Additional Styling below here
-
 .site-header {
 	.header-nav-bar {
 		//Header bar for the mobile site
@@ -135,8 +131,7 @@ a {
 			display: flex;
 			justify-content: center;
 			flex-direction: column;
-			align-items: center; 
-			//Styling for the slide out nav bar
+			align-items: center; //Styling for the slide out nav bar
 			.menu {
 				margin: 0px;
 				padding: 0px;
@@ -155,12 +150,11 @@ a {
 					display: block;
 					padding: 0px;
 					li {
-					 line-height: 1.5;
-
-					a{
-						color: grey;
-						font-size: 16px;
-					}
+						line-height: 1.5;
+						a {
+							color: grey;
+							font-size: 16px;
+						}
 					}
 				}
 			}
@@ -177,9 +171,8 @@ a {
 				color: white;
 				margin-left: -250px;
 				transition: margin 200ms ease-in-out;
-				a{
+				a {
 					text-decoration: none;
-
 					.mobile-nav-menu-home {
 						font-weight: 400;
 						font-size: 22px;
@@ -205,8 +198,7 @@ a {
 				background-size: contain;
 				background-repeat: no-repeat;
 				margin-top: 9px;
-			}
-			// .nav-toggle:before {
+			} // .nav-toggle:before {
 			// 	content: "\2261";
 			// 	color: $color__accent;
 			// 	line-height: 35px;
@@ -227,27 +219,20 @@ a {
 		display: flex;
 		justify-content: center;
 		flex-basis: 30%;
-		
 		img {
 			max-height: 100%;
 		}
-		
-
-	} 
-		.nav-logo {
-			height: 0;
-		}
-
-		//Settings for desktop
+	}
+	.nav-logo {
+		height: 0;
+	} //Settings for desktop
 	@media (min-width: $breakpoint) {
 		.header-nav-bar {
 			display: none;
 		}
-		
 		.nav-logo {
 			height: 100%;
 		}
-
 		.sub-menu {
 			flex-direction: column;
 			margin-top: 20px;
@@ -261,7 +246,6 @@ a {
 				}
 			}
 		}
-
 		.main-navigation {
 			//Desktop header bar styling
 			background: rgba(255, 255, 255, 0.80);
@@ -270,7 +254,6 @@ a {
 			position: absolute;
 			top: 0px;
 			height: 83px;
-
 			.header-logo {
 				flex-basis: 13%;
 				img {
@@ -298,13 +281,11 @@ a {
 					}
 				}
 			}
-
 			.menu-item-has-children {
-				    height: 100%;
-    display: flex;
-    align-items: center;
+				height: 100%;
+				display: flex;
+				align-items: center;
 			}
-
 			ul ul {
 				top: 5.6rem;
 				li {

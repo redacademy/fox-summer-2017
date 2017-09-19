@@ -98,7 +98,6 @@ h2 {
         justify-content: center;
         border: 1px solid $color__accent;
         margin-bottom: 51px;
-
         p {
             display: none;
             margin: 15px 70px;
@@ -126,7 +125,6 @@ h2 {
         margin-bottom: 40px;
         position: relative;
         width: 100%;
-
         p {
             display: none;
             margin: 15px 70px;
@@ -199,30 +197,23 @@ h2 {
             width: 50%;
         }
     }
-
     .front-page-hello {
-    h2 {
-        font-size: 48px;
+        h2 {
+            font-size: 48px;
+        }
+    }
+    .featured-in {
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .front-page-header-box {
+        width: 60%;
+    }
+    .front-page-other-projects-box {
+        display: none;
     }
 }
-
-.featured-in {
-    h2 {
-        font-size: 22px;
-    }
-}
-
-.front-page-header-box {
-    width: 60%;
-}
-
-.front-page-other-projects-box {
-    display: none;
-}
-
-}
-
-
 
 //Styling for About Page [MOBILE]
 .about-text-desktop {

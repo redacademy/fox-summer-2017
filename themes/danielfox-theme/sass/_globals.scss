@@ -3,7 +3,8 @@ body {
     color: $color__text-main;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: $color__accent;
     letter-spacing: 5px;
 }
@@ -18,6 +19,7 @@ h3 {
         }
     }
 }
+
 a:hover {
     background-color: transparent;
 }
