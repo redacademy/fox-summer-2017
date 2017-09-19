@@ -160,7 +160,10 @@ $postIndex++;
 endwhile;
 ?>
 
-<?php the_posts_navigation(); ?>
+<?php the_posts_navigation(array (
+	'prev_text' => __( 'Previous Page' ),
+    'next_text' => __( 'Next Page' ),
+)); ?>
 
 </section>
 	<?php else : ?>

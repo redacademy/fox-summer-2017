@@ -74,9 +74,27 @@
 	}
 }
 
-// Contact Form [MOBILE]
+// Contact Form [DESKTOP]
 @media (min-width: $breakpoint) {
 	.contact-form {
-		width: 434px;		
+		width: 434px;
+		input, textarea {
+			font-size: 18px;
+		}
+		p:nth-child(2),
+		p:nth-child(3),
+		p:nth-child(4) {
+		height: 60px;
+		}
+		p {
+			span {
+				input {
+					height: 48px;
+				}
+			}
+		}
+		textarea {
+			padding: 13px 0 0 15px;
+		}		
 	}
 }
