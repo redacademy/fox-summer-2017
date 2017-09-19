@@ -462,7 +462,7 @@ a {
       .main-navigation ul ul li.focus > ul {
         left: -3.4rem; }
       .main-navigation ul ul a {
-        width: 200px; }
+        width: 170px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -613,10 +613,10 @@ a {
   .site-header .sub-menu {
     -ms-flex-direction: column;
         flex-direction: column;
-    margin-top: 20px;
+    margin-top: 8px;
     text-align: center; }
     .site-header .sub-menu li {
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.8);
       border: 0.5px solid #0C5661; }
       .site-header .sub-menu li:nth-child(2) {
         border-top: 0px;
@@ -646,7 +646,12 @@ a {
       -ms-flex-preferred-size: 83%;
           flex-basis: 83%; }
       .site-header .main-navigation .nav-menu-options .menu li {
-        font-size: 20px; }
+        font-size: 20px;
+        margin-left: 25px; }
+        .site-header .main-navigation .nav-menu-options .menu li .sub-menu li a {
+          color: black;
+          font-size: 15px;
+          letter-spacing: 2px; }
       .site-header .main-navigation .nav-menu-options div {
         height: 100%; }
         .site-header .main-navigation .nav-menu-options div ul {
@@ -666,7 +671,7 @@ a {
     .site-header .main-navigation ul ul {
       top: 5.6rem; }
       .site-header .main-navigation ul ul li {
-        padding: 10px 0px; } }
+        padding: 7px 0px; } }
 
 .page-template-about .site-header {
   height: 0px; }
@@ -1014,8 +1019,8 @@ a:hover {
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  width: 100vw; }
+  height: 105vh;
+  width: 100%; }
   .home-hero .home-hero-overlay {
     background-color: rgba(255, 255, 255, 0.6);
     text-align: center;
@@ -1142,7 +1147,7 @@ h2 {
       .home-hero .home-hero-overlay h1:last-child {
         font-size: 48px;
         letter-spacing: 6px;
-        margin-top: 150px; }
+        margin-top: 190px; }
   .front-page-about .desktop-text {
     display: block; }
   .project-container {
