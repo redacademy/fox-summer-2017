@@ -1,6 +1,6 @@
 (function ($) {
   $( document ).ready(function() {
-  $( ".shareRoundIcons" ).each(function() {
+  $( '.shareRoundIcons' ).each(function() {
     var shareTitle =  $(this).data('share-title');
     var shareLink =  $(this).data('share-link');
    $( this ).jsSocials({
@@ -9,9 +9,9 @@
       showLabel: false,
       showCount: false,
      shares: [{
-       share: "facebook"
+       share: 'facebook'
       }, { 
-       share: "twitter"
+       share: 'twitter'
       }]
  });
 });

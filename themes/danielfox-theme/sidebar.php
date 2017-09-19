@@ -24,9 +24,20 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			<a href="<?php the_permalink(); ?>" >
 
 			<h3 class="recent-post-title"><?php the_title(); ?></h3>
-		<div class="thumbnail-container">
-			<?php the_post_thumbnail( 'large' ); ?>
-		</div>
+
+
+				<div class="blog-thumbnail">
+					<div class="blog-thumbnail-picture" 
+					
+					<?php
+					$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+					echo ' style="background-image: url('. $url.')"';
+					?>
+					>
+					</div>
+				</div>
+
+
 			</a> 
 			
 			<?php endif; ?>

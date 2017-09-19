@@ -1415,9 +1415,7 @@ h2 {
     height: 16vh; } }
 
 .photograph-grid .photograph-grid-item {
-  margin: 10px;
-  max-height: 500px;
-  overflow: hidden; }
+  margin: 10px; }
 
 #post-213 {
   width: 96%; }
@@ -1747,7 +1745,6 @@ h2 {
       height: 262px;
       position: relative;
       margin: 0 auto;
-      margin-bottom: 34px;
       overflow: hidden;
       display: -ms-flexbox;
       display: flex; }
@@ -1773,7 +1770,16 @@ h2 {
     .single-post .widget-area .recent-post-container .recent-post-title {
       width: 100%;
       margin-top: 0;
-      letter-spacing: 1px; } }
+      margin-bottom: 0px;
+      letter-spacing: 1px; }
+    .blog .widget-area .recent-post-container .blog-thumbnail,
+    .single-post .widget-area .recent-post-container .blog-thumbnail {
+      height: 100%; }
+      .blog .widget-area .recent-post-container .blog-thumbnail .blog-thumbnail-picture,
+      .single-post .widget-area .recent-post-container .blog-thumbnail .blog-thumbnail-picture {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px; } }
 
 .blog .site-content,
 .single-post .site-content {

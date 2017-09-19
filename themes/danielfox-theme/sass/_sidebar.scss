@@ -71,7 +71,6 @@
                     height: 262px;
                     position: relative;
                     margin: 0 auto;
-                    margin-bottom: 34px;
                     overflow: hidden;
                     display: flex;
                     .wp-post-image {
@@ -95,8 +94,22 @@
                 .recent-post-title {
                     width: 100%;
                     margin-top: 0;
+                    margin-bottom: 0px;
                     letter-spacing: 1px;
+
                 }
+                    .blog-thumbnail {
+                        height: 100%;
+                        .blog-thumbnail-picture {
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            height: 300px;
+                        }
+                    }
+
+
+
+
             }
         }
     }
