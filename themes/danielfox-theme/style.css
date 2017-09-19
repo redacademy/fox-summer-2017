@@ -1425,9 +1425,7 @@ h2 {
     height: 16vh; } }
 
 .photograph-grid .photograph-grid-item {
-  margin: 10px;
-  max-height: 500px;
-  overflow: hidden; }
+  margin: 10px; }
 
 #post-213 {
   width: 96%; }
@@ -1757,7 +1755,6 @@ h2 {
       height: 262px;
       position: relative;
       margin: 0 auto;
-      margin-bottom: 34px;
       overflow: hidden;
       display: -ms-flexbox;
       display: flex; }
@@ -1777,13 +1774,28 @@ h2 {
       position: absolute;
       text-decoration: none;
       color: #fff;
-      width: 100%;
-      text-align: center; }
+      width: 100%; }
     .blog .widget-area .recent-post-container .recent-post-title,
     .single-post .widget-area .recent-post-container .recent-post-title {
       width: 100%;
       margin-top: 0;
-      letter-spacing: 1px; } }
+<<<<<<< HEAD
+      margin-bottom: 0px;
+      letter-spacing: 1px; }
+    .blog .widget-area .recent-post-container .blog-thumbnail,
+    .single-post .widget-area .recent-post-container .blog-thumbnail {
+      height: 100%; }
+      .blog .widget-area .recent-post-container .blog-thumbnail .blog-thumbnail-picture,
+      .single-post .widget-area .recent-post-container .blog-thumbnail .blog-thumbnail-picture {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 300px; } }
+=======
+      letter-spacing: 1px;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      padding-left: 19px; } }
+>>>>>>> Corrected styling on nav buttons on blog page; applied letter-spacing and margins to error page
 
 .blog .site-content,
 .single-post .site-content {
@@ -1979,7 +1991,7 @@ h2 {
   margin-top: 11px; }
 
 .blog .post-date-2 {
-  display: non; }
+  display: none; }
 
 .blog .read-more-mobile {
   margin-bottom: 20px;
@@ -2004,23 +2016,28 @@ h2 {
   -ms-flex-pack: justify;
       justify-content: space-between; }
   .blog .blog-nav a {
-    text-decoration: none;
-    width: 50%; }
+    text-decoration: none; }
   .blog .blog-nav a:first-child {
     text-align: left; }
   .blog .blog-nav a:last-child {
     text-align: right; }
-  .blog .blog-nav a > div {
+  .blog .blog-nav a > span {
     background-size: auto 100%;
     background-repeat: no-repeat; }
-    .blog .blog-nav a > div.nav-older {
+    .blog .blog-nav a > span.nav-older {
       background-image: url("../../assets/icons/left.svg");
       background-position: left center;
-      padding-left: 20px; }
-    .blog .blog-nav a > div.nav-newer {
+      padding-left: 20px;
+      width: 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
+    .blog .blog-nav a > span.nav-newer {
       background-image: url("../../assets/icons/right.svg");
       background-position: right center;
-      padding-right: 20px; }
+      padding-right: 20px;
+      width: 50%;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%; }
 
 .subscribe-mobile-container .mc4wp-form {
   background-color: #dc4e3c;
@@ -2062,23 +2079,22 @@ h2 {
     display: none; }
   .blog .post-date {
     display: none; }
-  .blog .blog-nav {
-    line-height: 1px; }
-    .blog .blog-nav a {
-      box-sizing: border-box;
-      padding: 15px 0px;
-      width: 179px;
-      color: #fff;
-      background-color: #dc4e3c;
-      background-color: #dc4e3c;
-      color: #fff;
-      text-decoration: none;
-      padding: 20px;
-      letter-spacing: 1px; }
-      .blog .blog-nav a a {
-        color: #fff;
-        text-decoration: none;
-        text-align: center; }
+  .blog .blog-nav a {
+    background-color: #dc4e3c;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    max-width: 15%;
+    -ms-flex: 1 1 15%;
+        flex: 1 1 15%; }
+    .blog .blog-nav a > span.nav-older, .blog .blog-nav a > span.nav-newer {
+      padding: 0;
+      background-image: none; }
+  .blog .blog-nav a:first-child,
+  .blog .blog-nav a:last-child {
+    text-align: center; }
   .read-more-desktop {
     padding-left: 0.5rem; }
   .read-more-mobile {
@@ -2187,9 +2203,11 @@ h2 {
       width: 60%; } }
 
 .error404 .site-content {
-  margin: 0 5.07%; }
+  margin: 0 5.07%;
+  margin-top: 5.07%; }
   .error404 .site-content h2 {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: 1px; }
   .error404 .site-content p {
     margin-top: 0; }
   .error404 .site-content .search-form {
