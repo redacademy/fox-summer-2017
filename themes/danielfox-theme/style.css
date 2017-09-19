@@ -1677,7 +1677,7 @@ h2 {
       color: #dc4e3c;
       border-bottom: 2px solid rgba(1, 79, 90, 0.5);
       margin-bottom: 20px;
-      width: 73%; }
+      width: 100%; }
     .blog .widget-area .recent-post-container .recent-post-thumbnail,
     .single-post .widget-area .recent-post-container .recent-post-thumbnail {
       width: 262px;
@@ -1837,6 +1837,11 @@ h2 {
         display: flex;
         width: 100%;
         margin-top: 10px; }
+        .blog .site-content .content-area .blog-photo .blog-image,
+        .single-post .site-content .content-area .blog-photo .blog-image {
+          min-height: 483px;
+          width: 100%;
+          background-position: bottom center; }
         .blog .site-content .content-area .blog-photo .wp-post-image,
         .single-post .site-content .content-area .blog-photo .wp-post-image {
           width: 100%;
