@@ -37,5 +37,19 @@
     });
 
 
+
+    $("#modal-1").on('hidden.bs.modal', function () {
+        $("#modal-1 iframe").attr("src", $("#modal-1 iframe").attr("src"));
+    });
+
+    $("#modal-2").on('hidden.bs.modal', function () {
+        $("#modal-2 iframe").attr("src", $("#modal-2 iframe").attr("src"));
+    });
+
+     $("#modal-3").on('hidden.bs.modal', function () {
+        $("#modal-3 iframe").attr("src", $("#modal-3 iframe").attr("src"));
+    });
+
+
   });
 }(jQuery));

@@ -16,7 +16,7 @@ get_header(); ?>
 				</div>
 				</a>
 				<section class="speaker-description">
-					<div class="front-page-header-box speaker-header-box">
+					<div class="speaker-header-box">
 						<h2><?php echo CFS()->get( 'speaker_header' ); ?></h2>
 					</div>
 					<p><?php echo CFS()->get( 'speaker_first_text' ); ?></p>
