@@ -1094,7 +1094,6 @@ h2 {
   border-bottom: 1px solid rgba(1, 79, 90, 0.5); }
 
 .front-page-header-box h2 {
-  border-bottom: 1px solid rgba(1, 79, 90, 0.5);
   margin-bottom: 10px;
   padding: 12px 0 8px; }
 
@@ -1155,8 +1154,13 @@ h2 {
       position: relative;
       height: 60px; }
 
-.front-page-other-projects-box h2 {
-  margin-bottom: 40px; }
+.front-page-other-projects-box {
+  border: none; }
+  .front-page-other-projects-box h2 {
+    border-bottom: 1px solid rgba(1, 79, 90, 0.5);
+    margin-bottom: 40px;
+    text-align: center;
+    width: 72%; }
 
 @media (min-width: 600px) {
   .home-hero {
@@ -1172,6 +1176,11 @@ h2 {
         margin-top: 190px; }
   .front-page-about .desktop-text {
     display: block; }
+  .front-page-about {
+    width: 45.28%; }
+    .front-page-about p {
+      font-size: 17px;
+      letter-spacing: 2px; }
   .project-container {
     display: -ms-flexbox;
     display: flex; }
@@ -1213,9 +1222,20 @@ h2 {
   .featured-in h2 {
     font-size: 22px; }
   .front-page-header-box {
-    width: 60%; }
+    width: 60%;
+    margin-bottom: 50px; }
+    .front-page-header-box h2 {
+      border: none;
+      padding: 25px 0 8px; }
   .front-page-other-projects-box {
-    display: none; } }
+    display: none; }
+  .front-page-photography,
+  .front-page-speaker {
+    width: 60.35%; }
+    .front-page-photography p,
+    .front-page-speaker p {
+      font-size: 17px;
+      letter-spacing: 2px; } }
 
 .about-text-desktop {
   display: none; }

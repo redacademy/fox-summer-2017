@@ -23,8 +23,8 @@ get_header(); ?>
                 <?php echo CFS()->get( 'front_page_about_text' ); ?>
 
                 <span class="desktop-text">
-                    <p><?php echo CFS()->get( 'front_page_about_desktop_text_1' ); ?></p>
-                    <p><?php echo CFS()->get( 'front_page_about_desktop_text_2' ); ?></p>
+                    <?php echo CFS()->get( 'front_page_about_desktop_text_1' ); ?>
+                    <?php echo CFS()->get( 'front_page_about_desktop_text_2' ); ?>
                 </span>
                 <div class="red-button">
                     <h3><a href="about"><?php echo CFS()->get( 'front_page_about_button' ); ?></a></h3>
@@ -39,7 +39,7 @@ get_header(); ?>
                     <h2><?php echo CFS()->get( 'front_page_photography_h2' ); ?></h2>
                 </div>
 
-                <p><?php echo CFS()->get( 'front_page_photography_text' ); ?></p>
+                <?php echo CFS()->get( 'front_page_photography_text' ); ?>
 
                 <div class="red-button">
                     <h3><a href="album-type/wildlife/"><?php echo CFS()->get( 'front_page_photography_button' ); ?></a></h3>
@@ -53,7 +53,7 @@ get_header(); ?>
                     <h2><?php echo CFS()->get( 'front_page_speaker_h2' ); ?></h2>
                 </div>
 
-                <p><?php echo CFS()->get( 'front_page_speaker_text' ); ?></p>
+                <?php echo CFS()->get( 'front_page_speaker_text' ); ?>
 
                 <div class="red-button">
                     <h3><a href="speaker"><?php echo CFS()->get( 'front_page_speaker_button' ); ?></a></h3>
