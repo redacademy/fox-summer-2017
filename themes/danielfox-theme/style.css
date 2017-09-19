@@ -901,6 +901,8 @@ h3 {
     color: #fff;
     text-decoration: none;
     text-align: center; }
+  h3 a:hover {
+    color: white; }
 
 a:hover {
   background-color: transparent; }
@@ -1021,12 +1023,9 @@ a:hover {
     display: flex;
     -ms-flex-pack: center;
         justify-content: center; }
-  .front-page-about .desktop-text,
-  .front-page-photography .desktop-text,
-  .front-page-speaker .desktop-text,
-  .other-projects .desktop-text,
-  .speaker-description .desktop-text {
-    display: none; }
+
+.desktop-text {
+  display: none; }
 
 .front-page-header-box,
 .speaker-header-box {
@@ -1053,7 +1052,10 @@ a:hover {
     -ms-flex-pack: center;
         justify-content: center;
     border: 1px solid #dc4e3c;
-    margin-bottom: 51px; }
+    margin-bottom: 51px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 65%; }
     .other-projects .wild-image-project:before {
       content: ' ';
       background-size: cover;
@@ -1084,7 +1086,10 @@ a:hover {
         justify-content: center;
     margin-bottom: 40px;
     position: relative;
-    width: 100%; }
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 65%; }
     .other-projects .front-page-blog:before {
       content: ' ';
       background-size: cover;

@@ -52,7 +52,6 @@
 						{ 
 							echo '<p>' . get_the_title() . '</p>';
 						} 
-
 						?>
 						
 					</div>

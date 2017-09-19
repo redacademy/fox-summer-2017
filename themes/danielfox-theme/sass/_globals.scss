@@ -11,8 +11,12 @@ h3 {
     display: flex;
     justify-content: center;
     @include subscribe-btn;
+    a {
+        &:hover {
+            color: white;
+        }
+    }
 }
-
 a:hover {
     background-color: transparent;
 }

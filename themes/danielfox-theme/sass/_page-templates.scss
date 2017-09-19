@@ -50,11 +50,12 @@
     .red-button {
         display: flex;
         justify-content: center;
+        }
     } //This hides the overflow text until switched to desktop mode
     .desktop-text {
         display: none;
     }
-}
+
 
 .front-page-header-box,
 .speaker-header-box {
@@ -80,6 +81,9 @@
         justify-content: center;
         border: 1px solid $color__accent;
         margin-bottom: 51px;
+        background-size: cover;
+         background-repeat: no-repeat;
+        background-position: 50% 65%;
         &:before {
             content: ' ';
             background-size: cover;
@@ -112,6 +116,9 @@
         margin-bottom: 40px;
         position: relative;
         width: 100%;
+        background-size: cover;
+         background-repeat: no-repeat;
+        background-position: 50% 65%;
         &:before {
             content: ' ';
             background-size: cover;
