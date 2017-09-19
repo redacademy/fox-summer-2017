@@ -272,10 +272,18 @@ h2 {
         .about-image-fifth-desktop {
             display: block;
         }
+        .about-image-third-desktop {
+            img {
+                height: 627px;
+            }
+        }
     }
 }
 
 //Styling for Speaker Page [MOBILE]
+.page-template-speaker {
+    padding-top: 65px;
+}
 .speaker-header-box {
     justify-content: left;
 }
@@ -341,6 +349,9 @@ h2 {
 
 //Styling for Speaker Page [DESKTOP]
 @media (min-width: $breakpoint) {
+    .page-template-speaker {
+        padding-top: 120px;
+    }
     .speaker-top-half {
         display: flex;
         .speaker-header-image {

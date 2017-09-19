@@ -900,7 +900,8 @@ body {
   font-family: Roboto, Arial, sans-serif;
   color: #3a3a3a; }
 
-h1, h2 {
+h1,
+h2 {
   color: #dc4e3c;
   letter-spacing: 5px; }
 
@@ -992,7 +993,7 @@ a:hover {
         border: 1px solid #dc4e3c;
         border-radius: 0;
         margin: 18px 0;
-        padding: 12px 0; } }
+        padding-left: 12px; } }
 
 .about-section p {
   margin: 3rem 2.5rem 2.0rem; }
@@ -1235,7 +1236,12 @@ h2 {
     display: none; }
   .about-section .about-image-third-desktop,
   .about-section .about-image-fifth-desktop {
-    display: block; } }
+    display: block; }
+  .about-section .about-image-third-desktop img {
+    height: 627px; } }
+
+.page-template-speaker {
+  padding-top: 65px; }
 
 .speaker-header-box {
   -ms-flex-pack: left;
@@ -1297,6 +1303,8 @@ h2 {
   background-color: rgba(0, 0, 0, 0.7); }
 
 @media (min-width: 600px) {
+  .page-template-speaker {
+    padding-top: 120px; }
   .speaker-top-half {
     display: -ms-flexbox;
     display: flex; }
