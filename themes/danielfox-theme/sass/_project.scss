@@ -42,7 +42,6 @@
 .single-project {
     .project-featured-image {
         width: 100%;
-
     }
     .featured-image {
         height: 296px;
@@ -79,6 +78,27 @@
             height: 75vh;
             width: auto;
         }
+        .type-project {
+            .project-title {
+                margin-top: 90px;
+                margin-bottom: 30px;
+            }
+            .entry-title a {
+                font-size: 40px;
+            }
+        }
+        .project {
+            .project-featured-image-box {
+                display: flex;
+                justify-content: center;
+            }
+            .project-featured-image {
+                background-size: cover;
+                background-position: center;
+                height: 400px;
+                width: 80%;
+            }
+        }
     }
     .post-type-archive-project {
         .site-header {
@@ -114,6 +134,14 @@
             }
             .project {
                 width: 29.5%;
+            }
+        }
+    }
+    .project-container {
+        article {
+            .project-title {
+                margin-top: 50px;
+                margin-bottom: 0px;
             }
         }
     }
