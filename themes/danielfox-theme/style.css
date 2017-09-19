@@ -621,25 +621,29 @@ a {
         border-top: 0px;
         border-bottom: 0px; }
   .site-header .main-navigation {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     display: -ms-flexbox;
     display: flex;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 0px; }
+    top: 0px;
+    height: 83px; }
     .site-header .main-navigation .header-logo {
-      -ms-flex-preferred-size: 15%;
-          flex-basis: 15%; }
+      -ms-flex-preferred-size: 13%;
+          flex-basis: 13%; }
       .site-header .main-navigation .header-logo img {
-        max-height: 83px; }
+        max-height: 65px; }
       .site-header .main-navigation .header-logo a {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-pack: end;
-            justify-content: flex-end; }
+            justify-content: flex-end;
+        height: 100%;
+        -ms-flex-align: center;
+            align-items: center; }
     .site-header .main-navigation .nav-menu-options {
-      -ms-flex-preferred-size: 85%;
-          flex-basis: 85%; }
+      -ms-flex-preferred-size: 87%;
+          flex-basis: 87%; }
       .site-header .main-navigation .nav-menu-options .menu li {
         font-size: 20px; }
       .site-header .main-navigation .nav-menu-options div {
@@ -1075,11 +1079,7 @@ a:hover {
     -ms-flex-pack: center;
         justify-content: center;
     border: 1px solid #dc4e3c;
-    margin-bottom: 51px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 65%;
-    background-color: 0, 0, 0, 0.5; }
+    margin-bottom: 51px; }
     .other-projects .wild-image-project p {
       display: none;
       margin: 15px 70px; }
@@ -1105,22 +1105,7 @@ a:hover {
         justify-content: center;
     margin-bottom: 40px;
     position: relative;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 65%; }
-    .other-projects .front-page-blog:before {
-      content: ' ';
-      background-size: cover;
-      background-position: 50% 25%;
-      display: block;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      opacity: 0.2; }
+    width: 100%; }
     .other-projects .front-page-blog p {
       display: none;
       margin: 15px 70px; }
@@ -1140,7 +1125,7 @@ a:hover {
       .home-hero .home-hero-overlay h1:last-child {
         font-size: 48px;
         letter-spacing: 6px;
-        margin-top: 110px; }
+        margin-top: 150px; }
   .front-page-about .desktop-text {
     display: block; }
   .project-container {
