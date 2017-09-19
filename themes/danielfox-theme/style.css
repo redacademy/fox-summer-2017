@@ -1373,17 +1373,21 @@ h2 {
   max-height: 500px;
   overflow: hidden; }
 
+#post-213 {
+  width: 96%; }
+
 .taxonomy-description {
   display: none; }
 
 @media (min-width: 600px) {
-  .taxonomy-description {
+  .page-header .taxonomy-description {
+    margin-top: 80px !important;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
         justify-content: center;
     margin: 0px; }
-    .taxonomy-description p {
+    .page-header .taxonomy-description p {
       color: #dc4e3c; }
   .photograph-grid {
     -ms-flex-align: center;

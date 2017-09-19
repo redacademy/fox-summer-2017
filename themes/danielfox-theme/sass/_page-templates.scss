@@ -433,20 +433,26 @@ h2 {
     }
 }
 
+#post-213 {
+        width: 96%;
+}
+
 .taxonomy-description {
     display: none;
 }
 
 //Styling for Photo pages [Desktop]
 @media (min-width: $breakpoint) {
+    .page-header {
     .taxonomy-description {
+        margin-top: 80px !important;
         display: flex;
         justify-content: center;
         margin: 0px;
         p {
             color: $color__accent;
         }
-    }
+    }}
     .photograph-grid {
         align-items: center;
         display: flex;
