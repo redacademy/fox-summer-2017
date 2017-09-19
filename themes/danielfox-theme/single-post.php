@@ -16,7 +16,7 @@ get_header(); ?>
 				<header class="entry-header">
 				<div class="blog-photo">
 					<div class="icon-container-desktop">    
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" />
+					<a href="#comments"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" /></a>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
 					</div>
