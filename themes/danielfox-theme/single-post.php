@@ -15,11 +15,15 @@ get_header(); ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<header class="entry-header">
 				<div class="blog-photo">
-					<div class="icon-container-desktop">    
-					<a href="#comments"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" /></a>
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
-					</div>
+				<div class="icon-container-desktop">    
+				<a href="<?php echo esc_url( get_permalink() )?>#comments">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" />
+				</a>
+				<div class="shareRoundIcons" 
+					data-share-title="<?php echo get_the_title(); ?>" 
+					data-share-link="<?php echo esc_url(get_the_permalink()); ?>">
+				</div>
+			</div>
 					<?php if ( has_post_thumbnail() ) : ?>
 					<div class="blog-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
 				</div>
