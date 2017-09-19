@@ -2233,13 +2233,15 @@ h2 {
       text-decoration: none; }
 
 @media screen and (min-width: 600px) {
-  .error404 .search-form {
-    width: 52%; }
-    .error404 .search-form fieldset {
-      border: 0;
-      padding: 0;
-      width: 50%;
-      margin-left: 0; } }
+  .error404 {
+    padding-top: 100px; }
+    .error404 .search-form {
+      width: 52%; }
+      .error404 .search-form fieldset {
+        border: 0;
+        padding: 0;
+        width: 50%;
+        margin-left: 0; } }
 
 .post-type-archive-project .project-container .project-title {
   background: #dc4e3c; }
@@ -2421,11 +2423,13 @@ h2 {
     margin: 0; }
 
 @media screen and (min-width: 600px) {
-  .search fieldset {
-    border: 0;
-    padding: 0;
-    width: 50%;
-    margin-left: 0; } }
+  .search {
+    padding-top: 100px; }
+    .search fieldset {
+      border: 0;
+      padding: 0;
+      width: 50%;
+      margin-left: 0; } }
 
 .search-results .entry-meta {
   display: none; }

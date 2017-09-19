@@ -38,6 +38,7 @@
 
 .search {
     @media screen and (min-width: $breakpoint) {
+        padding-top: 100px;    
         fieldset {
             border: 0;
             padding: 0;
