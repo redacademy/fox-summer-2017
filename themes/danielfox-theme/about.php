@@ -44,8 +44,7 @@ get_header(); ?>
 			<div class="desktop-photo-columns">		
 				<div class="desktop-photo-column-sections desktop-photo-column-1">
            			 <section class="about-section about-first-section">
-				<div class="about-image">
-					<img src="<?php echo CFS()->get( 'about_first_image' ); ?>"/>
+				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_first_image' ); ?>);">
 				</div>
                 <p> 
 					<?php echo CFS()->get( 'about_first_text' ); ?>
@@ -53,8 +52,7 @@ get_header(); ?>
          		   </section>
 				
             <section class="about-section about-second-section">
-				<div class="about-image">
-					<img src="<?php echo CFS()->get( 'about_second_image' ); ?>"/>
+				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_second_image' ); ?>);">
 				</div>
                 <p> 
 					<?php echo CFS()->get( 'about_second_text' ); ?>					
@@ -66,12 +64,8 @@ get_header(); ?>
 
 			<div class="desktop-photo-column-sections desktop-photo-column-2">
             <section class="about-section about-third-section">
-				<div class="about-image about-image-third-mobile">
-					<img src="<?php echo CFS()->get( 'about_third_image' ); ?>"/>	
+				<div class="about-image about-image-large" style="background-image:url(<?php echo CFS()->get( 'about_fifth_image' ); ?>);">
 				</div>
-				<div class="about-image-third-desktop">
-					<img src="<?php echo CFS()->get( 'about_fifth_image' ); ?>"/>
-				</div>	
 					
                 <p>
 					<?php echo CFS()->get( 'about_third_text' ); ?>					
@@ -83,19 +77,17 @@ get_header(); ?>
 
 			<div class="desktop-photo-column-sections desktop-photo-column-3">			
 			<section class="about-section about-fourth-section">
-				<div class="about-image">
-					<img src="<?php echo CFS()->get( 'about_fourth_image' ); ?>"/>	
+				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_fourth_image' ); ?>);">
 				</div>
                 <p>
 					<?php echo CFS()->get( 'about_fourth_text' ); ?>					
                 </p>
+
+
             <section class="about-section about-fifth-section">
-				<div class="about-image about-image-fifth-mobile">
-					<img src="<?php echo CFS()->get( 'about_fifth_image' ); ?>"/>	
+				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_third_image' ); ?>);">
 				</div>
-				<div class="about-image-fifth-desktop">
-					<img src="<?php echo CFS()->get( 'about_third_image' ); ?>"/>
-				</div>	
+
                 <p>
 					<?php echo CFS()->get( 'about_fifth_text' ); ?>					
                 </p>

@@ -15,7 +15,7 @@
 		?>
 
 		<header class="page-header">
-			<?php the_archive_description( '<h1 class="taxonomy-description">', '</h1>' ); ?>
+			<?php the_archive_description( '<h1 class="taxonomy-description">', '</h1>'); ?>
 		</header><!-- .page-header -->
 		
 		<?php /* Start the Loop */ ?>
