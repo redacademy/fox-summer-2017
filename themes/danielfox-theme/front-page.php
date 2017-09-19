@@ -20,7 +20,7 @@ get_header(); ?>
                     <h2><?php echo CFS()->get( 'front_page_about_h2' ); ?></h2>
                 </div>
 
-                <p><?php echo CFS()->get( 'front_page_about_text' ); ?></p>
+                <?php echo CFS()->get( 'front_page_about_text' ); ?>
 
                 <span class="desktop-text">
                     <p><?php echo CFS()->get( 'front_page_about_desktop_text_1' ); ?></p>

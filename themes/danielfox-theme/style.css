@@ -1075,6 +1075,15 @@ h2 {
 .desktop-text {
   display: none; }
 
+.front-page-about p {
+  letter-spacing: 1px; }
+
+.red-button h3 {
+  font-weight: 100;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  width: 150px; }
+
 .front-page-header-box,
 .speaker-header-box {
   display: -ms-flexbox;
@@ -1083,6 +1092,10 @@ h2 {
       justify-content: center;
   margin: auto;
   border-bottom: 1px solid rgba(1, 79, 90, 0.5); }
+
+.front-page-header-box h2 {
+  margin-bottom: 10px;
+  padding: 12px 0 8px; }
 
 .featured-in {
   display: none; }
