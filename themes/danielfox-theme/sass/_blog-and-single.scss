@@ -1,5 +1,8 @@
 .blog, 
 .single-post {
+    .site-content {
+        padding-top: 60px;
+    }
     .widget-area {
         display: none;
     }
@@ -22,6 +25,12 @@
             color: $color__accent;
             font-size: 1.2rem;
         }
+    }
+    .blog-image {
+        height: 250px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .text-content {
         margin: 0px 20px;
@@ -61,6 +70,7 @@
         .widget-area {
             display: block;
             margin-right: 50px;
+            padding-top: 10px;
         }
         .site-footer {
         display: flex;
@@ -111,17 +121,19 @@
             .content-area {
                 flex-basis: 70%;
                 margin-right: 67px;
-                .post-date {
-                    display: none;
-                }
                 .blog-photo {
                     display: flex;
                     width: 100%;
                     margin-top: 10px;
-                    .wp-post-image {
+                    .blog-image {
+                        min-height: 483px; 
                         width: 100%;
-                        max-height: 450px;
+                        background-position: center center;
                     }
+                }
+                .post-date {
+                    display: none;
+                }
                     .icon-container-mobile {
                         display: none;
                     }
@@ -166,4 +178,3 @@
             }
         }
     }
-}

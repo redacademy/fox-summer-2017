@@ -27,17 +27,17 @@ get_header(); ?>
                             
                             <div class="blog-photo">
                                 <div class="icon-container-desktop">    
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" />
-                                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" /> -->
+                                    <a href="<?php echo esc_url( get_permalink() )?>#comments">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/commenticon.svg" class="comment-icon" alt="Comment icon" />
+                                    </a>
                                     <div class="shareRoundIcons" 
                                         data-share-title="<?php echo get_the_title(); ?>" 
                                         data-share-link="<?php echo esc_url(get_the_permalink()); ?>">
                                     </div>
                                 </div>
                                 <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail( 'large' ); ?>
-                            </div>
+                                <div class="blog-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
+                                </div>
                             <?php endif; ?>
                     </header><!-- .entry-header -->
 
