@@ -988,12 +988,13 @@ a:hover {
         margin: 18px 0;
         padding: 12px 0;
         text-shadow: none;
-        width: 179px; }
+        width: 130px; }
       .site-footer .widget-area .mc4wp-form-fields .email-input {
         border: 1px solid #dc4e3c;
         border-radius: 0;
         margin: 18px 0;
-        padding-left: 12px; } }
+        padding-left: 12px;
+        padding-right: 50px; } }
 
 .about-section p {
   margin: 3rem 2.5rem 2.0rem; }
@@ -1704,8 +1705,12 @@ h2 {
       margin-top: 0;
       letter-spacing: 1px; } }
 
-.blog .widget-area,
-.single-post .widget-area {
+.blog #secondary,
+.single-post #secondary {
+  display: none; }
+
+.blog .site-footer .widget-area,
+.single-post .site-footer .widget-area {
   display: none; }
 
 .blog .icon-container-desktop,
@@ -1762,20 +1767,19 @@ h2 {
     display: none; }
 
 @media screen and (min-width: 600px) {
-  .blog .site-content,
-  .single-post .site-content {
+  .blog #secondary,
+  .single-post #secondary {
+    display: block;
+    margin-right: 50px; }
+  .blog .site-footer,
+  .single-post .site-footer {
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row-reverse;
-        flex-direction: row-reverse;
-    margin-top: 70px; }
-    .blog .site-content .widget-area,
-    .single-post .site-content .widget-area {
-      display: block;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
-      .blog .site-content .widget-area .widget-title,
-      .single-post .site-content .widget-area .widget-title {
+    display: flex; }
+    .blog .site-footer .widget-area,
+    .single-post .site-footer .widget-area {
+      display: block; }
+      .blog .site-footer .widget-area .widget-title,
+      .single-post .site-footer .widget-area .widget-title {
         text-align: center;
         border-bottom: 1px solid rgba(1, 79, 90, 0.5);
         width: 80%;
@@ -1783,6 +1787,13 @@ h2 {
         font-size: 22px;
         padding-bottom: 10px;
         margin-bottom: 10px; }
+  .blog .site-content,
+  .single-post .site-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    margin-top: 70px; }
     .blog .site-content .content-area,
     .single-post .site-content .content-area {
       -ms-flex-preferred-size: 70%;
@@ -1935,6 +1946,8 @@ h2 {
       text-align: center; }
 
 @media screen and (min-width: 600px) {
+  .blog .blog-mobile-caption {
+    display: none; }
   .blog .post-date {
     display: none; }
   .blog .blog-nav {
@@ -2023,14 +2036,13 @@ h2 {
   .single-post .comments-area input {
     width: 100%; }
   .single-post .comments-area .form-submit {
-    margin-bottom: 20px;
     background-color: #dc4e3c;
     color: #fff;
-    text-decoration: none;
-    padding: 4px 10px;
     letter-spacing: 2px;
-    margin: 0 auto;
-    width: 50%; }
+    line-height: 40px;
+    margin: 0 auto 20px;
+    text-decoration: none;
+    width: 177px; }
     .single-post .comments-area .form-submit .submit {
       background-color: #dc4e3c;
       box-shadow: none;
