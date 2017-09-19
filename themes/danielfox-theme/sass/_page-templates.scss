@@ -92,7 +92,6 @@ h2 {
 }
 .front-page-header-box {
     h2 {
-        border-bottom: 1px solid rgba(1,79,90,.5);
         margin-bottom: 10px;
         padding: 12px 0 8px;
     }
@@ -159,8 +158,12 @@ h2 {
     }
 }
 .front-page-other-projects-box {
+    border: none;
     h2 {
+        border-bottom: 1px solid rgba(1,79,90,.5);        
         margin-bottom: 40px;
+        text-align: center;
+        width: 72%;
     }
 }
 
@@ -184,6 +187,13 @@ h2 {
     }
     .front-page-about .desktop-text {
         display: block;
+    }
+    .front-page-about {
+        width: 45.28%;
+        p {
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
     }
     .project-container {
         display: flex;
@@ -238,9 +248,22 @@ h2 {
     }
     .front-page-header-box {
         width: 60%;
+        margin-bottom: 50px;
+        h2 {
+            border: none;
+            padding: 25px 0 8px;
+        }
     }
     .front-page-other-projects-box {
         display: none;
+    }
+    .front-page-photography,
+    .front-page-speaker {
+        width: 60.35%;
+        p {
+            font-size: 17px;
+            letter-spacing: 2px;
+        }
     }
 }
 
