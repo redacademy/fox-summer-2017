@@ -957,7 +957,8 @@ a:hover {
   display: none; }
 
 @media screen and (min-width: 600px) {
-  .home .widget-area {
+  .home .widget-area,
+  .blog .widget-area {
     display: block; }
   .site-footer {
     display: -ms-flexbox;
@@ -1764,7 +1765,8 @@ h2 {
 @media screen and (min-width: 600px) {
   .blog .site-footer,
   .single-post .site-footer {
-    display: block; }
+    display: -ms-flexbox;
+    display: flex; }
   .blog .site-content,
   .single-post .site-content {
     display: -ms-flexbox;
