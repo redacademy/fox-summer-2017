@@ -39,6 +39,36 @@
     }
 }
 
+.single-project {
+    .featured-image {
+        height: 296px;
+        width: 500px;
+        overflow: hidden;
+        position: relative;
+        .wp-post-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: auto;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .project-title {
+        margin: 3.9% 13.87%;
+        .entry-title {
+            font-size: 20px;
+            text-align: center;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+    .entry-content {
+        margin: 5.62% 11.2%;
+    }
+}
+
 //Styling for Project Archive Page [DESKTOP]
 @media screen and (min-width: $breakpoint) {
     .single-project {
@@ -56,8 +86,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin: 0 2%;
-            .project-title {
-            }
             .project-mobile-description {
                 display: none;
             }
