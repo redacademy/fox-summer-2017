@@ -105,6 +105,9 @@
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
     .blog {
+        .blog-mobile-caption {
+            display: none;
+        }
         .post-date {
             display: none;
         }

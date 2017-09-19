@@ -994,12 +994,13 @@ a:hover {
         margin: 18px 0;
         padding: 12px 0;
         text-shadow: none;
-        width: 179px; }
+        width: 130px; }
       .site-footer .widget-area .mc4wp-form-fields .email-input {
         border: 1px solid #dc4e3c;
         border-radius: 0;
         margin: 18px 0;
-        padding-left: 12px; } }
+        padding-left: 12px;
+        padding-right: 50px; } }
 
 .about-section p {
   margin: 3rem 2.5rem 2.0rem; }
@@ -1782,10 +1783,52 @@ h2 {
     display: none; }
 
 @media screen and (min-width: 600px) {
+  .blog .widget-area,
+  .single-post .widget-area {
+    display: block;
+    margin-right: 50px; }
   .blog .site-footer,
   .single-post .site-footer {
     display: -ms-flexbox;
     display: flex; }
+    .blog .site-footer .widget-area .mc4wp-form,
+    .single-post .site-footer .widget-area .mc4wp-form {
+      border: none;
+      height: 80px;
+      width: 350px; }
+    .blog .site-footer .widget-area .mc4wp-form-fields,
+    .single-post .site-footer .widget-area .mc4wp-form-fields {
+      border: none;
+      display: -ms-flexbox;
+      display: flex;
+      height: auto;
+      overflow: visible;
+      width: auto; }
+      .blog .site-footer .widget-area .mc4wp-form-fields h4,
+      .single-post .site-footer .widget-area .mc4wp-form-fields h4 {
+        display: none; }
+      .blog .site-footer .widget-area .mc4wp-form-fields p,
+      .single-post .site-footer .widget-area .mc4wp-form-fields p {
+        display: none; }
+      .blog .site-footer .widget-area .mc4wp-form-fields .subscribe-button,
+      .single-post .site-footer .widget-area .mc4wp-form-fields .subscribe-button {
+        background-color: #dc4e3c;
+        border: 1px solid #dc4e3c;
+        border-radius: 0;
+        box-shadow: none;
+        color: #fff;
+        font-size: 18px;
+        margin: 18px 0;
+        padding: 12px 0;
+        text-shadow: none;
+        width: 130px; }
+      .blog .site-footer .widget-area .mc4wp-form-fields .email-input,
+      .single-post .site-footer .widget-area .mc4wp-form-fields .email-input {
+        border: 1px solid #dc4e3c;
+        border-radius: 0;
+        margin: 18px 0;
+        padding-left: 12px;
+        padding-right: 50px; }
   .blog .site-content,
   .single-post .site-content {
     display: -ms-flexbox;
@@ -1793,20 +1836,6 @@ h2 {
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
     margin-top: 70px; }
-    .blog .site-content .widget-area,
-    .single-post .site-content .widget-area {
-      display: block;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
-      .blog .site-content .widget-area .widget-title,
-      .single-post .site-content .widget-area .widget-title {
-        text-align: center;
-        border-bottom: 1px solid rgba(1, 79, 90, 0.5);
-        width: 80%;
-        margin: 0 auto;
-        font-size: 22px;
-        padding-bottom: 10px;
-        margin-bottom: 10px; }
     .blog .site-content .content-area,
     .single-post .site-content .content-area {
       -ms-flex-preferred-size: 70%;
@@ -1959,6 +1988,8 @@ h2 {
       text-align: center; }
 
 @media screen and (min-width: 600px) {
+  .blog .blog-mobile-caption {
+    display: none; }
   .blog .post-date {
     display: none; }
   .blog .blog-nav {
@@ -2047,14 +2078,13 @@ h2 {
   .single-post .comments-area input {
     width: 100%; }
   .single-post .comments-area .form-submit {
-    margin-bottom: 20px;
     background-color: #dc4e3c;
     color: #fff;
-    text-decoration: none;
-    padding: 4px 10px;
     letter-spacing: 2px;
-    margin: 0 auto;
-    width: 50%; }
+    line-height: 40px;
+    margin: 0 auto 20px;
+    text-decoration: none;
+    width: 177px; }
     .single-post .comments-area .form-submit .submit {
       background-color: #dc4e3c;
       box-shadow: none;
