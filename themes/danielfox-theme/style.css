@@ -1244,8 +1244,8 @@ h2 {
   padding-top: 65px; }
 
 .speaker-header-box {
-  -ms-flex-pack: left;
-      justify-content: left; }
+  -ms-flex-pack: center;
+      justify-content: center; }
   .speaker-header-box h2 {
     font-size: 16px;
     font-weight: 100;
@@ -1300,7 +1300,7 @@ h2 {
     width: 80vw;
     text-align: center;
     overflow: auto;
-    height: 14vh;
+    height: 25vh;
     color: white;
     letter-spacing: 3px; }
 
@@ -1345,7 +1345,8 @@ h2 {
   .video-modal-body .speaker-video-description {
     padding-top: 2vh;
     width: 90vw;
-    letter-spacing: 4px; } }
+    letter-spacing: 3px;
+    height: 16vh; } }
 
 .photograph-grid .photograph-grid-item {
   margin: 10px;
@@ -2148,9 +2149,11 @@ h2 {
 .post-type-archive-project .site-header {
   height: 41px; }
 
+.single-project .project-featured-image {
+  width: 100%; }
+
 .single-project .featured-image {
   height: 296px;
-  width: 500px;
   overflow: hidden;
   position: relative; }
   .single-project .featured-image .wp-post-image {
