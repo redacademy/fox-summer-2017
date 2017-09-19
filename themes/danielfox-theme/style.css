@@ -1762,6 +1762,9 @@ h2 {
     display: none; }
 
 @media screen and (min-width: 600px) {
+  .blog .site-footer,
+  .single-post .site-footer {
+    display: block; }
   .blog .site-content,
   .single-post .site-content {
     display: -ms-flexbox;
@@ -1983,12 +1986,12 @@ h2 {
     background-image: url("../../assets/icons/left.svg");
     background-position: left center;
     padding-left: 20px;
-    width: 30%; }
+    width: 36%; }
   .single-post .nav-links > div.nav-next {
     background-image: url("../../assets/icons/right.svg");
     background-position: right center;
     padding-right: 20px;
-    width: 30%; }
+    width: 36%; }
 
 .single-post .entry-meta {
   font-size: 13px;
