@@ -799,7 +799,17 @@ a {
 
 @media (min-width: 600px) {
   .contact-form {
-    width: 434px; } }
+    width: 434px; }
+    .contact-form input, .contact-form textarea {
+      font-size: 18px; }
+    .contact-form p:nth-child(2),
+    .contact-form p:nth-child(3),
+    .contact-form p:nth-child(4) {
+      height: 60px; }
+    .contact-form p span input {
+      height: 48px; }
+    .contact-form textarea {
+      padding: 13px 0 0 15px; } }
 
 /*--------------------------------------------------------------
 # Content
