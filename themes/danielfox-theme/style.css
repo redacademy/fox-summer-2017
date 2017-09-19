@@ -1732,6 +1732,10 @@ h2 {
       margin-top: 0;
       letter-spacing: 1px; } }
 
+.blog .site-content,
+.single-post .site-content {
+  padding-top: 60px; }
+
 .blog .widget-area,
 .single-post .widget-area {
   display: none; }
@@ -1866,7 +1870,7 @@ h2 {
         .single-post .site-content .content-area .blog-photo .blog-image {
           min-height: 483px;
           width: 100%;
-          background-position: center bottom; }
+          background-position: center center; }
       .blog .site-content .content-area .post-date,
       .single-post .site-content .content-area .post-date {
         display: none; }

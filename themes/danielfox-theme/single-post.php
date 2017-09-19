@@ -21,7 +21,7 @@ get_header(); ?>
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" />
 					</div>
 					<?php if ( has_post_thumbnail() ) : ?>
-							<?php the_post_thumbnail( 'large' ); ?>
+					<div class="blog-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
 				</div>
 					<?php endif; ?>
 				</header><!-- .entry-header -->

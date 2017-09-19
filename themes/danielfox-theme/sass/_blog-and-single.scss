@@ -1,5 +1,8 @@
 .blog, 
 .single-post {
+    .site-content {
+        padding-top: 60px;
+    }
     .widget-area {
         display: none;
     }
@@ -125,7 +128,7 @@
                     .blog-image {
                         min-height: 483px; 
                         width: 100%;
-                        background-position: center bottom;
+                        background-position: center center;
                     }
                 }
                 .post-date {
