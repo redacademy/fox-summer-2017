@@ -90,6 +90,7 @@ h2 {
 }
 .front-page-header-box {
     h2 {
+        border-bottom: 1px solid rgba(1,79,90,.5);
         margin-bottom: 10px;
         padding: 12px 0 8px;
     }
@@ -153,6 +154,11 @@ h2 {
             position: relative;
             height: 60px;
         }
+    }
+}
+.front-page-other-projects-box {
+    h2 {
+        margin-bottom: 40px;
     }
 }
 
