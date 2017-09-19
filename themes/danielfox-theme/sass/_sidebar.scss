@@ -56,6 +56,8 @@
                     line-height: 1.5;
                 }
             }
+
+            //Recent Posts
             .recent-post-container {
                 .container-title {
                     background-color: transparent;
@@ -89,14 +91,12 @@
                     text-decoration: none;
                     color: $color__reverse;
                     width: 100%;
-                    text-align: center;
                 }
                 .recent-post-title {
                     width: 100%;
                     margin-top: 0;
                     margin-bottom: 0px;
                     letter-spacing: 1px;
-
                 }
                     .blog-thumbnail {
                         height: 100%;
