@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="15px" viewBox="0 0 28 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>up</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Mobile-Hi-Fi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="WGCTv1" transform="translate(-174.000000, -640.000000)" fill-rule="nonzero" fill="#DC4E3C">
+            <g id="up" transform="translate(174.000000, 634.000000)">
+                <path d="M7.244375,26.9031212 C7.406875,27.0685758 7.62020833,27.1517273 7.83354167,27.1517273 C8.046875,27.1517273 8.26020833,27.0685758 8.42270833,26.9031212 L20.9227083,14.1758485 C21.2485417,13.8440909 21.2485417,13.3078485 20.9227083,12.9760909 L8.42270833,0.248818182 C8.096875,-0.0829393939 7.57020833,-0.0829393939 7.244375,0.248818182 C6.91854167,0.580575758 6.91854167,1.11681818 7.244375,1.44857576 L19.1552083,13.5759697 L7.244375,25.7033636 C6.91854167,26.0351212 6.91854167,26.5722121 7.244375,26.9031212 Z" id="Shape" transform="translate(14.083542, 13.575864) scale(1, -1) rotate(90.000000) translate(-14.083542, -13.575864) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

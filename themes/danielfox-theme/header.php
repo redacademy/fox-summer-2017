@@ -37,6 +37,7 @@
 						</nav>
 
 					</div>
+
 					<div class="header-page-name"> 
 						<?php 
 						if ( is_front_page() ) {
@@ -47,6 +48,9 @@
 						}
 						elseif( is_post_type_archive('project') ) {
 							echo 'Projects';
+						}
+						elseif( is_home('blog')) {
+							echo 'Blog';
 						}
 						else  
 						{ 

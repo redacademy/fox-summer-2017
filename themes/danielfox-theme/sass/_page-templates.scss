@@ -429,7 +429,7 @@
     justify-content: center;
     align-items: center;
     .modal-content {
-        width: 100vw;
+        width: 107vw;
         height: 100vh;
     }
     .modal-left-banner,
@@ -568,7 +568,7 @@
                 align-items: center;
 
                 .desktop-modal-details-plus-sign {
-                    background: url('../../assets/icons/exit.svg');
+                    background: url('../../assets/icons/plus.svg');
                     height: 30px;
                     width: 30px;
                     background-size: cover;
@@ -586,7 +586,6 @@
 
 }
 
-
 //Styling for modal-description window on [Mobile]
 
 .mobile-modal-closed-window {
@@ -600,9 +599,9 @@
         display: none;
     }
 
-    .mobile-modal-description-toggle {
-        background-color: blue;
-    }
+    // .mobile-modal-description-toggle {
+    //     background-color: blue;
+    // }
 }
 
 .mobile-modal-description-window {
@@ -620,10 +619,14 @@
     position: relative;
         .mobile-modal-description-toggle {
             height: 20px;
-            width: 20px;
-            background-color: red;
+            width: 36px;
+            background-image: url('../../assets/icons/up.svg');
             position: absolute;
-            right: 50%;
+            right: 47%;
+            background-size: cover;
+        }
+        .mobile-modal-description-toggle-close {
+            background-image: url('../../assets/icons/right.svg') !important;
         }
         .mobile-modal-description-picture-status{
         display: block;

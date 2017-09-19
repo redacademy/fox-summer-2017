@@ -837,6 +837,15 @@ iframe,
 object {
   max-width: 100%; }
 
+iframe {
+  max-width: 101%;
+  max-height: 500px; }
+
+@media (min-width: 600px) {
+  iframe {
+    max-width: 100%;
+    max-height: 600px; } }
+
 /* Captions */
 .wp-caption {
   margin-bottom: 1.5rem;
@@ -1357,7 +1366,7 @@ a:hover {
   -ms-flex-align: center;
       align-items: center; }
   .modal-dialog .modal-content {
-    width: 100vw;
+    width: 107vw;
     height: 100vh; }
   .modal-dialog .modal-left-banner,
   .modal-dialog .modal-right-banner {
@@ -1490,7 +1499,7 @@ a:hover {
     -ms-flex-align: center;
         align-items: center; }
     .modal-dialog .modal-body .desktop-modal-details-right .desktop-modal-details-plus-sign {
-      background: url("../../assets/icons/exit.svg");
+      background: url("../../assets/icons/plus.svg");
       height: 30px;
       width: 30px;
       background-size: cover; }
@@ -1506,8 +1515,6 @@ a:hover {
   position: absolute; }
   .mobile-modal-closed-window .mobile-modal-description-picture-status {
     display: none; }
-  .mobile-modal-closed-window .mobile-modal-description-toggle {
-    background-color: blue; }
 
 .mobile-modal-description-window {
   height: 280px;
@@ -1526,10 +1533,13 @@ a:hover {
   position: relative; }
   .mobile-modal-description-window-top .mobile-modal-description-toggle {
     height: 20px;
-    width: 20px;
-    background-color: red;
+    width: 36px;
+    background-image: url("../../assets/icons/up.svg");
     position: absolute;
-    right: 50%; }
+    right: 47%;
+    background-size: cover; }
+  .mobile-modal-description-window-top .mobile-modal-description-toggle-close {
+    background-image: url("../../assets/icons/right.svg") !important; }
   .mobile-modal-description-window-top .mobile-modal-description-picture-status {
     display: block;
     position: absolute;
