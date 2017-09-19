@@ -561,7 +561,8 @@ a {
         .site-header .header-nav-bar .burger-nav .nav-side a .mobile-nav-menu-home {
           font-weight: 400;
           font-size: 22px;
-          margin-bottom: 12px; }
+          margin-bottom: 12px;
+          letter-spacing: 0px; }
     .site-header .header-nav-bar .burger-nav .nav-side.nav-open {
       margin-left: 0;
       box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); }
@@ -636,14 +637,14 @@ a {
       .site-header .main-navigation .header-logo a {
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+        -ms-flex-pack: center;
+            justify-content: center;
         height: 100%;
         -ms-flex-align: center;
             align-items: center; }
     .site-header .main-navigation .nav-menu-options {
-      -ms-flex-preferred-size: 87%;
-          flex-basis: 87%; }
+      -ms-flex-preferred-size: 83%;
+          flex-basis: 83%; }
       .site-header .main-navigation .nav-menu-options .menu li {
         font-size: 20px; }
       .site-header .main-navigation .nav-menu-options div {
@@ -900,7 +901,8 @@ body {
   color: #3a3a3a; }
 
 h1, h2 {
-  color: #dc4e3c; }
+  color: #dc4e3c;
+  letter-spacing: 5px; }
 
 h3 {
   display: -ms-flexbox;
@@ -1017,6 +1019,9 @@ a:hover {
       .home-hero .home-hero-overlay h1:nth-child(2) {
         font-size: 20px;
         padding-bottom: 22px; }
+
+h2 {
+  font-size: 28px; }
 
 .front-page-photography-image {
   background-size: cover;
@@ -1147,7 +1152,8 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around; }
+        justify-content: space-around;
+    margin: 50px 0px 70px 0px; }
     .featured-in .featured-images {
       width: 78%;
       display: -ms-flexbox;
@@ -1162,7 +1168,15 @@ a:hover {
     left: 50%; }
   .other-projects .wild-image-project-background {
     height: 317px;
-    width: 50%; } }
+    width: 50%; }
+  .front-page-hello h2 {
+    font-size: 48px; }
+  .featured-in h2 {
+    font-size: 22px; }
+  .front-page-header-box {
+    width: 60%; }
+  .front-page-other-projects-box {
+    display: none; } }
 
 .about-text-desktop {
   display: none; }
@@ -1542,7 +1556,8 @@ a:hover {
     right: 47%;
     background-size: cover; }
   .mobile-modal-description-window-top .mobile-modal-description-toggle-close {
-    background-image: url("../../assets/icons/right.svg"); }
+    background-image: url("../../assets/icons/down.svg");
+    background-size: auto; }
   .mobile-modal-description-window-top .mobile-modal-description-picture-status {
     display: block;
     position: absolute;

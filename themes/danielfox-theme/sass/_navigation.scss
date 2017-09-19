@@ -184,6 +184,7 @@ a {
 						font-weight: 400;
 						font-size: 22px;
 						margin-bottom: 12px;
+						letter-spacing: 0px;
 					}
 				}
 			}
@@ -277,13 +278,13 @@ a {
 				}
 				a {
 					display: flex;
-					justify-content: flex-end;
+					justify-content: center;
 					height: 100%;
 					align-items: center;
 				}
 			}
 			.nav-menu-options {
-				flex-basis: 87%;
+				flex-basis: 83%;
 				.menu li {
 					font-size: 20px
 				}

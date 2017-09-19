@@ -16,7 +16,7 @@ get_header(); ?>
                 </div>
             </section>
             <section class="front-page-about">
-                <div class="front-page-header-box">
+                <div class="front-page-header-box front-page-hello">
                     <h2><?php echo CFS()->get( 'front_page_about_h2' ); ?></h2>
                 </div>
 
@@ -74,7 +74,7 @@ get_header(); ?>
             </div>
 
             <section class="other-projects">
-                <div class="front-page-header-box">
+                <div class="front-page-header-box front-page-other-projects-box">
                     <h2><?php echo CFS()->get( 'front_page_other_projects_h2' ); ?></h2>
                 </div>
 
