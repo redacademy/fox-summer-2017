@@ -20,6 +20,9 @@ get_header(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             
 	                <header class="entry-header">
+                            <div class="blog-mobile-caption">
+                                <?php echo CFS()->get( 'blog_mobile_caption' ); ?>
+                            </div>    
                             <span class="post-date"><?php danielfox_posted_on(); ?></span>
                             
                             <div class="blog-photo">

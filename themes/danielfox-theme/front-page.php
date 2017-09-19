@@ -16,7 +16,7 @@ get_header(); ?>
                 </div>
             </section>
             <section class="front-page-about">
-                <div class="front-page-header-box">
+                <div class="front-page-header-box front-page-hello">
                     <h2><?php echo CFS()->get( 'front_page_about_h2' ); ?></h2>
                 </div>
 
@@ -74,16 +74,21 @@ get_header(); ?>
             </div>
 
             <section class="other-projects">
-                <div class="front-page-header-box">
+                <div class="front-page-header-box front-page-other-projects-box">
                     <h2><?php echo CFS()->get( 'front_page_other_projects_h2' ); ?></h2>
                 </div>
 
                 <div class="project-container">
-                    <div class="wild-image-project" style="background-image:url(<?php echo CFS()->get( 'front_page_wild_image' ); ?>);">
+                    <div class="wild-image-project-background" style="background-image:url(<?php echo CFS()->get( 'front_page_wild_image' ); ?>);">
+                    </div>
+                    <div class="wild-image-project">
                         <p><?php echo CFS()->get( 'wild_image_project_text' ); ?></p>
                         <h3><a href="projects"><?php echo CFS()->get( 'front_page_projects_button' ); ?></a></h3>
                     </div>
-                    <div class="front-page-blog" style="background-image:url(<?php echo CFS()->get( 'front_page_blog_image' ); ?>);">
+
+                    <div class="front-page-blog-background" style="background-image:url(<?php echo CFS()->get( 'front_page_blog_image' ); ?>);">
+                    </div>
+                    <div class="front-page-blog">
                         <p><?php echo CFS()->get( 'front_page_blog_text' ); ?></p>
                         <h3><a href="blog"><?php echo CFS()->get( 'front_page_blog_button' ); ?></a></h3>
                     </div>
