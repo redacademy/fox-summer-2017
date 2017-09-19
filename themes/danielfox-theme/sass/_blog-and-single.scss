@@ -1,12 +1,7 @@
 .blog, 
 .single-post {
-    #secondary {
+    .widget-area {
         display: none;
-    }
-    .site-footer {
-        .widget-area {
-            display: none;
-        }
     }
     .icon-container-desktop {
         display: none;
@@ -63,23 +58,49 @@
 @media screen and (min-width: $breakpoint) {
     .blog,
     .single-post {
-        #secondary {
+        .widget-area {
             display: block;
             margin-right: 50px;
         }
         .site-footer {
         display: flex;
             .widget-area {
-                display: block;
-                // flex-basis: 25%;
-                .widget-title {
-                    text-align: center;
-                    border-bottom: 1px solid $color__underline;
-                    width: 80%;
-                    margin: 0 auto;
-                    font-size: 22px;
-                    padding-bottom: 10px;
-                    margin-bottom: 10px;
+                .mc4wp-form {
+                    border: none;
+                    height: 80px;
+                    width: 350px;
+                }
+                .mc4wp-form-fields {
+                    border: none;
+                    display: flex;
+                    height: auto;
+                    overflow: visible;
+                    width: auto;
+                    h4 {
+                        display: none;
+                    }
+                    p {
+                        display: none;
+                    }
+                    .subscribe-button {
+                        background-color: $color__accent;
+                        border: 1px solid $color__accent;
+                        border-radius: 0;
+                        box-shadow: none;
+                        color: $color__reverse;
+                        font-size: $base__font;
+                        margin: 18px 0;
+                        padding: 12px 0;
+                        text-shadow: none;	
+                        width: 130px;
+                    }
+                    .email-input {
+                        border: 1px solid $color__accent;
+                        border-radius: 0;
+                        margin: 18px 0;
+                        padding-left: 12px;
+                        padding-right: 50px;
+                    }
                 }
             }
         }

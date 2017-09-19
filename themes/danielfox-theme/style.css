@@ -1712,12 +1712,8 @@ h2 {
       margin-top: 0;
       letter-spacing: 1px; } }
 
-.blog #secondary,
-.single-post #secondary {
-  display: none; }
-
-.blog .site-footer .widget-area,
-.single-post .site-footer .widget-area {
+.blog .widget-area,
+.single-post .widget-area {
   display: none; }
 
 .blog .icon-container-desktop,
@@ -1774,26 +1770,52 @@ h2 {
     display: none; }
 
 @media screen and (min-width: 600px) {
-  .blog #secondary,
-  .single-post #secondary {
+  .blog .widget-area,
+  .single-post .widget-area {
     display: block;
     margin-right: 50px; }
   .blog .site-footer,
   .single-post .site-footer {
     display: -ms-flexbox;
     display: flex; }
-    .blog .site-footer .widget-area,
-    .single-post .site-footer .widget-area {
-      display: block; }
-      .blog .site-footer .widget-area .widget-title,
-      .single-post .site-footer .widget-area .widget-title {
-        text-align: center;
-        border-bottom: 1px solid rgba(1, 79, 90, 0.5);
-        width: 80%;
-        margin: 0 auto;
-        font-size: 22px;
-        padding-bottom: 10px;
-        margin-bottom: 10px; }
+    .blog .site-footer .widget-area .mc4wp-form,
+    .single-post .site-footer .widget-area .mc4wp-form {
+      border: none;
+      height: 80px;
+      width: 350px; }
+    .blog .site-footer .widget-area .mc4wp-form-fields,
+    .single-post .site-footer .widget-area .mc4wp-form-fields {
+      border: none;
+      display: -ms-flexbox;
+      display: flex;
+      height: auto;
+      overflow: visible;
+      width: auto; }
+      .blog .site-footer .widget-area .mc4wp-form-fields h4,
+      .single-post .site-footer .widget-area .mc4wp-form-fields h4 {
+        display: none; }
+      .blog .site-footer .widget-area .mc4wp-form-fields p,
+      .single-post .site-footer .widget-area .mc4wp-form-fields p {
+        display: none; }
+      .blog .site-footer .widget-area .mc4wp-form-fields .subscribe-button,
+      .single-post .site-footer .widget-area .mc4wp-form-fields .subscribe-button {
+        background-color: #dc4e3c;
+        border: 1px solid #dc4e3c;
+        border-radius: 0;
+        box-shadow: none;
+        color: #fff;
+        font-size: 18px;
+        margin: 18px 0;
+        padding: 12px 0;
+        text-shadow: none;
+        width: 130px; }
+      .blog .site-footer .widget-area .mc4wp-form-fields .email-input,
+      .single-post .site-footer .widget-area .mc4wp-form-fields .email-input {
+        border: 1px solid #dc4e3c;
+        border-radius: 0;
+        margin: 18px 0;
+        padding-left: 12px;
+        padding-right: 50px; }
   .blog .site-content,
   .single-post .site-content {
     display: -ms-flexbox;
