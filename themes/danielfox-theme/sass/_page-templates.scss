@@ -24,7 +24,7 @@
             margin: 0px;
             &:nth-child(1) {
                 padding-bottom: 6px;
-                padding-top: 15px; 
+                padding-top: 15px;
             }
             &:nth-child(2) {
                 font-size: 20px;
@@ -57,12 +57,11 @@
     .red-button {
         display: flex;
         justify-content: center;
-        }
-    } //This hides the overflow text until switched to desktop mode
-    .desktop-text {
-        display: none;
     }
-
+} //This hides the overflow text until switched to desktop mode
+.desktop-text {
+    display: none;
+}
 
 .front-page-header-box,
 .speaker-header-box {
@@ -79,6 +78,13 @@
 
 .other-projects {
     width: 100%;
+    .wild-image-project-background {
+        opacity: 0.2;
+        position: absolute;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
     .wild-image-project {
         align-items: center;
         height: 200px;
@@ -89,21 +95,21 @@
         border: 1px solid $color__accent;
         margin-bottom: 51px;
         background-size: cover;
-         background-repeat: no-repeat;
+        background-repeat: no-repeat;
         background-position: 50% 65%;
-        &:before {
-            content: ' ';
-            background-size: cover;
-            background-position: 50% 65%;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-            opacity: 0.2;
-        }
+        background-color: (0, 0, 0, 0.5); // &:before {
+        //     content: ' ';
+        //     background-size: cover;
+        //     background-position: 50% 65%;
+        //     display: block;
+        //     position: absolute;
+        //     left: 0;
+        //     top: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     z-index: 1;
+        //     opacity: 0.2;
+        // }
         p {
             display: none;
             margin: 15px 70px;
@@ -113,6 +119,14 @@
             position: relative;
             height: 60px;
         }
+    }
+    .front-page-blog-background {
+        opacity: 0.2;
+        position: absolute;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        left: 0%;
     }
     .front-page-blog {
         align-items: center;
@@ -124,7 +138,7 @@
         position: relative;
         width: 100%;
         background-size: cover;
-         background-repeat: no-repeat;
+        background-repeat: no-repeat;
         background-position: 50% 65%;
         &:before {
             content: ' ';
@@ -197,6 +211,17 @@
             a {
                 margin: 0px 3%;
             }
+        }
+    }
+    .other-projects {
+        .front-page-blog-background {
+            height: 317px;
+            width: 50%;
+            left: 50%;
+        }
+        .wild-image-project-background {
+            height: 317px;
+            width: 50%;
         }
     }
 }
@@ -301,14 +326,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     .speaker-video-title {
         height: 10vh;
         width: 65vw;
         padding-top: 2vh;
         color: white;
         text-align: center;
-        font-size: 20px;	
+        font-size: 20px;
         letter-spacing: 4px;
     }
     .speaker-video-description {
@@ -323,7 +347,7 @@
 }
 
 .speaker-modal-background {
-        background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 //Styling for Speaker Page [DESKTOP]
@@ -356,19 +380,18 @@
             min-width: 200px;
         }
     }
-
-.video-modal-body {
-    .speaker-video-title {
-        font-size: 36px;	
-        width: 80vw;
-        letter-spacing: 10px;
-    }
+    .video-modal-body {
+        .speaker-video-title {
+            font-size: 36px;
+            width: 80vw;
+            letter-spacing: 10px;
+        }
         .speaker-video-description {
-        padding-top: 2vh;
-        width: 90vw;
-        letter-spacing: 4px;
+            padding-top: 2vh;
+            width: 90vw;
+            letter-spacing: 4px;
+        }
     }
-}
 }
 
 //Styling for Photo pages [Mobile]
@@ -415,8 +438,8 @@
 }
 
 //Styling for Modal windows on photography pages
-
-.modal-open, .fade {
+.modal-open,
+.fade {
     padding-right: 0px !important;
 }
 
@@ -456,7 +479,7 @@
     #modal-background-image {
         height: 100vh;
         width: 100vw;
-        background-repeat: no-repeat ;
+        background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
         .modal-banners {
@@ -468,19 +491,16 @@
         position: relative;
         .desktop-modal-details {
             display: none;
-
         }
-    } 
-
+    }
     .modal-content-2 {
         display: flex;
         justify-content: center;
         align-items: center;
-
         .modal-body-2 {
             background-color: rgba(255, 255, 255, 0.9);
             border: 4px solid $color__accent;
-            border-radius: 0px; 
+            border-radius: 0px;
             height: 71.289vh;
             width: 86.666vw;
             .modal-2-top-section {
@@ -507,11 +527,9 @@
 }
 
 @media (min-width: $breakpoint) {
-
     #mobile-modal-details {
         display: none;
     }
-
     .modal-dialog {
         .modal-left-banner {
             display: flex;
@@ -544,7 +562,7 @@
                 height: 59px;
                 width: 31px;
                 background-size: contain;
-               background: url('../../assets/icons/right.svg');
+                background: url('../../assets/icons/right.svg');
             }
         }
         .modal-body {
@@ -557,7 +575,6 @@
                 top: 5%;
                 right: 13%;
             }
-
             .desktop-modal-details-left {
                 flex-basis: 75%;
                 display: flex;
@@ -573,7 +590,6 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
                 .desktop-modal-details-plus-sign {
                     background: url('../../assets/icons/plus.svg');
                     height: 30px;
@@ -583,30 +599,24 @@
             }
         }
     }
-
     .modal-body-2 {
         .modal-2-close {
-        left: auto;
-        right: 26px
+            left: auto;
+            right: 26px
+        }
     }
-    }
-
 }
 
 //Styling for modal-description window on [Mobile]
-
 .mobile-modal-closed-window {
     bottom: -250px;
-        height: 280px;
+    height: 280px;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
-
     .mobile-modal-description-picture-status {
         display: none;
-    }
-
-    // .mobile-modal-description-toggle {
+    } // .mobile-modal-description-toggle {
     //     background-color: blue;
     // }
 }
@@ -618,36 +628,38 @@
     position: absolute;
     bottom: 0px;
 }
-    .mobile-modal-description-window-top {
-        height: 55px;
-        width: 100%;
-            display: flex;
+
+.mobile-modal-description-window-top {
+    height: 55px;
+    width: 100%;
+    display: flex;
     flex-direction: row;
     position: relative;
-        .mobile-modal-description-toggle {
-            height: 20px;
-            width: 36px;
-            background-image: url('../../assets/icons/up.svg');
-            position: absolute;
-            right: 47%;
-            background-size: cover;
-        }
-        .mobile-modal-description-toggle-close {
-            background-image: url('../../assets/icons/right.svg');
-        }
-        .mobile-modal-description-picture-status{
+    .mobile-modal-description-toggle {
+        height: 20px;
+        width: 36px;
+        background-image: url('../../assets/icons/up.svg');
+        position: absolute;
+        right: 47%;
+        background-size: cover;
+    }
+    .mobile-modal-description-toggle-close {
+        background-image: url('../../assets/icons/right.svg');
+    }
+    .mobile-modal-description-picture-status {
         display: block;
         position: absolute;
         right: 5%;
         top: 25px;
-        }
     }
-    .mobile-modal-description-title-date {
-        height: 55px;
-        width: 100%;
-        margin: 0px 20px;
-    }
-    .mobile-modal-description-excerpt {
-        margin: 0px 20px;
-    }
+}
 
+.mobile-modal-description-title-date {
+    height: 55px;
+    width: 100%;
+    margin: 0px 20px;
+}
+
+.mobile-modal-description-excerpt {
+    margin: 0px 20px;
+}
