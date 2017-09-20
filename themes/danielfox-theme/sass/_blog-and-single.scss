@@ -1,4 +1,4 @@
-.blog, 
+.blog,
 .single-post {
     .site-content {
         padding-top: 60px;
@@ -62,7 +62,6 @@
     }
 }
 
-
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
     .blog,
@@ -73,7 +72,7 @@
             padding-top: 10px;
         }
         .site-footer {
-        display: flex;
+            display: flex;
             .widget-area {
                 .mc4wp-form {
                     border: none;
@@ -101,7 +100,7 @@
                         font-size: $base__font;
                         margin: 18px 0;
                         padding: 12px 0;
-                        text-shadow: none;	
+                        text-shadow: none;
                         width: 130px;
                     }
                     .email-input {
@@ -126,7 +125,7 @@
                     width: 100%;
                     margin-top: 10px;
                     .blog-image {
-                        min-height: 483px; 
+                        min-height: 483px;
                         width: 100%;
                         background-position: center center;
                     }
@@ -134,47 +133,48 @@
                 .post-date {
                     display: none;
                 }
-                    .icon-container-mobile {
-                        display: none;
-                    }
-                    .icon-container-desktop {
-                        display: block;
-                        width: 50px;
-                        margin-left: -30px;
-                        margin-top: 12px;
-                        .facebook-icon {
-                            margin-bottom: 21px;
-                        }
-                        .comment-icon {
-                            padding-bottom: 82px;
-                        }
-                    }
-                } 
-                .text-content {
-                    border: 0;
-                    .entry-content a {
-                        color: $color__accent;
-                        text-decoration: underline;
-                        letter-spacing: 1px;
-                        display: inline;
-                        background-color: transparent;
-                    }
-                }
-                .subscribe-mobile-container {
+                .icon-container-mobile {
                     display: none;
                 }
-                .jssocials-shares {
-                    display: block;  
-                    margin: 0; // or .3em 0 to have vertical gaps between shares
-                    width: 5%;
-                    background-color: transparent;
-                    .jssocials-share-link { 
-                        border-radius: 50%; 
-                        background-color: $color__accent;
-                        padding: 7px 8px;
-                        font-size: 25px;
+                .icon-container-desktop {
+                    display: block;
+                    width: 50px;
+                    margin-left: -30px;
+                    margin-top: 12px;
+                    .facebook-icon {
+                        margin-bottom: 21px;
                     }
+                    .comment-icon {
+                        padding-bottom: 82px;
+                    }
+                }
+            }
+            .text-content {
+                border: 0;
+                .entry-content a {
+                    color: $color__accent;
+                    text-decoration: underline;
+                    letter-spacing: 1px;
+                    display: inline;
+                    background-color: transparent;
+                }
+            }
+            .subscribe-mobile-container {
+                display: none;
+            }
+            .jssocials-shares {
+                display: block;
+                margin: 0;
+                width: 5%;
+                background-color: transparent;
+                .jssocials-share-link {
+                    border-radius: 50%;
+                    background-color: $color__accent;
+                    padding: 7px 8px;
+                    font-size: 25px;
+                    margin-bottom: 21px;
                 }
             }
         }
     }
+}
