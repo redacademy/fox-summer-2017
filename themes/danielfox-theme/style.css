@@ -312,9 +312,12 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
+  blockquote:before, blockquote:after,
+  q:before,
+  q:after {
     content: ""; }
 
 hr {
@@ -323,7 +326,8 @@ hr {
   height: 1px;
   margin-bottom: 1.5rem; }
 
-ul, ol {
+ul,
+ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
@@ -821,7 +825,8 @@ a {
       width: 100%; }
     .contact-form p input {
       width: 100px; }
-  .contact-form input, .contact-form textarea {
+  .contact-form input,
+  .contact-form textarea {
     border: 0.5px solid #dc4e3c;
     border-radius: 0;
     padding-left: 12px; }
@@ -836,7 +841,8 @@ a {
 @media (min-width: 600px) {
   .contact-form {
     width: 434px; }
-    .contact-form input, .contact-form textarea {
+    .contact-form input,
+    .contact-form textarea {
       font-size: 18px; }
     .contact-form p:nth-child(2),
     .contact-form p:nth-child(3),
@@ -1248,6 +1254,9 @@ h2 {
           flex-direction: column; }
       .project-container .front-page-blog p {
         display: block; }
+  .front-page-photography-image, .front-page-speaker-image {
+    background-position: 50% 100%;
+    height: 300px; }
   .featured-in {
     display: -ms-flexbox;
     display: flex;
@@ -1349,7 +1358,8 @@ h2 {
     height: 100% !important; }
     .about-third-section .about-image-large {
       height: 100%; }
-  .desktop-photo-column-sections .about-second-section, .desktop-photo-column-sections .about-fifth-section {
+  .desktop-photo-column-sections .about-second-section,
+  .desktop-photo-column-sections .about-fifth-section {
     margin-top: 10px; } }
 
 .page-template-speaker {
@@ -1705,14 +1715,14 @@ h2 {
     position: absolute;
     right: 5%;
     top: 35px;
-    color: red;
+    color: #dc4e3c;
     font-size: 18px; }
 
 .mobile-modal-description-title-date {
   height: 55px;
   width: 100%;
   margin: 0px 20px;
-  color: red;
+  color: #dc4e3c;
   font-size: 14px; }
   .mobile-modal-description-title-date .mobile-modal-description-title {
     font-size: 22px; }
@@ -2127,7 +2137,8 @@ h2 {
     max-width: 15%;
     -ms-flex: 1 1 15%;
         flex: 1 1 15%; }
-    .blog .blog-nav a > span.nav-older, .blog .blog-nav a > span.nav-newer {
+    .blog .blog-nav a > span.nav-older,
+    .blog .blog-nav a > span.nav-newer {
       padding: 0;
       background-image: none; }
   .blog .blog-nav a:first-child,
