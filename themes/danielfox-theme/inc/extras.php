@@ -21,7 +21,7 @@ function danielfox_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'danielfox_body_classes' );
 
-// add_image_size( 'custom-size', 900, 300, array( 'left', 'top' ) );
+add_image_size( 'custom-size', 900, 300, array( 'left', 'top' ) );
 
 function set_posts_per_page_for_photograph_cpt( $query ) {
   if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'photograph' ) || $query->is_tax('album-type') ) {
