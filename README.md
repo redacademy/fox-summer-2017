@@ -1,8 +1,8 @@
 ![front-page](https://raw.githubusercontent.com/redacademy/fox-summer-2017/1c1e193acf4e067424c19f203ae0714ad2670113/themes/danielfox-theme/assets/danielfox-frontpage.png "Daniel Fox Website Front Page")
 
-# INHABITENT
+# DANIEL FOX
 
-Our team created a responsive multi-page website with a blog for Vancouver explorer, storyteller and photographer Daniel Fox, using Wordpress as content management system. 
+Our team created a responsive multi-page website (for mobile and desktop) with a blog for Vancouver explorer, storyteller and photographer Daniel Fox, using Wordpress as content management system. 
 
 
 ## FEATURES: 
