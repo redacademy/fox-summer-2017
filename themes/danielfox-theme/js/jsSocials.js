@@ -4,7 +4,7 @@
     var shareTitle =  $(this).data('share-title');
     var shareLink =  $(this).data('share-link');
    $( this ).jsSocials({
-      url: 'http:' + shareLink,
+      url: shareLink,
       text: shareTitle,
       showLabel: false,
       showCount: false,
