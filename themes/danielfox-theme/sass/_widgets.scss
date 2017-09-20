@@ -4,14 +4,15 @@
 
 .widget {
 	margin: 0 0 $base__space-unit;
-
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
 
+
 /* Search widget. */
+
 .widget_search .search-submit {
 	display: none;
 }
@@ -39,7 +40,7 @@
 		text-align: center;
 		margin: 0 0 10px;
 		.wpcf7-submit {
-			background-color: $color__accent;			
+			background-color: $color__accent;
 			border: 1px solid $color__accent;
 			border-radius: 0;
 			box-shadow: none;
@@ -59,7 +60,8 @@
 			width: 100px;
 		}
 	}
-	input, textarea {
+	input,
+	textarea {
 		border: 0.5px solid $color__accent;
 		border-radius: 0;
 		padding-left: 12px;
@@ -78,13 +80,14 @@
 @media (min-width: $breakpoint) {
 	.contact-form {
 		width: 434px;
-		input, textarea {
+		input,
+		textarea {
 			font-size: 18px;
 		}
 		p:nth-child(2),
 		p:nth-child(3),
 		p:nth-child(4) {
-		height: 60px;
+			height: 60px;
 		}
 		p {
 			span {
@@ -95,6 +98,6 @@
 		}
 		textarea {
 			padding: 13px 0 0 15px;
-		}		
+		}
 	}
 }

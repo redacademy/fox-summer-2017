@@ -10,7 +10,6 @@
     background-position: 60% 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    //display: flex;
     height: 105vh;
     width: 100%;
     .home-hero-overlay {
@@ -57,7 +56,6 @@ h2 {
 .front-page-speaker,
 .other-projects,
 .speaker-description {
-    //Create mixin!
     margin: 15px auto;
     width: 75%;
     .red-button {
@@ -68,11 +66,13 @@ h2 {
 .desktop-text {
     display: none;
 }
+
 .front-page-about {
     p {
         letter-spacing: 1px;
     }
 }
+
 .red-button {
     h3 {
         font-weight: 100;
@@ -84,12 +84,12 @@ h2 {
 
 .front-page-header-box,
 .speaker-header-box {
-    //Create Mixin for this later!
     display: flex;
     justify-content: center;
     margin: auto;
     border-bottom: 1px solid $color__underline;
 }
+
 .front-page-header-box {
     h2 {
         margin-bottom: 10px;
@@ -157,10 +157,11 @@ h2 {
         }
     }
 }
+
 .front-page-other-projects-box {
     border: none;
     h2 {
-        border-bottom: 1px solid rgba(1,79,90,.5);        
+        border-bottom: 1px solid rgba(1, 79, 90, .5);
         margin-bottom: 40px;
         text-align: center;
         width: 72%;
@@ -287,13 +288,13 @@ h2 {
 }
 
 .about-section {
-.about-image {
-    height: 350px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 67%;
-}
+    .about-image {
+        height: 350px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 67%;
+    }
 }
 
 //Styling for About Page [DESKTOP]
@@ -340,25 +341,25 @@ h2 {
             }
         }
     }
-        .about-third-section {
-            height: 100% !important;
-        
+    .about-third-section {
+        height: 100% !important;
         .about-image-large {
             height: 100%;
         }
-        }
-.desktop-photo-column-sections{
-        .about-second-section, .about-fifth-section {
+    }
+    .desktop-photo-column-sections {
+        .about-second-section,
+        .about-fifth-section {
             margin-top: 10px;
         }
     }
-        
 }
 
 //Styling for Speaker Page [MOBILE]
 .page-template-speaker {
     padding-top: 65px;
 }
+
 .speaker-header-box {
     justify-content: center;
     h2 {
@@ -480,6 +481,7 @@ h2 {
 .tax-album-type {
     padding-top: 8px;
 }
+
 .photograph-grid {
     .photograph-grid-item {
         margin: 10px;
@@ -487,7 +489,7 @@ h2 {
 }
 
 #post-213 {
-        width: 96%;
+    width: 96%;
 }
 
 .taxonomy-description {
@@ -497,15 +499,16 @@ h2 {
 //Styling for Photo pages [Desktop]
 @media (min-width: $breakpoint) {
     .page-header {
-    .taxonomy-description {
-        margin-top: 80px !important;
-        display: flex;
-        justify-content: center;
-        margin: 0px;
-        p {
-            color: $color__accent;
+        .taxonomy-description {
+            margin-top: 80px !important;
+            display: flex;
+            justify-content: center;
+            margin: 0px;
+            p {
+                color: $color__accent;
+            }
         }
-    }}
+    }
     .photograph-grid {
         align-items: center;
         display: flex;
@@ -705,7 +708,7 @@ h2 {
     position: absolute;
     .mobile-modal-description-picture-status {
         display: none;
-    } 
+    }
 }
 
 .mobile-modal-description-window {
@@ -739,7 +742,7 @@ h2 {
         position: absolute;
         right: 5%;
         top: 35px;
-        color: red;
+        color: $color__accent;
         font-size: 18px;
     }
 }
@@ -748,13 +751,12 @@ h2 {
     height: 55px;
     width: 100%;
     margin: 0px 20px;
-    color: red;
+    color: $color__accent;
     font-size: 14px;
     .mobile-modal-description-title {
         font-size: 22px
     }
 }
-
 
 .mobile-modal-description-excerpt {
     margin: 15px 50px;

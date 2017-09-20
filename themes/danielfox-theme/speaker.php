@@ -14,7 +14,7 @@ get_header(); ?>
 
 				<div class="speaker-header-image" style="background:url(<?php echo CFS()->get( 'speaker_hero_image' ); ?>); ">		   
 				</div>
-				</a>
+
 				<section class="speaker-description">
 					<div class="speaker-header-box">
 						<h2><?php echo CFS()->get( 'speaker_header' ); ?></h2>
@@ -24,30 +24,29 @@ get_header(); ?>
 			</div>
 			<div class="speaker-bottom-half">
 				<div class="speaker-video-one speaker-vid">
-						
-						<a class="gallery-modal-link" data-toggle="modal" data-target="#modal-1" >
-							   <div class="modal-container modal-container-1">
-							   </div>
-						</a>
-	
+					
+					<a class="gallery-modal-link" data-toggle="modal" data-target="#modal-1" >
+							<div class="modal-container modal-container-1">
+							</div>
+					</a>
 
-						<div class="modal fade speaker-modal-background" id="modal-1">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-body video-modal-body">
-									<div class="speaker-video-title"><?php echo CFS()->get( 'first_iframe_title' ); ?></div>
+					<div class="modal fade speaker-modal-background" id="modal-1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-body video-modal-body">
+								<div class="speaker-video-title"><?php echo CFS()->get( 'first_iframe_title' ); ?></div>
 
-										<?php echo CFS()->get( 'speaker_first_iframe' ); ?>
+									<?php echo CFS()->get( 'speaker_first_iframe' ); ?>
 
-								<div class="speaker-video-description"><?php echo CFS()->get( 'first_iframe_description' ); ?></div>
-										<div class="modal-close" data-dismiss="modal">
-										</div>						
-									
-									</div>
-								</div><!-- /.modal-content -->
-							</div><!-- /.modal-dialog -->
-						</div><!-- /.modal -->  
-				
+							<div class="speaker-video-description"><?php echo CFS()->get( 'first_iframe_description' ); ?></div>
+									<div class="modal-close" data-dismiss="modal">
+									</div>						
+								
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->  
+			
 				
 				
 				</div>
@@ -55,9 +54,9 @@ get_header(); ?>
 				<div class="speaker-video-two speaker-vid">
 
 						<a class="gallery-modal-link" data-toggle="modal" 
-							   data-target="#modal-2" >
-							   <div class="modal-container modal-container-2">
-							   </div>
+							data-target="#modal-2" >
+							<div class="modal-container modal-container-2">
+							</div>
 						</a>
 
 						<div class="modal fade speaker-modal-background" id="modal-2">
@@ -65,11 +64,11 @@ get_header(); ?>
 								<div class="modal-content">
 									<div class="modal-body video-modal-body">
 
-									<div class="speaker-video-title"><?php echo CFS()->get( 'second_iframe_title' ); ?></div>
+										<div class="speaker-video-title"><?php echo CFS()->get( 'second_iframe_title' ); ?></div>
 
 										<?php echo CFS()->get( 'speaker_second_iframe' ); ?>
 
-									<div class="speaker-video-description"><?php echo CFS()->get( 'second_iframe_description' ); ?></div>
+										<div class="speaker-video-description"><?php echo CFS()->get( 'second_iframe_description' ); ?></div>
 										<div class="modal-close" data-dismiss="modal">
 										</div>
 									</div>
@@ -78,18 +77,14 @@ get_header(); ?>
 						</div><!-- /.modal -->  
 				</div>
 
-
-
 				<div class="speaker-video-three speaker-vid">
+					<a class="gallery-modal-link" data-toggle="modal" 
+						data-target="#modal-3" >
 
-						<a class="gallery-modal-link" data-toggle="modal" 
-							   data-target="#modal-3" >
-
-							   <div class="modal-container modal-container-3">
-								   
-							   </div>
+						<div class="modal-container modal-container-3">   
+						</div>
 							 
-						</a>
+					</a>
 
 						<div class="modal fade speaker-modal-background" id="modal-3">
 							<div class="modal-dialog">

@@ -7,9 +7,7 @@
 
 a {
 	color: $color__accent;
-	&:visited {
-		//color: $color__link-visited;
-	}
+	&:visited {}
 	&:hover,
 	&:focus,
 	&:active {
@@ -188,41 +186,40 @@ a {
 			.nav-side.nav-open {
 				margin-left: 0;
 				box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-
-						.search-form {
-						width: 100%;
-						border: 0;
-						margin-left: 0;
-						margin-bottom: 2rem;
+				.search-form {
+					width: 100%;
+					border: 0;
+					margin-left: 0;
+					margin-bottom: 2rem;
+				}
+				fieldset {
+					border: 0;
+					margin: 0 auto;
+					padding: 0;
+				}
+				.search-field {
+					margin: 0;
+					border: 0.5px solid $color__accent;
+					padding: 9px;
+					width: 87%;
+				}
+				.fieldset {
+					border: 0;
+					margin: 0;
+				}
+				.search-submit {
+					@include subscribe-btn;
+					box-shadow: none;
+					width: 5%;
+					background-color: transparent;
+					color: $color__accent;
+					font-size: 18px;
+					border: none;
+					padding-left: 41%;
+					.icon-search {
+						font-size: 30px;
 					}
-					fieldset {
-						border: 0;
-						margin: 0 auto;
-						padding: 0;
-					}
-					.search-field {
-						margin: 0;
-						border: 0.5px solid $color__accent;
-						padding: 9px;
-						width: 87%;
-					}
-					.fieldset {
-						border: 0;
-						margin: 0;
-					}
-					.search-submit {
-						@include subscribe-btn;
-						box-shadow: none;
-						width: 5%;
-						background-color: transparent;
-						color: $color__accent;
-						font-size: 18px;
-						border: none;
-						padding-left: 41%;
-						.icon-search {
-							font-size: 30px;
-						}
-					}
+				}
 			}
 			.nav-toggle {
 				position: absolute;
@@ -237,7 +234,7 @@ a {
 				background-size: contain;
 				background-repeat: no-repeat;
 				margin-top: 9px;
-			} 
+			}
 			.nav-side.nav-open .nav-toggle:before {
 				display: none;
 			}
@@ -256,8 +253,8 @@ a {
 		padding-left: 6%;
 		img {
 			max-height: 100%;
-		    max-height: 80%;
-    		margin-top: 4px;
+			max-height: 80%;
+			margin-top: 4px;
 		}
 	}
 	.nav-logo {

@@ -1,6 +1,6 @@
 // Footer Styling [MOBILE]
 .site-footer {
-    box-shadow: 0 -1px 2px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.5);
     display: none;
     height: 1.35%;
     .footer-left {
@@ -38,7 +38,7 @@
             display: block;
         }
     }
-    .site-footer{
+    .site-footer {
         display: flex;
         height: 1.84%;
         img {
@@ -46,7 +46,7 @@
             max-height: 40px;
             max-width: 40px;
         }
-        .widget-area{
+        .widget-area {
             .mc4wp-form-fields {
                 border: none;
                 display: flex;
@@ -68,7 +68,7 @@
                     font-size: $base__font;
                     margin: 18px 0;
                     padding: 12px 0;
-                    text-shadow: none;	
+                    text-shadow: none;
                     width: 130px;
                 }
                 .email-input {

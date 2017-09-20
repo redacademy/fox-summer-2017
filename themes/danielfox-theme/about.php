@@ -13,7 +13,7 @@ get_header(); ?>
 		 <section class="about-page">
             
 		 <div class="about-header">
-		 <h1> About Me <h1>
+		 	<h1> About Me <h1>
 		 </div>
 
 		 <div class="about-text-desktop">
@@ -44,11 +44,11 @@ get_header(); ?>
 			<div class="desktop-photo-columns">		
 				<div class="desktop-photo-column-sections desktop-photo-column-1">
            			 <section class="about-section about-first-section">
-				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_first_image' ); ?>);">
-				</div>
-                <p> 
-					<?php echo CFS()->get( 'about_first_text' ); ?>
-                </p>
+						<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_first_image' ); ?>);">
+						</div>
+						<p> 
+							<?php echo CFS()->get( 'about_first_text' ); ?>
+						</p>
          		   </section>
 				
             <section class="about-section about-second-section">
@@ -63,44 +63,44 @@ get_header(); ?>
 
 
 			<div class="desktop-photo-column-sections desktop-photo-column-2">
-            <section class="about-section about-third-section">
-				<div class="about-image about-image-large" style="background-image:url(<?php echo CFS()->get( 'about_fifth_image' ); ?>);">
-				</div>
-					
-                <p>
-					<?php echo CFS()->get( 'about_third_text' ); ?>					
-                </p>
-			</section>
+				<section class="about-section about-third-section">
+					<div class="about-image about-image-large" style="background-image:url(<?php echo CFS()->get( 'about_fifth_image' ); ?>);">
+					</div>
+						
+					<p>
+						<?php echo CFS()->get( 'about_third_text' ); ?>					
+					</p>
+				</section>
 			</div>
 
 
 
 			<div class="desktop-photo-column-sections desktop-photo-column-3">			
-			<section class="about-section about-fourth-section">
-				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_fourth_image' ); ?>);">
-				</div>
-                <p>
-					<?php echo CFS()->get( 'about_fourth_text' ); ?>					
-                </p>
-
-
-            <section class="about-section about-fifth-section">
-				<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_third_image' ); ?>);">
-				</div>
-
-                <p>
-					<?php echo CFS()->get( 'about_fifth_text' ); ?>					
-                </p>
-				
+				<section class="about-section about-fourth-section">
+					<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_fourth_image' ); ?>);">
+					</div>
+					<p>
+						<?php echo CFS()->get( 'about_fourth_text' ); ?>					
+					</p>
 				</section>
-				</div>
-			</div> <!-- Closing desktop-photo-columns-->
+
+				<section class="about-section about-fifth-section">
+					<div class="about-image" style="background-image:url(<?php echo CFS()->get( 'about_third_image' ); ?>);">
+					</div>
+
+					<p>
+						<?php echo CFS()->get( 'about_fifth_text' ); ?>					
+					</p>
+					
+				</section>
+			</div>
+		</div> <!-- Closing desktop-photo-columns-->
 
 
 		<section class="contact-form">
 			<?php dynamic_sidebar( 'contactform-1' ); ?>
 		</section>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>

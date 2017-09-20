@@ -16,10 +16,9 @@ get_header(); ?>
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
                 
-            
-            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            
-	                <header class="entry-header">
+                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                
+                        <header class="entry-header">
                             <div class="blog-mobile-caption">
                                 <?php echo CFS()->get( 'blog_mobile_caption' ); ?>
                             </div>    
@@ -38,30 +37,32 @@ get_header(); ?>
                                 <?php if ( has_post_thumbnail() ) : ?>
                                 <div class="blog-image" style="background-image: url(<?php echo the_post_thumbnail_url(); ?>)">
                                 </div>
-                            <?php endif; ?>
-                    </header><!-- .entry-header -->
+                                <?php endif; ?>
+                        </header><!-- .entry-header -->
 
-                <div class="text-content">
-                    
-		                    <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+                    <div class="text-content">
+                        
+                            <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
                             <?php if ( 'post' === get_post_type() ) : ?>
                             <span class="post-date-2"><?php danielfox_posted_on(); ?></span>
-		                    <div class="entry-meta">
-                                    <?php danielfox_entry_footer(); ?>
-		                    </div><!-- .entry-meta -->
-		                    <?php endif; ?>
+                            <div class="entry-meta">
+                                <?php danielfox_entry_footer(); ?>
+                            </div><!-- .entry-meta -->
+                            <?php endif; ?>
 
-	                <div class="entry-content">
+                        <div class="entry-content">
                             <?php the_excerpt(); ?>
                             <span class="read-more-mobile"><a href="<?php echo esc_url( get_permalink() )?>">Read More</a></span>
-                    </div><!-- .entry-content -->
-                </div>
-            </article><!-- #post-## -->
+                        </div><!-- .entry-content -->
+                    </div>
+                </article><!-- #post-## -->
 
             <?php endwhile; ?>
+
             <div class="blog-nav"><?php posts_nav_link( ' ',
             '<span class="nav-older">Older Posts</span>',
             '<span class="nav-newer">Newer Posts</span>' ); ?></div>
+            
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>
         <?php endif; ?>

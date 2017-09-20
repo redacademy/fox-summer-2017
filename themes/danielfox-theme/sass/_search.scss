@@ -35,10 +35,9 @@
     }
 }
 
-
 .search {
     @media screen and (min-width: $breakpoint) {
-        padding-top: 100px;    
+        padding-top: 100px;
         fieldset {
             border: 0;
             padding: 0;
@@ -47,7 +46,6 @@
         }
     }
 }
-
 
 .search-results {
     .entry-meta {
@@ -59,18 +57,18 @@
     .search-pagination {
         text-align: center;
     }
-    .search-pagination > a {
+    .search-pagination>a {
         background-size: auto 100%;
         background-repeat: no-repeat;
         text-decoration: none;
         &.prev.page-numbers {
-            background-image: url( '../../assets/icons/left.svg' );
+            background-image: url('../../assets/icons/left.svg');
             background-position: left center;
             padding-left: 20px;
             width: 50%;
         }
         &.next.page-numbers {
-            background-image: url( '../../assets/icons/right.svg' );
+            background-image: url('../../assets/icons/right.svg');
             background-position: right center;
             padding-right: 20px;
             width: 50%;

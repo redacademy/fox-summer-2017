@@ -165,7 +165,7 @@
                 }
                 .jssocials-shares {
                     display: block;  
-                    margin: .3em 0; // or .3em 0 to have vertical gaps between shares
+                    margin: 0; // or .3em 0 to have vertical gaps between shares
                     width: 5%;
                     background-color: transparent;
                     .jssocials-share-link { 
@@ -173,7 +173,6 @@
                         background-color: $color__accent;
                         padding: 7px 8px;
                         font-size: 25px;
-                        margin-bottom: 21px;
                     }
                 }
             }

@@ -43,18 +43,18 @@
         a:last-child {
             text-align: right;
         }
-        a > span {
+        a>span {
             background-size: auto 100%;
             background-repeat: no-repeat;
             &.nav-older {
-                background-image: url( '../../assets/icons/left.svg' );
+                background-image: url('../../assets/icons/left.svg');
                 background-position: left center;
                 padding-left: 20px;
                 width: 50%;
                 flex: 1 1 50%;
             }
             &.nav-newer {
-                background-image: url( '../../assets/icons/right.svg' );
+                background-image: url('../../assets/icons/right.svg');
                 background-position: right center;
                 padding-right: 20px;
                 width: 50%;
@@ -62,45 +62,41 @@
             }
         }
     }
-}
-    
-    
-    //Bottom Subscription Box:
-    .subscribe-mobile-container {
-        .mc4wp-form {
-            background-color: $color__accent;
-            box-sizing: border-box;
-            padding: 20px 20px;
-            .subscribe-desktop {
-                display: none;
-            }
-            h4 {
-                display: none;
-            }
-            p {
-                color: $color__reverse;
-                margin: 0;
-                margin-bottom: 5px;
-            }
-            .email-input {
-                border-radius: 0;
-                width: 66%;
-                margin-right: 8px;
-                padding-top: 3px;
-            }
-            .subscribe-button {
-                @include subscribe-btn;
-                padding: 8px 20px;
-                border-radius: 0;
-                width: 30%;
-                box-shadow: none;
-                border: 1px solid $color__reverse;
-                font-size: 1rem;
-                text-shadow: none;
-            }
+} //Bottom Subscription Box:
+.subscribe-mobile-container {
+    .mc4wp-form {
+        background-color: $color__accent;
+        box-sizing: border-box;
+        padding: 20px 20px;
+        .subscribe-desktop {
+            display: none;
+        }
+        h4 {
+            display: none;
+        }
+        p {
+            color: $color__reverse;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        .email-input {
+            border-radius: 0;
+            width: 66%;
+            margin-right: 8px;
+            padding-top: 3px;
+        }
+        .subscribe-button {
+            @include subscribe-btn;
+            padding: 8px 20px;
+            border-radius: 0;
+            width: 30%;
+            box-shadow: none;
+            border: 1px solid $color__reverse;
+            font-size: 1rem;
+            text-shadow: none;
         }
     }
-
+}
 
 //Desktop: 2-column layout
 @media screen and (min-width: $breakpoint) {
@@ -112,32 +108,31 @@
             display: none;
         }
         .blog-nav {
-                a {
-                    background-color: $color__accent;
-                    color: $color__reverse;
-                    text-decoration: none;
-                    padding: 10px 20px;
-                    letter-spacing: 1px;
-                    text-align: center;
-                    max-width: 15%;
-                    flex: 1 1 15%;
-                    &>span.nav-older, &>span.nav-newer {
-                        padding: 0;
-                        background-image: none;
-                    }
+            a {
+                background-color: $color__accent;
+                color: $color__reverse;
+                text-decoration: none;
+                padding: 10px 20px;
+                letter-spacing: 1px;
+                text-align: center;
+                max-width: 15%;
+                flex: 1 1 15%;
+                &>span.nav-older,
+                &>span.nav-newer {
+                    padding: 0;
+                    background-image: none;
                 }
-                a:first-child,
-                a:last-child {
-                    text-align: center;
-                }
-        }
-        
-    }
-        .read-more-desktop {
-            padding-left: 0.5rem;
-        }
-        .read-more-mobile {
-            display: none;
+            }
+            a:first-child,
+            a:last-child {
+                text-align: center;
+            }
         }
     }
-        
+    .read-more-desktop {
+        padding-left: 0.5rem;
+    }
+    .read-more-mobile {
+        display: none;
+    }
+}

@@ -34,14 +34,12 @@
 			<div class="photograph-grid-item" id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 				<header class="entry-header">
 					<div class="thumbnail-wrapper">
-					
 						<?php if ( has_post_thumbnail() ) : ?>
 							<a class="gallery-modal-link" data-toggle="modal" 
 							   data-target="#modal-<?php echo $postIndex; ?>" id="<?php echo get_the_ID(); ?>">
 							<?php the_post_thumbnail( 'large' ); ?>
 							</a>
 						<?php endif; ?>
-
 
 						<div class="modal fade modal-overlay-window" id="modal-<?php echo $postIndex; ?>">
 							<div class="modal-dialog">
@@ -117,9 +115,9 @@
 				<div class="modal modal-overlay-window modal-overlay-window-2" id="modal-2-<?php echo $postIndex; ?>">
 				<div class="modal-dialog modal-dialog-2">
 					<div class="modal-content modal-content-2" id="modal-background-image" style="background-image:url(<?php 
-										if ( has_post_thumbnail() ) :
-										the_post_thumbnail_url( 'full' ); 
-										endif ?>);">
+						if ( has_post_thumbnail() ) :
+						the_post_thumbnail_url( 'full' ); 
+						endif ?>);">
 
 					<div class="modal-body modal-body-2" >
 						<div class="modal-close modal-2-close" data-dismiss="modal">
@@ -140,9 +138,7 @@
 						</div>	
 							<div class="modal-2-picture-description">
 								<?php the_content(); ?> 
-							</div>
-
-							
+							</div>		
 						</div>
 					</div><!-- /.modal-content -->
 				</div><!-- /.modal-dialog -->

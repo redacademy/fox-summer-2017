@@ -15,7 +15,7 @@
             margin-left: 68%;
         }
     }
-    .nav-links > div {
+    .nav-links>div {
         background-size: auto 100%;
         background-repeat: no-repeat;
         margin: 0 5.07%;
@@ -23,13 +23,13 @@
             text-decoration: none;
         }
         &.nav-previous {
-            background-image: url( '../../assets/icons/left.svg' );
+            background-image: url('../../assets/icons/left.svg');
             background-position: left center;
             padding-left: 20px;
             width: 36%;
         }
         &.nav-next {
-            background-image: url( '../../assets/icons/right.svg' );
+            background-image: url('../../assets/icons/right.svg');
             background-position: right center;
             padding-right: 20px;
             width: 36%;
@@ -48,11 +48,11 @@
         }
     }
     .jssocials-shares {
-        display: block;  
-        margin: 0; // or .3em 0 to have vertical gaps between shares
+        display: block;
+        margin: 0;
         .jssocials-share {
-            .jssocials-share-link { 
-                border-radius: 50%; 
+            .jssocials-share-link {
+                border-radius: 50%;
                 padding: 7px 8px;
                 font-size: 25px;
                 background-color: $color__accent;
@@ -87,9 +87,7 @@
             margin: 0 auto 20px;
             text-decoration: none;
             width: 177px;
-
             .submit {
-                // @include subscribe-btn;
                 background-color: $color__accent;
                 box-shadow: none;
                 color: $color__reverse;
@@ -110,22 +108,22 @@
         .nav-links {
             padding: 20px;
             line-height: 1px;
-                a {
-                    background-color: $color__accent;
-                    color: $color__reverse;
-                    text-decoration: none;
-                    padding: 20px;
-                    letter-spacing: 1px;
-                    }
-                }
-            }
-        .comments-area {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            margin: 0 auto;
-            .comment-respond {
-                width: 60%;
+            a {
+                background-color: $color__accent;
+                color: $color__reverse;
+                text-decoration: none;
+                padding: 20px;
+                letter-spacing: 1px;
             }
         }
     }
+    .comments-area {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        .comment-respond {
+            width: 60%;
+        }
+    }
+}
