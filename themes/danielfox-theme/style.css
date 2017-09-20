@@ -2018,7 +2018,7 @@ h2 {
     .blog .site-content .jssocials-shares,
     .single-post .site-content .jssocials-shares {
       display: block;
-      margin: 0;
+      margin: .3em 0;
       width: 5%;
       background-color: transparent; }
       .blog .site-content .jssocials-shares .jssocials-share-link,
@@ -2026,7 +2026,8 @@ h2 {
         border-radius: 50%;
         background-color: #dc4e3c;
         padding: 7px 8px;
-        font-size: 25px; } }
+        font-size: 25px;
+        margin-bottom: 21px; } }
 
 .blog .blog-mobile-caption {
   color: #dc4e3c;
