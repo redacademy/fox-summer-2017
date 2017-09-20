@@ -120,6 +120,7 @@ a {
 		transition: all .2s ease-out 0s;
 		top: 0px;
 		width: 100%;
+
 		p {
 			color: $color__accent;
 			font-size: 20px;
@@ -260,6 +261,7 @@ a {
 	.nav-logo {
 		height: 0;
 	} //Settings for desktop
+
 	@media (min-width: $breakpoint) {
 		.header-nav-bar {
 			display: none;
@@ -280,6 +282,8 @@ a {
 				}
 			}
 		}
+
+
 		.main-navigation {
 			//Desktop header bar styling
 			background: rgba(255, 255, 255, 0.80);
@@ -292,6 +296,7 @@ a {
 				flex-basis: 13%;
 				img {
 					max-height: 65px;
+					max-width: 65px;
 				}
 				a {
 					display: flex;
