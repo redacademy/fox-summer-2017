@@ -15,14 +15,10 @@ get_header(); ?>
 			<h1><?php wp_title(''); ?></h1>
 
 			<div class="project-about">
-				<p>
-				<?php 
-
-				// Important that this post id matches the page using the 'Project Template'
-				echo CFS()->get( 'project_text', 343 );
-
-				?>
-				</p>
+			
+				 <!--Important that this post id matches the page using the 'Project Template'-->
+				<?php echo CFS()->get( 'project_text', 343 ); ?>
+		
 			</div>
 
 			<?php /* Start the Loop */ ?>
