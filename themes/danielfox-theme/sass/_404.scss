@@ -1,8 +1,10 @@
 .error404 {
     .site-content {
         margin: 0 5.07%;
+        margin-top: 5.07%;
         h2 {
             margin-bottom: 10px;
+            letter-spacing: 1px;
         }
         p {
             margin-top: 0;
@@ -53,6 +55,7 @@
 
 .error404 {
     @media screen and (min-width: $breakpoint) {
+        padding-top: 100px;        
         .search-form {
             width: 52%;
             fieldset {
