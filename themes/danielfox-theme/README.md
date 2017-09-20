@@ -1,21 +1,34 @@
-# RED Starter
+![front-page](https://raw.githubusercontent.com/redacademy/fox-summer-2017/1c1e193acf4e067424c19f203ae0714ad2670113/themes/danielfox-theme/assets/danielfox-frontpage.png "Daniel Fox Website Front Page")
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+# INHABITENT
 
-## Installation
+Our team created a responsive multi-page website with a blog for Vancouver explorer, storyteller and photographer Daniel Fox, using Wordpress as content management system. 
 
-### 1. Download me (don't clone me!)
 
-Then add me to your `wp-content` directory.
+## FEATURES: 
+* Page templating
+* Custom fields
+* Modals for photo gallery
+* Mail Chimp integration
+* Blog with social media sharing
 
-### 2. Rename the `redstarter` directory
 
-Make sure that the theme directory name is project appropriate!
+## TECHNOLOGIES USED:
+* WordPress 
+* HTML 
+* CSS 
+* SASS 
+* JavaScript
+* Gulp 
+* MAMP Apache
 
-### 3. Install the dev dependencies
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
+## LEARNINGS
+In this project we learned how to work as a team, from the design hand-off process with the UI and UX Designers to using a git workflow for teams during development. We learned how to resolve merge conflicts and to create this website based on the designers' prototypes on InVision. We learned WordPress custom theming and plugin development. We also learned the use of Migrate DB Pro to push, pull and sync WordPress database tables. 
 
-### 4. Update the proxy in `gulpfile.js`
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `inhabitent.dev` to the appropriate localhost URL).
+# CONTRIBUTORS
+Daniel Kell
+David Hilscher
+Marie Sarabia
+
