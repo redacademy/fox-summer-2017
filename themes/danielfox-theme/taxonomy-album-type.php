@@ -108,8 +108,6 @@
 											</div>
 										</div> <!-- Close mobile-modal-description-window -->
 
-
-
 									</div>
 								</div><!-- /.modal-content -->
 							</div><!-- /.modal-dialog -->
