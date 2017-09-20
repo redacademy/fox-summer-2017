@@ -705,9 +705,7 @@ h2 {
     position: absolute;
     .mobile-modal-description-picture-status {
         display: none;
-    } // .mobile-modal-description-toggle {
-    //     background-color: blue;
-    // }
+    } 
 }
 
 .mobile-modal-description-window {
@@ -741,6 +739,8 @@ h2 {
         position: absolute;
         right: 5%;
         top: 35px;
+        color: red;
+        font-size: 18px;
     }
 }
 
@@ -748,8 +748,14 @@ h2 {
     height: 55px;
     width: 100%;
     margin: 0px 20px;
+    color: red;
+    font-size: 14px;
+    .mobile-modal-description-title {
+        font-size: 22px
+    }
 }
 
+
 .mobile-modal-description-excerpt {
-    margin: 0px 20px;
+    margin: 15px 50px;
 }
