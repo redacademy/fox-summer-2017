@@ -513,7 +513,8 @@ a {
   position: fixed;
   transition: all .2s ease-out 0s;
   top: 0px;
-  width: 100%; }
+  width: 100%;
+  z-index: 16; }
   .site-header .header-nav-bar p {
     color: #dc4e3c;
     font-size: 20px;
@@ -2013,6 +2014,10 @@ h2 {
         letter-spacing: 1px;
         display: inline;
         background-color: transparent; }
+      .blog .site-content .text-content .post-date-2,
+      .single-post .site-content .text-content .post-date-2 {
+        display: block;
+        color: #dc4e3c; }
     .blog .site-content .subscribe-mobile-container,
     .single-post .site-content .subscribe-mobile-container {
       display: none; }

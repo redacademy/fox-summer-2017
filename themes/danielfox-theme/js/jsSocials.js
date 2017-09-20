@@ -8,11 +8,7 @@
       text: shareTitle,
       showLabel: false,
       showCount: false,
-     shares: [{
-       share: 'facebook'
-      }, { 
-       share: 'twitter'
-      }]
+     shares: [ 'facebook', 'twitter' ]
  });
 });
     
