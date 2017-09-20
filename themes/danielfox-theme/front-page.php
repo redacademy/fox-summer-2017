@@ -30,9 +30,7 @@ get_header(); ?>
                     <h3><a href="about"><?php echo CFS()->get( 'front_page_about_button' ); ?></a></h3>
                 </div>
             </section>
-
                 <div class="front-page-photography-image" style="background-image:url(<?php echo CFS()->get( 'front_page_photographer_image' ); ?>);">
-                   
                 </div>
             <section class="front-page-photography">
                 <div class="front-page-header-box">

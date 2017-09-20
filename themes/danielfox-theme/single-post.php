@@ -35,16 +35,16 @@ get_header(); ?>
 
 						<span class="post-date-2"><?php danielfox_posted_on(); ?></span>
 						<div class="entry-meta">
-								<?php danielfox_entry_footer(); ?>
+							<?php danielfox_entry_footer(); ?>
 						</div><!-- .entry-meta -->
 
 					<div class="entry-content">
 							<?php the_content(); ?>
 							<?php
-									wp_link_pages( array(
-											'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
-											'after'  => '</div>',
-									) );
+							wp_link_pages( array(
+									'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
+									'after'  => '</div>',
+							) );
 							?>
 					</div><!-- .entry-content -->
 				</div>
@@ -58,8 +58,6 @@ get_header(); ?>
 
 		<div class="icon-container-mobile">
 			<p>Share</p>   
-			<!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" class="facebook-icon" alt="Facebook logo" />
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" class="instagram-icon" alt="Instagram logo" /> -->
 			<div class="shareRoundIcons" 
                 data-share-title="<?php echo get_the_title(); ?>" 
                 data-share-link="<?php echo esc_url(get_the_permalink()); ?>">

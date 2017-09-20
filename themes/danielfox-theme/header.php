@@ -26,20 +26,20 @@
 				<nav class="header-nav-bar"> <!-- Mobile nav header -->
 					<div class="burger-nav">
 					
-					<nav class="nav-side">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-							<h2 class="mobile-nav-menu-home">Home</h2>
-						</a>
+						<nav class="nav-side">
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+								<h2 class="mobile-nav-menu-home">Home</h2>
+							</a>
 
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-						<?php get_search_form(); ?>
-						<a href="#" class="nav-toggle">
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+							<?php get_search_form(); ?>
+							<a href="#" class="nav-toggle">
 							</a>
 						</nav>
 
 					</div>
 
-					<div class="header-page-name"> 
+					<div class="header-page-name">  <!-- -->
 						<?php 
 						if ( is_front_page() ) {
 							echo '<p>Welcome</p>';
@@ -62,7 +62,7 @@
 					</div>
 					<div class="header-logo-mobile">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
 						</a>
 					</div>
 				</nav>
@@ -70,12 +70,12 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation"> <!-- Desktop nav header -->
 					<div class="header-logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<img class ="nav-logo" src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
+							<img class ="nav-logo" src="<?php echo get_template_directory_uri(); ?>/assets/seal.png" alt="David Fox seal logo" />
 						</a>
 					</div>
 					
 					<div class="nav-menu-options">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					</div>
 
 				</nav><!-- #site-navigation -->

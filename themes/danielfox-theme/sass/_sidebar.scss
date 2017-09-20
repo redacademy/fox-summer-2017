@@ -55,9 +55,7 @@
                     margin-bottom: 10px;
                     line-height: 1.5;
                 }
-            }
-
-            //Recent Posts
+            } //Recent Posts
             .recent-post-container {
                 .container-title {
                     background-color: transparent;
@@ -98,18 +96,14 @@
                     margin-bottom: 0px;
                     letter-spacing: 1px;
                 }
-                    .blog-thumbnail {
-                        height: 100%;
-                        .blog-thumbnail-picture {
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            height: 300px;
-                        }
+                .blog-thumbnail {
+                    height: 100%;
+                    .blog-thumbnail-picture {
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        height: 300px;
                     }
-
-
-
-
+                }
             }
         }
     }
