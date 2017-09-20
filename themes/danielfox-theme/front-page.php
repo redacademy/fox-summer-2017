@@ -65,11 +65,11 @@ get_header(); ?>
                 <h2><?php echo CFS()->get( 'front_page_featured_in_h2' ); ?></h2>
 
                 <div class="featured-images">
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/sidetracked.png" alt="Sidetracked brand logo" /></a>
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/the-culture-trip.png" alt="The culture trip brand logo" /></a>
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/maptia.png" alt="Maptia brand logo" /></a>
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bayan-collective.png" alt="Bayan collective brand logo" /></a>
-                    <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/icons/canoe-and-kayak.png" alt="Canoe and kayak brand logo" /></a>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/sidetracked.png" alt="Sidetracked brand logo" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/the-culture-trip.png" alt="The culture trip brand logo" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/maptia.png" alt="Maptia brand logo" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/bayan-collective.png" alt="Bayan collective brand logo" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/icons/canoe-and-kayak.png" alt="Canoe and kayak brand logo" />
                 </div>
             </div>
 

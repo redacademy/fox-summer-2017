@@ -1260,7 +1260,7 @@ h2 {
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-      .featured-in .featured-images a {
+      .featured-in .featured-images img {
         margin: 0px 3%; }
   .other-projects .front-page-blog-background {
     height: 317px;
@@ -1704,15 +1704,21 @@ h2 {
     display: block;
     position: absolute;
     right: 5%;
-    top: 35px; }
+    top: 35px;
+    color: red;
+    font-size: 18px; }
 
 .mobile-modal-description-title-date {
   height: 55px;
   width: 100%;
-  margin: 0px 20px; }
+  margin: 0px 20px;
+  color: red;
+  font-size: 14px; }
+  .mobile-modal-description-title-date .mobile-modal-description-title {
+    font-size: 22px; }
 
 .mobile-modal-description-excerpt {
-  margin: 0px 20px; }
+  margin: 15px 50px; }
 
 @media screen and (min-width: 600px) {
   .blog .widget-area,
