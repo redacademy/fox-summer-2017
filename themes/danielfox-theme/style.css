@@ -628,8 +628,10 @@ a {
       display: none; }
 
 .site-header .header-page-name {
+  color: #dc4e3c;
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+  font-size: 20px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
