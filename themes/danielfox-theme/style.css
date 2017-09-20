@@ -1260,7 +1260,7 @@ h2 {
       display: flex;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-      .featured-in .featured-images a {
+      .featured-in .featured-images img {
         margin: 0px 3%; }
   .other-projects .front-page-blog-background {
     height: 317px;
