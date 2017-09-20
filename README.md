@@ -28,7 +28,7 @@ In this project we learned how to work as a team, from the design hand-off proce
 
 
 # CONTRIBUTORS
-Daniel Kell
-David Hilscher
-Marie Sarabia
+* Daniel Kell
+* David Hilscher
+* Marie Sarabia
 
