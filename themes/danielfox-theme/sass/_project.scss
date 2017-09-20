@@ -42,6 +42,7 @@
 .single-project {
     .project-featured-image {
         width: 100%;
+        background-size: cover;
     }
     .featured-image {
         height: 296px;
@@ -93,7 +94,7 @@
                 justify-content: center;
             }
             .project-featured-image {
-                background-size: cover;
+                
                 background-position: center;
                 height: 400px;
                 width: 80%;

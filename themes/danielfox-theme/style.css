@@ -2018,7 +2018,7 @@ h2 {
     .blog .site-content .jssocials-shares,
     .single-post .site-content .jssocials-shares {
       display: block;
-      margin: .3em 0;
+      margin: 0;
       width: 5%;
       background-color: transparent; }
       .blog .site-content .jssocials-shares .jssocials-share-link,
@@ -2343,7 +2343,8 @@ h2 {
   height: 41px; }
 
 .single-project .project-featured-image {
-  width: 100%; }
+  width: 100%;
+  background-size: cover; }
 
 .single-project .featured-image {
   height: 296px;
@@ -2383,7 +2384,6 @@ h2 {
     -ms-flex-pack: center;
         justify-content: center; }
   .single-project .project .project-featured-image {
-    background-size: cover;
     background-position: center;
     height: 400px;
     width: 80%; }
