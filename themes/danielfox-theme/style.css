@@ -1255,6 +1255,9 @@ h2 {
           flex-direction: column; }
       .project-container .front-page-blog p {
         display: block; }
+  .front-page-photography-image, .front-page-speaker-image {
+    background-position: 50% 100%;
+    height: 300px; }
   .featured-in {
     display: -ms-flexbox;
     display: flex;
@@ -2010,6 +2013,10 @@ h2 {
         letter-spacing: 1px;
         display: inline;
         background-color: transparent; }
+      .blog .site-content .text-content .post-date-2,
+      .single-post .site-content .text-content .post-date-2 {
+        display: block;
+        color: #dc4e3c; }
     .blog .site-content .subscribe-mobile-container,
     .single-post .site-content .subscribe-mobile-container {
       display: none; }
@@ -2341,7 +2348,8 @@ h2 {
   height: 41px; }
 
 .single-project .project-featured-image {
-  width: 100%; }
+  width: 100%;
+  background-size: cover; }
 
 .single-project .featured-image {
   height: 296px;
@@ -2381,7 +2389,6 @@ h2 {
     -ms-flex-pack: center;
         justify-content: center; }
   .single-project .project .project-featured-image {
-    background-size: cover;
     background-position: center;
     height: 400px;
     width: 80%; }
