@@ -1986,7 +1986,7 @@ h2 {
     .single-post .site-content .content-area {
       -ms-flex-preferred-size: 70%;
           flex-basis: 70%;
-      margin-right: 40px; }
+      margin-right: 50px; }
       .blog .site-content .content-area .blog-photo,
       .single-post .site-content .content-area .blog-photo {
         display: -ms-flexbox;
@@ -2510,6 +2510,8 @@ h2 {
 
 .search .site-content {
   margin: 0 5.07%; }
+  .search .site-content .site-main {
+    margin-top: 25px; }
   .search .site-content fieldset {
     border: 0;
     margin: 0 auto;
