@@ -11,8 +11,12 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="footer-left">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+					<a href="https://www.facebook.com/thewildimage">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/Facebook_White.svg" alt="Facebook logo" />
+					</a>
+					<a href="https://www.instagram.com/thewildimage/">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/Instagram_White.svg" alt="Instagram logo" />
+					</a>
 					<div id="secondary" class="widget-area" role="complementary">
 						<?php dynamic_sidebar( 'subscribe-1' ); ?>
 					</div><!-- #secondary -->

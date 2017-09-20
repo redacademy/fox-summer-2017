@@ -80,10 +80,8 @@ get_header(); ?>
 				<div class="speaker-video-three speaker-vid">
 					<a class="gallery-modal-link" data-toggle="modal" 
 						data-target="#modal-3" >
-
 						<div class="modal-container modal-container-3">   
 						</div>
-							 
 					</a>
 
 						<div class="modal fade speaker-modal-background" id="modal-3">
