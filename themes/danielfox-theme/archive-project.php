@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Project
  *
  * @package Daniel_Fox_Theme
  */
