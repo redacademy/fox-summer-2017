@@ -681,7 +681,8 @@ a {
       -ms-flex-preferred-size: 13%;
           flex-basis: 13%; }
       .site-header .main-navigation .header-logo img {
-        max-height: 65px; }
+        max-height: 65px;
+        max-width: 65px; }
       .site-header .main-navigation .header-logo a {
         display: -ms-flexbox;
         display: flex;
