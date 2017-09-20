@@ -1,4 +1,4 @@
-![front-page](https://raw.githubusercontent.com/redacademy/fox-summer-2017/1c1e193acf4e067424c19f203ae0714ad2670113/themes/danielfox-theme/assets/danielfox-frontpage.png "Daniel Fox Website Front Page")
+![front-page](https://raw.githubusercontent.com/redacademy/fox-summer-2017/cc41cef789032f968a1585d9590ab6295fb21522/themes/danielfox-theme/assets/danielfox-website-front.png "Daniel Fox Website Front Page")
 
 # DANIEL FOX
 
