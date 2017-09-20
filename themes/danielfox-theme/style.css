@@ -1315,7 +1315,7 @@ h2 {
 .about-header {
   background: url("../../assets/images/aboutme-banner.jpg");
   display: none;
-  margin-top: 83px;
+  margin-top: 90px;
   -ms-flex-pack: center;
       justify-content: center;
   background-repeat: no-repeat;
@@ -1978,12 +1978,13 @@ h2 {
     display: flex;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
-    margin-top: 70px; }
+    margin-top: 70px;
+    margin-left: 20px; }
     .blog .site-content .content-area,
     .single-post .site-content .content-area {
       -ms-flex-preferred-size: 70%;
           flex-basis: 70%;
-      margin-right: 67px; }
+      margin-right: 40px; }
       .blog .site-content .content-area .blog-photo,
       .single-post .site-content .content-area .blog-photo {
         display: -ms-flexbox;
@@ -2429,7 +2430,7 @@ h2 {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    margin: 0 2%; }
+    margin: 2% 2% 8%; }
     .post-type-archive-project .project-container .project-mobile-description {
       display: none; }
   .post-type-archive-project .site-main h1 {
