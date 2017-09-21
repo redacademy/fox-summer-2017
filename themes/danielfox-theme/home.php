@@ -60,8 +60,8 @@ get_header(); ?>
             <?php endwhile; ?>
 
             <div class="blog-nav"><?php posts_nav_link( ' ',
-            '<span class="nav-older">Older Posts</span>',
-            '<span class="nav-newer">Newer Posts</span>' ); ?></div>
+            '<span class="nav-newer">Newer Posts</span>',
+            '<span class="nav-older">Older Posts</span>' ); ?></div>
             
         <?php else : ?>
             <?php get_template_part( 'template-parts/content', 'none' ); ?>

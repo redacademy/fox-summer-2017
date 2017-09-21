@@ -2271,8 +2271,7 @@ h2 {
       width: 60%; } }
 
 .error404 .site-content {
-  margin: 0 5.07%;
-  margin-top: 5.07%; }
+  margin: 0 5.07%; }
   .error404 .site-content h2 {
     margin-bottom: 10px;
     letter-spacing: 1px; }
@@ -2444,6 +2443,8 @@ h2 {
     width: 24.24%; }
   .post-type-archive-project .site-main .project-about {
     display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
     margin: 0 auto;
     width: 88.89%; }
   .post-type-archive-project .site-main .page-header {
@@ -2512,6 +2513,12 @@ h2 {
   margin: 0 5.07%; }
   .search .site-content .site-main {
     margin-top: 25px; }
+  .search .site-content .page-title,
+  .search .site-content .entry-title {
+    letter-spacing: 0;
+    margin-bottom: 0; }
+  .search .site-content .entry-summary p {
+    margin-top: 0; }
   .search .site-content fieldset {
     border: 0;
     margin: 0 auto;
@@ -2545,6 +2552,8 @@ h2 {
       text-align: center; }
   .search .site-content ul {
     margin: 0; }
+  .search .site-content .search-pagination {
+    margin-bottom: 20px; }
 
 @media screen and (min-width: 600px) {
   .search {
