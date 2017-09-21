@@ -1,9 +1,16 @@
 .search {
     .site-content {
         margin: 0 5.07%;
-
         .site-main {
             margin-top: 25px;
+        }
+        .page-title,
+        .entry-title {
+            letter-spacing: 0;
+            margin-bottom: 0;
+        }
+        .entry-summary p {
+            margin-top: 0;
         }
         fieldset {
             border: 0;
@@ -35,6 +42,9 @@
         }
         ul {
             margin: 0;
+        }
+        .search-pagination {
+            margin-bottom: 20px;
         }
     }
 }

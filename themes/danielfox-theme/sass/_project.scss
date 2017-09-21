@@ -101,6 +101,7 @@
 }
 
 
+
 //Styling for Project Archive Page [DESKTOP]
 @media screen and (min-width: $breakpoint) {
     .single-project {
@@ -194,7 +195,8 @@
 }
 
 // Video styling for landscape viewing on mobile devices
-@media screen and (orientation: landscape) {
+
+@media screen and (orientation: landscape) and (max-height: 550px) {
     .speaker-bottom-half {
             .video-modal-body {
         iframe {
