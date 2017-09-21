@@ -2443,6 +2443,8 @@ h2 {
     width: 24.24%; }
   .post-type-archive-project .site-main .project-about {
     display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
     margin: 0 auto;
     width: 88.89%; }
   .post-type-archive-project .site-main .page-header {
