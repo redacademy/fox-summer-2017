@@ -2153,9 +2153,7 @@ h2 {
     padding: 10px 20px;
     letter-spacing: 1px;
     text-align: center;
-    max-width: 15%;
-    -ms-flex: 1 1 15%;
-        flex: 1 1 15%; }
+    max-width: 179px; }
     .blog .blog-nav a > span.nav-older,
     .blog .blog-nav a > span.nav-newer {
       padding: 0;
