@@ -2463,7 +2463,7 @@ h2 {
   .speaker-bottom-half .video-modal-body .speaker-video-description {
     display: block; } }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-height: 550px) {
   .speaker-bottom-half .video-modal-body iframe {
     width: 95vw;
     height: 95vh;
